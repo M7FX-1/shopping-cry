@@ -1,0 +1,12 @@
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local user data — never commit profiles
+profiles/
+.product-scout/
+
+# Editor noise
+*.swp
+*~
