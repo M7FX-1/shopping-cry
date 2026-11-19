@@ -61,17 +61,18 @@ this file and the skill ever disagree, the skill wins. Verification tags: `[S]` 
 
 ## Standard dimension tables
 
-- **Mattress sizes `[P]` — measure, don't trust the name** (Egyptian
-  market approximations): single 90×190 cm; double 120×190–200;
-  "queen" 160×190–200; "king" 180×200. Regional labels vary — the
-  tape decides.
+- **Mattress sizes `[P]` — measure, don't trust the name**: regional
+  standards differ (e.g., EU single 90×200 / double 140×200 / queen
+  160×200 / king 180×200 cm; US twin 97×191 / full 137×191 / queen
+  152×203 / king 193×203 cm; UK single 90×190 / double 135×190 / king
+  150×200 cm) — always measure the frame and mattress in cm/inches.
 - **Circulation clearances `[P]`**: walkways ≥60 cm minimum
   (75–90 cm comfortable); bed-to-wall for making the bed ~60–70 cm;
   dining chair pull-back ~75 cm; coffee-table-to-sofa 40–45 cm.
-- **Route check `[P]`**: measure doorways (typical Egyptian apartment
-  door ~80–90 cm), stair turns, elevator cabin (many are ~80×100 cm —
-  a 180 cm sofa needs rotation or hoisting); flat-pack cartons are
-  often the binding dimension, not the furniture.
+- **Route check `[P]`**: measure doorways (typical apartment doors
+  ~76–90 cm), stair turns, elevator cabin (check both door opening and
+  depth — a 180+ cm sofa may need rotation or hoisting); flat-pack
+  cartons are often the binding dimension, not the furniture.
 
 ## Food-contact plastics — resin codes `[S]/[P]`
 

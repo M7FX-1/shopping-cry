@@ -19,8 +19,9 @@ the skill ever disagree, the skill wins. Verification tags: `[S]` = sourced — 
 
 - The number before `-W` is the cold-start grade (lower = flows at
   colder starts); the number after is the hot operating grade.
-- Common grades in MENA markets: 5W-30 / 5W-40 (European cars),
-  10W-40 (older engines, hot climates), 0W-20 (modern Japanese).
+- Common grades vary by engine and climate: 0W-20 (modern Japanese/
+  hybrid/fuel-economy engines), 5W-30 / 5W-40 (European and broad
+  gasoline fleets), 10W-40 (older engines, hot climates).
 - Choose exactly what the manual lists — the manual's tolerance
   ranges are the only legitimate alternates `[S]`.
 
@@ -92,20 +93,15 @@ steering vs ATF: only where the manufacturer says ATF `[P]`.
   rarely helps and may not fit the tray `[P]`.
 - Terminal orientation (polarity left/right) and base-hold-down type
   differ by market/car — the tray fit is part of fitment `[P]`.
-- Egypt heat shortens life; expect shorter service than European
-  norms and treat warranty months as the value signal `[P]`.
+- Extreme heat or extreme cold shortens battery life; treat warranty
+  months and local replacement availability as key value signals `[P]`.
 
 ## Counterfeit checklist — parts and fluids `[S]` where noted
 
-Documented context `[S]`: Egypt enforcement seized counterfeit
-heavy-vehicle parts (6,500+ items, 2024 raid), a warehouse of fake
-truck parts (2025), and ~45,000 L recycled/counterfeit engine oil
-(Egypt CPA, 2026-09 — re-verify currency of seizure data at
-dispatch); global fake-parts trade runs in the billions of dollars
-(OECD flags counterfeit auto parts — brake pads, airbags — as a top
-dangerous-goods category within a ~US$467B total counterfeit trade,
-2021); brake pads, filters, and lubricants are repeatedly named
-fake classes. Checklist:
+Documented global context `[S]`: OECD flags counterfeit auto parts
+(brake pads, airbags, filters, lubricants) as a top dangerous-goods
+category within a ~US$467B total global counterfeit trade (2021).
+Checklist:
 
 1. Price sanity: far below every other channel = presumed fake for
    oil, brakes, filters (SKILL.md behavior 8's rule).
@@ -117,8 +113,8 @@ fake classes. Checklist:
    via Bosch's KeySecure authentication page; oil brands are
    introducing QR/scratch verification).
 4. Physical: oil = golden/amber, uniform, no cloudiness; pads =
-   backing plate stamping + R90 approval number; filters = media
-   density and intact bypass.
+   backing plate stamping + R90 approval number (where applicable);
+   filters = media density and intact bypass.
 5. After-fit signals: engine noise/overheating after a cheap oil
    change, brake dust storms or fade after cheap pads — drain/
    replace and rebuy through a real channel `[P]`.
@@ -138,16 +134,15 @@ fake classes. Checklist:
 
 - **Filters** `[P]`: oil filter = media quality + bypass valve
   integrity (counterfeit point); air filter = pleat density; cabin
-  filter = activated-carbon layer for dust-heavy cities. Replace on
-  interval, not on failure — a clogged filter's cost is paid at the
-  fuel pump and the engine.
-- **Wipers** `[P]`: beam/hybrid blades outperform framed in heat and
-  dust; replace on streak/squeak; heat-hardened rubber is the
-  Egyptian failure mode, not frame wear.
-- **Car care** `[P]`: spray wax after every wash or monthly paste in
-  extreme UV; pH-neutral shampoo (dish soap strips wax); covers —
-  breathable multi-layer beats tarp (trapped moisture + UV
-  transmission); interior UV protectant for dash longevity.
+  filter = activated-carbon layer for high-pollution/dust cities.
+  Replace on interval, not on failure — a clogged filter's cost is
+  paid at the fuel pump and the engine.
+- **Wipers** `[P]`: beam/hybrid blades outperform framed in heat,
+  dust, and snow/ice; replace on streak/squeak.
+- **Car care** `[P]`: spray wax after washes or periodic sealant for
+  UV and road-salt protection; pH-neutral shampoo (dish soap strips
+  wax); covers — breathable multi-layer beats tarp (trapped moisture
+  + UV transmission); interior UV protectant for dash longevity.
 - **Jump starters** `[S]` (NOCO/AutoZone guidance): peak amps
   marketing — check cranking-amp ratings for the car class; reverse-
   polarity protection + spark-proof clamps as required features;
@@ -169,15 +164,13 @@ fake classes. Checklist:
   their own parts; the OEM-dealer path costs most but carries the
   cleanest recourse chain.
 
-## Egypt price/market notes `[P]`
+## Market & availability notes `[P]`
 
-- Parts prices move with import costs — check current listings; old-
-  generation parts (facelift cycles) drop sharply and are often
-  legitimate value for older cars.
-- Model popularity decides availability: Egypt's fleet skews to
-  Hyundai/Kia/Toyota/Chevrolet/Nissan/Renault (the verified retail
-  lookup menus mirror it) — parts for these move fast and cheap;
-  niche European parts cost more and wait longer.
-- Battery brands commonly stocked: Chloride (verified listing
-  2026-11), plus imported brands at premium channels; the morning-
-  you-need-it factor makes local availability a real ranking factor.
+- Parts prices move with supply-chain and import costs — check
+  current local listings at dispatch; old-generation parts (facelift
+  cycles) drop sharply and are often legitimate value for older cars.
+- Local fleet popularity decides availability and lead time: common
+  mass-market models have fast, affordable parts locally; niche
+  imports cost more and wait longer.
+- For urgent consumables (batteries, tires, belts), local same-day
+  availability and warranty exchange matter as much as brand prestige.
