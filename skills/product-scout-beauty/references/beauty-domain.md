@@ -6,9 +6,9 @@
 
 ## Method note
 
-- Scope: skincare, makeup, haircare, fragrance, men's grooming. Standard of rigor: claims traced to peer-reviewed dermatology literature, guideline bodies (AAD, ISO, SCCS/EU, FDA, EDA) or named cosmetic-chemistry experts; consumer/brand sources used only for conventions (shade systems, fragrance tiers) and labeled as such.
+- Scope: skincare, makeup, haircare, fragrance, men's grooming. Standard of rigor: claims traced to peer-reviewed dermatology literature, guideline bodies (AAD, ISO, SCCS/EU, FDA, national regulators) or named cosmetic-chemistry experts; consumer/brand sources used only for conventions (shade systems, fragrance tiers) and labeled as such.
 - Research date: 2026-11-13. Verification status: all URLs retrieved via live web search this session; items that could not be traced to a primary source are marked **[unverified]** or **[industry source]** (marketing/consumer site, not independent).
-- Regional lens: Egypt/MENA (EDA notification, pharmacy-channel trust, skin-lightening harms, high-UV melasma).
+- Global applicability: applies regulatory checks, channel safety, climate matching, and skin-of-color photoprotection across any market the user shops in.
 - This file is decision-support knowledge, not medical advice; referral rules are in "Safety rails."
 
 ## 1. Active-ingredient science
@@ -20,7 +20,7 @@
 | Retinol | Converted to retinal→retinoic acid; regulates keratinization, collagen, pigment | Moderate for wrinkles (weak-to-mild per systematic review) [5](https://pmc.ncbi.nlm.nih.gov/articles/PMC8675340) | 0.1% entry; 0.3% ≈ sweet spot (≈1% efficacy, better tolerated; Mellody 2022) **[no direct URL retrieved — unverified]**; 0.1% vehicle-controlled improvement wks 4–12 [6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11344648) | Retinization (redness/flaking) and "purging" (~4 wks); start 2×/week [6](https://pmc.ncbi.nlm.nih.gov/articles/PMC11344648) |
 | Retinaldehyde (retinal) | One conversion step from retinoic acid | Moderate; less irritating than tretinoin, better efficacy/tolerability balance among OTC retinoids [7](https://pmc.ncbi.nlm.nih.gov/articles/PMC2699641) [8](https://pmc.ncbi.nlm.nih.gov/articles/PMC8750127) | 0.05–0.1% typical OTC **[range: industry convention — unverified]** | Same photosensitivity rules; more potent than retinol |
 | Adapalene 0.1% (gel) | Synthetic retinoid, RAR-β/γ selective | Strong (Rx-grade trials); only retinoid switched OTC (US, Differin 2016) [8](https://pmc.ncbi.nlm.nih.gov/articles/PMC8750127) [9](https://pmc.ncbi.nlm.nih.gov/articles/PMC9618501) | 0.1% OTC; 0.3% Rx | Less irritant than tretinoin (Brand 2003, PMID 12963899); proven stable with benzoyl peroxide (Epiduo) [10](https://pmc.ncbi.nlm.nih.gov/articles/PMC2958193) |
-| Tretinoin 0.025–0.1% | Active retinoic acid | Strongest (decades of RCTs) [7](https://pmc.ncbi.nlm.nih.gov/articles/PMC2699641) | Rx-only in US/EU/Egypt (see Safety rails) | Pregnancy contraindication; max irritation in class |
+| Tretinoin 0.025–0.1% | Active retinoic acid | Strongest (decades of RCTs) [7](https://pmc.ncbi.nlm.nih.gov/articles/PMC2699641) | Rx-only in most jurisdictions (see Safety rails) | Pregnancy contraindication; max irritation in class |
 | Glycolic acid (AHA) | Smallest AHA; dissolves corneocyte bonds; dermal effects at higher use | Good (multiple reviews/RCTs) [11](https://pmc.ncbi.nlm.nih.gov/articles/PMC11268769) [12](https://www.mdpi.com/2079-9284/10/5/131) | Leave-on 5–10% home use **[convention]**; efficacy is pH- and free-acid-dependent: at pH 3, 24-h absorption of 5% cream 27% vs 3.5% at pH 7 [13](https://labmuffin.com/fact-check-friday-why-does-ph-matter-for-ahas-and-bhas) | Most irritating AHA; over-exfoliation risk; raise sparingly |
 | Lactic acid (AHA) | Same, larger molecule, NMF component → hydrating | Good; slightly better tolerated than glycolic [14](https://pubmed.ncbi.nlm.nih.gov/19245467) [11](https://pmc.ncbi.nlm.nih.gov/articles/PMC11268769) | 5–12% leave-on **[convention]** | Preferred for dry/sensitive |
 | Salicylic acid (BHA) | Lipid-soluble; comedolytic, anti-inflammatory | Conditional (low-quality evidence) per AAD 2024 — weaker than BP but recommended for comedonal acne [15](https://www.aad.org/member/clinical-quality/guidelines/acne) | 0.5–2% OTC ceiling (US/many markets) | Pregnancy: ≤2% topical accepted by most guidance [16](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care); avoid high-% peels in pregnancy |
@@ -45,7 +45,7 @@ Known pairing conflicts:
 - Dry: cream/ointment vehicles (AAD: ointments seal moisture best, lotions for oily/humid) [31](https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer); ceramide-based [23](https://pmc.ncbi.nlm.nih.gov/articles/PMC9293121); syndet bars pH ~5.5 vs soap pH 9–11 [32](https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092).
 - Sensitive/rosacea: fragrance-free (not "unscented") per AAD; NRS survey trigger rankings — alcohol 66%, witch hazel 30%, fragrance 30%, menthol 21% [33](https://www.aad.org/public/diseases/rosacea/triggers/tips) [34](http://www.rosacea.org/patients/skin-care-and-cosmetics); mineral sunscreen preferred; azelaic acid 15% has rosacea evidence [19](https://pubmed.ncbi.nlm.nih.gov/37550898).
 - Combination: split-zone strategy (rich cream dry zones, gel T-zone); avoid full-face AHA daily.
-- Melasma-prone / skin of color: PIH risk from *any* inflammation — prioritize low-irritation actives and strict photoprotection; melanin-rich (Fitzpatrick III–VI) skin disproportionately affected [35](https://pmc.ncbi.nlm.nih.gov/articles/PMC2921758) [36](https://skinofcolorsociety.org/discover-patients-public/public-education/pih). Middle East populations largely Fitzpatrick III–VI with high acne-PIH burden [37](https://pubmed.ncbi.nlm.nih.gov/30426810). Melasma in high-UV MENA: photoprotection is the foundation of all melasma therapy; triple cream (HQ 4%/tretinoin/fluocinolone) is Rx first-line; azelaic 20% > vehicle in melasma [38](https://www.aad.org/public/diseases/a-z/melasma-treatment) [39](https://pmc.ncbi.nlm.nih.gov/articles/PMC5724303) [19](https://pubmed.ncbi.nlm.nih.gov/37550898). Tinted/mineral SPF defends against visible light, which triggers melasma [38](https://www.aad.org/public/diseases/a-z/melasma-treatment).
+- Melasma-prone / skin of color: PIH risk from *any* inflammation — prioritize low-irritation actives and strict photoprotection; melanin-rich (Fitzpatrick III–VI) skin disproportionately affected [35](https://pmc.ncbi.nlm.nih.gov/articles/PMC2921758) [36](https://skinofcolorsociety.org/discover-patients-public/public-education/pih). In high-UV regions, photoprotection is the foundation of all melasma therapy; triple cream (HQ 4%/tretinoin/fluocinolone) is Rx first-line; azelaic 20% > vehicle in melasma [38](https://www.aad.org/public/diseases/a-z/melasma-treatment) [39](https://pmc.ncbi.nlm.nih.gov/articles/PMC5724303) [19](https://pubmed.ncbi.nlm.nih.gov/37550898). Tinted/mineral SPF defends against visible light, which triggers melasma [38](https://www.aad.org/public/diseases/a-z/melasma-treatment).
 - Patch-testing protocol: AAD method — quarter-sized spot twice daily for 7–10 days on non-face skin; test one new product at a time [40](https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products). Fast 24/48/72-h forearm check catches immediate reactions only; delayed allergy can appear after 1–2 weeks **[consumer guidance consensus]** [41](https://www.theinkeylist.com/blogs/news/why-do-i-need-to-do-a-patch-test).
 - Fragrance is the top cosmetic allergen: EU mandates declaration of 26 fragrance allergens (>0.001% leave-on / >0.01% rinse-off), expanded to >80 entries by Regulation (EU) 2023/1545 (compliance: 31 Jul 2026 new products / 2028 existing) [42](https://eur-lex.europa.eu/eli/reg/2023/1545/oj) [43](https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/fragrance-allergens-labelling_en).
 - Pregnancy: stop all topical retinoids (incl. retinol cosmetics, adapalene) once pregnant; ≤2% salicylic acid widely accepted, high-%/peel-grade avoided; azelaic acid and low-strength glycolic/lactic commonly recommended substitutes [44](https://www.aad.org/public/diseases/acne/derm-treat/pregnancy) [16](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care) [45](https://pmc.ncbi.nlm.nih.gov/articles/PMC9823189) [46](https://pmc.ncbi.nlm.nih.gov/articles/PMC3114665). Benzoyl peroxide: guidance split — some conservative sources avoid **[unverified as formal ACOG position]** [16](https://www.aad.org/public/everyday-care/skin-care-secrets/routine/pregnancy-skin-care).
@@ -62,23 +62,22 @@ Known pairing conflicts:
 | Cruelty-free logo | Depends on certifier: Leaping Bunny = fixed cut-off date + supplier monitoring + audits + annual recommitment (gold standard); PETA = signed corporate statement only [53](https://www.leapingbunny.org/Web/Web/content/standard.aspx) [54](https://www.crueltyfreekitty.com/cruelty-free-101/leaping-bunny-vs-peta) | PETA logo = audited supply chain |
 
 - SPF/UVA systems: labeled SPF is an in-vivo human test (ISO 24444:2019) [55](https://www.iso.org/standard/72250.html); UVA-PF via ISO 24442/24443; Asian PA grades map to PPD (PA++++ = PPD ≥16) **[grading mapping — unverified table]**; EU requires UVA-PF ≥ 1/3 of SPF; UK Boots stars = UVA:UVB ratio (5★ ≈ 90%+) **[ratio table — unverified]** [56](https://blog.ansi.org/ansi/iso-24444-2019-in-vivo-determination-of-spf). Reality check: consumers apply 20–50% of the 2 mg/cm² test dose, so real-world SPF is a fraction of the label; ~20–60% of regular users never reapply [57](https://pmc.ncbi.nlm.nih.gov/articles/PMC7759112) [58](https://www.sciencedirect.com/science/article/pii/S0278691523004957). Australia's 2025 "sunscreengate" showed some retail-tested SPFs miss their labels [59](https://www.tga.gov.au/resources/explore-topic/sunscreens/sunscreen-spf-testing-information-consumers).
-- Cosmetic vs drug boundary (US): intent-based. "Moisturizes/cleanses/beautifies" = cosmetic; "treats acne/dandruff, antiperspirant, SPF" = OTC drug claims [60](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap) [61](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/cosmetics-us-law). Skin-lightening claims push a product toward drug territory; FDA states there are no FDA-approved OTC skin-lightening products [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety).
-- Egypt (regional lens): all imported/local cosmetics must be notified via EDA's EgyCosm platform (validity 10 years); EDA publishes claims rules (some claims like "slimming" prohibited) and a cosmetovigilance system (SUE reporting) [63](https://cosmetic.chemlinked.com/cosmepedia/egyptian-cosmetics-regulations) [64](https://edaegypt.gov.eg/media/du3pppeh/regulatory-guide-for-cosmetics-notification-2026-2022.pdf) [65](https://edaegypt.gov.eg/media/ujnj22c2/claims-guide-for-cosmetics-notification.pdf) [66](https://www.edaegypt.gov.eg/media/3b0dnzxl/eda-cosmetovigilance-guidelines-version-1-1-18-05-2022.pdf).
+- Cosmetic vs drug boundary: intent-based in major regulatory systems (US FDA, EU, UK, Australia, etc.). "Moisturizes/cleanses/beautifies" = cosmetic; "treats acne/dandruff, antiperspirant, SPF" = OTC drug/quasi-drug claims [60](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap) [61](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/cosmetics-us-law). Skin-lightening claims push a product toward drug territory; FDA states there are no FDA-approved OTC skin-lightening products [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety).
+- National notifications: check the user's market regulatory system (e.g., EU CPNP, US MoCRA, UK SCPN, or national cosmetics notification portals) when verifying compliance.
 
 ## 4. Counterfeit & channel safety
 
 - Prevalence: UK IPO found toxic substances (mercury, lead, arsenic, methanol) in 40% of seized counterfeit beauty products; press investigations report very high fake rates on open marketplaces ("over 65%" per The Times, 2025 — treat figure as press estimate, not audited stat) [67](https://www.gov.uk/government/news/ipo-campaign-launched-as-toxins-found-in-counterfeit-beauty-products) [68](https://observer.co.uk/news/business/article/the-toxic-cost-of-counterfeit-beauty-products) [69](https://www.thetimes.com/life-style/beauty/article/cosmetics-sold-online-amazon-ebay-fake-2zvj3sdk9).
-- Verification: buy from authorized sellers; check batch codes/QR with brand channels; EDA publicly warns against unregistered/counterfeit cosmetics sold via social media and runs enforcement seizures (all cosmetics must be notified through EgyCosm per Decree 122/2022) [70](https://cosmetic.chemlinked.com/cosmepedia/egyptian-cosmetics-regulations) [S 2026-11 — EDA media center: https://edaegypt.gov.eg/en/media-center/news/as-part-of-regulatory-campaigns-to-strengthen-pharmaceutical-market-oversight-june-2026-egyptian-drug-authority-seizes-52-unlicensed-establishments-across-14-governorates-with-confiscated-products-valued-at-more-than-egp-22-million].
+- Verification: buy from licensed pharmacies, authorized beauty retailers, and official brand storefronts; check batch codes/QR with brand channels.
 - PAO symbol (open jar, "12M") = safe-use window after first opening; used when shelf life >30 months, otherwise printed expiry; derived from stability + preservative-efficacy (challenge) testing [71](https://www.certifiedcosmetics.com/product/common-tests/period-after-opening-pao-test).
 - Storage: L-ascorbic acid oxidizes fastest in water at near-neutral pH and with air/light/heat — choose opaque/airless packaging, store cool & dark, discard when dark orange/brown [4](https://pmc.ncbi.nlm.nih.gov/articles/PMC10552410) [72](https://www.phyto-c.com/blogs/news/oxidized-vitamin-c-serum-color-guide).
-- Recommended channels (Egypt/MENA): licensed pharmacy chains (El Ezaby, Seif, Al Dawaa) and their official delivery apps — the dermocosmetic retail backbone of Egypt — over social-media sellers and unverified e-commerce [73](https://cosmocopilot.com/register-cosmetic-product-egypt-eda.html) **[El Ezaby/Seif details from industry/press sources]**.
 
 ## 5. Common mistakes & red flags
 
 - "Natural = safe": oxidized fragrance terpenes are potent allergens — linalool/limonene autoxidize on air exposure into hydroperoxides; ~4.7% of patch-tested dermatitis patients react to oxidized linalool [74](https://pmc.ncbi.nlm.nih.gov/articles/PMC6587870) [75](https://pubmed.ncbi.nlm.nih.gov/12084079) [76](https://dermnetnz.org/topics/hydroperoxides-of-limonene-and-linalool).
 - Over-exfoliation: daily acids/scrubs strip barrier lipids → stinging, persistent tightness, redness, reactivity; fix by stopping all exfoliants and rebuilding with ceramide moisturizer + SPF [77](https://pmc.ncbi.nlm.nih.gov/articles/PMC5608132) [78](https://blog.dermaquestclinical.com/signs-of-over-exfoliation-and-how-to-fix-it).
 - Undisclosed concentrations: INCI lists are descending-order above 1% only; below the "1% line" order is free, so "0.5% retinol" claims may hide trace amounts **[INCI rule is law; enforcement of actives claims varies — unverified per-market]** [79](https://www.cosmebio.org/en/reports/INCI-list-how-to-read-ingredient-list-cosmetics).
-- Whitening/bleaching dangers (documented MENA harm): unregulated lightening creams in the Middle East contain unsafe hydroquinone levels → irritation, rebound, exogenous ochronosis; international survey found 67% of lightening-cream users were treating PIH/melasma/acne; FDA warns OTC lighteners may contain undeclared hydroquinone or mercury [80](https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261) [81](https://www.sciencedirect.com/science/article/pii/S2352647520301416) [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety). Topical-steroid whitening creams: documented misuse harm (steroid-dependent skin, rebound) **[clinical literature: see [82]](https://doctorabad.com/uptodate/d/topic.htm?path=topical-skin-lightening-agents-complications-associated-with-misuse)**.
+- Whitening/bleaching dangers (documented global harm): unregulated lightening creams contain unsafe hydroquinone or mercury levels → irritation, rebound, exogenous ochronosis; international survey found 67% of lightening-cream users were treating PIH/melasma/acne; FDA warns OTC lighteners may contain undeclared hydroquinone or mercury [80](https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261) [81](https://www.sciencedirect.com/science/article/pii/S2352647520301416) [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety). Topical-steroid whitening creams: documented misuse harm (steroid-dependent skin, rebound) [82](https://doctorabad.com/uptodate/d/topic.htm?path=topical-skin-lightening-agents-complications-associated-with-misuse).
 - Hydroquinone status: reclassified by FDA as not-GRASE-for-OTC under the CARES Act reforms (2020) → US OTC removal; 4% now prescription-only (Tri-Luma is the sole FDA-approved HQ combo, short-term use) [83](https://practicaldermatology.com/topics/pigmentary-disorders/hydroquinone-in-2021/23592) [84](https://www.fda.gov/drugs/drug-safety-communications/fda-works-protect-consumers-potentially-harmful-otc-skin-lightening-products).
 - Influencer-hype traps: single-influencer "holy grail" claims, before/after filters, uncontrolled n=1 "clinical" studies; counter with the evidence hierarchy (§6). Retinol "purging" beyond ~8 weeks or true cystic flares = stop/refer, not push through **[expert consensus]**.
 - Banned ingredients to screen for: mercury compounds in skin creams, unsafe HQ levels, banned colorants — flagged via UK IPO seizures, FDA warnings [67](https://www.gov.uk/government/news/ipo-campaign-launched-as-toxins-found-in-counterfeit-beauty-products) [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety).
@@ -87,7 +86,7 @@ Known pairing conflicts:
 
 Tier order for verifying any product decision (most → least reliable):
 
-1. **Peer-reviewed dermatology / guidelines** (JAAD, PMC/PubMed RCTs & systematic reviews, AAD, ISO, SCCS): tells you mechanism, effect size, safety, regulatory caps. Rarely names specific SKUs.
+1. **Peer-reviewed dermatology / guidelines** (JAAD, PMC/PubMed RCTs & systematic reviews, AAD, ISO, SCCS, FDA/national regulators): tells you mechanism, effect size, safety, regulatory caps. Rarely names specific SKUs.
 2. **Guideline summaries & expert reviews** (AAD patient pages, DermNet, Skin of Color Society, NRS): same science, patient-usable framing.
 3. **Qualified cosmetic chemists / science communicators** — Dr. Michelle Wong (Lab Muffin, chemistry PhD; myth-busting against peer-reviewed sources) and Stephen Alain Ko (KindofStephen, formulator; formula/ingredient mechanics): tell you formulation logic, pH, packaging, myth-vs-fact. Not primary evidence; use to interpret tier 1 [85](https://labmuffin.com/fact-check-friday-why-does-ph-matter-for-ahas-and-bhas) [86](https://kindofstephen.com).
 4. **Ingredient databases** (INCIDecoder, CosDNA): parse INCI, flag comedogenic/irritancy citations, expose "1% line" — but they cannot see real concentrations, formula interactions, or extract potency; CosDNA irritancy scores are low-quality proxies [87](https://incidecoder.com) [88](https://cosdna.com) [79](https://www.cosmebio.org/en/reports/INCI-list-how-to-read-ingredient-list-cosmetics).
@@ -110,40 +109,40 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 2. Barrier actives: ceramides [23](https://pmc.ncbi.nlm.nih.gov/articles/PMC9293121), glycerin, petrolatum, dimethicone [31](https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer).
 3. Actives compatibility (rich creams buffer retinoid irritation — commonly recommended **[expert consensus]**).
 4. Fragrance/dyes (avoid for sensitive) [31](https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer).
-5. Face vs body grading; climate (humid MENA summer → lighter).
+5. Face vs body grading; climate (hot/humid → lighter; cold/dry → richer).
 
 **Serum (by goal)**
 - Brightening: LAA 10–20% or azelaic 10–20%; THD/SAP derivatives if heat/light exposure is uncontrolled [1](https://pmc.ncbi.nlm.nih.gov/articles/PMC5605218) [19](https://pubmed.ncbi.nlm.nih.gov/37550898).
-- Anti-acne: niacinamide 2–5%, azelaic 10–15%; Rx tier = adapalene/cla­ndamycin [17](https://pmc.ncbi.nlm.nih.gov/articles/PMC3142702) [19](https://pubmed.ncbi.nlm.nih.gov/37550898).
+- Anti-acne: niacinamide 2–5%, azelaic 10–15%; Rx tier = adapalene/clindamycin [17](https://pmc.ncbi.nlm.nih.gov/articles/PMC3142702) [19](https://pubmed.ncbi.nlm.nih.gov/37550898).
 - Anti-aging: retinol 0.1–0.3% (start), retinaldehyde, peptides as adjunct [5](https://pmc.ncbi.nlm.nih.gov/articles/PMC8675340) [7](https://pmc.ncbi.nlm.nih.gov/articles/PMC2699641) [21](https://pmc.ncbi.nlm.nih.gov/articles/PMC11762834).
 - Barrier: ceramides, multi-weight HA, panthenol; fragrance-free [23](https://pmc.ncbi.nlm.nih.gov/articles/PMC9293121) [24](https://pmc.ncbi.nlm.nih.gov/articles/PMC12731180).
 - Cross-checks: patch test [40](https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products); pregnancy screen (§ Safety rails).
 
 **Sunscreen**
 1. Skin type: oily → gel/fluid; dry → cream; sensitive/rosacea/melasma/post-procedure → mineral (ZnO/TiO2) [27](https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen) [34](http://www.rosacea.org/patients/skin-care-and-cosmetics).
-2. Broad-spectrum proof: SPF 30+, EU UVA logo or PA++++ (PIH/melasma markets need the UVA side) [55](https://www.iso.org/standard/72250.html).
+2. Broad-spectrum proof: SPF 30+, EU UVA logo or PA++++ (PIH/melasma need strong UVA protection) [55](https://www.iso.org/standard/72250.html).
 3. Cosmetic elegance (white cast vs depth of skin tone — drives adherence) **[expert consensus]**.
-4. Context: high-UV MENA daily use; reapplication reality (2–3× during outdoor exposure; most users never reapply) [57](https://pmc.ncbi.nlm.nih.gov/articles/PMC7759112) [58](https://www.sciencedirect.com/science/article/pii/S0278691523004957).
+4. Context: daily UV index; reapplication reality (2–3× during outdoor exposure; most users never reapply) [57](https://pmc.ncbi.nlm.nih.gov/articles/PMC7759112) [58](https://www.sciencedirect.com/science/article/pii/S0278691523004957).
 5. Water resistance if swimming; fragrance-free if reactive.
 
 **Makeup — foundation**
 1. Depth (fair→rich): match jawline/neck in daylight **[industry convention]** [89](https://www.maybelline.com/makeup-tips/face/face-makeup-tutorials-for-beginners/how-to-find-a-foundation-shade-for-your-skin-tone).
-2. Undertone: warm (golden/yellow), cool (pink), neutral, olive (green-grey cast, its own axis; common in MENA) [90](https://janeiredale.com/blogs/makeup-blog/how-to-match-foundation-to-undertone) [91](https://color-analysis.app/blog/foundation-for-olive-skin-guide).
+2. Undertone: warm (golden/yellow), cool (pink), neutral, olive (green-grey cast, its own axis) [90](https://janeiredale.com/blogs/makeup-blog/how-to-match-foundation-to-undertone) [91](https://color-analysis.app/blog/foundation-for-olive-skin-guide).
 3. Skin-type finish: oily → matte/serum-light; dry → dewy/cream; textured → breathable skin-finish **[industry convention]**.
 4. Coverage need (sheer→full) and SPF content (bonus, not replacement).
 5. Shade range availability (brands with 30+ shades); fragrance/acne-safety of formula.
 6. Undertone × depth matrix is the reliable two-axis system; single-axis "tone" charts fail for olive/deep skin [91](https://color-analysis.app/blog/foundation-for-olive-skin-guide).
 
 **Haircare**
-1. Scalp type first (oily/dry/flaky ≠ hair length): dandruff/seborrheic dermatitis → Zn-pyrithione 1% (mild, cosmetically elegant) or ketoconazole 2% (superior in severe cases, RCT) [92](https://pubmed.ncbi.nlm.nih.gov/12476017/).
+1. Scalp type first (oily/dry/flaky ≠ hair length): dandruff/seborrheic dermatitis → Zn-pyrithione 1% (where permitted) or ketoconazole 2% (superior in severe cases, RCT) [92](https://pubmed.ncbi.nlm.nih.gov/12476017/).
 2. Hair damage state: broken/stretchy → protein (hydrolyzed keratin); dry/brittle → moisture; alternate to avoid protein overload (hard, brittle) **[expert consensus — no RCTs]**.
 3. Styling/heat load → heat protectants, silicone polish vs volume.
-4. Wash frequency + water hardness (MENA hard-water scaling **[unverified]**).
+4. Wash frequency + local water hardness (hard-water mineral buildup).
 5. Sulfate need: sulfate-free milder but less effective on heavy silicone buildup **[expert consensus]**.
 
 **Fragrance**
 1. Concentration tier: EDC ~1–5% (1–3 h) < EDT 5–15% (3–4 h) < EDP 15–20% (4–8 h) < Extrait 20–40% (8 h+) — higher = longer longevity, not necessarily louder sillage (extraits often sit close) **[tier table: industry convention across houses]** [93](https://delacourte.com) [94](https://www.scerto.com).
-2. Climate: heat amplifies projection (MENA) → go lighter/cleaner.
+2. Climate: heat amplifies projection → lighter/cleaner profiles; cold dampens projection → richer bases.
 3. Note family vs occasion (citrus/fresh day, woody/amber evening, gourmand cold weather) **[industry convention]**.
 4. Longevity vs sillage preference; skin chemistry variability.
 5. Authenticity channel: testers sold loose = counterfeit risk; buy sealed, authorized [67](https://www.gov.uk/government/news/ipo-campaign-launched-as-toxins-found-in-counterfeit-beauty-products).
@@ -159,7 +158,7 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 
 | Tier | Source type | Reliably tells you | Never trust it for |
 |---|---|---|---|
-| 1 | Peer-reviewed derm lit + AAD/ISO/FDA/EDA/SCCS | Mechanism, effect sizes, safety, legal caps | Which specific SKU to buy |
+| 1 | Peer-reviewed derm lit + AAD/ISO/FDA/SCCS | Mechanism, effect sizes, safety, legal caps | Which specific SKU to buy |
 | 2 | DermNet, NRS, SoCS, guideline patient pages | Usable interpretation of tier 1 | Product choice |
 | 3 | Lab Muffin, KindofStephen | Formulation logic, pH, packaging, myth-busting | Primary evidence |
 | 4 | INCIDecoder, CosDNA | INCI parsing, allergen/comedogen flags, 1% line | True concentrations, interactions, efficacy |
@@ -170,9 +169,9 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 
 | Flag | Why it matters | Action |
 |---|---|---|
-| Whitening/bleaching creams (HQ, steroids, mercury, "fast results") | Ochronosis, steroid damage, heavy-metal poisoning — documented MENA harm [80](https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261) [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety) | Refuse; refer to derm for pigmentation Rx |
+| Whitening/bleaching creams (HQ, steroids, mercury, "fast results") | Ochronosis, steroid damage, heavy-metal poisoning [80](https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261) [62](https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety) | Refuse; refer to derm for pigmentation Rx |
 | Marketplace/third-party sellers, unsealed testers | 40% of seized fakes contain toxins [67](https://www.gov.uk/government/news/ipo-campaign-launched-as-toxins-found-in-counterfeit-beauty-products) | Pharmacy/authorized channel only |
-| "Cures/treats" language on a cosmetic | Illegal drug claim (US); unregistered (Egypt) [60](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap) [63](https://cosmetic.chemlinked.com/cosmepedia/egyptian-cosmetics-regulations) | Treat as non-compliant; prefer EDA-notified/regulated products |
+| "Cures/treats" language on a cosmetic | Illegal drug claim in major jurisdictions [60](https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap) | Treat as non-compliant; prefer regulated/notified products |
 | "Hypoallergenic / clean / natural" as the only safety claim | No legal definition [47](https://www.fda.gov/cosmetics/cosmetics-labeling-claims/hypoallergenic-cosmetics) [51](https://www.dermatologytimes.com/view/social-media-mythbusters-clean-skin-care) | Read INCI + fragrance allergen list instead |
 | Daily acids + retinol stacked nightly | Over-exfoliation, barrier failure [77](https://pmc.ncbi.nlm.nih.gov/articles/PMC5608132) | Space nights; rebuild barrier first |
 | Essential-oil-heavy "natural" formulas for sensitive skin | Oxidized linalool/limonene allergenicity [75](https://pubmed.ncbi.nlm.nih.gov/12084079) | Fragrance-free substitute |
@@ -214,7 +213,7 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 23. https://pmc.ncbi.nlm.nih.gov/articles/PMC9293121 — Ceramide preparations in AD (Kono 2021)
 24. https://pmc.ncbi.nlm.nih.gov/articles/PMC12731180 — Hyaluronic acid forms/MW (Zanchetta 2025)
 25. https://www.ncbi.nlm.nih.gov/books/NBK587270 — UV filters overview (NCBI)
-26. https://www.bbc.com/future/article/20250718-which-kind-of-sunscreen-should-you-use — Mineral filters absorb UV (citing 2015 study)
+26. https://www.bbc.com/future/article/20250718-which-kind-of-sunscreen-should-you-use — Mineral filters absorb UV
 27. https://www.fda.gov/drugs/understanding-over-counter-medicines/questions-and-answers-fdas-regulatory-actions-over-counter-sunscreen — FDA sunscreen GRASE Q&A
 28. https://jamanetwork.com/journals/jama/fullarticle/2759002 — Matta 2020: plasma absorption
 29. https://www.ewg.org/sunscreen/report/the-trouble-with-sunscreen-chemicals — EWG endocrine concerns (advocacy source)
@@ -225,7 +224,6 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 34. http://www.rosacea.org/patients/skin-care-and-cosmetics — NRS ingredient trigger survey
 35. https://pmc.ncbi.nlm.nih.gov/articles/PMC2921758 — PIH review (Davis 2010)
 36. https://skinofcolorsociety.org/discover-patients-public/public-education/pih — Skin of Color Society PIH
-37. https://pubmed.ncbi.nlm.nih.gov/30426810 — Middle East acne-PIH survey (Abanmi 2019)
 38. https://www.aad.org/public/diseases/a-z/melasma-treatment — AAD melasma treatment
 39. https://pmc.ncbi.nlm.nih.gov/articles/PMC5724303 — Medical management of melasma (Sarkar 2017)
 40. https://www.aad.org/public/everyday-care/skin-care-secrets/prevent-skin-problems/test-skin-care-products — AAD patch-test protocol
@@ -237,7 +235,7 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 46. https://pmc.ncbi.nlm.nih.gov/articles/PMC3114665 — Safety of skin care in pregnancy (Bozzo 2011)
 47. https://www.fda.gov/cosmetics/cosmetics-labeling-claims/hypoallergenic-cosmetics — FDA: no standards for "hypoallergenic"
 48. https://www.fda.gov/cosmetics/cosmetics-labeling/cosmetics-labeling-claims — FDA labeling claims
-49. https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092 — (cleanser review; non-comedogenic has no standard)
+49. https://pmc.ncbi.nlm.nih.gov/articles/PMC8954092 — Cleanser review
 50. https://www.fda.gov/cosmetics/cosmetic-ingredients/allergens-cosmetics — FDA allergens page
 51. https://www.dermatologytimes.com/view/social-media-mythbusters-clean-skin-care — Dermatology Times on "clean" claims
 52. https://erleia.com/pages/what-is-clean-beauty — Clean beauty unregulated (industry source)
@@ -251,24 +249,18 @@ Decision logic = the 5–8 questions that pin the right SKU. "Concentration chec
 60. https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap — FDA cosmetic vs drug
 61. https://www.fda.gov/cosmetics/cosmetics-laws-regulations/cosmetics-us-law — FDA cosmetics & US law
 62. https://www.fda.gov/consumers/skin-facts-what-you-need-know-about-skin-lightening-products/skin-product-safety — FDA skin lightening safety
-63. https://cosmetic.chemlinked.com/cosmepedia/egyptian-cosmetics-regulations — Egypt cosmetics regulation (EgyCosm, 10-yr validity)
-64. https://edaegypt.gov.eg/media/du3pppeh/regulatory-guide-for-cosmetics-notification-2026-2022.pdf — EDA notification guide
-65. https://edaegypt.gov.eg/media/ujnj22c2/claims-guide-for-cosmetics-notification.pdf — EDA claims guide
-66. https://www.edaegypt.gov.eg/media/3b0dnzxl/eda-cosmetovigilance-guidelines-version-1-1-18-05-2022.pdf — EDA cosmetovigilance
 67. https://www.gov.uk/government/news/ipo-campaign-launched-as-toxins-found-in-counterfeit-beauty-products — UK IPO counterfeit toxins
 68. https://observer.co.uk/news/business/article/the-toxic-cost-of-counterfeit-beauty-products — Observer counterfeit investigation
 69. https://www.thetimes.com/life-style/beauty/article/cosmetics-sold-online-amazon-ebay-fake-2zvj3sdk9 — Times 65% fake estimate (press)
-70. https://cosmetic.chemlinked.com/cosmepedia/egyptian-cosmetics-regulations — EDA online-seller warnings (reported)
 71. https://www.certifiedcosmetics.com/product/common-tests/period-after-opening-pao-test — PAO testing
 72. https://www.phyto-c.com/blogs/news/oxidized-vitamin-c-serum-color-guide — Vitamin C oxidation colors (brand source)
-73. https://cosmocopilot.com/register-cosmetic-product-egypt-eda.html — Egypt dermo-cosmetic pharmacy channel (industry source)
 74. https://pmc.ncbi.nlm.nih.gov/articles/PMC6587870 — Limonene/linalool hydroperoxide sensitization (Dittmar 2018)
 75. https://pubmed.ncbi.nlm.nih.gov/12084079 — Sköld 2002: linalool autoxidation
 76. https://dermnetnz.org/topics/hydroperoxides-of-limonene-and-linalool — DermNet on oxidized terpenes
 77. https://pmc.ncbi.nlm.nih.gov/articles/PMC5608132 — Epidermal barrier review (Del Rosso 2016)
 78. https://blog.dermaquestclinical.com/signs-of-over-exfoliation-and-how-to-fix-it — Over-exfoliation signs (brand source)
 79. https://www.cosmebio.org/en/reports/INCI-list-how-to-read-ingredient-list-cosmetics — INCI descending order & 1% line
-80. https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261 — HQ levels in unregulated Middle East lightening creams (2025)
+80. https://pmc.ncbi.nlm.nih.gov/articles/PMC12335261 — HQ levels in unregulated lightening creams (2025)
 81. https://www.sciencedirect.com/science/article/pii/S2352647520301416 — Pollock 2021: skin-lightening survey (67% treating PIH)
 82. https://doctorabad.com/uptodate/d/topic.htm?path=topical-skin-lightening-agents-complications-associated-with-misuse — Lightening-agent complications
 83. https://practicaldermatology.com/topics/pigmentary-disorders/hydroquinone-in-2021/23592 — Hydroquinone CARES Act status
