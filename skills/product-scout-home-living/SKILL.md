@@ -77,9 +77,7 @@ signal (clothing behavior 1's logic, applied to wood):
   marketing grade unless certified. Where no standard is declared on
   premium-priced pressed-wood furniture, say the emissions claim is
   unverifiable. Air new pressed-wood furniture before heavy use; for
-  children's rooms prefer certified board or solid wood. Local
-  enforcement in Egypt is not assumed — the standard names are the
-  evidence, not a compliance gate.
+  children's rooms prefer certified board or solid wood.
 - **Joinery and hardware**: mortise-and-tenon/dovetail joints and metal
   runners beat staples, glue, and plastic slides; soft-close hinges and
   runners are the first things to fail — test in-hand or in zoomed
@@ -122,16 +120,18 @@ signal (clothing behavior 1's logic, applied to wood):
   (heavier sleepers need firmer/higher-density support); there is no
   universal "best mattress" — say so instead of ranking one.
 - **Try-before-buy IS the method**: lie 10–15 minutes in your usual
-  sleep position, with your own pillow if possible. Egyptian mattress
-  returns are effectively exchange-only (clothing behavior 8's channel
-  reality) — the showroom test is the primary risk control, not an
-  optional extra. Say this explicitly when recommending a mattress.
-- **Labels and airing**: flammability labels (US 16 CFR 1632/1633 on
-  imports) are a quality signal, not a local gate; air a new mattress
-  24–72h for off-gassing; CertiPUR-US-style foam certification is a
-  bonus. Read sag-warranty terms ("10-year warranty" covering only
-  dips ≥3–4 cm is the common fine print) — replace ~7–10 years or at
-  visible sag regardless of warranty.
+  sleep position, with your own pillow if possible. Check whether the
+  user's market offers sleep-trial return windows or exchange-only
+  policies — where returns are exchange-only, the showroom test is the
+  primary risk control, not an optional extra. Say this explicitly when
+  recommending a mattress.
+- **Labels and airing**: flammability labels (e.g., US 16 CFR
+  1632/1633, UK BS 7177) are mandatory in their respective markets and
+  a quality signal elsewhere; air a new mattress 24–72h for
+  off-gassing; CertiPUR-US / CertiPUR-EU foam certification is a bonus.
+  Read sag-warranty terms ("10-year warranty" covering only dips
+  ≥3–4 cm is the common fine print) — replace ~7–10 years or at visible
+  sag regardless of warranty.
 
 ### 4. Cookware coatings — the safety lines
 
@@ -201,8 +201,7 @@ signal (clothing behavior 1's logic, applied to wood):
   smell on arrival is a return-window item. Cross-reference the
   appliances skill for exhaust fans — ventilation is the root fix.
 - Kids' nursery bedding and sleepwear are the baby-kids skill's
-  territory; general children's bedding follows this
-  behavior.
+  territory; general children's bedding follows this behavior.
 
 ### 7. Lighting — lumens, temperature, color
 
@@ -235,10 +234,11 @@ signal (clothing behavior 1's logic, applied to wood):
   this skill owns the furniture side: sturdy low units, straps, no
   climbable drawers beneath a TV.
 - **Bunk beds**: guardrails on both sides with proper gaps, age ≥6 for
-  the top bunk (practitioner; EN 747 is the reference standard where
-  present); the top-bunk mattress must stay below the guardrail top —
-  ask the manufacturer's maximum mattress height and treat silence as
-  a downgrade; check ladder attachment stability and ceiling clearance.
+  the top bunk (practitioner; EN 747 / ASTM F1427 are the reference
+  standards where present); the top-bunk mattress must stay below the
+  guardrail top — ask the manufacturer's maximum mattress height and
+  treat silence as a downgrade; check ladder attachment stability and
+  ceiling clearance.
 - **Window blind cords** in children's rooms: cordless or cleated out
   of reach — a documented strangulation hazard (CPSC guidance).
 - State these as pass/fail checks in the comparison, exactly like
@@ -258,8 +258,8 @@ cheap insurance:
    drawer pulls, recliner extension) and walking clearance (~60 cm
    minimum circulation — practitioner).
 3. Verify **standard names locally**: "queen/king" mattress sizes
-   differ by market — measure the mattress, not the name (size table
-   in the reference file).
+   differ by market (US vs UK vs EU vs regional) — measure the
+   mattress, not the name (size table in the reference file).
 4. Write the numbers down and keep the tape for delivery day
    (behavior 10). For flat-pack, check the packed-carton dimensions
    against the route too.
@@ -277,13 +277,9 @@ cheap insurance:
 - **Re-check after first weeks**: cam-locks and bolts loosen — one
   retightening pass is normal care, say so.
 - **Keep packaging** until any return window closes (core honesty
-  rule); Egypt channel return windows follow the clothing skill's
-  verified windows (Noon ~15d, Amazon.eg ~15d, Jumia 14d free / 30d
-  defective) — reuse, don't re-research.
-- Verified local furniture channels (2026-11): IKEA Egypt
-  (ikea.com/eg — online + Cairo presence), Mobica (Egyptian
-  manufacturer; Mohandeseen, Heliopolis, Nasr City, Alexandria
-  showrooms), plus Noon/Amazon.eg for flat-pack and decor.
+  rule); verify the seller's return/exchange window at dispatch for
+  the user's market (established furniture chains, brand showrooms,
+  and verified marketplaces serving the user's country).
 
 ### 11. Religious household items
 
@@ -341,10 +337,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
   board standard, density silence), dye-lot variance, and the
   measure-then-buy reminder with the actual route numbers when the
   user provided them.
-- **When to buy** uses the local calendar: Egypt furniture demand
-  spikes before Ramadan and through the summer wedding season — prices
-  firm up before the peaks, genuine deals land after them
-  (practitioner); White Friday carries real flat-pack/decor discounts;
-  run price-history skepticism on event prices (core rule).
+- **When to buy** uses the user's local calendar: furniture demand
+  firms up ahead of major local holidays and moving/wedding peaks;
+  genuine deals land during post-holiday clearance and major local
+  sale events — run price-history skepticism on event prices (core
+  rule).
 - After the verdict: no profile ask — nothing sensitive is stored;
   simply answer follow-up measurement questions in-session.

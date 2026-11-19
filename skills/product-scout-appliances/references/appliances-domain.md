@@ -2,9 +2,8 @@
 
 This is the demoted-companion reference for the product-scout-appliances
 skill (install path: `references/appliances-domain.md`). Read it when a
-verdict needs the numeric sizing tables, the Egypt tariff table with
-worked running-cost examples, stabilizer sizing, or per-sub-domain
-driver detail.
+verdict needs the numeric sizing tables, running-cost calculation
+examples, stabilizer sizing, or per-sub-domain driver detail.
 
 **No operative safety rule lives here**: every gas, electrical, and
 installation rail stays in SKILL.md behaviors 4–8. If this file and the
@@ -26,48 +25,40 @@ skill ever disagree, the skill wins. Verification tags: `[S]` = sourced — veri
   electronics. Top-loader: cheaper, simpler repair, harsher on fabric —
   weigh against the local repair network (SKILL.md behavior 8).
 - **Air conditioner `[P]`**: start from ~600–650 BTU/h per m² of floor
-  area for a hot-climate room; adjust upward for west/sun-facing rooms,
-  top floors, high ceilings, poor insulation (+10–25%); then round UP
-  to the nearest real nameplate size. A 20 m² bedroom lands ~13,000–
-  15,000 BTU (~1.25 ton) before adjustments; a 30 m² living room
-  ~19,000–22,000. Verify against the nameplate BTU, never the headline
-  (SKILL.md behavior 1); 1 ton = 12,000 BTU/h = 3.5 kW `[S]`.
+  area for a hot-climate room (~450–550 BTU/h per m² for temperate
+  climates); adjust upward for west/sun-facing rooms, top floors, high
+  ceilings, poor insulation (+10–25%); then round UP to the nearest real
+  nameplate size. A 20 m² hot-climate bedroom lands ~13,000–15,000 BTU
+  (~1.25 ton / 3.8–4.4 kW) before adjustments; a 30 m² living room
+  ~19,000–22,000 BTU. Verify against the nameplate BTU/kW, never the
+  headline (SKILL.md behavior 1); 1 ton = 12,000 BTU/h = 3.5 kW `[S]`.
 - **Microwave `[P]`**: 20–25 L suits 1–3 people; 28–40 L for families
   or plate-sized dishes; wattage bands: 700–800 W budget, 900–1,100 W
   comfortable — cook-power, not input-power.
 
-## Egypt residential tariff table — date-stamped `[S]`
+## Running-cost math — local tariff method `[P]`
 
-Residential slabs (EGP/kWh) as verified 2026-11 against the regulator
-(EgyptERA) and press coverage of the July 31, 2026 raise (~12% average;
-rates moved twice during 2026 — April and July — so re-check at
-dispatch before quoting numbers to the user):
+Fetch the current residential electricity rate for the user's country
+and utility at dispatch.
 
-| Slab (kWh/month) | EGP/kWh |
-|---|---|
-| 0–50 | 0.68 |
-| 51–100 | 0.95 |
-| 101–200 | 1.15 |
-| 201–350 | 1.72 |
-| 351–650 | ~1.95 |
-| top tiers | up to 2.74 (flat, from 1,000 kWh+) |
-
-**Marginal-rate rule** (SKILL.md behavior 3): an added appliance's
-consumption lands in the household's top reached slab — use that slab's
-rate for running-cost math and say the assumption.
-
-**Worked examples** (illustrative, mark as estimates in output):
-
-- *Fridge class swap*: an old unit at ~500 kWh/yr vs an A-class at
-  ~200 kWh/yr → 300 kWh × 1.72 ≈ **EGP ~520/yr** — a class premium pays
-  back over the fridge's life, especially at higher slabs.
-- *AC season*: 18,000 BTU fixed-speed ~2.0 kW vs inverter averaging
-  ~1.3 kW at equal duty → 0.7 kW × 8 h/day × 120 days ≈ 670 kWh × 1.95
-  ≈ **EGP ~1,300/season** — before the hot-weather upper slabs, which
-  push the real saving higher.
-- *Inverter honesty*: "up to 60% savings" marketing assumes a light
-  duty cycle; use measured kWh or the label, and present savings as a
-  range tied to usage hours `[P]`.
+- **Marginal-rate rule** (SKILL.md behavior 3): in tiered residential
+  pricing, an added appliance's consumption lands in the household's top
+  reached slab — use that slab's rate (or the user's known flat/TOU
+  rate) for running-cost math and state the assumption.
+- **Formula**: `Annual running cost = Label kWh/year × Marginal local rate (currency/kWh)`.
+- **Worked examples** (illustrative at $0.15/kWh — substitute the user's
+  verified local tariff at dispatch and mark as estimates):
+  - *Fridge class swap*: an old unit at ~500 kWh/yr vs an A-class at
+    ~200 kWh/yr → 300 kWh × $0.15 ≈ **$45/yr** (~$450 over 10 years) —
+    a class premium pays back over the fridge's life, especially in
+    high-tariff markets.
+  - *AC season*: 18,000 BTU fixed-speed ~2.0 kW vs inverter averaging
+    ~1.3 kW at equal duty → 0.7 kW × 8 h/day × 120 days ≈ 670 kWh ×
+    $0.15 ≈ **$100/season** — more in higher-tariff or longer-summer
+    markets.
+  - *Inverter honesty*: "up to 60% savings" marketing assumes a light
+    duty cycle; use measured kWh or the label, and present savings as a
+    range tied to usage hours `[P]`.
 
 ## Stabilizer sizing `[P]`
 
@@ -77,9 +68,9 @@ rate for running-cost math and say the assumption.
   1.5-ton AC (~2,000W) needs ~5,000–10,000 VA per the unit's start
   current. Check the appliance manual's stated start current where
   given.
-- Prefer units with a stated wide input range (e.g., 140–260V) and a
-  serviceable copper-wound transformer; the cheap electronic-relay
-  type fails first.
+- Prefer units with a stated wide input range matching local mains
+  voltage and a serviceable copper-wound transformer; the cheap
+  electronic-relay type fails first.
 - When in doubt between two VA ratings, take the larger — an undersized
   stabilizer overheats; never undersize a compressor appliance's
   stabilizer.
@@ -92,9 +83,9 @@ rate for running-cost math and say the assumption.
 |---|---|
 | Air-fryer "7L capacity" | Often total pot; usable basket ~60–70% of the figure — check basket dimensions |
 | Blender "2L jar" | Usable liquid capacity lower; blades' effective volume is what matters |
-| Heater "2000W" | Verify real draw vs the 16A socket ceiling (~3,500W); certification is SKILL.md behavior 4's gate — it is not mode-gated |
+| Heater "2000W" | Verify real draw vs the local wall-socket ceiling (15A/120V ≈ 1,800W; 13–16A/230V ≈ 3,000–3,500W); certification is SKILL.md behavior 4's gate |
 | Microwave "1200W" | Check cook-power (output) vs input draw — they differ ~30–40% |
-| Kettle "fast boil" | Real driver is wattage (2,200W vs 1,800W) — compare the number, not the word |
+| Kettle "fast boil" | Real driver is wattage (e.g., 2,200W–3,000W on 230V; 1,500W on 120V) — compare the number, not the word |
 | Air purifier "medical-grade" | Wellness claim — check CADR for room size; no medical standard applies |
 
 ## Per-sub-domain driver detail `[P]`
@@ -105,9 +96,9 @@ rate for running-cost math and say the assumption.
 - **Washer/dryer**: drum kg (table above), hard-water handling
   (behavior 6), spin speed vs fabric wear, parts availability for the
   exact model.
-- **AC**: room-sized BTU (table above), T3 tropical rating for summer
-  peaks, install-crew quality as the deciding variable (behavior 7),
-  running-cost math (table above), filter cleaning cadence.
+- **AC**: room-sized BTU (table above), climate rating (T3 tropical for
+  extreme heat), install-crew quality as the deciding variable
+  (behavior 7), running-cost math (above), filter cleaning cadence.
 - **Range/oven**: gas vs electric per the kitchen's real connection
   (SKILL.md behavior 5 rails, incl. the flame-failure preference), oven
   size for the household's baking reality.

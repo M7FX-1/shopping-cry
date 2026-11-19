@@ -13,6 +13,7 @@ rule here ever disagrees with the SKILL.md, the SKILL.md wins.
 |---|---|---|
 | CPSC 16 CFR 1203 | US | mandatory since March 1999; impact attenuation, retention-system strength, positional stability — the stringent baseline |
 | CE EN 1078 (+A1) | EU | bikes + skateboards/roller skates; self-certified under CE; generally less stringent than CPSC 1203 |
+| AS/NZS 2063 | AU/NZ | mandatory in Australia/New Zealand |
 | Snell B-90/B-95 | voluntary (US-class) | above-baseline voluntary testing |
 
 Sources: eCFR 16 CFR 1203; CPSC bicycle-helmet guidance; EN 1078
@@ -58,11 +59,11 @@ verdict (SKILL behavior 3).
 | Lower Limit | standard man, 8 h sleep without waking from cold |
 | Extreme | 6-h survival threshold — never a shopping target |
 
-Shop by Comfort (cold sleepers) / Lower Limit (warm sleepers). Tested
-bags exclude extreme-expedition ranges (limit < −24 °C). Sources: REI
-guides, Mountain Equipment explainer, ISO 23537-1:2022 `[S]`.
-Egypt-desert note: winter desert nights (Sinai, Red Sea mountains)
-drop sharply after sunset `[P]` — comfort rating still decides.
+Shop by Comfort (cold sleepers) / Lower Limit (warm sleepers) against
+the actual expected nighttime low (desert and mountain nights drop
+sharply after sunset). Tested bags exclude extreme-expedition ranges
+(limit < −24 °C). Sources: REI guides, Mountain Equipment explainer,
+ISO 23537-1:2022 `[S]`.
 
 ## Life-jacket levels (ISO 12402) `[S]`
 
@@ -73,8 +74,9 @@ drop sharply after sunset `[P]` — comfort rating still decides.
 | 100 | 100N | lifejacket — turns most wearers face-up; sheltered/coastal |
 | 150 / 275 | 150N+ | offshore/professional |
 
-US equivalent: Coast Guard approval system. Inflatable armbands/water
-wings = toys per CPSC — never flotation devices.
+US/CA equivalent: US Coast Guard / Transport Canada approval system;
+AU equivalent: AS 4758. Inflatable armbands/water wings = toys per
+CPSC — never flotation devices.
 
 ## Bike sizing math `[P]`
 
@@ -85,10 +87,11 @@ wings = toys per CPSC — never flotation devices.
 - Kids' bikes by wheel diameter: 12 in (~2–4 y), 16 (~4–6 y), 20
   (~6–9 y), 24 (~9–12 y) — size by the child's height, not age
   `[P]`; the clothing kids rule (height over age) applies.
-- Home gym payback worked example `[P]`: machine EGP 30,000 vs gym
-  EGP 2,000/month → payback at 15 months of REAL use; idle-by-March
-  reality makes the gym cheaper for year-one starters. Adherence
-  honesty ships with the math.
+- Home gym payback worked example `[P]` (illustrative in USD — compute
+  in the user's local currency): machine $750 vs gym $50/month →
+  payback at 15 months of REAL use; idle-by-March reality makes the
+  gym cheaper for year-one starters. Adherence honesty ships with the
+  math.
 
 ## Yoga mat thickness bands `[P]`
 
@@ -96,28 +99,26 @@ wings = toys per CPSC — never flotation devices.
 |---|---|
 | 3–6 mm | balance-sensitive practice, travel — the standard choice |
 | 8–12 mm | joint comfort, floor exercises, home stretching |
-| > 12 mm | knee/carin comfort only — wobbles balance poses |
+| > 12 mm | knee/cushion comfort only — wobbles balance poses |
 
 Non-slip surface and material smell (open-cell vs closed-cell) are
 the quality axes.
 
-## Egypt channels (verified 2026-11-15 `[S]` — re-verify at dispatch)
+## Channel & authenticity guidance `[P]`
 
-| Channel | What verified | Notes |
-|---|---|---|
-| decathlon.eg | EGP prices, free delivery ≥ EGP 2,000, full sporting-goods range | the broadest verified local range |
-| intersport.com.eg | INTERSPORT Egypt storefront (Shopify, EN/AR) | footwear/apparel there → clothing rules on those items |
-| Noon Egypt / Amazon.eg / Jumia Egypt | family-verified marketplaces | fake-gear checks (SKILL behavior 11) |
-| dubizzle Egypt | family-verified second-hand channel | weights/tents acceptable; helmets/ropes never (SKILL behavior 1) |
-
-Replica-shirt honesty: replicas sold AS replicas are honest products;
-fakes sold as originals are the trap — the distinction is stated in
-the verdict, not assumed.
+- Verify established sporting-goods chains, authorized brand dealers,
+  and reputable marketplaces serving the user's country at dispatch.
+- Second-hand marketplaces: acceptable for weights/tents/racks;
+  conditional for bikes/rackets; never for helmets or climbing ropes
+  (SKILL behavior 1).
+- Replica-shirt honesty: replicas sold AS replicas are honest products;
+  fakes sold as originals are the trap — the distinction is stated in
+  the verdict, not assumed.
 
 ## Heat-training rails detail `[P]`
 
-- Timing: early morning / evening; midday summer outdoor sessions
-  are the avoid default.
+- Timing: early morning / evening; midday extreme-heat outdoor
+  sessions are the avoid default.
 - Hydration: planned before/during/after — thirst is a late signal.
 - Stop signs: dizziness, nausea, confusion, sweating cessation →
   stop, cool, shade; severe signs escalate per the health-medical

@@ -97,12 +97,9 @@ Wrong edition is this category's wrong-part-number. The gate sequence, in order:
 
 When the edition cannot be confirmed remotely, the verdict says **edition-unconfirmed**
 and hands over the exact question to ask the instructor — a referral, never a guess (the
-automotive skill's fitment shape, scaled to stakes).
-
-Egypt: government textbooks sell at printed prices through approved channels; the private
-"external book" (kitab khariji) market rides on teacher preference — the exact author and
-year matter more than the cover. International-curriculum books (IGCSE/American) are
-imported and priced accordingly — say so before hunting for "cheap".
+automotive skill's fitment shape, scaled to stakes). For international-curriculum or
+imported textbooks, state import pricing and lead times honestly before hunting for
+"cheap" copies.
 
 ### 3. Used books — grading and the real market
 
@@ -111,11 +108,10 @@ imported and priced accordingly — say so before hunting for "cheap".
   answer sections collapse the value**: say it, never average it away.
 - Run the edition gates (behavior 2) BEFORE the price excites anyone — a cheap wrong
   edition is worthless.
-- **Egypt's used-book culture is real**: Soor el-Azbakeya in Cairo — the century-old
-  used-book market (130+ stalls, recently renovated; verified 2026-11, re-verify at
-  dispatch) — is the hunting ground for out-of-print and older academic titles. Inspect in
-  person; pirated and photocopied copies circulate there too — the gate applies with no
-  sentimental exceptions.
+- **Used-book markets and secondhand booksellers** are legitimate hunting grounds for
+  out-of-print and older academic titles. Inspect condition in person or buy from sellers
+  with clear return policies; pirated and photocopied copies circulate in informal book
+  stalls too — the piracy/counterfeit gate applies with no sentimental exceptions.
 
 ### 4. E-books and audiobooks — format, DRM, platform
 
@@ -134,29 +130,28 @@ imported and priced accordingly — say so before hunting for "cheap".
 
 ### 5. Physical media — region codes and the collector reality
 
-- **Region codes are real**: Egypt sits in **DVD Region 2 / Blu-ray Region B** (same as
-  Europe). A disc from another region may not play — check the player's region support
-  before recommending an import. Multi-region players exist (the player question routes to
-  electronics); TV-format (PAL/NTSC) mismatch is a second, quieter trap on older
-  equipment. Multi-region playback is a compatibility fact for legally acquired discs —
-  it is never a route to acquiring content outside licensed channels.
+- **Region codes are real**: verify the disc's DVD region (Regions 1–6) and Blu-ray
+  region (A, B, or C) against the user's country and player before recommending an import.
+  A disc from another region may not play — multi-region players exist (the player
+  question routes to electronics); TV-format (PAL/NTSC) mismatch is a second, quieter
+  trap on older equipment. Multi-region playback is a compatibility fact for legally
+  acquired discs — it is never a route to acquiring content outside licensed channels.
 - **Used-disc grading**: scratches on the playing surface are the failure mode — "good"
   means tested or returnable; a shrink-wrapped "new" disc at a fraction of its price is
   the counterfeit gate.
 - **Collector framing, honestly**: physical media earns its price for collectors
   (ownership, artwork, no subscription dependency, special editions). For casual viewing,
-  streaming is cheaper — say so plainly. New physical releases in Egypt are thin and
-  import-priced; availability honesty beats pretending there is a local market.
+  streaming is cheaper — say so plainly. Where local physical stock is thin and
+  import-priced, availability honesty beats pretending there is a deep local market.
 
 ### 6. Religious books — the two-sided boundary
 
 - **This skill owns the content side**: translation choice (name the translator/edition
   and what is established about it), tajweed color-coded editions, study editions, and the
-  language of the edition (Arabic-only, bilingual, translation-only).
+  language of the edition (single-language, bilingual, translation-only).
 - **The physical Mushaf's print-authenticity rails live in the home-living skill's
   religious-items behavior** (licensed publishers, Uthmani script, print quality) —
-  cross-reference them, never re-word or duplicate them; one source of truth (the
-  diy-garden→appliances LPG borrowing pattern).
+  cross-reference them, never re-word or duplicate them; one source of truth.
 - **A gift Mushaf = gift mode (behavior 8) + the home-living rails for the physical object
   + the content choice here** — say which part each skill answered.
 
@@ -175,31 +170,27 @@ users by what they read.
 - **Match the recipient, not the giver**: the recipient's age (children's books carry age
   bands — respected like the age-rating gate), reading language, and one taste hint from
   the giver; a book the giver loved is data, not the verdict.
-- **Returns matter double on gifts**: prefer channels with real return windows (the
-  family-verified marketplace windows apply) and suggest a gift receipt where the channel
-  supports it.
-- Religious gifting (Eid, graduation): behavior 6 applies, plus the home-living rails for
-  the physical object.
+- **Returns matter double on gifts**: prefer channels with real return windows and
+  suggest a gift receipt where the channel supports it.
+- Religious gifting (holidays, graduation): behavior 6 applies, plus the home-living
+  rails for the physical object.
 
 ### 9. Price honesty — printed prices, real discounts, import reality
 
 - Books are price-transparent: the printed cover price is the anchor; discounts under it
   are the news worth reporting.
-- **Imported-book honesty**: foreign titles in Egypt carry real import premiums; a local
-  listing far under the foreign price suggests a photocopy or pirated print run — the
-  counterfeit gate applies.
-- **Channels (verified set, re-verify at dispatch)**: Diwan Bookstore (diwanegypt.com —
-  English/Arabic books, Cairo chain + online; verified by multi-source corroboration
-  2026-11 — direct fetch timed out), Neelwafurat (neelwafurat.com — Arabic titles,
-  shipping; same corroboration standard), plus the family-verified marketplaces Noon,
-  Amazon.eg, and Jumia Egypt (books categories confirmed in the family taxonomy).
-  Unverified names are not listed — rejections live in the decision log.
+- **Imported-book honesty**: imported titles carry real shipping/import premiums; a local
+  listing far under the foreign cover price suggests a photocopy or pirated print run —
+  the counterfeit gate applies.
+- **Channels (verify at dispatch for the user's market)**: prefer established national
+  bookstores, official publisher storefronts, major verified online booksellers, and
+  reputable used-book marketplaces serving the user's country.
 
 ## Sub-domain decision drivers
 
 - **Fiction/genre**: taste hint + format + language; series completeness — same edition
   across the set.
-- **Children's books**: age band, read-aloud vs independent, language (Arabic, English,
+- **Children's books**: age band, read-aloud vs independent, language (single-language or
   bilingual), board-book durability.
 - **Textbooks/workbooks**: the edition protocol is everything; consumability decides
   new-vs-used.
@@ -221,10 +212,6 @@ Keep the core verdict structure exactly, with these folds:
 - Caveats: edition-difference warning whenever an older edition is in play; DRM/platform
   limits on digital picks; counterfeit suspicion when a price sits far under the printed
   cover price.
-- **When to buy**: the Cairo International Book Fair (late January–early February, Egypt
-  International Exhibition Centre) is the year's best book-buying window — discounts are
-  real, commonly 20–75% across publishers (verified 2026-11, re-verify per edition).
-  Ramadan and Eid lift religious-book and gift-set demand — buy before the spike. School
-  books: buy early August, before the mid-August–September back-to-school wave (the school
-  year starts early-to-mid September; Ministry dates announced annually — re-verify).
-  White Friday for e-readers and playback devices (→ electronics).
+- **When to buy**: major local book fairs, publisher clearance windows, and pre-term
+  buying ahead of the user's local school/academic calendar; major national sale events
+  for e-readers and playback devices (→ electronics).

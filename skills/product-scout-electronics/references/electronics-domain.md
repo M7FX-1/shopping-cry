@@ -9,7 +9,7 @@
 
 - Researched against primary and secondary sources: manufacturer support/spec pages (Google, Samsung, Apple, Microsoft, Xiaomi, NVIDIA), independent test labs (RTINGS, NotebookCheck, TFTCentral, DXOMARK, GSMArena), and benchmark vendors' own methodology docs (Primate Labs/Geekbench, UL/3DMark). Research date: 2026-11-08.
 - Verification status: claims are cited inline with URLs. Items that could not be traced to a first-party methodology page or official policy are marked **[unverified]**. Where sources conflict (e.g., Xiaomi's update tiers), the conflict is noted. Vendor marketing pages were used only to document what the vendor promises, never to grade the vendor's own products.
-- Scope: phones, laptops, TVs/monitors, audio, cameras, gaming hardware, wearables, components/peripherals, with an Egypt/MENA lens for market dynamics.
+- Scope: phones, laptops, TVs/monitors, audio, cameras, gaming hardware, wearables, components/peripherals across all global markets.
 
 ---
 
@@ -35,7 +35,7 @@
 - RAM: 16 GB is the 2025/26 standard recommendation; 8 GB only for light use; many thin laptops solder LPDDR so you cannot upgrade later — verify before buying 8 GB. https://www.pcmag.com/explainers/ram-reality-check-how-much-memory-does-your-pc-actually-need-in-2026
 - Display: judge by measured brightness (nits), contrast, PWM, and sRGB coverage — NotebookCheck measures all per review; laptop marketing "nits" are often measured differently than labs. https://www.notebookcheck.net/Our-Rating-Criteria.2120.0.html
 - Battery: judge by measured WLAN/video runtime, not Wh capacity or vendor hours. NotebookCheck's rating criteria explicitly weight realistic WiFi/video runtimes. https://www.notebookcheck.net/Our-Rating-Criteria.2120.0.html
-- Serviceability: replaceable SODIMM slots + accessible M.2 extend useful life; soldered everything = a disposable device. **[expert consensus]** 
+- Serviceability: replaceable SODIMM slots + accessible M.2 extend useful life; soldered everything = a disposable device. **[expert consensus]**
 
 ### 1.3 TVs & monitors
 
@@ -122,20 +122,20 @@ Rank decisions: when levels conflict, prefer the higher level; when only marketi
 - **Flagship phones**: annual (Sept-Oct for Apple/Pixel; Jan-Feb for Galaxy S). Prices fall most ~2-3 months before the successor launches as retailers clear stock; the successor's launch triggers an official $100-200+ cut on the previous model. https://www.techradar.com (deal coverage; cadence **[general retail reporting, no single canonical page]**)
 - **GPUs**: NVIDIA has kept a ~2-year major cadence (RTX 20→30→40→50; Blackwell announced CES 2025) with mid-cycle SUPER refreshes; AMD RDNA and Intel Arc follow similar ~2-year spacing. https://en.wikipedia.org/wiki/GeForce_RTX_50_series
 - **CPUs**: annual ticks (Intel/AMD mobile) — "buy last gen at discount" usually wins outside top-tier needs. [P 2026-11 — stable buying heuristic commonly reported by deal/laptop buying guides and launch-cycle coverage]
-- **TVs**: CES announces in January; street availability spring (Mar-Jun); the best value window is Feb-Apr when last year's flagships are cleared. Black Friday has the lowest absolute prices but skews to mid/entry models. **[aggregated buying-guide reporting]** 
+- **TVs**: CES announces in January; street availability spring (Mar-Jun); the best value window is Feb-Apr when last year's flagships are cleared. Major sale events have the lowest absolute prices but skew to mid/entry models. **[aggregated buying-guide reporting]**
 
 ### 4.2 When buying is smart
 
-- Post-successor-launch purchase of the previous generation is the highest value-per-EGP play (supported by the phone price-drop data above).
-- Sale seasons (Black Friday late Nov, Prime Day July, back-to-school) for accessories and mid-tier gear; launch windows are the worst time for flagship buyers (early-adopter premium + firmware immaturity).
+- Post-successor-launch purchase of the previous generation is the highest value-per-currency play (supported by the phone price-drop data above).
+- Sale seasons (Black Friday / White Friday / Singles' Day / Prime Day / back-to-school) for accessories and mid-tier gear; launch windows are the worst time for flagship buyers (early-adopter premium + firmware immaturity).
 
-### 4.3 Egypt/MENA specifics
+### 4.3 Regional & grey-import checks (verify per user market)
 
-- **Type approval + IMEI registration are legal gates**: Egypt's NTRA blocks activation of handsets without GSMA-valid, NTRA-approved IMEIs; registration runs through the Customs "Telephony" app with a 90-day grace period. Enforcement tightened 2024-2026 (one duty-free phone per traveler per 3 years; 3G-only devices banned from import since Oct 1, 2025). Buying a grey handset can mean paying registration fees or losing network use. https://www.egyptindependent.com (2024-2026 enforcement reporting) **[exact official NTRA page not retrieved — verify current fee/schedule]**
-- **Warranty**: officially imported units get manufacturer warranty via authorized local service centers; grey/parallel imports usually fall outside local warranty or depend on "international warranty" the local distributor may not honor — commonly reported by consumer guides and Egyptian buyer commentary; parallel-import warranty exclusion is documented practice (see INTA overview: https://www.inta.org/topics/parallel-imports). Check IMEI/approval before paying. [P 2026-11 — regional practice; no public distributor policy page]
-- **Power**: Egypt is 220 V/50 Hz, plug types C/F — irrelevant for modern dual-voltage chargers ("100-240V" on the label), relevant for buying US-only appliances. https://www.power-plugs-sockets.com/us/egypt
-- **Region locks**: streaming-app availability, keyboard layouts, and LTE band support can differ between regional SKUs; band support for Egyptian networks should be checked on the manufacturer's band list. **[unverified per-SKU]**
-- **After-sales as a purchase factor**: brands with thin local service coverage (many Chinese TV/small-appliance brands) turn cheap purchases into expensive repairs; prefer brands with documented local service before buying a low-price unknown. **[general guidance]**
+- **Telecom / IMEI registration & band support**: several countries require imported phones to register their IMEI with the national telecom authority or pay import fees within a grace window; check cellular bands and local registration rules before recommending a grey-market handset.
+- **Warranty**: officially imported units get manufacturer warranty via authorized local service centers; grey/parallel imports usually fall outside local warranty or depend on "international warranty" the local distributor may not honor (see INTA overview: https://www.inta.org/topics/parallel-imports). [P 2026-11]
+- **Power**: verify local mains voltage/plug compatibility (120V/60Hz vs 220–240V/50Hz) — irrelevant for dual-voltage chargers ("100-240V" on the label), critical for single-voltage devices.
+- **Region locks**: streaming-app availability, keyboard layouts, and cellular band support can differ between regional SKUs.
+- **After-sales as a purchase factor**: brands with thin local service coverage turn cheap purchases into expensive repairs; prefer brands with documented local service in the user's market.
 
 ---
 
@@ -147,7 +147,7 @@ Rank decisions: when levels conflict, prefer the higher level; when only marketi
 4. **Refresh-old-chip-in-new-shell** — last year's SoC re-shelled and sold as new-gen (also "s"-tier chips marketed as flagship). Fix: check the actual chipset model, not the model name or marketing. https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems_on_chips
 5. **No-name brands with inflated spec sheets** — firmware can lie: fake RAM/storage/Android version/CPU model on cheap tablets; fake-capacity USB/SD (16 GB chip reporting 2 TB) corrupts data silently. Fix: Fake Device Test / CPU-Z cross-check for devices; H2testw (Windows) or F3 (Linux/macOS) for flash; treat "2TB for $20" as counterfeit by definition. https://industrialmonitordirect.com/blogs/knowledgebase/detecting-fake-usb-drives-with-h2testw-complete-guide
 6. **Refurbished sold as new** — letter grades (A/B/C) describe cosmetics only; Amazon Renewed has 4 tiers (Premium/Excellent/Good/Acceptable) with 90-day guarantee; Apple Certified Refurbished = new battery/shell, 1-year warranty, "F" model prefix. If a "new" phone's warranty clock started months ago, it was used. Fix: check warranty start date + model prefix. https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7
-7. **Counterfeit units** — fake iPhones/Galaxy units exist; verify IMEI (device settings + carrier/NTRA app), verify serial on the manufacturer's coverage page before/after purchase. **[procedure guidance]**
+7. **Counterfeit units** — fake iPhones/Galaxy units exist; verify IMEI and serial on the manufacturer's coverage page before/after purchase. **[procedure guidance]**
 8. **Benchmark-trusting purchases** — scores gamed by OEMs (banned devices list above). Fix: look for sustained-load and thermals, not peak scores. https://www.mensxp.com/technology/smartphones/86880-smartphone-companies-caught-cheating-on-benchmark-apps.html
 9. **Ignoring update windows** — especially TVs and budget Android; see section 2.
 10. **TV size/distance mismatch and HDMI port assumptions** — wrong panel for the room; only some ports have HDMI 2.1 bandwidth. https://www.rtings.com/tv/reviews/by-size/size-to-distance-relationship
@@ -163,7 +163,7 @@ Rank decisions: when levels conflict, prefer the higher level; when only marketi
 4. Display: OLED vs LCD, PWM sensitivity, measured brightness for outdoor use?
 5. Battery: measured Active Use Score, not mAh?
 6. Storage: UFS 3.1+ confirmed; enough capacity (no hybrid slots)?
-7. Regional: NTRA-approved/registered IMEI? local warranty?
+7. Regional: local carrier bands / IMEI rules? local warranty?
 
 ### Laptops
 1. Workload class (browsing/office vs dev vs gaming vs video editing) → CPU tier and GPU necessity?
@@ -243,7 +243,7 @@ Rule: a purchase recommendation should rest on level 1-2 evidence for its decisi
 | "New" at suspicious price, box opened | Check warranty start date, IMEI/serial, refurb grade disclosure |
 | Score-based claims (AnTuTu) | Prefer sustained/thermal and lab measures |
 | Unpublished update policy | Assume short support; check section 2 pages |
-| Grey import at "great" price | IMEI/NTRA registration, local warranty confirmation |
+| Grey import at "great" price | Check local IMEI/carrier rules and local warranty confirmation |
 | Only some HDMI ports full 2.1 | Port map per model on RTINGS/vendor |
 | "Future-proof" upsell | Buy for today's workload + update window, not specs you won't use |
 
@@ -259,4 +259,4 @@ Rule: a purchase recommendation should rest on level 1-2 evidence for its decisi
 - Geekbench: https://www.geekbench.com/doc/geekbench6-benchmark-internals.pdf
 - Update policies: https://support.google.com/pixelphone/answer/4457705?hl=en ; https://security.samsungmobile.com/workScope.smsb ; https://www.apple.com/os/ios ; https://support.apple.com/en-us/102772 ; https://www.bgr.com/2247704/oneplus-phones-that-have-software-support-until-2029 ; https://trust.mi.com/misrc/updates/phone ; https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025 ; https://www.bgr.com/2290606/how-long-will-samsung-smart-tv-get-software-updates ; https://endoflife.date/apple-watch ; https://endoflife.date/iphone
 - Market/technical references: https://en.wikipedia.org/wiki/GeForce_RTX_50_series ; https://en.wikipedia.org/wiki/List_of_Qualcomm_Snapdragon_systems_on_chips ; https://www.pcmag.com/explainers/ram-reality-check-how-much-memory-does-your-pc-actually-need-in-2026 ; https://www.tomshardware.com/laptops
-- Fraud/regional: https://industrialmonitordirect.com/blogs/knowledgebase/detecting-fake-usb-drives-with-h2testw-complete-guide ; https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7 ; https://www.power-plugs-sockets.com/us/egypt ; https://www.egyptindependent.com (NTRA enforcement reporting); https://www.mensxp.com/technology/smartphones/86880-smartphone-companies-caught-cheating-on-benchmark-apps.html
+- Fraud/parallel imports: https://industrialmonitordirect.com/blogs/knowledgebase/detecting-fake-usb-drives-with-h2testw-complete-guide ; https://www.amazon.com/gp/help/customer/display.html?nodeId=GRAS7M4E8YJCLWH7 ; https://www.inta.org/topics/parallel-imports ; https://www.mensxp.com/technology/smartphones/86880-smartphone-companies-caught-cheating-on-benchmark-apps.html

@@ -1,7 +1,7 @@
 # Pets — domain reference (demoted detail; no operative safety rule lives here)
 
 Every operative rail (vet-first boundary, permethrin species rail,
-never-share toxic list, heat-welfare pass/fail, counterfeit channel
+never-share toxic list, weather-welfare pass/fail, counterfeit channel
 defenses) lives in the SKILL.md main file. This reference holds the
 worked math, tables, and source notes the main file points at.
 Verification tags: `[S]` = sourced — verified against a regulator, standards body, official/primary source, or a family-verified precedent this cycle (inline `[S: URL]` carries the source); `[P]` = practitioner/market consensus or street anchor — labeled as such, never presented as sourced fact; `[A]` = anchored rail — a calibrated threshold set at install and re-anchored on a ~6-month cadence. Suffixes in any order: a source number (`[S13]`), a `YYYY-MM` date (mandatory on `[A]`), and lowercase modifiers — `unverified` (secondary coverage only; re-verify or drop before stating as fact), `industry` (vendor/marketing source), `convention` (usage convention, not evidence). A `[S, unverified]` claim is never the sole basis for a dosage or contraindication statement. If a rule here ever disagrees with the
@@ -9,10 +9,11 @@ SKILL.md, the SKILL.md wins.
 
 ## Worked feeding-cost-per-month math `[P]`
 
-- Monthly cost = daily kcal × 30 ÷ bag kcal/kg × EGP/kg. Worked
-  example: a 15 kg adult dog at roughly 900–1,000 kcal/day on a 3,600
-  kcal/kg food eats ~8 kg/month; at EGP 500/15 kg bag (EGP 33/kg)
-  that is ~EGP 265/month — the number to compare, not the bag price.
+- Monthly cost = daily kcal × 30 ÷ bag kcal/kg × price/kg. Worked
+  example (illustrative in USD — compute in the user's local currency):
+  a 15 kg adult dog at roughly 900–1,000 kcal/day on a 3,600 kcal/kg
+  food eats ~8 kg/month; at $60/15 kg bag ($4/kg) that is ~$32/month —
+  the number to compare, not the bag price.
 - A cheaper bag with lower energy density can cost MORE per month;
   the kcal/kg line on the guaranteed-analysis panel is the input.
 - Cats: a 4 kg adult cat at ~220–250 kcal/day on a 4,000 kcal/kg dry
@@ -107,31 +108,29 @@ food is grain-led. Sum sibling fractions before crediting a
 - Aquarium cycle: ammonia → nitrite → nitrate over weeks; test strips
   and starter bacteria are real purchases; fishless cycling preferred.
 
-## Heat-welfare and travel notes `[P]`
+## Weather-welfare and travel notes `[P]`
 
-- Outdoor pets in Egyptian summer: all-day shade, daily-checked cool
+- Outdoor pets in hot summers: all-day shade, daily-checked cool
   water, ventilation; walks early/late; hand-on-asphalt test (~5 s);
   parked cars kill quickly — verified veterinary heatstroke guidance.
-- Flat-faced breeds have a smaller heat window.
+- Flat-faced breeds have a smaller heat window. In freezing climates,
+  account for insulated shelter, non-freezing water, and paw ice/salt
+  protection.
 - Carriers: IATA Live Animals container requirements are the enforced
   airline standard — size to the animal's measurements; car = crash-
   tested crate or restraint harness; acclimate before travel day.
 
-## Egypt pet channels and vet lens (2026-11 — re-verify at dispatch)
+## Local channel & vet notes `[P]`
 
-- Online pet stores `[S]`: petshopeg.com (Cairo/Giza same-day, Almaza
-  pickup), petshome.com.eg, petsegypt.com; family-verified marketplaces
-  Jumia Egypt and Noon Egypt carry the common brands (Royal Canin,
-  Whiskas, Pro Plan listings verified in-market).
-- No dominant brick-and-mortar pet chain — independent shops are the
-  offline channel `[S]`.
-- Vet availability: private clinics concentrate in cities; governorate
-  vet offices (General Organization of Veterinary Services) run
-  vaccination programs `[P]` — distance-to-clinic is part of the
-  pet-cost honesty when the user's location is known.
-- Kibble pricing: imported premiums cost multiples of regional lines —
-  compare per-month cost at equal adequacy standard (SKILL behavior 5);
-  check manufacturing origin and import channel on the bag `[P]`.
+- Verify established national pet chains, authorized online pet
+  retailers, vet-clinic supply desks, and official brand storefronts
+  serving the user's country at dispatch.
+- Vet availability: private clinics concentrate in cities; factor
+  clinic distance into ownership-cost honesty for rural areas `[P]`.
+- Kibble pricing: imported premiums often cost multiples of regional
+  lines — compare per-month cost at equal adequacy standard (SKILL
+  behavior 5); check manufacturing origin and import channel on the
+  bag `[P]`.
 - Adoption/breeder: one neutral sentence in verdicts; health records
   and parents' condition are the breeder checks; vaccination/neuter
   status from rescues `[P]`.

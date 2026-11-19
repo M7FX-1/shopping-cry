@@ -18,8 +18,8 @@ First read the core engine at
 `<skills-root>/product-scout/SKILL.md` — it owns the intake
 protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the appliances domain
-layer. The numeric tables behind the rules below — capacity sizing, the
-Egypt tariff table with worked running-cost examples, stabilizer sizing,
+layer. The numeric tables behind the rules below — capacity sizing,
+running-cost math by local electricity tariff, stabilizer sizing, and
 the claims-inflation table — live in `references/appliances-domain.md`
 (same directory).
 
@@ -63,11 +63,12 @@ organization and independent tests; 2) the energy label's declared kWh
 (a regulated document, not marketing); 3) verified user reviews on
 longevity; 4) vendor spec sheets — never sufficient alone.
 
-- **AC capacity**: Egypt sells by "ton" — 1 ton = 12,000 BTU/h = 3.5 kW;
-  check the rated BTU on the nameplate, not the headline. Cheap units
-  are widely suspected of inflated tonnage (practitioner-verified
-  concern — the nameplate-vs-price gap is the check), and a T3
-  "tropical" compressor rating is a real spec for MENA summers.
+- **AC capacity**: markets sell by BTU/h, kW, or "ton" — 1 ton = 12,000
+  BTU/h = 3.5 kW; check the rated cooling capacity on the nameplate,
+  not the headline. Cheap units are widely suspected of inflated
+  tonnage (practitioner-verified concern — the nameplate-vs-price gap
+  is the check), and a T3 "tropical" compressor rating is a real spec
+  for hot-climate summers.
 - **Noise**: judge measured dB in reviews, not "ultra quiet" — a 5 dB
   difference in a fridge that hums 24/7 is audible.
 - **Wattage and liters**: heater/blender wattage and air-fryer/blender
@@ -96,34 +97,36 @@ undersizing is a daily irritation (full tables in the reference):
 For anything that runs hours-daily (fridge 24/7, AC all summer) the
 electricity bill rivals the price difference between classes. Method:
 
-1. Read the label's **kWh/year** (EU-style A–G classes since the 2021
-   rescale — old "A+++" stock means an old label; convert via declared
-   kWh, never the letter alone).
-2. Multiply by the user's **marginal tariff** — in Egypt's tiered
-   residential pricing, the marginal rate is the top slab the household
-   already reaches (tariff table date-stamped in the reference; rates
-   changed twice in 2026 — re-check at dispatch via egyptera.org). If
-   the user knows their bill slab, use their slab — the top slab is the
-   default, not a substitute for a known fact. State the assumption in
-   the verdict.
+1. Read the local energy label's **kWh/year** (e.g., EU A–G rescale
+   since 2021 — old "A+++" stock means an old label; US EnergyGuide;
+   or the user's national energy label — compare declared kWh, never
+   the letter alone).
+2. Multiply by the user's **marginal electricity tariff** — fetch the
+   current local residential rate from the market's utility/regulator at
+   dispatch. In tiered-tariff markets, the marginal rate is the top slab
+   the household already reaches (use the user's known slab if stated,
+   otherwise state the assumed tariff explicitly).
 3. Rank heavy users on **total cost of ownership**: price + (expected
-   years × annual running cost). A fridge or AC saving EGP ~500–1500
-   per year pays back a real class premium; a rarely-used oven's
-   energy class is secondary.
-4. Fold into the Quality cell: "A-class, ~200 kWh/yr ≈ EGP X/yr" —
+   years × annual running cost). A fridge or AC that saves meaningful
+   kWh/year pays back a real class premium; a rarely-used oven's energy
+   class is secondary.
+4. Fold into the Quality cell: "A-class, ~200 kWh/yr ≈ [local currency] X/yr" —
    never a separate column.
 
 ### 4. Voltage, wiring and electrical-safety rails
 
-Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
+Match the user's local mains standard (120V/60Hz or 220–240V/50Hz) and
+standard household circuit/socket amp ratings (e.g., 15A/120V ≈ 1,800W
+or 13–16A/230V ≈ 3,000–3,500W):
 
 - **Certification gate**: never recommend a heater, kettle, or any
   mains-powered heating/motor appliance without a recognized
-  certification mark (CE/UL or the market's equivalent). Uncertified
-  heaters and cheap irons are this category's fire source.
-- **Socket discipline**: a 2,000W heater or 2,200W kettle belongs on
-  its own wall socket — never on daisy-chained or thin extension
-  cords; say this whenever the pick draws >1,500W.
+  certification mark (UL/ETL/CSA, CE/UKCA, or the user's national
+  safety mark). Uncertified heaters and cheap irons are this category's
+  fire source.
+- **Socket discipline**: any high-draw heating appliance (>1,500W)
+  belongs on its own wall socket — never on daisy-chained or thin
+  extension cords; say this whenever the pick draws >1,500W.
 - **Heater placement rails (pass/fail)**: at least 1 m from curtains,
   bedding, sofas, and anything flammable; never covered, and never
   used to dry clothes or towels; never in a bathroom or within reach
@@ -140,8 +143,8 @@ Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
   reach in.
 - **Dedicated line for ACs**: a split AC needs its own breaker line
   sized to the unit — include it in the installation price question.
-- **Stabilizers**: where voltage sags or surges (rural areas, old
-  buildings, generator blocks), an AVR stabilizer protects compressor
+- **Stabilizers**: where voltage sags or surges (rural grids, older
+  wiring, generator blocks), an AVR stabilizer protects compressor
   appliances; size it for motor start surge, not just running wattage
   (numbers in the reference). If the household reports brownouts, add
   the stabilizer cost to the TCO math instead of pretending power is
@@ -152,16 +155,15 @@ Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
 Pass/fail in any comparison; never folded away:
 
 - **Licensed connection only**: any gas installation, moving, or
-  reconnection is done by the licensed gas technician/utility crew —
-  never DIY, never "the building's handyman". Budget the connection
+  reconnection is done by a licensed gas technician/utility crew —
+  never DIY, never an unlicensed handyman. Budget the connection
   when comparing gas vs electric ranges.
 - **Ventilation and CO**: gas cooking needs a working hood or an open
   window; a gas oven is never a space heater. A **gas water heater
   must never sit in a closed shower enclosure** — flued/vented type,
   ventilated room, professional install. CO has no smell; any indoor
   gas-burning appliance without ventilation is disqualified. Where the
-  home burns gas indoors, recommend a CO detector if locally available
-  (patchy in Egypt — say so honestly).
+  home burns gas indoors, recommend a certified CO detector.
 - **LPG cylinders**: upright, ventilated spot, never below floor level
   or in low cabinets (leaked LPG pools); leak-check with soap water,
   never a flame; replace hose and regulator on schedule (practitioner:
@@ -173,27 +175,24 @@ Pass/fail in any comparison; never folded away:
   switches, no flames, no phone inside; (2) close the valve (meter
   valve for piped gas) if you can reach it safely; (3) get everyone
   out of the house — open windows and doors on your way out; (4) call
-  the national gas emergency line **129** from outside the building —
-  street, not the same stairwell (Egypt, 24/7 — verified; Town Gas
-  customer service 19129, Gas Masr 19220). Do not re-enter until the
-  utility says it is safe.
+  your local gas-emergency or national emergency number from outside
+  the building — street, not the same stairwell. Do not re-enter until
+  the utility says it is safe.
 - **Suspected CO exposure** (headache, dizziness, nausea while a gas
   appliance burns indoors): move the person to fresh air immediately
-  and call an ambulance — **123** (Egypt national ambulance line —
-  verify at dispatch per family rule). This line ships with every gas
-  water heater and gas-range recommendation, and is never simplified
-  away.
+  and call local emergency medical services. This line ships with every
+  gas water heater and gas-range recommendation, and is never
+  simplified away.
 
 ### 6. Hard water and maintenance reality
 
-Egyptian tap water is widely hard-to-very-hard by area (no authoritative
-public figure — treat ~150–300+ ppm as anecdotal; the visible
-kettle-scale test decides locally):
+Where local tap water is hard (the visible kettle-scale test decides
+locally):
 
 - **Washers**: scale builds on the heater and shortens its life —
   prefer models with documented scale-resistant heaters or self-clean
   cycles; recommend periodic descaling and inlet-filter checks; count
-  the descaler as running cost in hard areas.
+  the descaler as running cost in hard-water areas.
 - **Dishwashers**: hard water needs regeneration salt and rinse aid —
   factored into running cost, not discovered at week two.
 - **Water heaters**: element scaling cuts efficiency yearly — an
@@ -215,14 +214,13 @@ at all — treat install quality as part of the verdict:
   guide), leak-tests, sizes the breaker line, slopes the drain, and
   insulates the copper properly. Skipping any of these means
   undercapacity or gas leakage within a season or two.
-- **Buy install through the retailer/brand service where possible** —
-  verified channel: B.TECH TechCare (hotline 19966) bundles install,
-  maintenance and extended warranty; get the installation warranty in
-  writing, separate from the product warranty.
-- **Price the extras up front**: included copper is typically ~3–4
-  meters (regional practice — practitioner), extra meters charged per
-  meter, stair-carry may cost extra; put the number in the Price cell
-  ("— install + 5 m copper extra").
+- **Buy install through the retailer/brand authorized service where
+  possible** and get the installation warranty in writing, separate
+  from the product warranty.
+- **Price the extras up front**: included copper line-set is typically
+  ~3–4 meters (practitioner), extra meters charged per meter, and
+  stair-carry or brackets may cost extra; put the note in the Price
+  cell ("— install + extra copper extra").
 - **Washers/dishwashers**: leveling feet, correct drain height, inlet
   filter — cheap to check, expensive to skip.
 - Gas ranges/heaters: the licensed-technician rule (behavior 5)
@@ -234,14 +232,12 @@ at all — treat install quality as part of the verdict:
   compressor-only, parts excluded, labor extra — the whole-unit term
   and callout/labor terms matter more than the headline. State the
   split in the Quality cell ("10-yr compressor, 1-yr parts+labor").
-- **Service density outranks spec sheets** at close prices: verified
-  local channels (2026-11): retailers B.TECH, Raya Shop, 2B, Sigma,
-  Elbadrgroup, Noon Egypt, Amazon.eg; brand service hotlines — Fresh
-  19059, Kiriazi 19091, EL-ARABY (Toshiba/Tornado/TCL) 19319, Zanussi
-  19999. Verify the hotline from the brand's official site at
-  dispatch: **fake repair numbers circulate online and all these
-  brands warn against them** — this warning ships with any service
-  mention.
+- **Service density outranks spec sheets** at close prices: check
+  authorized local retailers, official brand service centers, and
+  official support hotlines in the user's country at dispatch. Always
+  verify service hotlines directly from the brand's official site:
+  **fake repair numbers and impersonator service pages circulate online**
+  — this warning ships with any service mention.
 - **Spare-parts question at purchase**: shelves, gaskets, drums, boards
   — whether parts for the exact model are stocked locally is a
   verdict-changing answer.
@@ -254,24 +250,24 @@ at all — treat install quality as part of the verdict:
 Low-stakes, low-cost small appliances skip the mode question and run
 **Quick mode automatically** — the binding test is the class: kettles,
 toasters, irons, hand mixers, basic blenders with no installation, no
-gas, and no pressure path, roughly under ~EGP 3,000 (≈$60 — anchored
-rail [A 2026-11]) as the price anchor on top. An
-explicit user mode choice wins over this shortcut (family rule); when
-class and price disagree, the deeper mode wins — and when in doubt,
-run Verified. Ambiguity resolves toward more research, never less.
-Mid-ticket small appliances (air fryers, microwaves, robot vacuums,
-espresso machines) run the chosen mode normally. The shortcut never
-skips three things:
+gas, and no pressure path, roughly under ~$60 equivalent in the user's
+local currency (anchored rail [A 2026-11]) as the price anchor on top.
+An explicit user mode choice wins over this shortcut (family rule);
+when class and price disagree, the deeper mode wins — and when in
+doubt, run Verified. Ambiguity resolves toward more research, never
+less. Mid-ticket small appliances (air fryers, microwaves, robot
+vacuums, espresso machines) run the chosen mode normally. The shortcut
+never skips three things:
 
 1. **Certification mark** (behavior 4's gate applies to all mains
    heating/motor devices — it is not mode-gated).
-2. **Real heating claims** — wattage vs the 16A socket reality, and
-   the claims-inflation traps (reference table): air-fryer liters as
-   total pot vs usable basket, blender jar vs usable capacity, "2000W"
-   on heaters that never draw it.
+2. **Real heating claims** — wattage vs the local wall-socket ceiling,
+   and the claims-inflation traps (reference table): air-fryer liters
+   as total pot vs usable basket, blender jar vs usable capacity,
+   inflated heater wattage.
 3. **Motor/element warranty** — the failure point of every small
-   appliance; a 6-month motor warranty on a daily-use blender is the
-   real quality statement.
+   appliance; a short motor warranty on a daily-use blender is the real
+   quality statement.
 
 - **Microwave rails**: never run a unit with a bent door, damaged
   hinge or latch, or a burnt door seal — replace the unit rather than
@@ -297,8 +293,8 @@ washer, range, dishwasher, AC, water heater) earns a showroom visit:
 - **Inspect build in person**: hinge feel, drawer rails, gasket seal,
   drum wobble, panel flex; ask for a power-on demo.
 - **Get in writing**: price contents (delivery, install, extra copper,
-  stair carry), warranty card stamped with the serial, hotline
-  printout.
+  stair carry), warranty card carrying the serial, official support
+  contact.
 - **Delivery day**: inspect before signing (dents, scratches, missing
   parts); keep packaging until any return window closes; run
   first-cycle tests (fridge cool-down, washer empty cycle, AC
@@ -306,9 +302,9 @@ washer, range, dishwasher, AC, water heater) earns a showroom visit:
 
 ### 11. Used appliances — shown, with an inspection checklist
 
-When the user is open to used (Egypt's market is real — dubizzle Egypt,
-the OLX rebrand), include them with honest framing: no warranty comes
-with it.
+When the user is open to used (via local classifieds or certified
+resellers), include them with honest framing: no manufacturer warranty
+comes with private used units.
 
 - **Fridge/freezer**: compressor run + cool-down test on-site, gasket
   seal, rust under the liner, age from the nameplate.
@@ -330,10 +326,11 @@ with it.
 ### 12. Explanation depth adapts to the user
 
 - Casual: plain outcomes — "this AC actually cools a 20 m² room and
-  costs about EGP X a summer to run" instead of BTU and EER math.
-- Technical: kWh/year math with the tariff slab named, T3 compressor
-  ratings, inverter duty-cycle reasoning, install vacuum/leak-test
-  criteria — with sources.
+  costs about [local currency] X a summer to run" instead of BTU and
+  EER math.
+- Technical: kWh/year math with the local tariff rate named, T3
+  compressor ratings, inverter duty-cycle reasoning, install
+  vacuum/leak-test criteria — with sources.
 
 Both get the same verdict and the same safety rails — only the
 explanation changes. Gas and electrical rails are never simplified away.
@@ -342,9 +339,9 @@ explanation changes. Gas and electrical rails are never simplified away.
 
 Full per-sub-domain reasoning lives in the reference file. The pins:
 fridge — capacity by household + energy class + service network; washer
-— drum kg, hard-water handling, service; AC — room-sized BTU with T3
-reality + install quality + running cost; range — gas vs electric per
-the kitchen's real connection + safety rails; dishwasher —
+— drum kg, hard-water handling, service; AC — room-sized BTU with
+climate rating + install quality + running cost; range — gas vs
+electric per the kitchen's real connection + safety rails; dishwasher —
 salt/rinse-aid running cost + fit; water heater — gas rails vs electric
 element scaling; small appliances — certification, real wattage/
 capacity, motor warranty.
@@ -360,11 +357,12 @@ table, tier picks, caveats, when-to-buy), with these additions:
   Price suffix ("— install + copper extra"); service-network density as
   a word inside Value for money or the weakness cell ("thin local
   service — weigh before buying"). No new columns.
-- Under caveats: the tariff-change note (rates moved twice in 2026),
-  hard-water maintenance where relevant, install-crew quality for ACs,
-  and the fake-repair-number warning whenever a hotline is named.
-- **When to buy** uses the local calendar: AC prices firm up into
-  summer demand — buy in spring (practitioner); Ramadan drives
-  fridge/TV demand (prices hold before it, deals land after Eid);
-  White Friday carries the genuine appliance discounts; run
+- Under caveats: the local electricity-tariff assumption used for
+  running-cost math, hard-water maintenance where relevant,
+  install-crew quality for ACs, and the fake-repair-number warning
+  whenever a service hotline is named.
+- **When to buy** uses the user's local calendar: AC prices firm up
+  into summer demand — buy in spring (practitioner); major national
+  sale events (Black Friday / White Friday / Singles' Day) and
+  post-holiday clearance windows carry genuine appliance discounts; run
   price-history skepticism on event prices (core rule).

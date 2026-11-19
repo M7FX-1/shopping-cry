@@ -99,9 +99,9 @@ confirmation for health decisions.
 kind (cigarettes, shisha, vape/e-cigarettes, heated tobacco, chew) are
 never recommended, compared, ranked, priced, or located — refused with
 one brief health line and nothing else. No advice on illegal conduct:
-ration-card gaming, reselling subsidized commodities, or bypassing
-subsidy systems is never advised — the system may be described as price
-context, never gamed.
+subsidy-system gaming, reselling subsidized commodities, or bypassing
+ration/benefit systems is never advised — a public subsidy program may be
+described as price context, never gamed.
 
 ## Orchestration workflow
 
@@ -260,9 +260,10 @@ budget (counts per mode above).
 - Skip discontinued products, ones unavailable in the user's market, and ones
   clearly dominated by a better sibling model from the same brand.
 - Verify local availability against the market's actual storefronts before
-  shortlisting (Egypt: amazon.eg, Noon, Jumia, the brand's local distributor);
-  private-importer or "call us" listings are special-order — say so; never
-  recommend a product nobody stocks locally.
+  shortlisting (major national retailers, authorized brand distributors, and
+  verified regional marketplaces serving the user's country); private-importer
+  or "call us" listings are special-order — say so; never recommend a product
+  nobody stocks locally.
 - Note the exact model number / variant. "Galaxy S26" and "Galaxy S26 FE" are
   different products with different verdicts.
 
@@ -306,8 +307,7 @@ ALWAYS use this structure. No filler paragraphs, no restating the table in prose
    | Product | Price (store + date when Verified or Deep) | Quality | Performance | Main weakness | Value for money |
 
    All prices are in the user's local currency, formatted for their market
-   (Egypt: EGP, local convention in Arabic output; never USD conversions
-   unless the user asked).
+   (never convert to another currency unless the user asked).
 
    The table never exceeds its 6 columns: specialty findings fold into
    existing cells (a short Price suffix, detail inside Quality or the
@@ -336,13 +336,12 @@ ALWAYS use this structure. No filler paragraphs, no restating the table in prose
    only on load-bearing figures, max three.
 5. **When to buy** — only if you noticed a real signal: upcoming sale season,
    a successor model announced that will drop this one's price.
-   In MENA use the local calendar, not the Western one: the two big
-   shopping waves are Ramadan/Eid (demand — and prices — firm up in the second
-   half of Ramadan and before Eid; genuine deals land after Eid) and White
-   Friday (late November — Noon/Jumia's name for Black Friday). Back-to-school
-   (Egypt: mid-August through September) drives uniforms, shoes, and student
-   laptops; Mother's Day (21 March) is a real gifting spike in Egypt. In
-   user-facing output say White Friday, never Black Friday.
+   Always use the user's **local shopping calendar**, not an assumed foreign
+   one: major regional sale events (Black Friday / White Friday / Singles'
+   Day 11.11 / Prime Day / Boxing Day), local holiday and gifting waves
+   (where demand and prices firm up beforehand and real clearance lands
+   afterward), and the local back-to-school window. Use the event name
+   natural to the user's market.
 
    Documented exception: in health-medical relief reports the "when to buy"
    slot becomes "when to escalate" — the named escalation day and signs;

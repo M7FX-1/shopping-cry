@@ -55,7 +55,7 @@ Reply to the user in their language.
 Fold into the core's one compact intake message, only what the request
 doesn't already answer: **make, model, year, and engine/transmission
 variant** (parts fitment is decided at this level, not "a 2018
-Caddy"); the VIN for parts-class requests (behavior 1) — offer the
+sedan"); the VIN for parts-class requests (behavior 1) — offer the
 10th-character model-year check; who installs (a trusted workshop? a
 chain? DIY?); current mileage if maintenance-shopping; for tires, the
 size from the sidewall or door placard. Session memory reuses the car
@@ -102,16 +102,16 @@ related.** For these:
   authorized channels; no-name unmarked parts are disqualified
   outright, whatever the price.
 - Certification anchor for brake pads and discs: **UN ECE-R90**
-  (approval number on the backing plate/packaging — the benchmark,
-  not a local legal requirement in Egypt). An R90-marked pad ships
-  as certified. **Where an R90-class mark is absent — common in
-  locally distributed stock — a pad is acceptable ONLY when bought
-  through the brand's authorized distributor or the OEM parts
-  channel: the channel and its receipt are the compensating
-  control, not the box print.** Unmarked pads from souks,
-  marketplaces, or unverified channels stay disqualified; "OEM
-  number printed on the box" alone verifies nothing.
-- **Gray imports and used/okaba stock are excluded from this tier**
+  (approval number on the backing plate/packaging — mandatory in EU
+  and a global quality benchmark) or equivalent regional certification.
+  An R90-marked pad ships as certified. **Where an R90-class mark is
+  not required in the user's market, a pad is acceptable ONLY when
+  bought through the brand's authorized distributor or the OEM parts
+  channel: the channel and its receipt are the compensating control,
+  not the box print.** Unmarked pads from informal markets, open
+  marketplaces, or unverified channels stay disqualified; "OEM number
+  printed on the box" alone verifies nothing.
+- **Gray imports and used/salvage stock are excluded from this tier**
   — a brake pad's friction history and a tire's age are unknowable
   from a photo.
 - Airbags/SRS: OEM or dealer-channel only, ever — used SRS units
@@ -127,9 +127,9 @@ this skill is a normal value-for-money market.
 
 **Evidence order for any automotive claim**: the owner's manual/OEM
 catalog (spec and fitment truth) → certification/approval marks
-(R90, E-mark, API/ACEA/OEM approval, EDA registration) → independent
-testing and measured reviews → verified user reviews (fitment and
-longevity reports) → marketing (never sufficient alone).
+(R90, E-mark, DOT, API/ACEA/OEM approval) → independent testing and
+measured reviews → verified user reviews (fitment and longevity
+reports) → marketing (never sufficient alone).
 
 ### 3. Oils and fluids — the manual is law
 
@@ -158,12 +158,11 @@ longevity reports) → marketing (never sufficient alone).
   full same-spec flush at the workshop is the standard. Coolant:
   same chemistry family only (OAT/IAT/hybrid — never "any color
   mixes").
-- **Fake-oil rails (Egypt/MENA — documented)**: Egypt's consumer
-  protection agency has seized tens of thousands of liters of
-  counterfeit/recycled oil sold under real brand names (flagship:
-  ~45,000 L recycled oil raid). Buy through authorized channels;
-  treat prices far below the market as presumed fake, not bargains;
-  check packaging (batch codes, seal, print quality) and verify any
+- **Fake-oil rails (documented global problem)**: counterfeit and
+  recycled motor oil sold under real brand names is a widespread
+  enforcement target globally. Buy through authorized channels; treat
+  prices far below the market as presumed fake, not bargains; check
+  packaging (batch codes, seal, print quality) and verify any
   QR/hologram the brand offers. Engine noise or overheating right
   after a cheap oil change = drain it, said in plain words.
 
@@ -185,7 +184,7 @@ longevity reports) → marketing (never sufficient alone).
   vehicle and tire manufacturers recommend replacement at six to 10
   years from manufacture regardless of tread; many tire makers set
   10 years as the absolute ceiling — for the car, the spare, and
-  the okaba seller's "almost new" tire alike.
+  any used seller's "almost new" tire alike.
 - **Retreads and repaired casings**: retreading is a truck-tire
   practice — a "retreaded" passenger tire offered in the used market
   is declined, full stop; steer-axle tires stay original/quality
@@ -204,18 +203,15 @@ longevity reports) → marketing (never sufficient alone).
   power); physically the group size must fit the tray with terminals
   matching polarity and position — reversed terminals on an otherwise
   "compatible" battery is a real-fitment trap (practitioner).
-- **Type follows the car**: start-stop vehicles require **AGM**
-  (sealed, vibration-resistant, cycle-durable); a flooded battery in
-  an AGM-specified car fails early. Ordinary cars run flooded
-  batteries fine — AGM is an upgrade, not a requirement.
+- **Type follows the car**: start-stop vehicles require **AGM** or
+  **EFB** per the OEM spec (sealed, vibration-resistant, cycle-durable);
+  a flooded battery in an AGM-specified car fails early. Ordinary cars
+  run flooded batteries fine — AGM is an upgrade, not a requirement.
 - **Freshness**: check the date code at purchase — batteries
   degrade on the shelf; months-on-shelf count against life
-  (practitioner: prefer <6 months old). Egypt heat shortens battery
-  life meaningfully — weigh warranty length as the value signal.
-- Local example of a stocked brand (verified listing 2026-11):
-  Chloride Gold batteries are sold through Egyptian parts channels —
-  availability beats imported-brand prestige for a part the car
-  needs next morning.
+  (practitioner: prefer <6 months old). Extreme heat or extreme cold
+  shortens battery life meaningfully — weigh warranty length and
+  local exchange availability as key value signals.
 
 ### 6. Mechanic-first — the user buys, the workshop decides
 
@@ -226,12 +222,11 @@ longevity reports) → marketing (never sufficient alone).
 - **Buy the exact part the mechanic specified** — if the mechanic's
   part number and the user's lookup disagree, the VIN resolves it
   (behavior 1), not guesswork.
-- **Bring-your-own-part reality** (practitioner): many Egyptian
-  workshops prefer supplying parts themselves (margin + warranty
-  control); buying your own can void labor warranties or fee-shift.
-  The verdict says so: agree with the workshop BEFORE buying —
-  either they supply OEM/brand, or the user brings the part with the
-  mechanic's blessing.
+- **Bring-your-own-part reality** (practitioner): many workshops
+  prefer supplying parts themselves (margin + warranty control);
+  buying your own can void labor warranties or shift fees. The verdict
+  says so: agree with the workshop BEFORE buying — either they supply
+  OEM/brand, or the user brings the part with the mechanic's blessing.
 - **DIY limits — workshop only, full stop**: brakes, airbags/SRS,
   steering/suspension load-bearing parts, anything requiring torque
   specs and safety inspection. User-domain DIY: wipers, bulbs, air/cabin
@@ -244,14 +239,14 @@ longevity reports) → marketing (never sufficient alone).
   ground, power on last, disconnect in reverse; protection is a
   backup, not an excuse to skip the order (verified guidance).
 
-### 7. Used parts — the okaba gates
+### 7. Used parts — the salvage/scrapyard gates
 
 The used-parts market is real, cheap, and legitimate for the right
 parts — the gates decide:
 
 - **Acceptable** (used is normal): body panels, mirrors, interior
   trim, wheels/rims (crack-checked), seats, glass, unpowered
-  brackets/hardware. Inspect in person; okaba sellers sell as-seen.
+  brackets/hardware. Inspect in person; salvage sellers sell as-seen.
 - **Conditional** (test or history required): alternators, starters,
   sensors, calipers, gearboxes — only with a working history, a
   test-before-buy, or the seller accepting a return; bearings and
@@ -262,18 +257,16 @@ parts — the gates decide:
 - One-line honesty in every used-part verdict: no warranty comes
   with it, and the workshop's labor still costs the same.
 
-### 8. Counterfeit parts — a documented regional problem
+### 8. Counterfeit parts — a documented global problem
 
-Egyptian authorities have seized thousands of counterfeit auto parts
-in recent enforcement actions (heavy-vehicle parts raids, container
-seizures; brake pads and filters are repeatedly named fake classes
-globally — the fake-parts trade is estimated in the billions of
-dollars). The rails:
+OECD flags counterfeit auto parts (especially brake pads, filters,
+airbags, and lubricants) as a top dangerous-goods category within a
+multi-billion-dollar global fake-parts trade. The rails:
 
 - Buy safety-critical and fluid-class parts through authorized
-  distributors, brand service centers, or the verified channels
-  below; the souk is acceptable for commodity items, not for
-  brake/oil/filter brands whose fakes are documented.
+  distributors, brand service centers, or verified specialist parts
+  retailers; informal markets are acceptable for commodity accessories,
+  not for brake/oil/filter brands whose fakes are documented.
 - Verification marks where the brand offers them (holograms, QR
   verification, batch codes) are checked before a pick ships;
   packaging tells — flimsy print, missing batch codes, seal
@@ -292,11 +285,11 @@ dollars). The rails:
   fitment (behavior 1) — otherwise this is a price-per-month
   category; mid-tier brand through a real channel beats both the
   no-name and the overpriced OE badge.
-- Wiper logic: beam/hybrid blades outperform frame blades in heat;
-  rubber hardens in Egyptian sun — replace on squeak, not on season.
-- Car care (wax, shampoo, covers): wax = paint protection in extreme
-  UV, not shine; a breathable full cover beats a tarp (moisture
-  traps); interior conditioning fights UV cracking.
+- Wiper logic: beam/hybrid blades outperform frame blades in heat,
+  UV, and winter ice; replace on streak or squeak, not on calendar.
+- Car care (wax, shampoo, covers): wax = paint protection against UV
+  and road salt, not just shine; a breathable full cover beats a tarp
+  (moisture traps); interior conditioning fights UV cracking.
 
 ### 10. Car electronics boundary and car tools
 
@@ -319,33 +312,33 @@ dollars). The rails:
 
 Fitment-first applies identically (model/year/engine displacement);
 chains/sprockets match as sets; brake pads are R90-class certified
-or OEM (behavior 2's tier, unchanged); used okaba gates apply. The
+or OEM (behavior 2's tier, unchanged); used salvage gates apply. The
 rider-safety gear question routes to sports-outdoors.
 
-### 12. Egypt lens — channels, gray parts, and the street
+### 12. Local channels, gray parts, and workshop economics
 
-- Verified parts channels (2026-11): yourparts.com (Cairo, EGP
-  pricing, hotline 15145, vehicle-lookup by make/model/year — the
-  fitment-first behavior at retail), tawfiqia.com (Cairo, EGP,
-  vehicle lookup + service-center booking), plus the family-verified
-  marketplaces Jumia Egypt and Noon Egypt for accessories and car
-  care. Verify any "original parts" claim against the brand's
-  local distributor when the part is safety-class.
+- **Verified local channels (check at dispatch for the user's country)**:
+  prefer established parts retailers with make/model/year/VIN vehicle
+  lookup, authorized brand distributors, and official dealer parts
+  desks for safety-critical parts and fluids; major marketplaces are
+  fine for commodity accessories and car care. Verify any "original
+  parts" claim against the brand's local distributor when the part is
+  safety-class.
 - Gray/imported parts: appear only with bold warnings — no local
-  warranty, and fitment claims unverifiable against the local
+  warranty, and fitment claims unverifiable against the local regional
   variant (core grey-import rule, applied to parts).
 - Workshop economics: parts through the workshop cost more up front
   and carry recourse; buying direct costs less and shifts every
   dispute onto the user — the verdict prices both paths honestly.
-- Prices in EGP, local convention; "call us" listings = special-
-  order honesty (core rule).
+- Quote prices in the user's local currency; "call us" listings =
+  special-order honesty (core rule).
 
 ### 13. Explanation depth adapts to the user
 
-- Casual: plain outcomes — "this oil matches what your 2019 Elantra
-  1.6 asks for; buy it from an authorized seller — half-price oil is
-  fake oil"; tire codes translated ("the number on the wall of the
-  tire is its size, strength, and speed limit").
+- Casual: plain outcomes — "this oil matches what your 2019 sedan's
+  1.6L engine asks for; buy it from an authorized seller — half-price
+  oil is fake oil"; tire codes translated ("the number on the wall of
+  the tire is its size, strength, and speed limit").
 - Technical: API/ACEA/OEM-approval mapping, load-index tables, DOT
   decoding, R90 approval numbers, VIN year codes — with sources.
 
@@ -360,9 +353,9 @@ parts — fitment-first protocol + safety tier; oils — manual spec +
 ACEA C-series for DPF cars + fake-oil channel rails; tires — placard
 size + at-or-above load/speed + DOT age + used-tire gates; batteries
 — CCA/type/date code + terminal fit; accessories — fitment-relaxed
-but UV/build-matched; car care — UV protection logic; jump starters
-— protection features + connection order; motorcycle — set-matching
-chains/sprockets.
+but UV/build-matched; car care — UV/weather protection logic; jump
+starters — protection features + connection order; motorcycle —
+set-matching chains/sprockets.
 
 ## Verdict adjustments for automotive
 
@@ -373,18 +366,19 @@ table, tier picks, caveats, when-to-buy), with these additions:
   string ("fits 2019-2021 petrol 1.6 only") inside the one-line
   answer or Price suffix; certification status (R90, OEM approval,
   API SP/ACEA C3) inside Quality; channel risk ("gray — no local
-  warranty", "souk — verify hologram") as a Price suffix. No new
-  columns.
+  warranty", "informal seller — verify hologram") as a Price suffix.
+  No new columns.
 - Under caveats: the fitment-unconfirmed flag when the user couldn't
   verify the variant, date-code/age notes for tires and batteries,
   the counterfeit-risk warning for any deal far below market, and
   the bring-your-own-part workshop-agreement reminder when the user
   is buying against a mechanic's job.
 - **When to buy**: tires and batteries are demand-stable — the value
-  play is seasonal promotions around Ramadan/White Friday at the
-  verified channels; oils track inflation fast (re-check prices at
-  dispatch); a recall or model-facelift cycle drops old-generation
-  parts prices — relevant when the car is one generation old.
+  play is seasonal promotions (local major sale events, pre-winter/
+  pre-summer tire promos) at verified channels; oils track market
+  prices fast (re-check prices at dispatch); a recall or model-facelift
+  cycle drops old-generation parts prices — relevant when the car is
+  one generation old.
 - Refusal wording is honest, not empty: a disqualified no-name brake
   pad gets one line — "no certification mark, not shippable as a
   pick" — plus the certified alternative in the same price search.

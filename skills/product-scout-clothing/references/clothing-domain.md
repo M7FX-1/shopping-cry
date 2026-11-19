@@ -12,7 +12,7 @@
 - Research date: **2026-11-14**. Compiled via web search of standards bodies (ISO, FTC, EUR-Lex, GINETEX), academic literature (BJSM, Journal of Socio-Economics, ScienceDirect), test-lab guides (QIMA, SGS, TESTEX, A&E), and consumer-protection reporting (Which?, BBC, Reuters).
 - Citations use `[S#]` keys resolved in the Sources list at the end. Every sourced claim carries a key.
 - **Verification status:** claims marked `[S#, unverified]` come from search-result summaries whose primary URL could not be opened/confirmed in this session; treat numeric details there as provisional. Claims marked *(practitioner consensus)* reflect standard industry/QC practice found in multiple secondary sources but without a single authoritative URL.
-- Consumer-lab and standards facts (SPI, Martindale, ISO fastness/pilling, FTC/EU/Egypt labeling) are the highest-confidence tier; market-size figures are the lowest (definitions vary by vendor).
+- Consumer-lab and standards facts (SPI, Martindale, ISO fastness/pilling, FTC/EU labeling) are the highest-confidence tier; market-size figures are the lowest (definitions vary by vendor).
 
 ---
 
@@ -25,7 +25,7 @@
 
 ### Merino wool (micron = average fiber diameter in microns)
 - The micron system is the modern grading standard (replacing "blood grade"/spinning count). Common apparel bands: ultrafine ≤15.5 (some sources use <16.5), superfine 15.6–18.5, fine 18.6–20.5, medium 20.6–22.5. Below ~15.5 = premium next-to-skin; above 18.5 = more durable, better for outer layers. Band boundaries vary by source — classifications are not perfectly standardized (market guides use ultrafine ≤15.5–16.5; Woolmark's certification spec instead sets Ultrafine Merino at required max 17.5 µm mean fibre diameter). [S13][S3][S 2026-11 — Woolmark spec AK-3: https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/ak-3_merino_ultrafine_2016_edit_final.pdf]
-- wool garments: higher micron = coarser feel (prickle threshold roughly <18–19 for most skin) *(practitioner consensus)*.
+- Wool garments: higher micron = coarser feel (prickle threshold roughly <18–19 for most skin) *(practitioner consensus)*.
 
 ### Linen & silk
 - Linen quality follows staple length and spinning: wet-spun long-staple ("line") flax yields fine, smooth fabrics down to ~50–100 gsm; dry-spun short-staple is coarser/heavier (~150–250 gsm). [S46][S 2026-11 — Safilin flax-spinning methods: https://www.safilin.fr/are-there-several-methods-of-flax-spinning/?lang=en]
@@ -38,7 +38,7 @@
 - Elastane (spandex/Lycra): typically 2–5% for stretch comfort. It is the durability weak link — degraded by heat (dryers, hot wash), UV, chlorine, and mechanical stretch cycling; swimwear breaking force fell ~12% after 200 h and ~66% after 300 h of chlorinated-water + sunlight exposure in a 2024 Polymers study. For frequent pool use, polyester/PBT blends resist chlorine far better than nylon/Lycra. [S21][S22][S23][S24]
 - Blend rule of thumb: natural fiber gives comfort/absorbency, synthetic gives shape retention, quick-dry, and abrasion resistance; every % of elastane added shortens the realistic service life *(practitioner consensus built on S21–S24)*.
 
-### Hot-climate (MENA/Egypt) fabric logic
+### Hot-climate fabric logic
 - Best performers: linen (open weave + wicking, the summer gold standard), loose-weave lightweight cottons (voile, muslin, gauze, poplin, seersucker), hemp; TENCEL/modal/viscose are soft wicking alternatives. Avoid tight knits (trap heat) and everyday polyester (holds sweat at skin). [S25][S26]
 - Modest layered wear: multiple *loose* breathable layers create cooling air gaps; a thin moisture-managing base layer plus loose open-weave outer layers beats one tight heavy layer. [S25][S26]
 
@@ -67,7 +67,7 @@
 ### What needs the in-hand checklist
 - Fabric hand feel, true GSM/weight, opacity stretch tests. [S16]
 - Seam slippage (tug seams gently at a join), needle holes/damage, thread trimming, symmetry (collar points, sleeve lengths, pocket placement). [S33]
-- Button anchoring (twist test), zipper smoothness through full travel, care/content label presence and stitching (a permanent stitched label is itself a compliance signal in Egypt). [S29][S33]
+- Button anchoring (twist test), zipper smoothness through full travel, care/content label presence and stitching (a permanent stitched label is a baseline compliance signal). [S33]
 - Chemical odor (indicates finishing/dye shortcuts), lining fabric quality, print crack/stretch behavior. *(practitioner consensus)*
 
 ---
@@ -75,7 +75,7 @@
 ## 3. Sizing & Fit — the #1 Online Failure Mode
 
 ### Why letter sizes fail
-- There is **no legally enforced sizing standard** for apparel in the US or EU; every brand defines its own chart. [S34][S29]
+- There is **no legally enforced sizing standard** for apparel in the US or EU; every brand defines its own chart. [S34]
 - Vanity sizing is measured, not anecdotal: Franz (2017) analyzed size charts of **54 US retailers** and found sizes inflated most in **moderately priced women's brands**. [S31] The same body measurements can be "size 8" in one brand and "size 12" in another. [S32]
 - Men's sizing is comparatively stable because it encodes inches (chest/waist); women's numeric sizes bundle multiple body dimensions that do not scale together — one waist number cannot predict hip/thigh/rise. [S34]
 - Fit drives returns: online apparel return rate ~24.4% in the US (~20% e-commerce overall; ~26% global apparel), and **~53% of apparel returns are size/fit-related** — the single biggest cause. [S35][S36]
@@ -133,7 +133,7 @@
 - **Labeling as the legal floor** (missing = strong proxy for gray-channel goods):
   - US: Textile Fiber Products Identification Act 1960 + 16 CFR 303 — fiber content in approved generic names by predominance, country of origin, manufacturer name or RN number. [S63][S64]
   - EU: Regulation (EU) 1007/2011 — mandatory fiber-composition label in standardized fiber names, durable/legible/attached, in the member state's language; animal-origin non-textile parts disclosed. [S65][S66]
-  - Egypt: ES 7266 series ("Safety and health criteria and labelling for textile products") + Arabic labeling with origin/manufacturer; permanent stitched label; conformity verification (GOEIC/EOS) before clearance for covered HS codes. [S29][S30]
+  - Other markets enforce equivalent national fiber-content and permanent care-label laws.
 - "Premium/luxury-grade/heavyweight" wording **without a disclosed fiber-content %** is unverifiable marketing; a listing with no size chart and no fiber content combines two red flags. *(practitioner consensus built on S63–S66)*
 - Brand impersonation: misspelled brand names, seller accounts with unrelated product histories, prices far below brand MSRP with new-stock claims. *(practitioner consensus)*
 
@@ -141,21 +141,16 @@
 
 ## 7. Buying Timing & Value
 
-- Seasonal clearance cycles: winter apparel is most deeply discounted **January–early February** (post-holiday through Presidents' Day); summer clearance runs **July–Labor Day**. Markdowns deepen the longer out-of-season stock sits — roughly 4–6 weeks after each season's peak. [S67][S68]
-- **Black Friday quality skew**: UK consumer group Which? found **92% of 2023 Black Friday "deals"** were the same price or cheaper at other times of the year; nine of 10 in 2024; eight of 10 in 2025. Retailers inflate reference prices pre-event. Use a price-history tool before trusting any event discount. [S69]
+- Seasonal clearance cycles: winter apparel is most deeply discounted **4–6 weeks after winter peak**; summer clearance runs **late summer**. Markdowns deepen the longer out-of-season stock sits. [S67][S68]
+- **Major sale-event quality skew**: UK consumer group Which? found **92% of 2023 Black Friday "deals"** were the same price or cheaper at other times of the year; nine of 10 in 2024; eight of 10 in 2025. Retailers inflate reference prices pre-event. Use a price-history tool before trusting any event discount. [S69]
 - Fast fashion vs durable math: fast-fashion garments are worn an estimated **7–10 times** before discard (Ellen MacArthur Foundation 2017; clothing utilization down ~36% vs 15 years prior). A $25 item worn 8× costs $3.13/wear; a $50 well-made item worn 100× costs $0.50/wear. [S70]
-- Second-hand role: US secondhand apparel grew 14% in 2024 — ~5× faster than the broader retail clothing market (ThredUp 2025 Resale Report, with GlobalData); the US secondhand market reached ~$55.5B in 2025 and global secondhand is projected to reach $367B by 2029. For durability strategy, secondhand is *durability arbitrage*: garments that survived years of wear have demonstrated quality. [S71]
+- Second-hand role: US secondhand apparel grew 14% in 2024 — ~5× faster than the broader retail clothing market (ThredUp 2025 Resale Report, with GlobalData); global secondhand is projected to reach $367B by 2029. For durability strategy, secondhand is *durability arbitrage*: garments that survived years of wear have demonstrated quality. [S71]
 
 ---
 
-## 8. Egypt / MENA Lens
+## 8. Extra-Long-Staple Cotton Authenticity (Global Commodity Fraud Example)
 
-- **Climate-suited fabrics**: linen and loose-weave cottons for breathability and fast-dry comfort; layered modest wear works via loose air gaps, not heavy single layers; avoid tight polyester knits and everyday synthetics for heat. [S25][S26] For sweat-heavy days, performance synthetics are justified *for activewear specifically* (capillary wicking dries fast) but not for casual daily wear. [S18][S19]
-- **Modest-wear market**: Muslim consumer spending on clothing & footwear ≈ **$347B (2024)**, projected ~$444B by 2029 (SGIE Report 2025/26, DinarStandard; definitions vary — "modest-specific" estimates run smaller; some trackers project ~$485B by 2030). [S72][S 2026-11 — DinarStandard SGIE 2025/26: https://www.dinarstandard.com/insights/state-of-the-global-islamic-economy-report-2025-26]
-- **Import quality variance & compliance**: Egypt enforces Arabic labels, ES 7266 textile safety/labeling standards, permanent stitched labels, and GOEIC conformity checks on covered imports — imported goods bought from compliant channels should carry these; gray-channel goods often lack Arabic labeling entirely. [S29][S30]
-- **Local vs imported at same price**: at parity pricing, local brands typically offer fresher stock, local warranty/return handling, and no gray-import compliance risk; imported goods carry shipping-warehousing cycle age and variable storage. *(practitioner guidance — not directly sourced)*
-- **Egyptian cotton authenticity — the real story**: the Cotton Egypt Association estimated **~90% of global "Egyptian cotton" supplies were fake (2016)**; the Welspun/Target scandal (~750,000 bed-sheet sets mislabeled) triggered the crackdown. The genuine certification is the **gold Egyptian Cotton™ trademark seal** managed by the CEA with Bureau Veritas testing/auditing (DNA/mineral-traceability verified). Cheap "1000 TC 100% Egyptian cotton" claims are a red flag; even in-hand feel cannot distinguish fakes — only the seal and price realism help. [S73][S74][S75][S76]
-- Local cotton-country advantage: genuine Egyptian extra-long-staple cotton is domestically available — proximity can mean real long-staple goods at lower markup than imports carrying the same claim. *(practitioner guidance, anchored on S75–S76)*
+- **Egyptian cotton authenticity**: the Cotton Egypt Association estimated **~90% of global "Egyptian cotton" supplies were fake (2016)**; the Welspun/Target scandal (~750,000 bed-sheet sets mislabeled) triggered the crackdown. The genuine certification is the **gold Egyptian Cotton™ trademark seal** managed by the CEA with Bureau Veritas testing/auditing (DNA/mineral-traceability verified). Cheap "1000 TC 100% Egyptian cotton" claims are a global red flag; even in-hand feel cannot distinguish fakes — only the seal and price realism help. [S73][S74][S75][S76]
 
 ---
 
@@ -163,7 +158,7 @@
 
 | Signal | From listing/photos | Needs in-hand |
 |---|---|---|
-| Fiber content % (generic names) | Check composition field + label photo [S63][S65] | Verify label sewn-in matches listing [S29] |
+| Fiber content % (generic names) | Check composition field + label photo [S63][S65] | Verify label sewn-in matches listing |
 | GSM / fabric weight | Only if seller publishes it [S16] | Feel/heft, opacity [S16] |
 | Stitch density (SPI) | Count stitches in zoomed photo vs 8–10 / 12–14 bands [S1] | Seam tug test, slippage check [S33] |
 | Seam quality | Puckering, evenness, pattern matching at joins [S33] | Needle damage, thread trims, symmetry [S33] |
@@ -206,9 +201,9 @@ Decision rule: estimate wears *first*; a higher price is justified only when wea
 
 | Red flag | Why it matters |
 |---|---|
-| No fiber-content label/% disclosed | Legally mandatory in US/EU/Egypt — absence signals gray-channel goods [S63][S65][S29] |
+| No fiber-content label/% disclosed | Legally mandatory across major markets — absence signals gray-channel goods [S63][S65] |
 | No size chart, or chart without garment measurements | Fit is the top return driver; measurement-free charts predict failure [S35][S37] |
-| "100% Egyptian cotton" at low price, no gold seal | ~90% of the market was estimated fake (2016); verify the CEA/Bureau Veritas seal [S74][S75] |
+| "100% Egyptian cotton" at low price, no gold seal | ~90% of the global market was estimated fake (2016); verify the CEA/Bureau Veritas seal [S74][S75] |
 | Only 5-star reviews, unverified purchases, recent clusters | FTC banned fake/incentivized reviews; up to ~40% estimated fake on some platforms [S62] |
 | Stock-photo listing / same photos across stores | Classic dropshipping quality-gap tell [S61] |
 | "Premium/heavyweight" with no GSM or fiber % | Unverifiable marketing — the numbers are the only proof [S16][S63] |
@@ -217,7 +212,7 @@ Decision rule: estimate wears *first*; a higher price is justified only when wea
 | Cemented construction sold as "forever" footwear | Glued soles are not resoleable [S58] |
 | Event "50% off" without price history check | 8–9 of 10 Black Friday deals matched/beat at other times [S69] |
 | High elastane % sold as long-life activewear/swimwear | Elastane degrades fastest — chlorine/heat/UV kill it first [S21][S22] |
-| No care symbols or care label missing | US requires permanent care labels (16 CFR 423); Egypt requires stitched label [S49][S29] |
+| No care symbols or care label missing | Permanent care labels are required in major markets (e.g., 16 CFR 423) [S49] |
 
 ---
 
@@ -235,7 +230,7 @@ Decision rule: estimate wears *first*; a higher price is justified only when wea
 10. S10 — OEKO-TEX Standard 100 (official): https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100
 11. S11 — Nooteboom Textiles, GOTS vs OEKO-TEX: https://www.nooteboomtextiles.com/blogs/technical-info/gots-vs-oeko-tex-explained
 12. S12 — Global Organic Textile Standard (official): https://global-standard.org
-13. S13 — Merino micron band tables (market guides incl. Citizen Wolf: https://citizenwolf.com); Woolmark certification spec AK-3 (Ultrafine Merino ≤17.5 µm): https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/ak-3_merino_ultrafine_2016_edit_final.pdf *(band boundaries confirmed to vary by source, 2026-11)*
+13. S13 — Merino micron band tables (Citizen Wolf: https://citizenwolf.com); Woolmark spec AK-3: https://www.woolmark.com/globalassets/_06-new-woolmark/_industry/certification/_old-certification/product-specifications/ak-3_merino_ultrafine_2016_edit_final.pdf
 14. S14 — Canvas ETC, combed vs carded cotton: https://www.canvasetc.com/combed-cotton-vs-regular-cotton/
 15. S15 — Jain Sint, combed vs carded / Pima–Supima staple: https://jainsint.com/insights/combed-vs-carded-cotton-pima-supima
 16. S16 — Stanley/Stella, T-shirt weight (GSM) guide: https://stanleystella.com/en-us/blog/post/t-shirts-why-weight-matters
@@ -250,55 +245,51 @@ Decision rule: estimate wears *first*; a higher price is justified only when wea
 25. S25 — Fabriculture, best fabrics for humid weather: https://fabriculture.store/blogs/news/best-fabrics-for-humid-weather
 26. S26 — REI, breathable fabrics guide: https://www.rei.com/learn/expert-advice/how-to-pick-the-most-breathable-fabrics.html
 27. S27 — Selvane, YKK vs RiRi vs Lampo zipper quality: https://www.selvane.co/blogs/knowledge/ykk-vs-riri-vs-lampo-a-guide-to-zipper-quality
-28. S28 — YKK Americas (snap/button catalog, ISO-certified systems): https://ykkamericas.com
-29. S29 — US ITA trade.gov, Egypt labeling & marking requirements: https://www.trade.gov/country-commercial-guides/egypt-labeling-marking-requirements
-30. S30 — SGS Safeguards, Egyptian textile standards ES 7266: https://newsletter.sgs.com/eNewsletterPro/uploadedimages/000006/sgs-safeguards-03112-egyptian-textile-testing-standards-for-garments-eg-stds-no-en-12.pdf
+28. S28 — YKK Americas: https://ykkamericas.com
 31. S31 — Franz (2017), "Economics of vanity sizing," J. Socio-Economics: https://www.sciencedirect.com/science/article/abs/pii/S0167268117300045
 32. S32 — Wikipedia, "Vanity sizing": https://en.wikipedia.org/wiki/Vanity_sizing
-33. S33 — Garment QC checklists (seams, buttonholes, lining, symmetry; AQL inspection practice) — QIMA garment QC checklist: https://www.qima.com/blog/quality-control/garment-quality-control-textile-apparel-inspections *(confirmed 2026-11; AQL 1.0/2.5/4.0 apparel norms)*
-34. S34 — Vox (2019-10-17), "Clothing sizes are inconsistent. Can tech help?": https://www.vox.com/2019/10/17/20898585/sizing-fit-prediction-clothing-bodyscan-made-to-order
-35. S35 — Size.ly, ecommerce return statistics (NRF/Happy Returns-based): https://www.size.ly/blog/ecommerce-return-statistics
+33. S33 — QIMA garment QC checklist: https://www.qima.com/blog/quality-control/garment-quality-control-textile-apparel-inspections
+34. S34 — Vox (2019-10-17), "Clothing sizes are inconsistent": https://www.vox.com/2019/10/17/20898585/sizing-fit-prediction-clothing-bodyscan-made-to-order
+35. S35 — Size.ly, ecommerce return statistics: https://www.size.ly/blog/ecommerce-return-statistics
 36. S36 — Antla, fashion ecommerce returns statistics: https://antla.io/blog/ecommerce-returns-fashion-statistics-2026
 37. S37 — Yo Baby Online, kids clothing size guide (height vs age): https://www.yobabyonline.com/blogs/style-guide/kids-clothing-size-guide-right-fit
 38. S38 — Wikipedia, "Shoe size": https://en.wikipedia.org/wiki/Shoe_size
 39. S39 — Gentleman's Gazette, "Men's Shoe Sizes Make No Sense": https://www.gentlemansgazette.com/mens-shoe-sizes-no-sense
-40. S40 — Brannock Device Co., instructions & fitting tips: https://brannock.com/pages/instructions-fitting-tips
+40. S40 — Brannock Device Co.: https://brannock.com/pages/instructions-fitting-tips
 41. S41 — Gentleman's Gazette, "Why the Brannock Device Isn't Enough": https://www.gentlemansgazette.com/why-brannock-device-is-not-enough
-42. S42 — Gentleman's Gazette width/letter systems (within S39/S41 above).
-43. S45 — Masters of Linen / CELC (official, European Flax vs Masters of Linen): https://www.mastersoflinen.com *(official site not fetched this session: label distinctions from search summaries)*
-44. S46 — Safilin, "Are there several methods of flax spinning?" (wet-spun line flax vs dry-spun): https://www.safilin.fr/are-there-several-methods-of-flax-spinning/?lang=en *(confirmed 2026-11)*
-45. S47 — Silk momme conversion (~4.34 g/m² per momme) & quality tiers: https://sensoire.com/what-is-momme/ *(confirmed 2026-11)*
-46. S48 — GINETEX official care symbols chart (PDF): https://www.ginetex.net/userfiles/files/Textile_care_symbols_en.pdf
-47. S49 — GINETEX care symbols page: https://www.ginetex.net/gb/labelling/care-symbols.asp
-48. S50 — FTC Care Labeling Rule, 16 CFR 423: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-423
-49. S51 — Global Fabric Wholesale, shrinkage rates by type: https://globalfabricwholesale.com/fabric-shrinkage-rates-by-type-cheat-sheet
-50. S52 — ACSM, "Selecting Running Shoes" (PDF): https://rmhprovidencerc.org/wp-content/uploads/running-shoes-acsm.pdf
-51. S53 — AAOS OrthoInfo, "Athletic Shoes": https://orthoinfo.aaos.org/en/staying-healthy/athletic-shoes/
-52. S54 — Richards et al. (2008), BJSM — pronation-control prescription not evidence-based: https://www.correcttoes.com/wp-content/uploads/2015/12/Craig-Richards-Is-your-prescription-running-shoe-evidence-based.pdf
-53. S55 — Malisoux et al. (2016), BJSM 50(8):481 — motion control & injury risk: https://bjsm.bmj.com/content/50/8/481
-54. S56 — Malisoux et al. (2020), BJSM 55(8):472 — cushioning & injury: https://bjsm.bmj.com/content/55/8/472
-55. S57 — Tyler Shupe Leather, types of leather: https://tylershupeleather.com/blogs/news/types-of-leather
-56. S58 — Milwaukee Boot Company, Goodyear welt vs Blake vs cemented: https://milwaukeebootcompany.com/blogs/shoe-guide/goodyear-welt-vs-blake-stitch-vs-cemented-which-boot-construction-should-you-actually-buy
-57. S59 — Rack Room Shoes, durable school shoes guide: https://www.rackroomshoes.com/footnotes/guides/kids/most-durable-school-shoes-for-active-kids
-58. S60 — Beggs Shoes, scuff-resistant school shoes: https://www.beggshoes.com/blog/hard-wearing-school-shoes
-59. S61 — Dropshipping photo-mismatch reporting [P 2026-11 — stable heuristic commonly reported by seller/dropshipping communities and marketplace-quality commentary; no primary source exists or was confirmed]
-60. S62 — FTC, final rule banning fake reviews (Aug 14, 2024): https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials
-61. S63 — FTC, Textile Fiber Products Identification Act (text): https://www.ftc.gov/legal-library/browse/rules/textile-products-identification-act-text
-62. S64 — 16 CFR Part 303 (Textile Act rules): https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-303
-63. S65 — EUR-Lex, Regulation (EU) 1007/2011: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011R1007
-64. S66 — European Commission, revised FAQs on Reg. 1007/2011 (Jan 2024): https://single-market-economy.ec.europa.eu/document/download/34fcf863-59ef-4352-8489-a2577102fd8f_en
-65. S67 — Krazy Coupon Lady, retailer clearance markdown cheat sheet: https://thekrazycouponlady.com/tips/store-hacks/retailer-clearance-markdown-cheatsheet
-66. S68 — US News, best days to shop (seasonal clearance): https://money.usnews.com/money/articles/shopping-holidays-the-best-days-to-shop-this-year
-67. S69 — Sky News / Which?, Black Friday deals not best prices: https://news.sky.com/story/most-black-friday-offers-are-not-as-good-as-you-think-survey-shows-13475179
-68. S70 — The Sustainable Agency, fast fashion stats (Ellen MacArthur 7–10 wears): https://thesustainableagency.com/blog/impact-of-fast-fashion-stats-and-facts
-69. S71 — ThredUp Resale Report 2025 (with GlobalData; US secondhand grew 14% in 2024, ~5× faster than broader retail; global $367B by 2029): https://cf-assets-tup.thredup.com/resale_report/2025/ThredUp_Resale_Report_2025.pdf *(figures confirmed 2026-11; US secondhand ≈ $55.5B in 2025 per 2026 report)*
-70. S72 — SGIE Report 2025/26 (DinarStandard) modest-fashion figures ($347B in 2024, ~$444B projected 2029): https://www.dinarstandard.com/insights/state-of-the-global-islamic-economy-report-2025-26 *(confirmed 2026-11; definitions vary — "modest-specific" estimates run smaller)*
-71. S73 — Reuters, Welspun "Egyptian cotton" scandal: https://www.reuters.com/article/business/welspun-scandal-follows-years-of-plummeting-egyptian-cotton-output-idUSKCN1100EE
-72. S74 — BBC Future, "How to spot fake fabric claims": https://www.bbc.com/future/article/20230206-fabric-fraud-how-to-spot-fake-fabric-claims
-73. S75 — AmCham Egypt Business Monthly, "Accept No Substitutes": https://www.amcham.org.eg/publications/business-monthly/issues/261/September-2017/3636/accept-no-substitutes
-74. S76 — Egyptian Cotton™ trademark / Cotton Egypt Association: https://www.egyptiancottonassociation.com
-75. S77 — Gentleman's Gazette, cost-per-wear equation: https://www.gentlemansgazette.com/cost-per-wear-equation
-76. S78 — Clueless, cost-per-wear guide: https://clueless.clothing/blog/cost-per-wear-guide
+45. S45 — Masters of Linen / CELC: https://www.mastersoflinen.com
+46. S46 — Safilin, flax spinning methods: https://www.safilin.fr/are-there-several-methods-of-flax-spinning/?lang=en
+47. S47 — Silk momme conversion: https://sensoire.com/what-is-momme/
+48. S48 — GINETEX official care symbols chart: https://www.ginetex.net/userfiles/files/Textile_care_symbols_en.pdf
+49. S49 — GINETEX care symbols page: https://www.ginetex.net/gb/labelling/care-symbols.asp
+50. S50 — FTC Care Labeling Rule, 16 CFR 423: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-423
+51. S51 — Global Fabric Wholesale, shrinkage rates: https://globalfabricwholesale.com/fabric-shrinkage-rates-by-type-cheat-sheet
+52. S52 — ACSM, "Selecting Running Shoes": https://rmhprovidencerc.org/wp-content/uploads/running-shoes-acsm.pdf
+53. S53 — AAOS OrthoInfo, "Athletic Shoes": https://orthoinfo.aaos.org/en/staying-healthy/athletic-shoes/
+54. S54 — Richards et al. (2008), BJSM: https://www.correcttoes.com/wp-content/uploads/2015/12/Craig-Richards-Is-your-prescription-running-shoe-evidence-based.pdf
+55. S55 — Malisoux et al. (2016), BJSM: https://bjsm.bmj.com/content/50/8/481
+56. S56 — Malisoux et al. (2020), BJSM: https://bjsm.bmj.com/content/55/8/472
+57. S57 — Tyler Shupe Leather, types of leather: https://tylershupeleather.com/blogs/news/types-of-leather
+58. S58 — Milwaukee Boot Company, Goodyear welt vs Blake vs cemented: https://milwaukeebootcompany.com/blogs/shoe-guide/goodyear-welt-vs-blake-stitch-vs-cemented-which-boot-construction-should-you-actually-buy
+59. S59 — Rack Room Shoes, durable school shoes guide: https://www.rackroomshoes.com/footnotes/guides/kids/most-durable-school-shoes-for-active-kids
+60. S60 — Beggs Shoes, scuff-resistant school shoes: https://www.beggshoes.com/blog/hard-wearing-school-shoes
+61. S61 — Dropshipping photo-mismatch reporting `[P 2026-11]`
+62. S62 — FTC, final rule banning fake reviews (Aug 14, 2024): https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials
+63. S63 — FTC, Textile Fiber Products Identification Act: https://www.ftc.gov/legal-library/browse/rules/textile-products-identification-act-text
+64. S64 — 16 CFR Part 303: https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-303
+65. S65 — EUR-Lex, Regulation (EU) 1007/2011: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011R1007
+66. S66 — European Commission, revised FAQs on Reg. 1007/2011: https://single-market-economy.ec.europa.eu/document/download/34fcf863-59ef-4352-8489-a2577102fd8f_en
+67. S67 — Krazy Coupon Lady, clearance markdown cheat sheet: https://thekrazycouponlady.com/tips/store-hacks/retailer-clearance-markdown-cheatsheet
+68. S68 — US News, seasonal clearance: https://money.usnews.com/money/articles/shopping-holidays-the-best-days-to-shop-this-year
+69. S69 — Sky News / Which?, Black Friday deals: https://news.sky.com/story/most-black-friday-offers-are-not-as-good-as-you-think-survey-shows-13475179
+70. S70 — The Sustainable Agency, fast fashion stats: https://thesustainableagency.com/blog/impact-of-fast-fashion-stats-and-facts
+71. S71 — ThredUp Resale Report 2025: https://cf-assets-tup.thredup.com/resale_report/2025/ThredUp_Resale_Report_2025.pdf
+73. S73 — Reuters, Welspun "Egyptian cotton" scandal: https://www.reuters.com/article/business/welspun-scandal-follows-years-of-plummeting-egyptian-cotton-output-idUSKCN1100EE
+74. S74 — BBC Future, "How to spot fake fabric claims": https://www.bbc.com/future/article/20230206-fabric-fraud-how-to-spot-fake-fabric-claims
+75. S75 — AmCham Business Monthly, "Accept No Substitutes": https://www.amcham.org.eg/publications/business-monthly/issues/261/September-2017/3636/accept-no-substitutes
+76. S76 — Cotton Egypt Association: https://www.egyptiancottonassociation.com
+77. S77 — Gentleman's Gazette, cost-per-wear equation: https://www.gentlemansgazette.com/cost-per-wear-equation
+78. S78 — Clueless, cost-per-wear guide: https://clueless.clothing/blog/cost-per-wear-guide
 
 ## Appendix — clothing size profile template (the template of record; SKILL.md holds the operative rules)
 

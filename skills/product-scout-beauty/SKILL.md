@@ -1,6 +1,6 @@
 ---
 name: product-scout-beauty
-description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history) so recommendations never repeat harmful advice. Normally dispatched by the product-scout core engine for any beauty request, but can run standalone when the user directly asks about serums, sunscreens, foundations, fragrances, treatment shampoos, or any cosmetic purchase. Read the core engine first — it owns intake, modes, verdict structure, and honesty rules."
+description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history). Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -132,7 +132,7 @@ Every quality judgment starts from the ingredient list (INCI) and labeled
 concentrations — never from the brand's story. Evidence hierarchy for any
 beauty claim:
 
-1. Peer-reviewed dermatology literature & guidelines (AAD, ISO, FDA/EDA)
+1. Peer-reviewed dermatology literature & guidelines (AAD, ISO, FDA/EMA/national regulators)
 2. Guideline patient pages (DermNet, Skin of Color Society, NRS)
 3. Qualified cosmetic chemists (Lab Muffin, KindofStephen) — interpretation,
    not primary evidence
@@ -156,18 +156,18 @@ not 20%.
 "clean" and "natural" are legally undefined or unregulated. Never let them
 carry a recommendation. Instead read: the INCI list (descending order above
 1%, free order below the "1% line" — an undisclosed "retinol complex" may
-hide trace amounts), the EU fragrance-allergen list, and regulatory
-notifications (Egypt: EDA EgyCosm notification). Prefer products with
-labeled concentrations of hero actives.
+hide trace amounts), the EU fragrance-allergen list, and local regulatory
+notifications (e.g., EU CPNP, US MoCRA, or the user's national cosmetics
+registry). Prefer products with labeled concentrations of hero actives.
 
 ### 3. Safety rails — hard rules that never bend
 
 - **Never recommend**: hydroquinone or topical-steroid lightening creams,
   mercury-containing products, any product marketed as skin lightening/
-  whitening/bleaching — documented harm in the MENA region (ochronosis,
-  steroid damage, heavy metals). For pigmentation concerns: sunscreen-first
-  OTC options (azelaic 10% — the OTC tier; 15–20% is prescription in the US
-  and OTC only in some markets, filter per market — plus vitamin C) and a
+  whitening/bleaching — documented global harm (ochronosis, steroid
+  damage, heavy metals). For pigmentation concerns: sunscreen-first OTC
+  options (azelaic 10% — the OTC tier; 15–20% is prescription in some
+  markets and OTC in others, filter per market — plus vitamin C) and a
   dermatologist referral — the effective treatments (hydroquinone 4%,
   triple cream) are Rx-only.
 - **Rx-only ingredients** (tretinoin, tazarotene, trifarotene, hydroquinone
@@ -231,13 +231,12 @@ labeled concentrations of hero actives.
 
 When the user describes a problem — "best shampoo to finally kill
 dandruff", "cream that removes my pimples", or the same request in the
-user's language (an Arabic "cream for pimples", for example) — the deliverable
-is a **unified condition report**, not a generic product list. The
-protocols and their evidence live in `references/beauty-protocols.md`;
-covered conditions: dandruff/seborrheic dermatitis, acne,
-post-inflammatory hyperpigmentation (PIH)/melasma support (OTC tier),
-dry-skin/mild-eczema support, razor bumps, chapped lips, mild rosacea
-support.
+user's language — the deliverable is a **unified condition report**, not
+a generic product list. The protocols and their evidence live in
+`references/beauty-protocols.md`; covered conditions: dandruff/seborrheic
+dermatitis, acne, post-inflammatory hyperpigmentation (PIH)/melasma
+support (OTC tier), dry-skin/mild-eczema support, razor bumps, chapped
+lips, mild rosacea support.
 
 The report structure, in the user's language:
 
@@ -288,10 +287,10 @@ channels per behavior 8) → filter and rank through this funnel:
    skin type. Profile-stated allergies fail a product here outright.
 
 If the best product isn't stocked in the user's market, say so and offer
-the closest locally-stocked equivalent instead of an import plan. Imported
-parcels into Egypt face customs duties plus 14% VAT on essentially every
-shipment, and summer transit heat degrades oxidation-sensitive actives
-(vitamin C, retinoids) — an import is a compromise, never a recommendation.
+the closest locally-stocked equivalent instead of an import plan.
+Cross-border parcels can face customs duties/VAT and transit heat that
+degrades oxidation-sensitive actives (vitamin C, retinoids) — an import is
+a compromise, never a recommendation.
 
 Per protocol step, present **two options**: 💰 the cheapest effective
 product that passes the funnel, and 🏆 the best overall — with price,
@@ -302,15 +301,16 @@ money.
 
 Match vehicles and actives to the behavior-anchored skin/hair facts from
 step 0 (or the intake answers): oily → gel/fluid, dry → cream/ointment,
-sensitive → fragrance-free + mineral sunscreen; climate (hot humid MENA
-summers → lighter textures, stable actives — derivatives over LAA (L-ascorbic
-acid) when storage heat is uncontrolled); skin of color (Fitzpatrick III–VI:
-post-inflammatory hyperpigmentation risk from ANY inflammation — favor
-low-irritation actives and strict photoprotection; tinted mineral SPF
-defends against visible light that triggers melasma). Include
-sun-protection reality: real-world SPF is a fraction of the label because
-people under-apply and rarely reapply — recommend generous application and
-reapplication, not just a bigger SPF number.
+sensitive → fragrance-free + mineral sunscreen; climate (hot/humid
+climates → lighter textures, stable actives — derivatives over LAA
+(L-ascorbic acid) when storage heat is uncontrolled; cold/dry climates →
+richer occlusives); skin of color (Fitzpatrick III–VI: post-inflammatory
+hyperpigmentation risk from ANY inflammation — favor low-irritation
+actives and strict photoprotection; tinted mineral SPF defends against
+visible light that triggers melasma). Include sun-protection reality:
+real-world SPF is a fraction of the label because people under-apply and
+rarely reapply — recommend generous application and reapplication, not
+just a bigger SPF number.
 
 ### 7. Pairing conflicts and routine building
 
@@ -330,20 +330,17 @@ Real conflicts are irritation-stacking, not chemistry myths:
 ### 8. Channel safety — pharmacy-first, counterfeit-aware
 
 40% of seized counterfeit beauty products contained toxic substances. The
-default channel is licensed pharmacies and official brand sellers (Egypt:
-El Ezaby, Seif, 19011, and Kamada pharmacy chains; Chefaa and Yodawy
-delivery apps; brand storefronts on Noon/Amazon.eg — all EDA-notified
-products), never unverified marketplace sellers or social-media pages.
-Check: sealed packaging (loose testers = counterfeit risk), batch code
-verification, PAO symbol ("12M") or printed expiry, and storage advice
-(vitamin C darkens = oxidized = discard; cool dark storage). Fragrance:
-buy sealed from authorized sellers only. In Egypt, Instagram perfume pages
-and importer shops are the main gray-market risk (no batch code, no PAO
-symbol); attar/Oriental perfumery houses (Ajmal, Rasasi, Al Haramain) with
-mall stores are a legitimate local channel for concentrated oils and
-Arabic fragrances. Treatment products (antifungal shampoos, acne actives)
-fail silently if counterfeit — no active, no therapeutic effect, lost
-treatment weeks. Channel rules bind hardest here.
+default channel is licensed pharmacies, authorized beauty retailers, and
+official brand storefronts in the user's country — never unverified
+marketplace resellers or social-media pages. Check: sealed packaging
+(loose testers = counterfeit risk), batch code verification, PAO symbol
+("12M") or printed expiry, and storage advice (vitamin C darkens =
+oxidized = discard; cool dark storage). Fragrance: buy sealed from
+authorized sellers or established perfumery houses only — social-media
+resellers and unverified discounters are the main gray-market/fake risk.
+Treatment products (antifungal shampoos, acne actives) fail silently if
+counterfeit — no active, no therapeutic effect, lost treatment weeks.
+Channel rules bind hardest here.
 
 ### 9. Explanation depth adapts to the user
 
@@ -366,16 +363,16 @@ The questions that pin the right purchase (non-treatment requests):
   glycerin, petrolatum); actives compatibility (rich cream buffers
   retinoids); fragrance-free for sensitive; climate texture.
 - **Serum by goal**: brightening (LAA 10–20%, or azelaic 10% — the OTC
-  tier; 15–20% is prescription in the US and OTC only in some markets,
-  filter per market); anti-acne (niacinamide 2–5%, azelaic); anti-aging
+  tier; 15–20% is prescription in some markets and OTC in others, filter
+  per market); anti-acne (niacinamide 2–5%, azelaic); anti-aging
   (retinol 0.1–0.3% entry, retinaldehyde; peptides as adjunct only);
   barrier (ceramides, multi-weight HA, panthenol, fragrance-free).
 - **Sunscreen**: skin type → mineral vs chemical; broad-spectrum proof
   (SPF 30+, UVA-PF/PA++++); cosmetic elegance for the user's skin depth
   (white cast kills adherence); water resistance; reapplication reality.
 - **Makeup — foundation**: depth × undertone as a two-axis match (jawline
-  in daylight; olive is its own axis, common in MENA); finish by skin type;
-  coverage; shade-range breadth; fragrance/acne-safety of formula.
+  in daylight; olive is its own axis); finish by skin type; coverage;
+  shade-range breadth; fragrance/acne-safety of formula.
 - **Haircare**: scalp type first (dandruff → antifungal actives, see
   protocols reference); damage state (protein vs moisture, alternated);
   heat protection; sulfate trade-offs; wash frequency.

@@ -1,6 +1,6 @@
 ---
 name: product-scout-baby-kids
-description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129 preferred, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, Egypt heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
+description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129/FMVSS 213 certified, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -59,9 +59,9 @@ Only what's missing, inside the core's ONE compact message: the
 child's **age, weight, and height** (the grading inputs — age alone is
 not enough), the car it must fit if a car seat is involved, whether
 second-hand is acceptable to the user, and any existing gear the new
-purchase must work with (a travel system, an ISOFIX car, a nursery
-already furnished). Never re-ask what the request already answered;
-reuse the core's session memory.
+purchase must work with (a travel system, an ISOFIX/LATCH car, a
+nursery already furnished). Never re-ask what the request already
+answered; reuse the core's session memory.
 
 ## Domain behaviors
 
@@ -70,57 +70,57 @@ reuse the core's session memory.
 Every safety claim is verified against the standard NUMBER printed on
 the product label or spec sheet:
 
-- Car seats: an approval mark citing **UN R129** (i-Size, the current
-  European standard — height-based, side-impact tested, rear-facing
-  mandatory to at least 15 months) or the older **ECE R44/04**
-  (weight-based, no side-impact test; new R44 approvals have ended).
-  The mark is a small orange/colored label with the R number and a
-  code — "i-Size compatible", "crash tested", or "meets European
-  standards" as listing text verifies NOTHING.
+- Car seats: match the user's regional mandatory standard — **UN R129**
+  (i-Size, current European/international standard — height-based,
+  side-impact tested, rear-facing mandatory to at least 15 months),
+  **FMVSS 213** (US), **CMVSS 213** (Canada), **AS/NZS 1754**
+  (Australia/NZ), or the older **ECE R44/04** (weight-based, no
+  side-impact test; new R44 approvals have ended). The approval label
+  must be physically present on the seat — "i-Size compatible", "crash
+  tested", or "meets European/US standards" as listing text verifies
+  NOTHING.
 - Cribs: **16 CFR 1219/1220** (US full-size/non-full-size cribs,
-  incorporating ASTM F1169/F406) or **EN 716** (EU). Drop-side cribs
-  predate the 2011 US ban — treat any movable-side crib without
-  current-standard evidence as disqualified.
+  incorporating ASTM F1169/F406), **EN 716** (EU), or the market's
+  national equivalent. Drop-side cribs predate the 2011 US ban — treat
+  any movable-side crib without current-standard evidence as
+  disqualified.
 - Baby bottles and food-contact plastics: BPA-free is the baseline;
   glass and tritan are the materials that need no trust — standard
   practice, prefer them when price is close.
-- High chairs: **ASTM F404** (US) or equivalent; a 5-point harness and
-  passive stability are pass/fail, not comfort notes.
+- High chairs: **ASTM F404** (US), **EN 14988** (EU), or equivalent; a
+  5-point harness and passive stability are pass/fail, not comfort
+  notes.
 - Gates: hardware-mounted (screwed) for the top of stairs —
   pressure-mounted anywhere a child could climb/fall through.
-- When the market's stock carries no standard marks at all (common in
-  the informal channel), the honest verdict says so and the
-  channel-check behavior 10 does the enforcement — never silently
-  include an unmarked product.
+- When a local informal channel carries no standard marks at all, the
+  honest verdict says so and the channel-check behavior 10 does the
+  enforcement — never silently include an unmarked product.
 
 ### 2. Car seats — the never-gray tier (strongest rails in the family)
 
 These rails are absolute; no budget, urgency, or user insistence
 moves them. Every car-seat verdict restates the rails that fired.
 
-1. **Standard gate**: prefer R129/i-Size for any NEW purchase; an
-   R44/04 seat is acceptable only when bought NEW with the approval
-   label intact and the budget genuinely stops there — say the
-   side-impact difference in one line. Unmarked seats are never
-   recommended, at any price. Check the R129 entry price first:
-   entry R129/i-Size seats are stocked locally from roughly the
-   the R129-preference rail [A 2026-11]: name the cheapest
-   locally-stocked R129 before declaring R44 the only option. The
-   entry-price band is a market figure [S 2026-11], indicative only —
-   entry R129/i-Size seats were stocked locally from roughly EGP
-   4,000–7,000; quote it only as "approximate — last confirmed
-   2026-11" and check live listings before any fallback verdict. An R44/04-with-label is the floor,
-   not a default — and it never comes from an unverified channel or
-   second-hand.
+1. **Standard gate**: require the current standard for the user's
+   market (UN R129/i-Size in R129 markets, FMVSS 213 in the US,
+   CMVSS 213 in Canada, AS/NZS 1754 in AU/NZ). In R129/R44 markets,
+   prefer R129/i-Size for any NEW purchase; an R44/04 seat is
+   acceptable only when bought NEW with the approval label intact and
+   the budget genuinely stops there — say the side-impact difference in
+   one line. Unmarked seats are never recommended, at any price. Apply
+   the R129-preference rail [A 2026-11]: check live local listings and
+   name the cheapest locally-stocked R129 before declaring R44 the only
+   option. An R44/04-with-label is the floor, not a default — and it
+   never comes from an unverified channel or second-hand.
 2. **Never a second-hand seat with unknown history.** Unknown history
    = no, full stop — a seat's crash history is invisible from the
    outside. A second-hand seat is considered ONLY with: manufacture
    date label, model/instruction availability, a crash-history answer
    the seller can actually stand behind, no expired date, and a recall
-   check via the manufacturer's recall/owner-support page for the
-   model (NHTSA's lookup covers US-sold seats; Egyptian/EU-market
-   stock uses the maker's page). Anything missing from that list ends
-   the discussion.
+   check via the manufacturer's recall/owner-support page or national
+   recall database (e.g., NHTSA for US-sold seats; manufacturer/EU
+   Safety Gate for EU/international stock). Anything missing from that
+   list ends the discussion.
 3. **Crash rule**: replace after any moderate-to-severe crash, and
    after a minor crash ONLY if all five NHTSA conditions held (car
    drivable, nearest door undamaged, no injuries, no airbag
@@ -135,18 +135,17 @@ moves them. Every car-seat verdict restates the rails that fired.
    rear-facing limit — never moved forward early to save money.
    Boosters fit by belt position (lap belt low on hips, shoulder belt
    across chest).
-6. **Install reality**: the gate is movement — less than ~2.5 cm of
-   movement at the belt path after a maximum-force tighten [P]. Say
-   the install check in the verdict and point at ISOFIX when the car
-   has it; note that most seats in real cars are installed or used
+6. **Install reality**: the gate is movement — less than ~2.5 cm (1 in)
+   of movement at the belt path after a maximum-force tighten [P]. Say
+   the install check in the verdict and point at ISOFIX/LATCH when the
+   car has it; note that most seats in real cars are installed or used
    incorrectly [P — commonly cited across fitting services; verify
-   locally], which is why the check ships with the pick.
-   Egypt reality: there is no car-seat fitting service to lean on —
-   self-install is the norm, so the movement check is the parent's own
-   job; buy from a store that will demonstrate the seat in YOUR car
-   before you leave (ask — most will), and refuse a box-only handover.
-7. **Heat rail (Egypt)**: never a child in a parked car, ever — the
-   verdict repeats this when a car seat is the purchase; check buckle
+   locally], which is why the check ships with the pick. Where certified
+   fitting stations (e.g., CPSTs) are unavailable, self-install is the
+   norm — buy from a store that will demonstrate the seat in YOUR car
+   before you leave, and refuse a box-only handover.
+7. **Heat rail**: never a child in a parked car, ever — the verdict
+   repeats this when a car seat is the purchase; check buckle
    temperature before placing a child ("test with the back of your
    hand").
 
@@ -158,8 +157,8 @@ moves them. Every car-seat verdict restates the rails that fired.
   chart boundary.
 - **Cost-per-month math** (reference has the worked example): price
   per diaper × diapers per day × 30. State it in the Quality cell
-  ("≈ EGP X/month at 8/day"). A cheaper pack with worse absorption is
-  not cheaper — leaks cost wipes, laundry, and skin.
+  ("≈ [local currency] X/month at 8/day"). A cheaper pack with worse
+  absorption is not cheaper — leaks cost wipes, laundry, and skin.
 - **Never bulk-buy newborn sizes ahead** — the outgrows-the-pack trap
   [P]; bulk only for a size the child is settled in.
 - Wipes: fragrance-free and alcohol-free as the default for routine
@@ -183,9 +182,10 @@ moves them. Every car-seat verdict restates the rails that fired.
   under 1 year (infant botulism — the health skill's rail, restated
   here because formula and honey live on the same shelf).
 - **Recall awareness**: a known recall on a formula or baby-food brand
-  stops shopping talk on it — state the recall as fact, and check NFSA
-  (Egypt) or the manufacturer's page when the verdict is written; no "other batches
-  are probably fine" speculation.
+  stops shopping talk on it — state the recall as fact, and check the
+  user's national food-safety authority (e.g., FDA, FSA, RASFF, or
+  local regulator) and the manufacturer's page when the verdict is
+  written; no "other batches are probably fine" speculation.
 - **Boundary**: once the child is on ordinary table food and staples,
   that is the groceries skill's lane (its behavior 10 routes baby
   food/formula HERE — the pair is complete when both are installed).
@@ -209,9 +209,9 @@ moves them. Every car-seat verdict restates the rails that fired.
   factor (size guides ship with the pick); "hospital-grade" on
   consumer packaging is marketing unless it is a rental-grade unit —
   renting before buying is often the honest answer for short needs.
-- **High chairs**: 5-point harness (pass/fail), F404-class stability,
-  a tray that locks, and a wipeable seat — a chair that tips or a
-  harness that allows standing is disqualified, not down-ranked.
+- **High chairs**: 5-point harness (pass/fail), F404/EN 14988-class
+  stability, a tray that locks, and a wipeable seat — a chair that tips
+  or a harness that allows standing is disqualified, not down-ranked.
 
 ### 6. Cribs & nursery — the safe-sleep product list
 
@@ -284,27 +284,22 @@ moves them. Every car-seat verdict restates the rails that fired.
   parts (open-system pumps can pull milk into the motor — new or
   closed-system only [P]).
 
-### 10. Egypt channels and the import reality
+### 10. Local channels, imports, and counterfeit reality
 
-- **Verified stores (fetched 2026-11-15 — re-verify at dispatch)**:
-  shop-ourkids.com (EGP, cash on delivery, store locator, Joie and
-  similar ranges — carries baby gear AND toys), tinnywinny.com
-  (address: Mall GateWay, El Rehab City, New Cairo; phone on site;
-  EGP; R129-labeled car-seat stock observed in listings), minimore-eg.com
-  (Cairo, +20 phone, EGP). Plus the family-verified marketplaces:
-  Noon Egypt, Amazon.eg, Jumia Egypt; dubizzle Egypt for the
-  second-hand band (behavior 9 rules apply).
-- Imported vs local: Western brands (Chicco, Joie, Maxi-Cosi-class)
-  arrive via distributors and gray importers alike — an
-  R129-labeled seat in Egypt is real and findable (verified in
-  listings), but the gray-import question ("is the distributor
-  warranty real?") is asked for every high-ticket pick.
-- **Counterfeit consciousness**: baby gear fakes exist (copy
-  car seats, copy bottles) — the standard-number rule (behavior 1) is
-  the defense; a "Joy/Joie"-class misspelling or a missing
-  manufacturer address is a reject.
-- Heat storage: strollers, car seats (vinyl/plastic), wipes, and
-  sunscreen live in a 45 °C summer — storage advice ships with
+- **Verified stores (check at dispatch for the user's market)**:
+  prefer authorized baby-gear specialty retailers, brand flagship
+  stores, and verified official storefronts on major local marketplaces;
+  use local peer-to-peer marketplaces for the second-hand band only
+  with behavior-9 rules applied.
+- Imported vs local: international brands arrive via authorized
+  distributors and gray importers alike — always ask the gray-import
+  question ("is the distributor warranty real, and does this unit carry
+  the local mandatory approval label?") for every high-ticket pick.
+- **Counterfeit consciousness**: baby gear fakes exist (copy car seats,
+  copy bottles) — the standard-number rule (behavior 1) is the defense;
+  a misspelled brand name or a missing manufacturer address is a reject.
+- Hot-climate storage: strollers, car seats (vinyl/plastic), wipes, and
+  sunscreen degrade in extreme summer heat — storage advice ships with
   heat-sensitive picks [P].
 
 ### 11. Explanation depth adapts to the user
@@ -312,9 +307,9 @@ moves them. Every car-seat verdict restates the rails that fired.
 - Casual: "this seat is approved to the newer standard with side-impact
   testing; it must face backwards until at least 15 months; install it
   so it moves less than two fingers' width at the belt path."
-- Technical (they quote standards): R129 phase 2 height ranges, R44
-  group boundaries, F404 stability clauses, WHO water-temperature
-  rationale — with sources.
+- Technical (they quote standards): R129 phase 2 height ranges, FMVSS
+  213 / R44 group boundaries, F404 stability clauses, WHO
+  water-temperature rationale — with sources.
 
 Both get the same verdict and the same rails — car-seat rails, the
 70 °C formula rail, and the monitor-cord rail are never simplified
@@ -330,8 +325,9 @@ away or softened.
   pediatrician owns timing questions.
 - **Strollers/travel**: newborn recline, harness, brakes, verified
   adapter compatibility, second-hand bands.
-- **Car seats**: standard first (R129 > R44 > never unmarked), chart
-  fit, install movement gate, history/expiry rails absolute.
+- **Car seats**: standard first (current local standard > older
+  certified new-with-label > never unmarked), chart fit, install
+  movement gate, history/expiry rails absolute.
 - **Cribs/nursery**: spacing + mattress fit + drop-side ban + empty-crib
   list; anchors via home-living.
 - **Safety equipment**: cord 3-foot rail; hardware-mounted stair gates;
@@ -343,9 +339,10 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these additions:
 
 - Fold additions into the core table's existing columns: the standard
-  number lives inside Quality ("R129 (i-Size), side-impact tested");
-  cost-per-month as a Price suffix for consumables; second-hand
-  acceptability inside the tier-pick sentence. No new columns, ever.
+  number lives inside Quality ("R129 (i-Size), side-impact tested" or
+  "FMVSS 213 certified"); cost-per-month as a Price suffix for
+  consumables; second-hand acceptability inside the tier-pick sentence.
+  No new columns, ever.
 - **Safety rails are pass/fail, not preferences**: an unmarked car
   seat, a drop-side crib, a monitor sold as crib-clippable, or a high
   chair without a real harness is disqualified in the table and named
@@ -354,10 +351,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
   for car seats, gray-import warranty status for high-ticket imports,
   and recall-check status where a brand had one.
 - **When to buy**: consumables (diapers, wipes, formula) are bought on
-  price-per-month, not seasons — but the Ramadan/White Friday waves
-  do move gear prices; run the family's price-history skepticism on
-  event discounts. Never buy a car seat on a flash deal from an
-  unverified seller — the channel rule outranks the discount.
+  price-per-month, not seasons — major local sale events do move gear
+  prices; run the family's price-history skepticism on event discounts.
+  Never buy a car seat on a flash deal from an unverified seller — the
+  channel rule outranks the discount.
 
 ## No profile, by design
 

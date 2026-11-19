@@ -8,43 +8,29 @@ the skill wins. Verification tags: `[S]` = sourced — verified against a regula
 
 ## 1. Karat and fineness conversion table `[S]`
 
-| Mark | Fineness | Gold content | Egyptian market presence |
+| Mark | Fineness | Gold content | Typical regional use |
 |---|---|---|---|
-| 999 / 24k | 999 | 99.9% | Coins, some bars/tradition pieces |
-| 916–917 / 22k | 916 | ~91.6% | Rare; some imported/Asian designs |
-| 875 / 21k | 875 | 87.5% | **The Egyptian standard** for jewelry |
-| 750 / 18k | 750 | 75.0% | Imported/European designs, stones settings |
-| 585 / 14k | 585 | 58.5% | US-market imports |
-| 375 / 9k | 375 | 37.5% | Low-cost imports — flag as below common local expectations |
+| 999 / 24k | 999 | 99.9% | Bullion coins, bars, East Asian & ceremonial pieces |
+| 916–917 / 22k | 916 | ~91.6% | South Asian & Gulf jewelry standard |
+| 875 / 21k | 875 | 87.5% | Widely used across MENA markets |
+| 750 / 18k | 750 | 75.0% | European fine jewelry, gemstone settings |
+| 585 / 14k | 585 | 58.5% | North American daily-wear standard |
+| 375 / 9k | 375 | 37.5% | UK/Commonwealth budget gold — lower purity, higher durability |
 
-Notes: "karat" for gold fineness; "carat" = gemstone weight (0.2 g) —
-never interchangeable. Stamps in Egypt use Arabic-Indic numerals for
-karatage (the digits for "21" appear as the karatage mark) alongside
-the national mark [S 2026-11 — collector
-documentation of the Egyptian system, hallmarkresearch.com /
-silvercollection.it; modern stamp appearance [S 2026-11]].
+Notes: "karat" (or "carat" in UK English) for gold fineness; "carat"
+= gemstone weight (0.2 g) — never interchangeable.
 
-## 2. Egyptian hallmark structure and the legal frame `[S]`
+## 2. Hallmarking systems — global overview `[S]`
 
-- Legal basis: Law 68/1976 — mandatory assay and stamping of gold,
-  silver, platinum articles before sale; selling unstamped jewelry
-  commercially is illegal (enforcement reporting, Aug 2024). System
-  dates to ~1916 (earlier stamping law under Sultan Hussein Kamel,
-  1914–1917).
-- Hallmark components (sequential row): karatage/fineness numerals
-  (assay-office symbol above) + national mark — the **ibis** for gold,
-  the **lotus** for silver (since October 1946) — + date letter
-  (Arabic letters cycling — the first cycle letter entered use in
-  1946–1947).
-- Authority: the stamping/assay department (historically the
-  "Stamping of Goldsmith Work and Scales" department, Dar al-Damgh in
-  common usage). The
-  SKILL.md does not name a single modern storefront desk — buyers
-  verify stamps via the piece + receipt discipline, and brand-level
-  verification happens at dispatch.
-- Fraud note from consumer-protection reporting: "correct stamp but
-  wrong karat" fraud exists — the itemized receipt (weight, karat,
-  gram price, making fee) is the enforceable record.
+- Mandatory assay/hallmarking countries (e.g., UK Assay Offices,
+  Vienna Convention signatory states, India BIS Hallmarking, France,
+  and many national assay laws) require precious metals to carry
+  registered fineness + assay/sponsor marks before retail sale.
+- Self-marking jurisdictions (e.g., US under FTC 16 CFR Part 23)
+  require a maker's trademark alongside any karat quality mark.
+- Fraud note: "correct stamp, wrong karat" fraud exists globally —
+  the itemized receipt (weight, karat, gram price, making fee) is the
+  enforceable record.
 
 ## 3. FTC metal-marking terms (16 CFR Part 23) `[S]`
 
@@ -61,28 +47,20 @@ silvercollection.it; modern stamp appearance [S 2026-11]].
 Treatment/lab-grown disclosure duties: §23.24 (all value-affecting
 gemstone treatments disclosed), §23.12 (man-made products cannot use
 "real, genuine, natural, artificial" misleadingly; lab-grown diamonds
-are diamonds but origin must be disclosed) — the 2018 revision's
-basis-and-purpose document is the anchor.
+are diamonds but origin must be disclosed).
 
-## 4. Egypt gold pricing — worked example `[P 2026-11]` (fetch at dispatch)
+## 4. Gold pricing formula `[P]` (fetch spot & local rates at dispatch)
 
-Formula (main behavior 1): price = (weight × today's gram price) +
-making fee + stamp fee.
+Formula (main behavior 1): `price = (weight × today's local gram price for karat) + making fee + local tax/assay fee`.
 
-Worked example (figures date-stamped 2026-11 research pass, EGP,
-daily-moving — fetch at dispatch, never quote from file):
-- 21k gram price ~EGP 5,900–5,975 sell; buyback ~EGP 5,899–5,940 —
-  street sell/buy spread tens of EGP/g [P 2026-11].
-- Gold Division daily averages (egajtd.com): publish sell/buy for
-  21k/24k/18k and the ounce [S 2026-11 — verified official site].
-- Making fee band ~EGP 15–50/g by design complexity [P]:
-  machine-made chains at the low end; hand-worked shabka sets at the
-  top; negotiating the fee is standard souk practice.
-- Gold pound coin (21k, 8 g standard; 4 g half; 2 g quarter) [S]:
-  lowest making-fee load in the jewelry channel; liquid buyback;
-  price tracks the day's 21k gram price × weight + small fee.
-- Exchange-rate and ounce movements pass into the gram price daily —
-  a "yesterday's price" quote is stale by construction.
+- Convert global spot ounce price (1 troy oz = 31.1035 g) × purity
+  fraction (e.g., 0.750 for 18k, 0.875 for 21k, 0.916 for 22k) into
+  the user's local currency, or fetch the local gold-trade benchmark
+  at dispatch.
+- Making fees vary by region and complexity: machine-made chains at
+  the low end, hand-worked bridal or designer jewelry at the top.
+- Retail buyback pays metal weight at that day's buy rate — making
+  fees and retail sell/buy spreads are lost immediately on resale.
 
 ## 5. Diamonds — 4Cs buyer-priority reference `[S]` unless noted
 
@@ -148,9 +126,8 @@ behavior 7).
 
 EU REACH Annex XVII entry 27: release <0.5 µg/cm²/week (prolonged
 contact), <0.2 µg/cm²/week (piercing posts); EN 1811 test method
-`[S]`. No Egyptian equivalent enforcement — material choice is the
-control. Not protective for every highly sensitized person (research
-coverage `[S]`).
+`[S]`. Enforcement varies outside the EU — material choice is the
+reliable control.
 
 ## 9. Pearls `[S]` / `[P]`
 
@@ -209,32 +186,7 @@ What requires a certified appraiser / brand service center: movement
 inspection, case-back opening, provenance beyond papers. The skill
 routes; it never certifies.
 
-Counterfeit-pattern cross-reference: the same seller-side logic as
-the clothing skill's behavior 6 (misspelled brands, unrelated seller
-histories, prices far below market with new-stock claims) applies in
-full to watch and jewelry listings.
-
-## 12. Egypt channel notes `[S]` / `[P]`
-
-- Price authority: the Egyptian Gold Division's daily averages
-  (egajtd.com) `[S 2026-11]`; trackers differ slightly
-  (Dahabak, Gramz, Empire of Gold class `[P]`) since shops set local
-  rates against the ounce and the EGP rate.
-- El Sagha (Gamaleya, near Khan el-Khalili): the historic gold souk —
-  weigh-in-front culture, bargainable making fees, bridal-set
-  specialization `[S 2026-11 — EgyptToday feature]`.
-- Branded showrooms: design/warranty premium, standardized receipts
-  `[P]`. Named-brand verification happens at dispatch — the skill
-  names no unverified showroom chains (verified-named-channels-only
-  rule).
-- Coin dealers found retailing gold pounds online in the research
-  pass (Empire of Gold, Gold Era) `[S 2026-11 — retail sites]` — behavior 2 receipt discipline applies to them equally.
-- Second-hand gold: weight-only pricing, old-style marks, no returns
-  `[P]`.
-- Seasonality: demand firms before Ramadan/Eid and in wedding season;
-  off-peak = genuine fee flexibility `[P]` (core MENA calendar).
-
-## 13. Jewelry cleaning & care — product-to-piece matching `[P]`
+## 12. Jewelry cleaning & care — product-to-piece matching `[P]`
 
 | Product | Safe on | Never on |
 |---|---|---|
@@ -246,45 +198,11 @@ full to watch and jewelry listings.
 The rail is product damage (main behavior 14); skin-exposure
 questions → beauty skill.
 
-## Sources and verification status (2026-11-15)
+## 13. Calibration & maintenance notes
 
-| Claim area | Source class | Status |
-|---|---|---|
-| Egypt Law 68/1976 mandatory assay/stamping; unstamped-sale illegality; penalties | Law full text (Official Gazette copy) + Aug 2024 enforcement reporting | Verified `[S]`; modern desk names re-check at dispatch |
-| Egyptian hallmark structure (karatage + ibis/lotus + date letter; ibis→gold, lotus→silver 1946; ~1916 origin) | Collector references (hallmarkresearch.com, silvercollection.it) | Verified historical `[S]`; modern stamp appearance = dispatch re-check |
-| Gold Division daily sell/buy averages (egajtd.com) | Official division site | Verified `[S]`; daily figures re-check at dispatch |
-| Making fee band ~EGP 15–50/g; spread tens of EGP/g; buyback loses fee | Street/retail practice | Anchored rail `[A 2026-11]` |
-| 21k = Egyptian standard karat; weigh-in-front culture; El Sagha district | EgyptToday feature + multiple travel/retail sources | Verified `[S]` |
-| Gold pound coin 8 g/4 g/2 g, 21k | Retail coin sites (Empire of Gold, Gold Era) + market trackers | Verified `[S]`; re-verify dealers at dispatch |
-| FTC 16 CFR Part 23 marking minimums (plate 0.175 µm; heavy 2.5 µm; vermeil; flashed/washed) | eCFR/Cornell LII full text | Verified regulation `[S]` |
-| FTC §23.24 treatment disclosure; §23.12 lab-grown; 2018 "real/natural/genuine" ban | FTC Guides + 2018 Basis & Purpose | Verified `[S]` |
-| GIA lab-grown: Quality Assessment Premium/Standard replacing D–Z/FL–I3 (late 2025); >95% narrow band | GIA news/press | Verified `[S]`; recent change — verify current report formats at dispatch |
-| IGI continues D–Z grades for lab-grown | Lab comparison coverage | Verified `[S]` |
-| GIA Report Check / IGI Report Verification free lookup | gia.edu, IGI | Verified `[S]` |
-| 4Cs scale structure (D–Z, FL–I3, cut grades, carat = 0.2 g) | GIA education | Verified `[S]` |
-| Eye-clean ≈ VS2/SI1; G-H value zone; fluorescence neutrality | Buyer guidance + trade practice | Practitioner `[P]` |
-| Lab-grown price collapse 80%+; 60–85% retail gap; near-zero resale | Industry analyses/press (secondary) | Reported estimates `[P]` — labeled, never quoted as precise |
-| Gemstone treatment duties (heat/filling/oiling/laser/HPHT/irradiation) | FTC §23.24 + gemological trade guidance | Verified duties `[S]`; per-stone table partly trade practice `[P]` |
-| Nickel limits 0.5 / 0.2 µg/cm²/week; EN 1811; not safe for all sensitized | REACH Annex XVII entry 27 coverage + research citations | Verified `[S]` |
-| Implant-grade material rankings | Body-jewelry industry standards practice | Practitioner `[P]` (titanium/niobium "effectively none" is consensus) |
-| Pearl classes + four cultured types; Tahitian mislabeling | GIA education + buyer guidance | Verified `[S]` |
-| Tooth test / luster screens | Retailer/trade guidance | Practitioner `[P]` |
-| COSC −4/+6 s/day (15 days/5 positions/3 temps); quartz ~±25 s/yr; Excellence tier | COSC explainer sources | Verified `[S]` |
-| Water-resistance ATM bands; 5–8 yr mechanical service cycle | Watch-industry practice | Practitioner `[P]` |
-| Watch authentication checks (serial consistency, price realism, registers) | Consumer/watchdog guidance + The Watch Register | Verified approach `[S]`; brand-specific marks not named |
-| El Sagha / souk vs showroom trade-off | EgyptToday + travel sources | Verified `[S]` / `[P]` blend |
-| Cleaning-product matching table | Trade/jeweler practice | Practitioner `[P]` |
-
-## Calibration & maintenance notes
-
-- Value-tier rails (~EGP 1,500 / ~EGP 15,000) are calibrated anchors,
-  not fixed market facts: re-anchor at install on a ~6-month cadence,
-  keep the meaning (one fashion piece / a small ~2–3 g 21k gold piece),
-  not the number. Daily market figures are never quoted from this file —
-  fetch at dispatch. The meaning note lives in SKILL.md behavior 3.
-- Making-fee band and the ~0.3–0.9%-of-metal-value sanity check are
-  SKILL.md behavior 1; the same install-time re-anchoring cadence applies.
-- GIA lab-grown three-format rule is SKILL.md behavior 6; §6 keeps the
-  transition history as background detail.
-- Gold pound coin handling ("in person — Tier 3 by value") is SKILL.md
-  behavior 13's coin bullet.
+- Value-tier rails (~$30 / ~$300 equivalent in the user's local
+  currency) are calibrated anchors, not fixed market facts: re-anchor
+  at install on a ~6-month cadence, keep the meaning (one fashion
+  piece / a small ~2–3 g gold piece), not the number. Daily spot and
+  local gram prices are never quoted from this file — fetch at
+  dispatch.
