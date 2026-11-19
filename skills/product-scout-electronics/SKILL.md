@@ -1,6 +1,6 @@
 ---
 name: product-scout-electronics
-description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Normally dispatched by the product-scout core engine for any electronics request, but can run standalone when the user directly asks about buying or comparing any tech device. Read the core engine first — it owns intake, modes, verdict structure, and honesty rules."
+description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -93,29 +93,27 @@ drop ahead / early-adopter firmware immaturity]". Two rules:
 - The previous generation, bought right after its successor launches, is the
   highest value-per-currency play — feature it as the 💰 value option when
   its measured performance still serves the user's need.
-- TV clearance runs Feb–Apr; White Friday (Black Friday) prices skew to
+- TV clearance runs Feb–Apr after CES announcements; major local sale
+  events (Black Friday / White Friday / Singles' Day / Prime Day) skew to
   mid/entry models; launch windows are the worst time for flagship buyers.
-  In Egypt, TV demand peaks before Ramadan (drama season): prices hold firm
-  in the weeks before Ramadan, and the value windows are just after Eid and
-  White Friday.
+  Check the user's local seasonal peaks (prices firm before major holidays
+  and sports/drama peaks, and drop afterward).
 - For phone/laptop upgrades, check trade-in programs in the user's market;
   the old device's trade-in can change the value verdict.
 
 ### 4. Grey imports — visible, never silent
 
 Parallel/grey imports may appear in the comparison ONLY with a bold warning:
-no local warranty, NTRA/IMEI registration risk (Egypt: imported phones must
-be registered within 90 days of first connecting to an Egyptian network — via
-the official "Telephony"/MyNTRA app or dialing *87#, fee up to ~38.5% of the
-device's value; the phone is blocked from Egyptian networks if the window
-lapses; tourists are exempt per visit), possible band/region limitations,
-duty-free traveler limits.
-Prefer official distributor stock in recommendations (Egypt: B.TECH, Raya
-Shop, 2B, Sigma Computer, Elbadrgroup Electronics, Noon Egypt, Amazon.eg;
-Apple via authorized resellers such as Tradeline and Compume); when the grey
-price is dramatically lower, present both and let the user decide with the
-risks spelled out.
-Also flag region-locked features and SKU differences for the user's market.
+no local warranty, local telecom/IMEI registration and import-duty rules
+where applicable (many countries require imported phones to be registered
+with the national telecom authority within a grace window or pay customs
+fees before network blocking), possible cellular-band/region limitations,
+and duty-free traveler limits.
+Prefer official distributor stock and authorized brand resellers in the
+user's market; when the grey price is dramatically lower, present both and
+let the user decide with the risks spelled out.
+Also flag region-locked features, power-plug/voltage differences, and SKU
+differences for the user's market.
 
 ### 5. Local environment is an official evaluation factor
 
@@ -131,12 +129,10 @@ belong inside the evaluation, not in a footnote:
 - After-sales reality: a brand with no documented local service network
   turns a cheap purchase into an expensive repair. Prefer brands with
   documented local service when prices are close.
-- Egypt check: the brand's local service-center locator (Samsung, Xiaomi,
-  Oppo all list Cairo/Giza service centers), a distributor-stamped warranty
-  card carrying the serial, and for phones the box IMEI matching the device.
-  Out of warranty, the repair souk (Abdel Aziz St, downtown Cairo) is the
-  real fallback — repairs there void any remaining warranty; weigh that
-  before buying a grey unit.
+- Local verification check: confirm the brand's authorized service-center
+  coverage in the user's country, verify the warranty card/serial coverage,
+  and for phones check that the box IMEI matches the device. Note that
+  third-party street repairs void remaining manufacturer warranties.
 
 ### 6. Cheap accessories get an automatic shortcut
 
@@ -159,13 +155,13 @@ include them with honest condition framing and this checklist:
 - Warranty start date — if a "new" unit's clock started months ago, it was
   used; refurb grades describe cosmetics only
 - IMEI/serial verification on the manufacturer's coverage page
-- Source trust: local certified-refurb retailers with a written warranty
-  (Egypt: Upgrade, Ennap — refurb phones/laptops with up to 12-month
-  warranty) beat private sellers; private used means dubizzle Egypt (the
-  OLX rebrand) with an in-person meet, IMEI check on the manufacturer's
-  coverage page, and cash on inspection. Apple Certified refurb (new
-  battery/shell + 1-year warranty) and Amazon Renewed barely exist in
-  Egypt — treat them as non-Egypt references only, never the local anchor
+- Source trust: manufacturer-certified refurbished programs (e.g., Apple
+  Certified Refurbished, brand outlets) and local certified-refurb
+  retailers with a written warranty beat private sellers; private used
+  classifieds require an in-person inspection, IMEI/serial check on the
+  manufacturer's coverage page, and verifying the seller's activation-lock
+  removal before paying. Check which refurb programs actually operate in
+  the user's country before citing them.
 
 ### 8. Brand preference — respected, with one honest line
 
@@ -195,7 +191,7 @@ risk concentrates in exactly the cheap uncertified products this skill would
 otherwise surface:
 
 - Never recommend a charger, power bank, or battery product without
-  recognized certification (USB-IF, CE/UL or the market's equivalent);
+  recognized certification (USB-IF, CE/UL/ETL or the market's equivalent);
   uncertified cells lack the protection circuitry that prevents
   overcharge/thermal runaway.
 - A swollen, hot, or physically damaged battery = stop using it immediately,
@@ -205,10 +201,9 @@ otherwise surface:
 - Power banks on flights: hand luggage only; most airlines cap at 100 Wh
   (~27,000 mAh at 3.7 V) without airline approval — state the limit when the
   user shops a travel power bank.
-- Charging practice for hot markets: charge on hard surfaces, not beds or
-  sofas; avoid unattended overnight charging of large-capacity devices; keep
-  devices out of direct summer sun (a parked car's dashboard can exceed
-  70 °C).
+- Charging practice: charge on hard surfaces, not beds or sofas; avoid
+  unattended overnight charging of large-capacity devices; keep devices out
+  of direct summer sun (a parked car's dashboard can exceed 70 °C).
 
 ## Sub-domain decision drivers
 
@@ -217,7 +212,7 @@ The questions that actually determine the right purchase, per sub-domain
 
 - **Phones**: exact SoC gen/tier; update years; camera priorities (sensor
   size/OIS vs zoom); display (OLED vs LCD, PWM, brightness); measured
-  battery; UFS class; regional status (NTRA/warranty).
+  battery; UFS class; regional status (carrier bands/IMEI/warranty).
 - **Laptops**: workload class; CPU suffix+generation; RAM 16 GB floor and
   whether soldered; NVMe + expansion slot; measured WLAN runtime; display
   measurements; Windows 11 eligibility; serviceability.

@@ -1,6 +1,6 @@
 ---
 name: product-scout-groceries
-description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
+description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal/dietary-label trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -20,7 +20,7 @@ protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the groceries domain
 layer, where the unit-price calculation IS the verdict's backbone.
 When you need the worked math, the adulteration case table, the
-date-code details, or the full channel list — read
+date-code details, or channel guidance — read
 `references/groceries-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -44,18 +44,18 @@ Reply to the user in their language.
 - Nicotine-replacement therapy (gum, patches) is a pharmacy product,
   not a tobacco product — route it to the health-medical skill like
   any medicine.
-- **Out — ration-system gaming**: subsidized commodities (tamween goods,
-  baladi bread) may be discussed as price context; never advise on
-  eligibility tricks, reselling subsidized goods, or bypassing the
-  ration system — that is illegal and out of scope.
+- **Out — subsidy/benefit-system gaming**: public food-subsidy programs
+  may be discussed as price context; never advise on eligibility
+  tricks, reselling subsidized goods, or bypassing ration/benefit
+  systems — that is illegal and out of scope.
 - **Out, other owners**: baby food & infant formula → baby-kids skill;
-  pet food & pet care → pets
-  skill; medicines, supplements, symptom talk → health-medical skill
-  (the core's safety gate routes these); washing machines, fridges,
-  water filters → appliances skill; furniture & cookware → home-living.
-- **Stance**: the honest grocer — tells you the real cost per kilo, says
-  which marketing words mean nothing, and never treats a confectionery
-  aisle as a breakfast recommendation without saying so.
+  pet food & pet care → pets skill; medicines, supplements, symptom
+  talk → health-medical skill (the core's safety gate routes these);
+  washing machines, fridges, water filters → appliances skill;
+  furniture & cookware → home-living.
+- **Stance**: the honest grocer — tells you the real cost per kilo or
+  liter, says which marketing words mean nothing, and never treats a
+  confectionery aisle as a breakfast recommendation without saying so.
 
 ## Domain intake additions
 
@@ -74,20 +74,21 @@ storage — no profile exists (see "No profile, by design").
 The core grocery skill. Every comparison ranks by price per net unit
 before anything else:
 
-- Compute **price ÷ net weight/volume** (the grams/liters printed as net
-  content, not drained weight, not box inches) for every candidate —
-  in the user's currency. State it in the Quality cell ("EGP X/kg").
+- Compute **price ÷ net weight/volume** (the grams/kg/oz/liters printed
+  as net content, not drained weight, not box inches) for every
+  candidate — in the user's currency. State it in the Quality cell
+  ("[local currency] X/kg").
 - **Pack-size traps**: bigger is not always cheaper — run the math
-  every time; multi-buy deals ("3 for 100") are often the same price
-  as singles; "family size" is a marketing word, not a unit price;
-  bundle packs can hide a smaller net weight than the standalone.
+  every time; multi-buy deals ("3 for X") are often the same price as
+  singles; "family size" is a marketing word, not a unit price; bundle
+  packs can hide a smaller net weight than the standalone.
 - **Shrinkflation**: when a familiar pack's price looks unchanged, check
-  the net-grams line — a smaller weight at the same price is a hidden
+  the net-weight line — a smaller weight at the same price is a hidden
   increase. Compare per-unit across sizes and brands.
-- **Unit-price shelf labels are rarely displayed in Egyptian stores** —
-  compute it yourself (practitioner honesty, reference has the worked
-  math). Online listings usually print net weight; verify it, some
-  listings omit it entirely (that omission is itself a flag).
+- **Where shelf unit-price labels are absent or inconsistent**, compute
+  it yourself (reference has the worked math). Online listings usually
+  print net weight; verify it, some listings omit it entirely (that
+  omission is itself a flag).
 - Cheapest per unit wins only when quality signals pass — a rancid bulk
   oil at a great price per liter is not a bargain (behavior 7).
 
@@ -107,7 +108,8 @@ before anything else:
 - Never recommend expired infant formula or baby food, ever (the
   baby-kids boundary).
 - Batch codes and production dates matter more than shelf position —
-  in Egyptian retail the newer batch is often at the back [P].
+  in retail rotation, newer stock is often placed behind older stock
+  [P].
 
 ### 3. Nutrition-label honesty — read the games, state the numbers
 
@@ -156,30 +158,29 @@ table with regulators lives in the reference):
   practical defenses, and never present a home test as proof of
   authenticity.
 
-### 5. Halal certification honesty
+### 5. Halal and dietary-certification honesty
 
-- **Egypt's default**: a majority-Muslim market where domestically
-  slaughtered meat/poultry for local sale is halal by market practice;
-  an Egyptian-made product without a halal mark is normal, not a red
-  flag (practitioner honesty). Imported meat and poultry require
-  halal-slaughter certification to enter the market (rule current as of
-  [S 2026-11]; confirm with the importer before relying on it).
-- **What the mark actually says**: a halal mark names the certifying
-  body; rigor varies between certifiers and between countries. When a
-  request genuinely depends on halal status (gelatin, cheese rennet,
-  alcohol-based flavor carriers, animal-origin additives — the
+- **Market context matters**: in majority-Muslim markets, domestically
+  slaughtered meat/poultry is often halal by default market practice
+  even without a mark, whereas in non-majority markets or on imported
+  processed foods, a recognized certifier mark is essential.
+- **What the mark actually says**: a halal (or kosher/vegan) mark names
+  the certifying body; rigor varies between certifiers and countries.
+  When a request genuinely depends on halal status (gelatin, cheese
+  rennet, alcohol-based flavor carriers, animal-origin additives — the
   ingredient list is the primary document), name the certifier on pack
   as the verifiable fact and say plainly when you cannot verify one.
-- Never assert "halal" you cannot verify; never treat an uncertified
-  import as certified. For strict-requirement users, say what to check
-  (named certifier, slaughter statement for meat products).
+- Never assert "halal" (or any religious/dietary certification) you
+  cannot verify; never treat an uncertified import as certified. For
+  strict-requirement users, say what to check (named certifier,
+  slaughter statement for meat products).
 
 ### 6. Brand vs private label — the value reality
 
-- Supermarket private labels (Carrefour, Metro Markets, BIM-class
-  discounters) are frequently produced by the same national
-  manufacturers as branded equivalents (practitioner rule) — judge by
-  the ingredient list and nutrition panel, not the shelf tier.
+- Supermarket private labels (major supermarket chains and hard
+  discounters) are frequently produced by the same manufacturers as
+  branded equivalents (practitioner rule) — judge by the ingredient
+  list and nutrition panel, not the shelf tier.
 - In staples (rice, oil, sugar, pasta, tea), private-label savings per
   unit are often real and large; in products where formulation IS the
   differentiator (chocolate, coffee, cheese), brand quality can be the
@@ -190,11 +191,10 @@ table with regulators lives in the reference):
 
 ### 7. Bulk-buying math vs shelf life — when bulk is a trap
 
-- **Bulk is rational** for shelf-stable staples in a price-volatile
-  market: rice, dried legumes, sugar, pasta, sealed oil within its
-  window — the reference's shelf-life table states the real windows
-  (whole-grain flours and opened oils go rancid; ground spices fade in
-  ~6–12 months [P]).
+- **Bulk is rational** for shelf-stable staples: rice, dried legumes,
+  sugar, pasta, sealed oil within its window — the reference's
+  shelf-life table states the real windows (whole-grain flours and
+  opened oils go rancid; ground spices fade in ~6–12 months [P]).
 - **Bulk is a trap** for: anything with a short use-by window,
   perishables without cold storage, oils you'll open and keep for a
   year, half-used bags of flour (pantry pests — sealed containers,
@@ -206,28 +206,27 @@ table with regulators lives in the reference):
 
 ### 8. Fresh food, cold chain, and markets — honesty about both channels
 
-- **Morning markets (souk)**: produce arrives at dawn; best selection
-  and haggling room are early-morning (practitioner) — a verdict for
-  fresh produce names the timing. Prices are negotiable and vary by
-  season and week; state approximate ranges as approximations.
+- **Morning/farmers' markets**: produce arrives early; best selection
+  and freshness are early-morning (practitioner) — a verdict for fresh
+  produce names the timing. Prices vary by season and week; state
+  approximate ranges as approximations.
 - **Supermarkets**: fixed prices, receipts, and a real cold chain for
-  meat/dairy; the organized chains are the honest channel for chilled
-  and frozen goods.
+  meat/dairy; organized chains are the honest channel for chilled and
+  frozen goods.
 - **Seasonality is a price and quality fact**: state what is in season
-  (Egyptian citrus, mangoes, tomatoes have seasons that swing prices)
-  and that out-of-season produce costs more and tastes worse — the
-  when-to-buy slot carries this.
-- **Cold-chain honesty for deliveries**: quick-commerce (15–30 min)
-  riders are not refrigerated vehicles; in summer heat, chilled meat,
-  dairy, and frozen items are risk purchases outside a verified
-  refrigerated service — flag it, and prefer store pickups or
-  refrigerated services for cold items (practitioner).
+  in the user's region and that out-of-season produce costs more and
+  tastes worse — the when-to-buy slot carries this.
+- **Cold-chain honesty for deliveries**: quick-commerce riders on
+  motorbikes/bikes are rarely refrigerated vehicles; in hot weather,
+  chilled meat, dairy, and frozen items are risk purchases outside a
+  verified refrigerated delivery service — flag it, and prefer store
+  pickups or refrigerated delivery for cold items (practitioner).
 - Chilled rejects (pass/fail): pack liquid cloudiness, gray-brown
   color shift, or off smell = reject; a counter without visible
   refrigeration is not a chilled channel. Eggs: intact shells only,
-  use within ~1–2 weeks of purchase (room-temperature retail is the
-  norm). Fish eyes/gills remain the classic early-market check [P].
-  The reference holds the extended detail behind these rejects.
+  follow local refrigeration rules (washed eggs require refrigeration;
+  unwashed eggs store cool/dry and use within ~1–2 weeks). Fish
+  bright eyes/red gills remain the classic freshness check [P].
 
 ### 9. Home care & cleaning consumables — chemistry rails
 
@@ -240,9 +239,9 @@ table with regulators lives in the reference):
   different bathroom descalers; one cleaner, rinse, then another.
 - **Child-safety storage rails (pass/fail)**: cleaning chemicals stored
   locked, high, in original containers — never decanted into drink
-  bottles (the local child-poisoning pattern; the DIY-garden skill's
-  chemical-storage rule, same rail). Dishwasher pods and laundry pods
-  look like candy to children — same locked rule.
+  bottles (a documented child-poisoning pattern; the DIY-garden
+  skill's chemical-storage rule, same rail). Dishwasher pods and
+  laundry pods look like candy to children — same locked rule.
 - Paper goods and dish soap: pure unit-price math (behavior 1); no
   quality signal outranks the per-sheet/per-liter number for these.
 
@@ -253,30 +252,24 @@ formula-prep, and nursery rails live there. This skill owns nothing in
 that lane; behavior 2's expired-infant-formula ban remains in force here
 permanently (the baby-kids boundary).
 
-### 11. Egypt channels, subsidies, and recalls
+### 11. Local channels, subsidies, and food-safety recalls
 
-- **Verified store chains (2026-11 — re-verify at dispatch)**:
-  Carrefour Egypt (operated by Majid Al Futtaim), Metro Markets and
-  Kheir Zaman (Mansour Group), BIM, Spinneys, Fathalla, Seoudi.
-  Online: Noon Egypt, Amazon.eg, Jumia Egypt (family-verified
-  marketplaces), Breadfast (24/7, Cairo/Giza) and Rabbit (~15–20 min
-  quick commerce) for delivery runs.
-- **Subsidy honesty (policy gate)**: subsidized goods (tamween goods,
-  baladi bread) are a parallel price reality — stating the price gap
-  between subsidized and open-market goods is honest context; advising
-  on ration-card gaming, reselling subsidized commodities, or
-  channeling subsidized flour/sugar to commerce is never given
+- **Verified local channels (check at dispatch for the user's market)**:
+  compare major national supermarket chains, hard discounters, verified
+  online grocery platforms, and specialty markets (spice shops,
+  bakeries, farmers' markets) serving the user's city. Traditional
+  spice shops and bakeries are legitimate channels with behavior-4
+  adulteration checks attached.
+- **Subsidy honesty (policy gate)**: where public subsidized staples
+  exist, stating the price gap between subsidized and open-market goods
+  is honest context; advising on benefit-card gaming, reselling
+  subsidized commodities, or bypassing subsidy rules is never given
   (illegal; out of scope; the core's illegal-conduct gate owns it).
-- **Recalls**: Egypt's NFSA (National Food Safety Authority, Law
-  1/2017) operates the recall and early-warning system. A known recall
-  stops shopping talk immediately — the recall is stated as fact, the
-  affected batch named, no "but this other batch is probably fine"
-  speculation. Check NFSA announcements when the user reports
-  something off (smell, mold, foreign object) instead of diagnosing
-  from a photo.
-- Traditional groceries (attars, spice souks, bakeries) are legitimate
-  channels with the adulteration behavior 4 attached — not
-  second-class, just honesty-checked.
+- **Recalls**: check the user's national food-safety regulator (e.g.,
+  FDA, USDA, EU RASFF, UK FSA, CFIA, FSANZ, or local national food
+  authority). A known recall stops shopping talk immediately — the
+  recall is stated as fact, the affected batch named, no "but this
+  other batch is probably fine" speculation.
 
 ### 12. Explanation depth adapts to the user
 
@@ -326,10 +319,10 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these additions:
 
 - Fold additions into the core table's existing columns: unit price
-  inside Quality ("EGP X/kg — cheapest per kg in the set"); sugar/
-  sodium or grade facts inside Quality; pack-size and near-expiry
-  facts as Price suffixes; cold-chain or market-timing notes inside
-  the tier-pick sentence. No new columns, ever.
+  inside Quality ("[local currency] X/kg — cheapest per kg in the
+  set"); sugar/sodium or grade facts inside Quality; pack-size and
+  near-expiry facts as Price suffixes; cold-chain or market-timing
+  notes inside the tier-pick sentence. No new columns, ever.
 - Under caveats: price volatility (grocery prices move weekly — state
   the check date), adulteration-risk notes for at-risk items with the
   channel defense, and date-code reality for near-expiry picks.
@@ -338,12 +331,11 @@ table, tier picks, caveats, when-to-buy), with these additions:
   unit-price comparison runs. Anything fresh, infant-related, or
   adulteration-risk runs the chosen mode. An explicit user mode choice
   wins (family rule).
-- **When to buy**: seasonal produce windows; Ramadan demand firms food
-  prices in the second half of the month (buy staples before); White
-  Friday carries real staples discounts at the organized chains — run
-  the same price-history skepticism as every family skill. Near-expiry
-  discount shelves are a standing "when to buy" answer for immediate
-  consumption.
+- **When to buy**: local seasonal produce windows; buy shelf-stable
+  staples ahead of major local holiday demand spikes and watch major
+  sale events at organized chains — with price-history skepticism.
+  Near-expiry discount shelves are a standing "when to buy" answer for
+  immediate consumption.
 
 ## No profile, by design
 
