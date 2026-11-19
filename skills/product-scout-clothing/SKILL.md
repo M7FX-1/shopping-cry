@@ -139,8 +139,9 @@ is itself a signal:
   symbols. When none of these appear AND the "premium/heavyweight" wording
   does — that's unverifiable marketing, not a product.
 - A missing fiber-content label is a legal red flag, not a style choice —
-  fiber composition labeling is mandatory in the US, EU, and Egypt (ES
-  7266 + Arabic labeling). Its absence signals gray-channel goods.
+  fiber composition labeling is mandatory across major jurisdictions (US
+  Textile Act, EU Reg. 1007/2011, and national textile standards). Its
+  absence signals gray-channel goods.
 - Stitch density bands: 8–10 SPI standard commercial, 12–14+ premium;
   count stitches per 2.5 cm in a zoomed photo. Pilling grade 4–5 and
   colorfastness ≥4 are the quality targets where published.
@@ -149,16 +150,18 @@ is itself a signal:
   alone → marketing.
 - Evidence order for any clothing claim: 1) published standardized test
   numbers and certificate IDs (Martindale, pilling/colorfastness grades,
-  GOTS/OEKO-TEX/CEA seals); 2) the fiber-content label (a legal document);
-  3) verified, size-specific user reviews (fit reality); 4) brand
-  marketing — never sufficient alone.
+  GOTS/OEKO-TEX/origin seals); 2) the fiber-content label (a legal
+  document); 3) verified, size-specific user reviews (fit reality);
+  4) brand marketing — never sufficient alone.
 
 ### 2. Fabric logic follows climate and use
 
-- Hot climate (MENA default): linen and loose-weave lightweight cottons
-  win — they breathe and dry fast. Tight knits and everyday polyester hold
-  sweat at the skin. Performance synthetics are justified for activewear
-  specifically (capillary wicking), not casual daily wear.
+- Hot/humid climates: linen and loose-weave lightweight cottons win —
+  they breathe and dry fast. Tight knits and everyday polyester hold
+  sweat at the skin. Cold climates: wool (merino micron grading),
+  layered insulation, and wind/waterproof shells decide. Performance
+  synthetics are justified for activewear specifically (capillary
+  wicking), not casual daily wear.
 - Wicking ≠ absorbing: cotton absorbs and stays wet; synthetics spread
   sweat thin and evaporate it. Match the fiber to whether the user will
   actually sweat.
@@ -169,9 +172,10 @@ is itself a signal:
 - Modest layered wear for heat works through loose air gaps — thin
   moisture-managing base + loose open-weave outer layers — never one heavy
   layer.
-- Egyptian cotton authenticity: only the gold Egyptian Cotton™ seal (CEA —
-  the Cotton Egypt Association — Bureau Veritas verified) is trustworthy —
-  most market claims were estimated fake. "1000 TC 100% Egyptian cotton"
+- Extra-long-staple cotton authenticity: for "Egyptian cotton" claims
+  globally, only the gold Egyptian Cotton™ seal (CEA — Bureau Veritas
+  verified) is trustworthy — most market claims were estimated fake; for
+  Supima®, check the licensed trademark. "1000 TC 100% Egyptian cotton"
   at a low price is a red flag; even in-hand feel cannot distinguish fakes
   — the seal and price realism are the only signals.
 
@@ -230,8 +234,8 @@ construction signals support the longer life.
   inspection list (fabric condition, stains, odors, hardware, authenticity)
   plus, for children's items: recall check and safety-feature check (a
   removed drawstring is fine; a missing flammability label on sleepwear is
-  not). Egypt: dubizzle Egypt — the OLX rebrand — is the local second-hand
-  channel.
+  not). Use reputable local resale platforms or vetted thrift channels in
+  the user's market.
 
 ### 6. Marketplace traps
 
@@ -252,17 +256,15 @@ construction signals support the longer life.
 
 ### 7. Buying timing — clearance beats events
 
-Winter apparel clears January–early February; summer clears July–early
-September; markdowns deepen 4–6 weeks after each season's peak. Black
-Friday "deals" were found to be the same price or cheaper at other times
-the overwhelming majority of cases in consumer-group testing — always run
-a price-history check before trusting an event discount, and say so when
-an event price is fake. Egypt/MENA: demand spikes before Eid (the Eid
-clothes tradition) and through back-to-school (mid-August–September —
-school uniforms and shoes sell out, sizes gap out); buy ahead of these
-peaks rather than into them. Genuine discounts land after the peaks and
-around White Friday. Run the same price-history skepticism on White Friday
-as on Black Friday — same event, local name.
+End-of-season clearance beats hype sales in every hemisphere: markdowns
+deepen 4–6 weeks after each season's peak (winter clearance post-winter,
+summer clearance late summer). Major sale-event "deals" (Black Friday /
+White Friday / Singles' Day) were found to be the same price or cheaper at
+other times in the overwhelming majority of cases in consumer-group
+testing — always run a price-history check before trusting an event
+discount, and say so when an event price is fake. Buy ahead of local
+holiday-clothing and back-to-school peaks before sizes gap out; genuine
+discounts land after peaks.
 
 ### 8. Return policy is an official ranking factor
 
@@ -270,14 +272,11 @@ Especially for fit-risky items (sizing uncertainty, no measurement data,
 shoes): a seller with flexible return/exchange outranks a cheaper one with
 a strict policy — the return flexibility is the insurance that makes the
 measurement method recoverable. Show each recommendation's return stance
-(flexible / limited / none) next to the price. In Egypt, translate this to
-channel choice: Noon (~15 days), Amazon.eg (~15 days) and Jumia (14-day
-free returns, 30 days for defective) are the returnable channels; local
-shops are exchange-only and Instagram/Facebook sellers effectively
-non-returnable. Weight the marketplaces for fit-risky items, and state the
-actual window next to the return stance. When the item is stocked locally
-or the brand has shops in the user's market, say so — trying shoes in
-store beats every size chart.
+(flexible / limited / none) and actual return window next to the price.
+Weight verified retailers and marketplaces with clear return windows over
+exchange-only shops or non-returnable social-media sellers. When the item
+is stocked locally or the brand has shops in the user's market, say so —
+trying shoes in store beats every size chart.
 
 ### 9. Delivery inspection checklist
 
