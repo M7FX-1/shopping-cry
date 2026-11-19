@@ -1,6 +1,6 @@
 ---
 name: product-scout-office-business
-description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, the Egypt school-season wave with kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
+description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, back-to-school kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -55,10 +55,11 @@ machine; nothing persists past the conversation.
 Wrong refill, wrong cartridge, wrong paper size: this category's everyday returns, all
 preventable with one check.
 
-- **Paper size discipline**: A4 (210 x 297 mm, ISO 216) is the Egypt and regional
-  standard; US Letter (216 x 279 mm) arrives on imported machines and imported paper
-  packs. Letter in an A4 device (or the reverse) jams trays and breaks margins — check the
-  device spec and the pack label, every time. One glance; never assume.
+- **Paper size discipline**: match the user's market standard — **A4 (210 × 297 mm, ISO
+  216)** is standard in most of the world, while **US Letter (216 × 279 mm)** is standard
+  in North America and parts of Latin America. Letter in an A4 device (or the reverse)
+  jams trays and breaks margins — check the device spec and the pack label, every time.
+  One glance; never assume.
 - **Cartridge matching**: the model number printed on the old cartridge (or in the
   device's spec sheet) is the exact key — "fits most" listing text is not fitment data,
   and this protocol has NO relaxation level (the automotive skill relaxes for accessories;
@@ -92,21 +93,19 @@ preventable with one check.
 
 ### 3. School-supplies season — the wave and the kit-list builder
 
-- **The wave is the market's year**: demand builds through August and peaks
-  mid-August–September (family-verified core claim); the school year starts early-to-mid
-  September (Ministry calendar — for 2026/27: September 12 public schools, September 6
-  international; dates are announced annually, re-verify each year).
-- **Buy the staples before the wave**: early August is the year's best price-and-stock
-  window; during the wave, prices firm and the good copybooks gap out.
+- **The wave follows the local academic calendar**: check when the school year starts in
+  the user's country (e.g., Aug–Sep in Northern Hemisphere, Jan–Feb in Southern
+  Hemisphere, April in Japan). Buy staples 3–4 weeks ahead of the wave before prices firm
+  and popular notebooks/tools sell out.
 - **Kit-list building — offer it on every school request**: build from the school's
   official list (a photo of the list works) and group it: (a) **mandated items** the
-  school names exactly — copybooks by page count and ruling (32/48/96 pages, squared vs
-  lined; teachers check), (b) **staples bought in bulk** (pencils, erasers, sharpeners,
-  glue), (c) **stage-specific tools** (geometry set, the required calculator), (d)
-  **routed items** named with their owner skill (bag → clothing; water bottle →
+  school names exactly — notebooks by page count and ruling (lined, squared, wide-ruled,
+  college-ruled; teachers check), (b) **staples bought in bulk** (pencils, erasers,
+  sharpeners, glue), (c) **stage-specific tools** (geometry set, the required calculator),
+  (d) **routed items** named with their owner skill (bag → clothing; water bottle →
   home-living), and (e) the **safety items** of behavior 8. The kit becomes the verdict's
   tier structure with the total set against the budget.
-- **Copybook quality is genuinely variable**: page count matching the stated count, and
+- **Notebook quality is genuinely variable**: page count matching the stated count, and
   paper that takes ink without bleeding — the two checks that matter. The cheapest stack
   that fails them is false economy across a school year.
 
@@ -127,8 +126,8 @@ preventable with one check.
 
 ### 5. Filing and organization
 
-- **The size-matching trap repeats here**: A4 files vs Letter-size imported files — match
-  files, hangers, and boxes to the paper, not the shelf.
+- **The size-matching trap repeats here**: A4 files vs Letter-size files — match files,
+  hangers, and boxes to the paper standard used in the user's office, not the shelf.
 - Capacity honesty: spine widths and box capacities are stated numbers; overfilling is the
   real failure mode.
 - Active vs archive: quality where hands touch daily; cheap and uniform for archive.
@@ -154,23 +153,21 @@ preventable with one check.
 - **MOQ reality**: suppliers impose minimum order quantities and business pricing is
   quoted, not listed — never pretend single-unit retail prices apply to case quantities.
   State the minimum and let the budget decide.
-- **Invoice discipline**: a business purchase needs a valid tax invoice carrying the
-  company's details (Egypt's e-invoicing rules apply to registered businesses — confirm
-  the vendor issues compliant documents BEFORE buying, or the purchase may be
-  unrecoverable as an expense). Practitioner guidance — verify current rules at dispatch.
-- Delivery terms and VAT-visible pricing belong in the comparison as Price suffixes.
-- **Where the bulk is bought (verified set, re-verify at dispatch)**: Samir & Aly
-  (samirandaly.com — office/school/stationery/art, EGP pricing, delivery across
-  governorates; verified by direct fetch 2026-11 — fetch served via a staging subdomain,
-  re-verify), plus the family-verified marketplaces Amazon.eg, Noon, and Jumia Egypt
-  (stationery categories confirmed in the family taxonomy). Unverified names are not
-  listed — rejections are recorded in the decision log.
+- **Invoice discipline**: a business purchase needs a compliant tax/VAT invoice carrying
+  the company's details (per local e-invoicing or tax-invoice rules in the user's country
+  — confirm the vendor issues compliant documents BEFORE buying, or the purchase may be
+  unrecoverable as an expense).
+- Delivery terms and tax/VAT-inclusive vs exclusive pricing belong in the comparison as
+  Price suffixes.
+- **Where the bulk is bought (verify at dispatch for the user's market)**: compare
+  established national office-supply retailers, B2B stationery distributors, and verified
+  business marketplaces serving the user's country.
 
 ### 8. Young children's school kit — the safety line
 
 - **Blunt-tip scissors for young children** — pass/fail, stated in the tier sentence.
 - **Art materials for children** (crayons, paints, markers): non-toxic labeling (ASTM
-  D-4236) — the family's art-materials rail (aligned with
+  D-4236 / CE EN 71) — the family's art-materials rail (aligned with
   the toys-games-hobbies skill's art-materials behavior).
 - Items for under-3s follow the family's small-parts logic (the clothing skill's behavior
   11 pattern).
@@ -185,8 +182,8 @@ preventable with one check.
 
 - **Writing instruments**: ink type per use, refill availability, grip for volume writing;
   left-handed smudge note for gel/rollerball.
-- **Paper**: size (A4 unless proven otherwise), GSM (75–80 copy standard, 100+ letterhead,
-  160–300 card), brightness matters less than the size check.
+- **Paper**: local standard size (A4 or Letter — verify), GSM (75–80 copy standard, 100+
+  letterhead, 160–300 card), brightness matters less than the size check.
 - **Filing**: size match, capacity, active-vs-archive.
 - **Desk accessories**: function over gadgetry — if it does not hold, sort, or measure, it
   is clutter.
@@ -202,15 +199,16 @@ preventable with one check.
 Keep the core verdict structure exactly, with these folds:
 
 - Compatibility status folds into Quality ("A4 confirmed — tray-safe"; "refill model X —
-  stocked locally"); unit price goes into the Price or value cell ("EGP X/page", "EGP
-  X/unit in the 50-box"); MOQ and invoice compliance are Price suffixes on business picks.
-  The table never exceeds the core's 6 columns — no new column, ever.
+  stocked locally"); unit price goes into the Price or value cell ("[local currency]
+  X/page", "[local currency] X/unit in the 50-box"); MOQ and invoice compliance are Price
+  suffixes on business picks. The table never exceeds the core's 6 columns — no new
+  column, ever.
 - School-kit verdicts: the tier structure IS the kit list (mandated / staples / stage
   tools / routed / safety) with the total against the budget — the one case where the
   tiers carry a list. Safety items are never folded away when the core aggregates
   multi-category requests.
 - Caveats: the clone-cartridge trade-off named wherever a clone was picked; school-wave
   stock warnings in season.
-- **When to buy**: school supplies early August, before the wave; equipment on White
-  Friday; bulk consumables whenever the case math wins — there is no seasonal discount
-  worth waiting for.
+- **When to buy**: school supplies 3–4 weeks before the user's local school year starts;
+  equipment on major local sale events; bulk consumables whenever the case math wins —
+  there is no seasonal discount worth waiting for.
