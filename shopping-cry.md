@@ -2,7 +2,7 @@ For human reading only. Agents: never load this file — read skills/product-sco
 
 # shopping-cry — the product-scout skill family
 
-Generated: 2026-11-15. This file bundles all 17 SKILL.md files of the family verbatim, in registry order. Reference files (domain knowledge bases) are NOT included — they live next to each skill in its own folder.
+Generated: 2026-11-19. This file bundles all 17 SKILL.md files of the family verbatim, in registry order. Reference files (domain knowledge bases) are NOT included — they live next to each skill in its own folder.
 
 
 
@@ -111,9 +111,9 @@ confirmation for health decisions.
 kind (cigarettes, shisha, vape/e-cigarettes, heated tobacco, chew) are
 never recommended, compared, ranked, priced, or located — refused with
 one brief health line and nothing else. No advice on illegal conduct:
-ration-card gaming, reselling subsidized commodities, or bypassing
-subsidy systems is never advised — the system may be described as price
-context, never gamed.
+subsidy-system gaming, reselling subsidized commodities, or bypassing
+ration/benefit systems is never advised — a public subsidy program may be
+described as price context, never gamed.
 
 ## Orchestration workflow
 
@@ -272,9 +272,10 @@ budget (counts per mode above).
 - Skip discontinued products, ones unavailable in the user's market, and ones
   clearly dominated by a better sibling model from the same brand.
 - Verify local availability against the market's actual storefronts before
-  shortlisting (Egypt: amazon.eg, Noon, Jumia, the brand's local distributor);
-  private-importer or "call us" listings are special-order — say so; never
-  recommend a product nobody stocks locally.
+  shortlisting (major national retailers, authorized brand distributors, and
+  verified regional marketplaces serving the user's country); private-importer
+  or "call us" listings are special-order — say so; never recommend a product
+  nobody stocks locally.
 - Note the exact model number / variant. "Galaxy S26" and "Galaxy S26 FE" are
   different products with different verdicts.
 
@@ -318,8 +319,7 @@ ALWAYS use this structure. No filler paragraphs, no restating the table in prose
    | Product | Price (store + date when Verified or Deep) | Quality | Performance | Main weakness | Value for money |
 
    All prices are in the user's local currency, formatted for their market
-   (Egypt: EGP, local convention in Arabic output; never USD conversions
-   unless the user asked).
+   (never convert to another currency unless the user asked).
 
    The table never exceeds its 6 columns: specialty findings fold into
    existing cells (a short Price suffix, detail inside Quality or the
@@ -348,13 +348,12 @@ ALWAYS use this structure. No filler paragraphs, no restating the table in prose
    only on load-bearing figures, max three.
 5. **When to buy** — only if you noticed a real signal: upcoming sale season,
    a successor model announced that will drop this one's price.
-   In MENA use the local calendar, not the Western one: the two big
-   shopping waves are Ramadan/Eid (demand — and prices — firm up in the second
-   half of Ramadan and before Eid; genuine deals land after Eid) and White
-   Friday (late November — Noon/Jumia's name for Black Friday). Back-to-school
-   (Egypt: mid-August through September) drives uniforms, shoes, and student
-   laptops; Mother's Day (21 March) is a real gifting spike in Egypt. In
-   user-facing output say White Friday, never Black Friday.
+   Always use the user's **local shopping calendar**, not an assumed foreign
+   one: major regional sale events (Black Friday / White Friday / Singles'
+   Day 11.11 / Prime Day / Boxing Day), local holiday and gifting waves
+   (where demand and prices firm up beforehand and real clearance lands
+   afterward), and the local back-to-school window. Use the event name
+   natural to the user's market.
 
    Documented exception: in health-medical relief reports the "when to buy"
    slot becomes "when to escalate" — the named escalation day and signs;
@@ -420,7 +419,7 @@ never outrank "can this hurt someone".
 
 ---
 name: product-scout-electronics
-description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Normally dispatched by the product-scout core engine for any electronics request, but can run standalone when the user directly asks about buying or comparing any tech device. Read the core engine first — it owns intake, modes, verdict structure, and honesty rules."
+description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -513,29 +512,27 @@ drop ahead / early-adopter firmware immaturity]". Two rules:
 - The previous generation, bought right after its successor launches, is the
   highest value-per-currency play — feature it as the 💰 value option when
   its measured performance still serves the user's need.
-- TV clearance runs Feb–Apr; White Friday (Black Friday) prices skew to
+- TV clearance runs Feb–Apr after CES announcements; major local sale
+  events (Black Friday / White Friday / Singles' Day / Prime Day) skew to
   mid/entry models; launch windows are the worst time for flagship buyers.
-  In Egypt, TV demand peaks before Ramadan (drama season): prices hold firm
-  in the weeks before Ramadan, and the value windows are just after Eid and
-  White Friday.
+  Check the user's local seasonal peaks (prices firm before major holidays
+  and sports/drama peaks, and drop afterward).
 - For phone/laptop upgrades, check trade-in programs in the user's market;
   the old device's trade-in can change the value verdict.
 
 ### 4. Grey imports — visible, never silent
 
 Parallel/grey imports may appear in the comparison ONLY with a bold warning:
-no local warranty, NTRA/IMEI registration risk (Egypt: imported phones must
-be registered within 90 days of first connecting to an Egyptian network — via
-the official "Telephony"/MyNTRA app or dialing *87#, fee up to ~38.5% of the
-device's value; the phone is blocked from Egyptian networks if the window
-lapses; tourists are exempt per visit), possible band/region limitations,
-duty-free traveler limits.
-Prefer official distributor stock in recommendations (Egypt: B.TECH, Raya
-Shop, 2B, Sigma Computer, Elbadrgroup Electronics, Noon Egypt, Amazon.eg;
-Apple via authorized resellers such as Tradeline and Compume); when the grey
-price is dramatically lower, present both and let the user decide with the
-risks spelled out.
-Also flag region-locked features and SKU differences for the user's market.
+no local warranty, local telecom/IMEI registration and import-duty rules
+where applicable (many countries require imported phones to be registered
+with the national telecom authority within a grace window or pay customs
+fees before network blocking), possible cellular-band/region limitations,
+and duty-free traveler limits.
+Prefer official distributor stock and authorized brand resellers in the
+user's market; when the grey price is dramatically lower, present both and
+let the user decide with the risks spelled out.
+Also flag region-locked features, power-plug/voltage differences, and SKU
+differences for the user's market.
 
 ### 5. Local environment is an official evaluation factor
 
@@ -551,12 +548,10 @@ belong inside the evaluation, not in a footnote:
 - After-sales reality: a brand with no documented local service network
   turns a cheap purchase into an expensive repair. Prefer brands with
   documented local service when prices are close.
-- Egypt check: the brand's local service-center locator (Samsung, Xiaomi,
-  Oppo all list Cairo/Giza service centers), a distributor-stamped warranty
-  card carrying the serial, and for phones the box IMEI matching the device.
-  Out of warranty, the repair souk (Abdel Aziz St, downtown Cairo) is the
-  real fallback — repairs there void any remaining warranty; weigh that
-  before buying a grey unit.
+- Local verification check: confirm the brand's authorized service-center
+  coverage in the user's country, verify the warranty card/serial coverage,
+  and for phones check that the box IMEI matches the device. Note that
+  third-party street repairs void remaining manufacturer warranties.
 
 ### 6. Cheap accessories get an automatic shortcut
 
@@ -579,13 +574,13 @@ include them with honest condition framing and this checklist:
 - Warranty start date — if a "new" unit's clock started months ago, it was
   used; refurb grades describe cosmetics only
 - IMEI/serial verification on the manufacturer's coverage page
-- Source trust: local certified-refurb retailers with a written warranty
-  (Egypt: Upgrade, Ennap — refurb phones/laptops with up to 12-month
-  warranty) beat private sellers; private used means dubizzle Egypt (the
-  OLX rebrand) with an in-person meet, IMEI check on the manufacturer's
-  coverage page, and cash on inspection. Apple Certified refurb (new
-  battery/shell + 1-year warranty) and Amazon Renewed barely exist in
-  Egypt — treat them as non-Egypt references only, never the local anchor
+- Source trust: manufacturer-certified refurbished programs (e.g., Apple
+  Certified Refurbished, brand outlets) and local certified-refurb
+  retailers with a written warranty beat private sellers; private used
+  classifieds require an in-person inspection, IMEI/serial check on the
+  manufacturer's coverage page, and verifying the seller's activation-lock
+  removal before paying. Check which refurb programs actually operate in
+  the user's country before citing them.
 
 ### 8. Brand preference — respected, with one honest line
 
@@ -615,7 +610,7 @@ risk concentrates in exactly the cheap uncertified products this skill would
 otherwise surface:
 
 - Never recommend a charger, power bank, or battery product without
-  recognized certification (USB-IF, CE/UL or the market's equivalent);
+  recognized certification (USB-IF, CE/UL/ETL or the market's equivalent);
   uncertified cells lack the protection circuitry that prevents
   overcharge/thermal runaway.
 - A swollen, hot, or physically damaged battery = stop using it immediately,
@@ -625,10 +620,9 @@ otherwise surface:
 - Power banks on flights: hand luggage only; most airlines cap at 100 Wh
   (~27,000 mAh at 3.7 V) without airline approval — state the limit when the
   user shops a travel power bank.
-- Charging practice for hot markets: charge on hard surfaces, not beds or
-  sofas; avoid unattended overnight charging of large-capacity devices; keep
-  devices out of direct summer sun (a parked car's dashboard can exceed
-  70 °C).
+- Charging practice: charge on hard surfaces, not beds or sofas; avoid
+  unattended overnight charging of large-capacity devices; keep devices out
+  of direct summer sun (a parked car's dashboard can exceed 70 °C).
 
 ## Sub-domain decision drivers
 
@@ -637,7 +631,7 @@ The questions that actually determine the right purchase, per sub-domain
 
 - **Phones**: exact SoC gen/tier; update years; camera priorities (sensor
   size/OIS vs zoom); display (OLED vs LCD, PWM, brightness); measured
-  battery; UFS class; regional status (NTRA/warranty).
+  battery; UFS class; regional status (carrier bands/IMEI/warranty).
 - **Laptops**: workload class; CPU suffix+generation; RAM 16 GB floor and
   whether soldered; NVMe + expansion slot; measured WLAN runtime; display
   measurements; Windows 11 eligibility; serviceability.
@@ -682,7 +676,7 @@ tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-beauty
-description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history) so recommendations never repeat harmful advice. Normally dispatched by the product-scout core engine for any beauty request, but can run standalone when the user directly asks about serums, sunscreens, foundations, fragrances, treatment shampoos, or any cosmetic purchase. Read the core engine first — it owns intake, modes, verdict structure, and honesty rules."
+description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history). Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -814,7 +808,7 @@ Every quality judgment starts from the ingredient list (INCI) and labeled
 concentrations — never from the brand's story. Evidence hierarchy for any
 beauty claim:
 
-1. Peer-reviewed dermatology literature & guidelines (AAD, ISO, FDA/EDA)
+1. Peer-reviewed dermatology literature & guidelines (AAD, ISO, FDA/EMA/national regulators)
 2. Guideline patient pages (DermNet, Skin of Color Society, NRS)
 3. Qualified cosmetic chemists (Lab Muffin, KindofStephen) — interpretation,
    not primary evidence
@@ -838,18 +832,18 @@ not 20%.
 "clean" and "natural" are legally undefined or unregulated. Never let them
 carry a recommendation. Instead read: the INCI list (descending order above
 1%, free order below the "1% line" — an undisclosed "retinol complex" may
-hide trace amounts), the EU fragrance-allergen list, and regulatory
-notifications (Egypt: EDA EgyCosm notification). Prefer products with
-labeled concentrations of hero actives.
+hide trace amounts), the EU fragrance-allergen list, and local regulatory
+notifications (e.g., EU CPNP, US MoCRA, or the user's national cosmetics
+registry). Prefer products with labeled concentrations of hero actives.
 
 ### 3. Safety rails — hard rules that never bend
 
 - **Never recommend**: hydroquinone or topical-steroid lightening creams,
   mercury-containing products, any product marketed as skin lightening/
-  whitening/bleaching — documented harm in the MENA region (ochronosis,
-  steroid damage, heavy metals). For pigmentation concerns: sunscreen-first
-  OTC options (azelaic 10% — the OTC tier; 15–20% is prescription in the US
-  and OTC only in some markets, filter per market — plus vitamin C) and a
+  whitening/bleaching — documented global harm (ochronosis, steroid
+  damage, heavy metals). For pigmentation concerns: sunscreen-first OTC
+  options (azelaic 10% — the OTC tier; 15–20% is prescription in some
+  markets and OTC in others, filter per market — plus vitamin C) and a
   dermatologist referral — the effective treatments (hydroquinone 4%,
   triple cream) are Rx-only.
 - **Rx-only ingredients** (tretinoin, tazarotene, trifarotene, hydroquinone
@@ -913,13 +907,12 @@ labeled concentrations of hero actives.
 
 When the user describes a problem — "best shampoo to finally kill
 dandruff", "cream that removes my pimples", or the same request in the
-user's language (an Arabic "cream for pimples", for example) — the deliverable
-is a **unified condition report**, not a generic product list. The
-protocols and their evidence live in `references/beauty-protocols.md`;
-covered conditions: dandruff/seborrheic dermatitis, acne,
-post-inflammatory hyperpigmentation (PIH)/melasma support (OTC tier),
-dry-skin/mild-eczema support, razor bumps, chapped lips, mild rosacea
-support.
+user's language — the deliverable is a **unified condition report**, not
+a generic product list. The protocols and their evidence live in
+`references/beauty-protocols.md`; covered conditions: dandruff/seborrheic
+dermatitis, acne, post-inflammatory hyperpigmentation (PIH)/melasma
+support (OTC tier), dry-skin/mild-eczema support, razor bumps, chapped
+lips, mild rosacea support.
 
 The report structure, in the user's language:
 
@@ -970,10 +963,10 @@ channels per behavior 8) → filter and rank through this funnel:
    skin type. Profile-stated allergies fail a product here outright.
 
 If the best product isn't stocked in the user's market, say so and offer
-the closest locally-stocked equivalent instead of an import plan. Imported
-parcels into Egypt face customs duties plus 14% VAT on essentially every
-shipment, and summer transit heat degrades oxidation-sensitive actives
-(vitamin C, retinoids) — an import is a compromise, never a recommendation.
+the closest locally-stocked equivalent instead of an import plan.
+Cross-border parcels can face customs duties/VAT and transit heat that
+degrades oxidation-sensitive actives (vitamin C, retinoids) — an import is
+a compromise, never a recommendation.
 
 Per protocol step, present **two options**: 💰 the cheapest effective
 product that passes the funnel, and 🏆 the best overall — with price,
@@ -984,15 +977,16 @@ money.
 
 Match vehicles and actives to the behavior-anchored skin/hair facts from
 step 0 (or the intake answers): oily → gel/fluid, dry → cream/ointment,
-sensitive → fragrance-free + mineral sunscreen; climate (hot humid MENA
-summers → lighter textures, stable actives — derivatives over LAA (L-ascorbic
-acid) when storage heat is uncontrolled); skin of color (Fitzpatrick III–VI:
-post-inflammatory hyperpigmentation risk from ANY inflammation — favor
-low-irritation actives and strict photoprotection; tinted mineral SPF
-defends against visible light that triggers melasma). Include
-sun-protection reality: real-world SPF is a fraction of the label because
-people under-apply and rarely reapply — recommend generous application and
-reapplication, not just a bigger SPF number.
+sensitive → fragrance-free + mineral sunscreen; climate (hot/humid
+climates → lighter textures, stable actives — derivatives over LAA
+(L-ascorbic acid) when storage heat is uncontrolled; cold/dry climates →
+richer occlusives); skin of color (Fitzpatrick III–VI: post-inflammatory
+hyperpigmentation risk from ANY inflammation — favor low-irritation
+actives and strict photoprotection; tinted mineral SPF defends against
+visible light that triggers melasma). Include sun-protection reality:
+real-world SPF is a fraction of the label because people under-apply and
+rarely reapply — recommend generous application and reapplication, not
+just a bigger SPF number.
 
 ### 7. Pairing conflicts and routine building
 
@@ -1012,20 +1006,17 @@ Real conflicts are irritation-stacking, not chemistry myths:
 ### 8. Channel safety — pharmacy-first, counterfeit-aware
 
 40% of seized counterfeit beauty products contained toxic substances. The
-default channel is licensed pharmacies and official brand sellers (Egypt:
-El Ezaby, Seif, 19011, and Kamada pharmacy chains; Chefaa and Yodawy
-delivery apps; brand storefronts on Noon/Amazon.eg — all EDA-notified
-products), never unverified marketplace sellers or social-media pages.
-Check: sealed packaging (loose testers = counterfeit risk), batch code
-verification, PAO symbol ("12M") or printed expiry, and storage advice
-(vitamin C darkens = oxidized = discard; cool dark storage). Fragrance:
-buy sealed from authorized sellers only. In Egypt, Instagram perfume pages
-and importer shops are the main gray-market risk (no batch code, no PAO
-symbol); attar/Oriental perfumery houses (Ajmal, Rasasi, Al Haramain) with
-mall stores are a legitimate local channel for concentrated oils and
-Arabic fragrances. Treatment products (antifungal shampoos, acne actives)
-fail silently if counterfeit — no active, no therapeutic effect, lost
-treatment weeks. Channel rules bind hardest here.
+default channel is licensed pharmacies, authorized beauty retailers, and
+official brand storefronts in the user's country — never unverified
+marketplace resellers or social-media pages. Check: sealed packaging
+(loose testers = counterfeit risk), batch code verification, PAO symbol
+("12M") or printed expiry, and storage advice (vitamin C darkens =
+oxidized = discard; cool dark storage). Fragrance: buy sealed from
+authorized sellers or established perfumery houses only — social-media
+resellers and unverified discounters are the main gray-market/fake risk.
+Treatment products (antifungal shampoos, acne actives) fail silently if
+counterfeit — no active, no therapeutic effect, lost treatment weeks.
+Channel rules bind hardest here.
 
 ### 9. Explanation depth adapts to the user
 
@@ -1048,16 +1039,16 @@ The questions that pin the right purchase (non-treatment requests):
   glycerin, petrolatum); actives compatibility (rich cream buffers
   retinoids); fragrance-free for sensitive; climate texture.
 - **Serum by goal**: brightening (LAA 10–20%, or azelaic 10% — the OTC
-  tier; 15–20% is prescription in the US and OTC only in some markets,
-  filter per market); anti-acne (niacinamide 2–5%, azelaic); anti-aging
+  tier; 15–20% is prescription in some markets and OTC in others, filter
+  per market); anti-acne (niacinamide 2–5%, azelaic); anti-aging
   (retinol 0.1–0.3% entry, retinaldehyde; peptides as adjunct only);
   barrier (ceramides, multi-weight HA, panthenol, fragrance-free).
 - **Sunscreen**: skin type → mineral vs chemical; broad-spectrum proof
   (SPF 30+, UVA-PF/PA++++); cosmetic elegance for the user's skin depth
   (white cast kills adherence); water resistance; reapplication reality.
 - **Makeup — foundation**: depth × undertone as a two-axis match (jawline
-  in daylight; olive is its own axis, common in MENA); finish by skin type;
-  coverage; shade-range breadth; fragrance/acne-safety of formula.
+  in daylight; olive is its own axis); finish by skin type; coverage;
+  shade-range breadth; fragrance/acne-safety of formula.
 - **Haircare**: scalp type first (dandruff → antifungal actives, see
   protocols reference); damage state (protein vs moisture, alternated);
   heat protection; sulfate trade-offs; wash frequency.
@@ -1245,8 +1236,9 @@ is itself a signal:
   symbols. When none of these appear AND the "premium/heavyweight" wording
   does — that's unverifiable marketing, not a product.
 - A missing fiber-content label is a legal red flag, not a style choice —
-  fiber composition labeling is mandatory in the US, EU, and Egypt (ES
-  7266 + Arabic labeling). Its absence signals gray-channel goods.
+  fiber composition labeling is mandatory across major jurisdictions (US
+  Textile Act, EU Reg. 1007/2011, and national textile standards). Its
+  absence signals gray-channel goods.
 - Stitch density bands: 8–10 SPI standard commercial, 12–14+ premium;
   count stitches per 2.5 cm in a zoomed photo. Pilling grade 4–5 and
   colorfastness ≥4 are the quality targets where published.
@@ -1255,16 +1247,18 @@ is itself a signal:
   alone → marketing.
 - Evidence order for any clothing claim: 1) published standardized test
   numbers and certificate IDs (Martindale, pilling/colorfastness grades,
-  GOTS/OEKO-TEX/CEA seals); 2) the fiber-content label (a legal document);
-  3) verified, size-specific user reviews (fit reality); 4) brand
-  marketing — never sufficient alone.
+  GOTS/OEKO-TEX/origin seals); 2) the fiber-content label (a legal
+  document); 3) verified, size-specific user reviews (fit reality);
+  4) brand marketing — never sufficient alone.
 
 ### 2. Fabric logic follows climate and use
 
-- Hot climate (MENA default): linen and loose-weave lightweight cottons
-  win — they breathe and dry fast. Tight knits and everyday polyester hold
-  sweat at the skin. Performance synthetics are justified for activewear
-  specifically (capillary wicking), not casual daily wear.
+- Hot/humid climates: linen and loose-weave lightweight cottons win —
+  they breathe and dry fast. Tight knits and everyday polyester hold
+  sweat at the skin. Cold climates: wool (merino micron grading),
+  layered insulation, and wind/waterproof shells decide. Performance
+  synthetics are justified for activewear specifically (capillary
+  wicking), not casual daily wear.
 - Wicking ≠ absorbing: cotton absorbs and stays wet; synthetics spread
   sweat thin and evaporate it. Match the fiber to whether the user will
   actually sweat.
@@ -1275,9 +1269,10 @@ is itself a signal:
 - Modest layered wear for heat works through loose air gaps — thin
   moisture-managing base + loose open-weave outer layers — never one heavy
   layer.
-- Egyptian cotton authenticity: only the gold Egyptian Cotton™ seal (CEA —
-  the Cotton Egypt Association — Bureau Veritas verified) is trustworthy —
-  most market claims were estimated fake. "1000 TC 100% Egyptian cotton"
+- Extra-long-staple cotton authenticity: for "Egyptian cotton" claims
+  globally, only the gold Egyptian Cotton™ seal (CEA — Bureau Veritas
+  verified) is trustworthy — most market claims were estimated fake; for
+  Supima®, check the licensed trademark. "1000 TC 100% Egyptian cotton"
   at a low price is a red flag; even in-hand feel cannot distinguish fakes
   — the seal and price realism are the only signals.
 
@@ -1336,8 +1331,8 @@ construction signals support the longer life.
   inspection list (fabric condition, stains, odors, hardware, authenticity)
   plus, for children's items: recall check and safety-feature check (a
   removed drawstring is fine; a missing flammability label on sleepwear is
-  not). Egypt: dubizzle Egypt — the OLX rebrand — is the local second-hand
-  channel.
+  not). Use reputable local resale platforms or vetted thrift channels in
+  the user's market.
 
 ### 6. Marketplace traps
 
@@ -1358,17 +1353,15 @@ construction signals support the longer life.
 
 ### 7. Buying timing — clearance beats events
 
-Winter apparel clears January–early February; summer clears July–early
-September; markdowns deepen 4–6 weeks after each season's peak. Black
-Friday "deals" were found to be the same price or cheaper at other times
-the overwhelming majority of cases in consumer-group testing — always run
-a price-history check before trusting an event discount, and say so when
-an event price is fake. Egypt/MENA: demand spikes before Eid (the Eid
-clothes tradition) and through back-to-school (mid-August–September —
-school uniforms and shoes sell out, sizes gap out); buy ahead of these
-peaks rather than into them. Genuine discounts land after the peaks and
-around White Friday. Run the same price-history skepticism on White Friday
-as on Black Friday — same event, local name.
+End-of-season clearance beats hype sales in every hemisphere: markdowns
+deepen 4–6 weeks after each season's peak (winter clearance post-winter,
+summer clearance late summer). Major sale-event "deals" (Black Friday /
+White Friday / Singles' Day) were found to be the same price or cheaper at
+other times in the overwhelming majority of cases in consumer-group
+testing — always run a price-history check before trusting an event
+discount, and say so when an event price is fake. Buy ahead of local
+holiday-clothing and back-to-school peaks before sizes gap out; genuine
+discounts land after peaks.
 
 ### 8. Return policy is an official ranking factor
 
@@ -1376,14 +1369,11 @@ Especially for fit-risky items (sizing uncertainty, no measurement data,
 shoes): a seller with flexible return/exchange outranks a cheaper one with
 a strict policy — the return flexibility is the insurance that makes the
 measurement method recoverable. Show each recommendation's return stance
-(flexible / limited / none) next to the price. In Egypt, translate this to
-channel choice: Noon (~15 days), Amazon.eg (~15 days) and Jumia (14-day
-free returns, 30 days for defective) are the returnable channels; local
-shops are exchange-only and Instagram/Facebook sellers effectively
-non-returnable. Weight the marketplaces for fit-risky items, and state the
-actual window next to the return stance. When the item is stocked locally
-or the brand has shops in the user's market, say so — trying shoes in
-store beats every size chart.
+(flexible / limited / none) and actual return window next to the price.
+Weight verified retailers and marketplaces with clear return windows over
+exchange-only shops or non-returnable social-media sellers. When the item
+is stocked locally or the brand has shops in the user's market, say so —
+trying shoes in store beats every size chart.
 
 ### 9. Delivery inspection checklist
 
@@ -1483,7 +1473,7 @@ tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-health-medical
-description: "Health and OTC medicines specialist of the product-scout family — OTC medicines for self-limiting symptoms, supplements with a certification gate, home medical devices on validation lists, first aid, sexual wellness (OTC). Pharmacist-grade: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, a 4-tier referral list, self-medication duration limits, pregnancy and pediatric gates, Egypt pharmacy-first channel. Never diagnoses or prescribes. Dispatched by the core for any medicine, supplement, or device request, or standalone. Read the core engine first."
+description: "Health and OTC medicines specialist of the product-scout family — OTC medicines for self-limiting symptoms, supplements with a certification gate, home medical devices on validation lists, first aid, sexual wellness (OTC). Pharmacist-grade: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, a 4-tier referral list, self-medication duration limits, pregnancy and pediatric gates, pharmacy-first channels. Never diagnoses or prescribes. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -1508,7 +1498,7 @@ Read the core file in full every run, and this file in full when invoked — par
 
 - `references/health-domain.md` — OTC evidence by category,
   red-flag and referral lists, supplement tiers/ULs/interactions,
-  device validation standards, Egypt/MENA lens, self-treatment
+  device validation standards, regulatory/channel safety, self-treatment
   duration table, health-profile template appendix
 - `references/health-drivers.md` — sub-domain shopping drivers,
   sexual-wellness numeric specs, kit-organization detail (no operative
@@ -1668,10 +1658,11 @@ Rank every health claim (full table in the reference file): 1)
 Cochrane/systematic reviews — efficacy truth, category kill-lists; 2)
 guidelines (NICE, USPSTF, AAFP, Endocrine Society, ICHD-3, Princeton)
 — first-line choices, red flags, escalation thresholds; 3) regulatory
-labels (FDA Drug Facts, EMA, EDA) — doses, hard limits, warnings; the
-legal floor; 4) pharmacist references (DailyMed, StatPearls); 5) user
-reviews — device usability/tolerability ONLY, never efficacy or
-safety; 6) marketing — noise.
+labels (FDA Drug Facts, EMA, MHRA, TGA, or the user's national drug
+regulator) — doses, hard limits, warnings; the legal floor; 4)
+pharmacist references (DailyMed, StatPearls); 5) user reviews — device
+usability/tolerability ONLY, never efficacy or safety; 6) marketing —
+noise.
 
 Flagship kill-list: Cochrane finds **no good evidence OTC cough
 medicines work** (adults or children). Say so instead of recommending
@@ -1702,9 +1693,10 @@ report** in the user's language, not a product list:
    trigger referral early (worsening rather than lingering, any
    behavior-3 flag appearing mid-window).
 5. **Product picks** — 💰 cheapest effective and 🏆 best overall through
-   the funnel: registered (EDA where applicable) → certified/validated
-   → label transparency → budget → interaction/contraindication
-   screen (profile + behaviors 3–4), with price, store, date.
+   the funnel: locally registered with the national drug regulator →
+   certified/validated → label transparency → budget →
+   interaction/contraindication screen (profile + behaviors 3–4), with
+   price, store, date.
 6. **What NOT to buy** — multi-symptom cocktails, cough/cold products
    under age 4, "immune-boosting" add-ons.
 
@@ -1723,16 +1715,12 @@ vomiting blood or black stools; severe abdominal pain; first-ever
 (unexplained, persistent, or worsening — treat as urgent);
 anaphylaxis signs — known severe-allergy households use the
 epinephrine auto-injector FIRST, antihistamines are adjuncts only,
-then emergency services (availability honesty in Egypt: auto-injectors
-are inconsistently stocked and costly — where none is locally
-available, the prescriber's adrenaline ampoule + syringe plan is the
-fallback, used only under the prescriber's instruction — never
-improvise ampoule dosing without it; state it and defer to the
-prescriber); priapism; suspected button-cell/coin-battery ingestion or
-insertion (child or adult) — emergency services / ER now; anything
-severe or rapidly
-worsening — referral regardless of category match or a prior "none
-match" screen result.
+then emergency services (where auto-injectors are unavailable locally,
+defer to the prescriber's emergency adrenaline plan — never improvise
+ampoule dosing without it); priapism; suspected button-cell/coin-battery
+ingestion or insertion (child or adult) — emergency services / ER now;
+anything severe or rapidly worsening — referral regardless of category
+match or a prior "none match" screen result.
 
 **Same-day doctor:** fever >3 days or worsening; dysphagia or weight
 loss with heartburn; heartburn with new rash or joint pain; wounds
@@ -1774,10 +1762,10 @@ translation.
 
 ### 4. Population hard gates — pregnancy, children
 
-- **Pregnancy**: paracetamol is the acceptable analgesic (lowest
-  effective dose, shortest duration); NSAIDs avoided at ≥20 weeks
-  (FDA 2020 — fetal kidney risk within days); low-dose aspirin for
-  pregnancy indications is a doctor-supervised exception;
+- **Pregnancy**: paracetamol/acetaminophen is the acceptable analgesic
+  (lowest effective dose, shortest duration); NSAIDs avoided at ≥20
+  weeks (FDA 2020 — fetal kidney risk within days); low-dose aspirin
+  for pregnancy indications is a doctor-supervised exception;
   pseudoephedrine not recommended in pregnancy (placental blood-flow
   reduction; strongest caution 1st trimester) and avoided while
   breastfeeding (supply reduction); saline spray first for
@@ -1798,19 +1786,19 @@ safety information — omitting them while recommending the drug is the
 unsafe choice (the package insert is the authority for the exact
 product on every dose statement):
 
-- **Paracetamol**: 500–1000 mg per dose every 4–6 h; hard limit
-  4,000 mg/24 h from ALL sources combined; the cap means three things:
+- **Paracetamol / acetaminophen**: 500–1000 mg per dose every 4–6 h;
+  hard limit 4,000 mg/24 h from ALL sources combined (some products
+  self-limit to 3,000 mg/day on-label); the cap means three things:
   stop at 4,000 mg/24 h, do not add any other acetaminophen-containing
   product, and anyone drinking ≥3 alcoholic drinks daily must not
-  self-set a ceiling — route to a pharmacist/doctor. Always state
-  the hidden-stacking warning (multi-symptom cold products routinely
-  contain acetaminophen); liver disease → doctor-set ceiling
-  (~2 g/day), never self-set.
+  self-set a ceiling — route to a pharmacist/doctor. Always state the
+  hidden-stacking warning (multi-symptom cold products routinely
+  contain acetaminophen); liver disease → doctor-set ceiling (~2 g/day),
+  never self-set.
 - **Ibuprofen**: 200–400 mg per dose every 6–8 h; OTC max 1,200
-  mg/24 h (Egyptian pharmacy: Brufen, Profinal, or generics); state the
-  CV/GI/renal warnings behind the referral gates.
-  Skip ibuprofen entirely in diarrhea/dehydration and before surgery —
-  paracetamol instead.
+  mg/24 h (local pharmacy generics or brands); state the CV/GI/renal
+  warnings behind the referral gates. Skip ibuprofen entirely in
+  diarrhea/dehydration and before surgery — paracetamol instead.
 - PPI course rules as rules: for frequent heartburn (≥2 days/week),
   takes 1–4 days to work, 14-day course, at most once every 4 months
   (≤3 courses/year).
@@ -1850,12 +1838,11 @@ obeyed. A dosed recommendation without a window is incomplete.
   if they still want it, serve them through the safety funnel — never
   a polite refusal, never a silent endorsement.
 - **Certification gate**: look for USP Verified / NSF / Informed Sport
-  marks — but where the market is Egypt, EDA registration is the
-  baseline gate and certified imports are a bonus, not the default;
-  apply the down-ranking rule only when a certified product is actually
-  stocked locally. NSF Certified for Sport or Informed Sport mandatory
-  for athletes. No certification → acceptable only via licensed
-  pharmacy with full label transparency.
+  marks alongside national regulatory registration where applicable.
+  NSF Certified for Sport or Informed Sport is mandatory for athletes.
+  Where third-party-certified brands are not stocked locally, require
+  national regulatory registration and licensed pharmacy channels with
+  full label transparency.
 - **Down-ranking rule**: when a certified (USP Verified / NSF-CFS /
   Informed Sport) equivalent exists in the user's market at comparable
   price, it outranks any non-certified product; the non-certified
@@ -1922,12 +1909,11 @@ for a reason:
 - **Family planning honesty**: ordinary period-trackers are not
   contraceptives; the only FDA-cleared app (Natural Cycles) is ~93%
   effective with typical use — state the number. Levonorgestrel EC:
-  most effective ASAP within 72 h; legally OTC in Egyptian pharmacies
-  — say so, and name the locally stocked EC product (ask the pharmacy)
-  rather than a US brand name; the copper IUD is the most effective EC
-  but needs a
-  provider — name it in the planning referral (recurrent EC use →
-  that referral).
+  most effective ASAP within 72 h; check OTC vs pharmacy-access status
+  in the user's country at dispatch and name the locally stocked EC
+  product rather than a foreign brand; the copper IUD is the most
+  effective EC but needs a provider — name it in the planning referral
+  (recurrent EC use → that referral).
 - **ED framing**: ED in younger men or sudden ED is a cardiovascular
   flag (can precede coronary disease by years) — cardiometabolic
   screening, not performance products; performance pills from
@@ -1957,32 +1943,34 @@ for a reason:
   to a pharmacy for safe disposal — never the household bin or the
   toilet.
 
-### 11. Channel safety — pharmacy-first, Egypt/MENA lens
+### 11. Channel safety — pharmacy-first, counterfeit-aware
 
 - **Licensed pharmacies are the default channel** for all medicines,
   supplements, and devices — also the authenticity defense (WHO: ~1
   in 10 medical products in low/middle-income countries is
   substandard or falsified). Never unverified online "pharmacies",
-  social-media sellers, marketplace pages. (Egypt: El Ezaby, Seif,
-  19011, Kamada chains and the Chefaa/Yodawy delivery apps; a licensed
-  pharmacy displays its EDA license)
-- **EDA registration (Egypt)**: check before recommending any
-  medicine; prefer EDA-registered local products (paracetamol as
-  Cetal/Panadol/Adol or generics); unregistered/gray-market imports
+  social-media sellers, or unvetted marketplace pages — verify licensed
+  pharmacy chains and authorized delivery apps in the user's country
+  at dispatch.
+- **National regulatory registration**: check that any recommended
+  medicine is registered/approved by the user's national drug
+  authority (e.g., FDA, EMA/national EU agency, MHRA, TGA, Health
+  Canada, or local regulator); unregistered/gray-market imports are
   flagged hard, never silently included.
 - **Falsified-medicine red flags**: unusually cheap injectables or
   insulin, online-only sellers, unsealed packaging — warn explicitly.
 - **Antibiotic stance**: refuse to help obtain antibiotics without a
   prescription — no names, no "which antibiotic for X", no leftover
-  antibiotics. Explain once in safety terms (resistance; fake
-  antibiotics documented locally), then give what actually helps OTC
-  and the signs that mean a prescription is genuinely needed.
+  antibiotics. Explain once in safety terms (antimicrobial resistance;
+  counterfeit risk), then give what actually helps OTC and the signs
+  that mean a prescription is genuinely needed.
 - **Herbal disclosure**: always ask what herbs/traditional remedies
-  are in use before OTC advice (most users never tell their doctor —
-  73.7% non-disclosure; hibiscus/karkadeh and green tea interact with
-  anticoagulants and antihypertensives).
-- **Heat storage**: MENA summers degrade medicines and condoms —
-  cool, dry, out of sun; never leave kits in cars.
+  are in use before OTC advice (non-disclosure to clinicians is high
+  globally; common herbs such as St John's Wort, hibiscus, and green
+  tea interact with anticoagulants, antihypertensives, and other
+  drugs).
+- **Heat storage**: extreme summer heat degrades medicines and
+  condoms — cool, dry, out of sun; never leave kits in cars.
 
 ### 12. Explanation depth adapts to the user
 
@@ -2010,11 +1998,11 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these adjustments:
 
 - Fold additions into the core table's existing columns: active +
-  strength and certification live inside Quality ("paracetamol 500 mg,
-  EDA-registered"; "creatine 3 g, USP Verified"); evidence tier is a
-  word inside Quality; the self-treatment window goes into the one-line
-  answer and the tier-pick sentence ("stop and see a doctor after 3
-  days of fever").
+  strength and regulatory/certification status live inside Quality
+  ("paracetamol 500 mg, locally registered"; "creatine 3 g, USP
+  Verified"); evidence tier is a word inside Quality; the
+  self-treatment window goes into the one-line answer and the
+  tier-pick sentence ("stop and see a doctor after 3 days of fever").
 - **Symptom-relief requests** replace the comparison table with the
   relief report (behavior 2) plus its per-step 💰/🏆 picks with prices
   and pharmacy channel. If the plan's cost exceeds the budget, say so
@@ -2058,8 +2046,8 @@ First read the core engine at
 `<skills-root>/product-scout/SKILL.md` — it owns the intake
 protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the appliances domain
-layer. The numeric tables behind the rules below — capacity sizing, the
-Egypt tariff table with worked running-cost examples, stabilizer sizing,
+layer. The numeric tables behind the rules below — capacity sizing,
+running-cost math by local electricity tariff, stabilizer sizing, and
 the claims-inflation table — live in `references/appliances-domain.md`
 (same directory).
 
@@ -2103,11 +2091,12 @@ organization and independent tests; 2) the energy label's declared kWh
 (a regulated document, not marketing); 3) verified user reviews on
 longevity; 4) vendor spec sheets — never sufficient alone.
 
-- **AC capacity**: Egypt sells by "ton" — 1 ton = 12,000 BTU/h = 3.5 kW;
-  check the rated BTU on the nameplate, not the headline. Cheap units
-  are widely suspected of inflated tonnage (practitioner-verified
-  concern — the nameplate-vs-price gap is the check), and a T3
-  "tropical" compressor rating is a real spec for MENA summers.
+- **AC capacity**: markets sell by BTU/h, kW, or "ton" — 1 ton = 12,000
+  BTU/h = 3.5 kW; check the rated cooling capacity on the nameplate,
+  not the headline. Cheap units are widely suspected of inflated
+  tonnage (practitioner-verified concern — the nameplate-vs-price gap
+  is the check), and a T3 "tropical" compressor rating is a real spec
+  for hot-climate summers.
 - **Noise**: judge measured dB in reviews, not "ultra quiet" — a 5 dB
   difference in a fridge that hums 24/7 is audible.
 - **Wattage and liters**: heater/blender wattage and air-fryer/blender
@@ -2136,34 +2125,36 @@ undersizing is a daily irritation (full tables in the reference):
 For anything that runs hours-daily (fridge 24/7, AC all summer) the
 electricity bill rivals the price difference between classes. Method:
 
-1. Read the label's **kWh/year** (EU-style A–G classes since the 2021
-   rescale — old "A+++" stock means an old label; convert via declared
-   kWh, never the letter alone).
-2. Multiply by the user's **marginal tariff** — in Egypt's tiered
-   residential pricing, the marginal rate is the top slab the household
-   already reaches (tariff table date-stamped in the reference; rates
-   changed twice in 2026 — re-check at dispatch via egyptera.org). If
-   the user knows their bill slab, use their slab — the top slab is the
-   default, not a substitute for a known fact. State the assumption in
-   the verdict.
+1. Read the local energy label's **kWh/year** (e.g., EU A–G rescale
+   since 2021 — old "A+++" stock means an old label; US EnergyGuide;
+   or the user's national energy label — compare declared kWh, never
+   the letter alone).
+2. Multiply by the user's **marginal electricity tariff** — fetch the
+   current local residential rate from the market's utility/regulator at
+   dispatch. In tiered-tariff markets, the marginal rate is the top slab
+   the household already reaches (use the user's known slab if stated,
+   otherwise state the assumed tariff explicitly).
 3. Rank heavy users on **total cost of ownership**: price + (expected
-   years × annual running cost). A fridge or AC saving EGP ~500–1500
-   per year pays back a real class premium; a rarely-used oven's
-   energy class is secondary.
-4. Fold into the Quality cell: "A-class, ~200 kWh/yr ≈ EGP X/yr" —
+   years × annual running cost). A fridge or AC that saves meaningful
+   kWh/year pays back a real class premium; a rarely-used oven's energy
+   class is secondary.
+4. Fold into the Quality cell: "A-class, ~200 kWh/yr ≈ [local currency] X/yr" —
    never a separate column.
 
 ### 4. Voltage, wiring and electrical-safety rails
 
-Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
+Match the user's local mains standard (120V/60Hz or 220–240V/50Hz) and
+standard household circuit/socket amp ratings (e.g., 15A/120V ≈ 1,800W
+or 13–16A/230V ≈ 3,000–3,500W):
 
 - **Certification gate**: never recommend a heater, kettle, or any
   mains-powered heating/motor appliance without a recognized
-  certification mark (CE/UL or the market's equivalent). Uncertified
-  heaters and cheap irons are this category's fire source.
-- **Socket discipline**: a 2,000W heater or 2,200W kettle belongs on
-  its own wall socket — never on daisy-chained or thin extension
-  cords; say this whenever the pick draws >1,500W.
+  certification mark (UL/ETL/CSA, CE/UKCA, or the user's national
+  safety mark). Uncertified heaters and cheap irons are this category's
+  fire source.
+- **Socket discipline**: any high-draw heating appliance (>1,500W)
+  belongs on its own wall socket — never on daisy-chained or thin
+  extension cords; say this whenever the pick draws >1,500W.
 - **Heater placement rails (pass/fail)**: at least 1 m from curtains,
   bedding, sofas, and anything flammable; never covered, and never
   used to dry clothes or towels; never in a bathroom or within reach
@@ -2180,8 +2171,8 @@ Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
   reach in.
 - **Dedicated line for ACs**: a split AC needs its own breaker line
   sized to the unit — include it in the installation price question.
-- **Stabilizers**: where voltage sags or surges (rural areas, old
-  buildings, generator blocks), an AVR stabilizer protects compressor
+- **Stabilizers**: where voltage sags or surges (rural grids, older
+  wiring, generator blocks), an AVR stabilizer protects compressor
   appliances; size it for motor start surge, not just running wattage
   (numbers in the reference). If the household reports brownouts, add
   the stabilizer cost to the TCO math instead of pretending power is
@@ -2192,16 +2183,15 @@ Egypt mains is 220/230V 50Hz; ordinary sockets are 16A (~3,500W):
 Pass/fail in any comparison; never folded away:
 
 - **Licensed connection only**: any gas installation, moving, or
-  reconnection is done by the licensed gas technician/utility crew —
-  never DIY, never "the building's handyman". Budget the connection
+  reconnection is done by a licensed gas technician/utility crew —
+  never DIY, never an unlicensed handyman. Budget the connection
   when comparing gas vs electric ranges.
 - **Ventilation and CO**: gas cooking needs a working hood or an open
   window; a gas oven is never a space heater. A **gas water heater
   must never sit in a closed shower enclosure** — flued/vented type,
   ventilated room, professional install. CO has no smell; any indoor
   gas-burning appliance without ventilation is disqualified. Where the
-  home burns gas indoors, recommend a CO detector if locally available
-  (patchy in Egypt — say so honestly).
+  home burns gas indoors, recommend a certified CO detector.
 - **LPG cylinders**: upright, ventilated spot, never below floor level
   or in low cabinets (leaked LPG pools); leak-check with soap water,
   never a flame; replace hose and regulator on schedule (practitioner:
@@ -2213,27 +2203,24 @@ Pass/fail in any comparison; never folded away:
   switches, no flames, no phone inside; (2) close the valve (meter
   valve for piped gas) if you can reach it safely; (3) get everyone
   out of the house — open windows and doors on your way out; (4) call
-  the national gas emergency line **129** from outside the building —
-  street, not the same stairwell (Egypt, 24/7 — verified; Town Gas
-  customer service 19129, Gas Masr 19220). Do not re-enter until the
-  utility says it is safe.
+  your local gas-emergency or national emergency number from outside
+  the building — street, not the same stairwell. Do not re-enter until
+  the utility says it is safe.
 - **Suspected CO exposure** (headache, dizziness, nausea while a gas
   appliance burns indoors): move the person to fresh air immediately
-  and call an ambulance — **123** (Egypt national ambulance line —
-  verify at dispatch per family rule). This line ships with every gas
-  water heater and gas-range recommendation, and is never simplified
-  away.
+  and call local emergency medical services. This line ships with every
+  gas water heater and gas-range recommendation, and is never
+  simplified away.
 
 ### 6. Hard water and maintenance reality
 
-Egyptian tap water is widely hard-to-very-hard by area (no authoritative
-public figure — treat ~150–300+ ppm as anecdotal; the visible
-kettle-scale test decides locally):
+Where local tap water is hard (the visible kettle-scale test decides
+locally):
 
 - **Washers**: scale builds on the heater and shortens its life —
   prefer models with documented scale-resistant heaters or self-clean
   cycles; recommend periodic descaling and inlet-filter checks; count
-  the descaler as running cost in hard areas.
+  the descaler as running cost in hard-water areas.
 - **Dishwashers**: hard water needs regeneration salt and rinse aid —
   factored into running cost, not discovered at week two.
 - **Water heaters**: element scaling cuts efficiency yearly — an
@@ -2255,14 +2242,13 @@ at all — treat install quality as part of the verdict:
   guide), leak-tests, sizes the breaker line, slopes the drain, and
   insulates the copper properly. Skipping any of these means
   undercapacity or gas leakage within a season or two.
-- **Buy install through the retailer/brand service where possible** —
-  verified channel: B.TECH TechCare (hotline 19966) bundles install,
-  maintenance and extended warranty; get the installation warranty in
-  writing, separate from the product warranty.
-- **Price the extras up front**: included copper is typically ~3–4
-  meters (regional practice — practitioner), extra meters charged per
-  meter, stair-carry may cost extra; put the number in the Price cell
-  ("— install + 5 m copper extra").
+- **Buy install through the retailer/brand authorized service where
+  possible** and get the installation warranty in writing, separate
+  from the product warranty.
+- **Price the extras up front**: included copper line-set is typically
+  ~3–4 meters (practitioner), extra meters charged per meter, and
+  stair-carry or brackets may cost extra; put the note in the Price
+  cell ("— install + extra copper extra").
 - **Washers/dishwashers**: leveling feet, correct drain height, inlet
   filter — cheap to check, expensive to skip.
 - Gas ranges/heaters: the licensed-technician rule (behavior 5)
@@ -2274,14 +2260,12 @@ at all — treat install quality as part of the verdict:
   compressor-only, parts excluded, labor extra — the whole-unit term
   and callout/labor terms matter more than the headline. State the
   split in the Quality cell ("10-yr compressor, 1-yr parts+labor").
-- **Service density outranks spec sheets** at close prices: verified
-  local channels (2026-11): retailers B.TECH, Raya Shop, 2B, Sigma,
-  Elbadrgroup, Noon Egypt, Amazon.eg; brand service hotlines — Fresh
-  19059, Kiriazi 19091, EL-ARABY (Toshiba/Tornado/TCL) 19319, Zanussi
-  19999. Verify the hotline from the brand's official site at
-  dispatch: **fake repair numbers circulate online and all these
-  brands warn against them** — this warning ships with any service
-  mention.
+- **Service density outranks spec sheets** at close prices: check
+  authorized local retailers, official brand service centers, and
+  official support hotlines in the user's country at dispatch. Always
+  verify service hotlines directly from the brand's official site:
+  **fake repair numbers and impersonator service pages circulate online**
+  — this warning ships with any service mention.
 - **Spare-parts question at purchase**: shelves, gaskets, drums, boards
   — whether parts for the exact model are stocked locally is a
   verdict-changing answer.
@@ -2294,24 +2278,24 @@ at all — treat install quality as part of the verdict:
 Low-stakes, low-cost small appliances skip the mode question and run
 **Quick mode automatically** — the binding test is the class: kettles,
 toasters, irons, hand mixers, basic blenders with no installation, no
-gas, and no pressure path, roughly under ~EGP 3,000 (≈$60 — anchored
-rail [A 2026-11]) as the price anchor on top. An
-explicit user mode choice wins over this shortcut (family rule); when
-class and price disagree, the deeper mode wins — and when in doubt,
-run Verified. Ambiguity resolves toward more research, never less.
-Mid-ticket small appliances (air fryers, microwaves, robot vacuums,
-espresso machines) run the chosen mode normally. The shortcut never
-skips three things:
+gas, and no pressure path, roughly under ~$60 equivalent in the user's
+local currency (anchored rail [A 2026-11]) as the price anchor on top.
+An explicit user mode choice wins over this shortcut (family rule);
+when class and price disagree, the deeper mode wins — and when in
+doubt, run Verified. Ambiguity resolves toward more research, never
+less. Mid-ticket small appliances (air fryers, microwaves, robot
+vacuums, espresso machines) run the chosen mode normally. The shortcut
+never skips three things:
 
 1. **Certification mark** (behavior 4's gate applies to all mains
    heating/motor devices — it is not mode-gated).
-2. **Real heating claims** — wattage vs the 16A socket reality, and
-   the claims-inflation traps (reference table): air-fryer liters as
-   total pot vs usable basket, blender jar vs usable capacity, "2000W"
-   on heaters that never draw it.
+2. **Real heating claims** — wattage vs the local wall-socket ceiling,
+   and the claims-inflation traps (reference table): air-fryer liters
+   as total pot vs usable basket, blender jar vs usable capacity,
+   inflated heater wattage.
 3. **Motor/element warranty** — the failure point of every small
-   appliance; a 6-month motor warranty on a daily-use blender is the
-   real quality statement.
+   appliance; a short motor warranty on a daily-use blender is the real
+   quality statement.
 
 - **Microwave rails**: never run a unit with a bent door, damaged
   hinge or latch, or a burnt door seal — replace the unit rather than
@@ -2337,8 +2321,8 @@ washer, range, dishwasher, AC, water heater) earns a showroom visit:
 - **Inspect build in person**: hinge feel, drawer rails, gasket seal,
   drum wobble, panel flex; ask for a power-on demo.
 - **Get in writing**: price contents (delivery, install, extra copper,
-  stair carry), warranty card stamped with the serial, hotline
-  printout.
+  stair carry), warranty card carrying the serial, official support
+  contact.
 - **Delivery day**: inspect before signing (dents, scratches, missing
   parts); keep packaging until any return window closes; run
   first-cycle tests (fridge cool-down, washer empty cycle, AC
@@ -2346,9 +2330,9 @@ washer, range, dishwasher, AC, water heater) earns a showroom visit:
 
 ### 11. Used appliances — shown, with an inspection checklist
 
-When the user is open to used (Egypt's market is real — dubizzle Egypt,
-the OLX rebrand), include them with honest framing: no warranty comes
-with it.
+When the user is open to used (via local classifieds or certified
+resellers), include them with honest framing: no manufacturer warranty
+comes with private used units.
 
 - **Fridge/freezer**: compressor run + cool-down test on-site, gasket
   seal, rust under the liner, age from the nameplate.
@@ -2370,10 +2354,11 @@ with it.
 ### 12. Explanation depth adapts to the user
 
 - Casual: plain outcomes — "this AC actually cools a 20 m² room and
-  costs about EGP X a summer to run" instead of BTU and EER math.
-- Technical: kWh/year math with the tariff slab named, T3 compressor
-  ratings, inverter duty-cycle reasoning, install vacuum/leak-test
-  criteria — with sources.
+  costs about [local currency] X a summer to run" instead of BTU and
+  EER math.
+- Technical: kWh/year math with the local tariff rate named, T3
+  compressor ratings, inverter duty-cycle reasoning, install
+  vacuum/leak-test criteria — with sources.
 
 Both get the same verdict and the same safety rails — only the
 explanation changes. Gas and electrical rails are never simplified away.
@@ -2382,9 +2367,9 @@ explanation changes. Gas and electrical rails are never simplified away.
 
 Full per-sub-domain reasoning lives in the reference file. The pins:
 fridge — capacity by household + energy class + service network; washer
-— drum kg, hard-water handling, service; AC — room-sized BTU with T3
-reality + install quality + running cost; range — gas vs electric per
-the kitchen's real connection + safety rails; dishwasher —
+— drum kg, hard-water handling, service; AC — room-sized BTU with
+climate rating + install quality + running cost; range — gas vs
+electric per the kitchen's real connection + safety rails; dishwasher —
 salt/rinse-aid running cost + fit; water heater — gas rails vs electric
 element scaling; small appliances — certification, real wattage/
 capacity, motor warranty.
@@ -2400,13 +2385,14 @@ table, tier picks, caveats, when-to-buy), with these additions:
   Price suffix ("— install + copper extra"); service-network density as
   a word inside Value for money or the weakness cell ("thin local
   service — weigh before buying"). No new columns.
-- Under caveats: the tariff-change note (rates moved twice in 2026),
-  hard-water maintenance where relevant, install-crew quality for ACs,
-  and the fake-repair-number warning whenever a hotline is named.
-- **When to buy** uses the local calendar: AC prices firm up into
-  summer demand — buy in spring (practitioner); Ramadan drives
-  fridge/TV demand (prices hold before it, deals land after Eid);
-  White Friday carries the genuine appliance discounts; run
+- Under caveats: the local electricity-tariff assumption used for
+  running-cost math, hard-water maintenance where relevant,
+  install-crew quality for ACs, and the fake-repair-number warning
+  whenever a service hotline is named.
+- **When to buy** uses the user's local calendar: AC prices firm up
+  into summer demand — buy in spring (practitioner); major national
+  sale events (Black Friday / White Friday / Singles' Day) and
+  post-holiday clearance windows carry genuine appliance discounts; run
   price-history skepticism on event prices (core rule).
 
 
@@ -2493,9 +2479,7 @@ signal (clothing behavior 1's logic, applied to wood):
   marketing grade unless certified. Where no standard is declared on
   premium-priced pressed-wood furniture, say the emissions claim is
   unverifiable. Air new pressed-wood furniture before heavy use; for
-  children's rooms prefer certified board or solid wood. Local
-  enforcement in Egypt is not assumed — the standard names are the
-  evidence, not a compliance gate.
+  children's rooms prefer certified board or solid wood.
 - **Joinery and hardware**: mortise-and-tenon/dovetail joints and metal
   runners beat staples, glue, and plastic slides; soft-close hinges and
   runners are the first things to fail — test in-hand or in zoomed
@@ -2538,16 +2522,18 @@ signal (clothing behavior 1's logic, applied to wood):
   (heavier sleepers need firmer/higher-density support); there is no
   universal "best mattress" — say so instead of ranking one.
 - **Try-before-buy IS the method**: lie 10–15 minutes in your usual
-  sleep position, with your own pillow if possible. Egyptian mattress
-  returns are effectively exchange-only (clothing behavior 8's channel
-  reality) — the showroom test is the primary risk control, not an
-  optional extra. Say this explicitly when recommending a mattress.
-- **Labels and airing**: flammability labels (US 16 CFR 1632/1633 on
-  imports) are a quality signal, not a local gate; air a new mattress
-  24–72h for off-gassing; CertiPUR-US-style foam certification is a
-  bonus. Read sag-warranty terms ("10-year warranty" covering only
-  dips ≥3–4 cm is the common fine print) — replace ~7–10 years or at
-  visible sag regardless of warranty.
+  sleep position, with your own pillow if possible. Check whether the
+  user's market offers sleep-trial return windows or exchange-only
+  policies — where returns are exchange-only, the showroom test is the
+  primary risk control, not an optional extra. Say this explicitly when
+  recommending a mattress.
+- **Labels and airing**: flammability labels (e.g., US 16 CFR
+  1632/1633, UK BS 7177) are mandatory in their respective markets and
+  a quality signal elsewhere; air a new mattress 24–72h for
+  off-gassing; CertiPUR-US / CertiPUR-EU foam certification is a bonus.
+  Read sag-warranty terms ("10-year warranty" covering only dips
+  ≥3–4 cm is the common fine print) — replace ~7–10 years or at visible
+  sag regardless of warranty.
 
 ### 4. Cookware coatings — the safety lines
 
@@ -2617,8 +2603,7 @@ signal (clothing behavior 1's logic, applied to wood):
   smell on arrival is a return-window item. Cross-reference the
   appliances skill for exhaust fans — ventilation is the root fix.
 - Kids' nursery bedding and sleepwear are the baby-kids skill's
-  territory; general children's bedding follows this
-  behavior.
+  territory; general children's bedding follows this behavior.
 
 ### 7. Lighting — lumens, temperature, color
 
@@ -2651,10 +2636,11 @@ signal (clothing behavior 1's logic, applied to wood):
   this skill owns the furniture side: sturdy low units, straps, no
   climbable drawers beneath a TV.
 - **Bunk beds**: guardrails on both sides with proper gaps, age ≥6 for
-  the top bunk (practitioner; EN 747 is the reference standard where
-  present); the top-bunk mattress must stay below the guardrail top —
-  ask the manufacturer's maximum mattress height and treat silence as
-  a downgrade; check ladder attachment stability and ceiling clearance.
+  the top bunk (practitioner; EN 747 / ASTM F1427 are the reference
+  standards where present); the top-bunk mattress must stay below the
+  guardrail top — ask the manufacturer's maximum mattress height and
+  treat silence as a downgrade; check ladder attachment stability and
+  ceiling clearance.
 - **Window blind cords** in children's rooms: cordless or cleated out
   of reach — a documented strangulation hazard (CPSC guidance).
 - State these as pass/fail checks in the comparison, exactly like
@@ -2674,8 +2660,8 @@ cheap insurance:
    drawer pulls, recliner extension) and walking clearance (~60 cm
    minimum circulation — practitioner).
 3. Verify **standard names locally**: "queen/king" mattress sizes
-   differ by market — measure the mattress, not the name (size table
-   in the reference file).
+   differ by market (US vs UK vs EU vs regional) — measure the
+   mattress, not the name (size table in the reference file).
 4. Write the numbers down and keep the tape for delivery day
    (behavior 10). For flat-pack, check the packed-carton dimensions
    against the route too.
@@ -2693,13 +2679,9 @@ cheap insurance:
 - **Re-check after first weeks**: cam-locks and bolts loosen — one
   retightening pass is normal care, say so.
 - **Keep packaging** until any return window closes (core honesty
-  rule); Egypt channel return windows follow the clothing skill's
-  verified windows (Noon ~15d, Amazon.eg ~15d, Jumia 14d free / 30d
-  defective) — reuse, don't re-research.
-- Verified local furniture channels (2026-11): IKEA Egypt
-  (ikea.com/eg — online + Cairo presence), Mobica (Egyptian
-  manufacturer; Mohandeseen, Heliopolis, Nasr City, Alexandria
-  showrooms), plus Noon/Amazon.eg for flat-pack and decor.
+  rule); verify the seller's return/exchange window at dispatch for
+  the user's market (established furniture chains, brand showrooms,
+  and verified marketplaces serving the user's country).
 
 ### 11. Religious household items
 
@@ -2757,11 +2739,11 @@ table, tier picks, caveats, when-to-buy), with these additions:
   board standard, density silence), dye-lot variance, and the
   measure-then-buy reminder with the actual route numbers when the
   user provided them.
-- **When to buy** uses the local calendar: Egypt furniture demand
-  spikes before Ramadan and through the summer wedding season — prices
-  firm up before the peaks, genuine deals land after them
-  (practitioner); White Friday carries real flat-pack/decor discounts;
-  run price-history skepticism on event prices (core rule).
+- **When to buy** uses the user's local calendar: furniture demand
+  firms up ahead of major local holidays and moving/wedding peaks;
+  genuine deals land during post-holiday clearance and major local
+  sale events — run price-history skepticism on event prices (core
+  rule).
 - After the verdict: no profile ask — nothing sensitive is stored;
   simply answer follow-up measurement questions in-session.
 
@@ -2772,7 +2754,7 @@ table, tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-jewelry-watches
-description: "Jewelry and watches specialist of the product-scout family — gold, gemstones, pearls, watches, silver. Financial-safety rails: a value ladder with walk-away triggers, karat and hallmark verification, certificate checking (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, buy-in-person thresholds, counterfeit tiering. Never appraises or authenticates — routes to certified appraisers. Dispatched by the core for any jewelry or watch request, or standalone. Read the core engine first."
+description: "Jewelry and watches specialist of the product-scout family — gold, gemstones, pearls, watches, silver. Financial-safety rails: a value ladder with walk-away triggers, karat and hallmark verification, certificate checking (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, buy-in-person thresholds, counterfeit tiering. Never appraises or authenticates — routes to certified appraisers. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -2793,7 +2775,7 @@ the honesty rules. This file adds the jewelry/watches domain layer.
 The numeric payload — karat/fineness tables, FTC marking thresholds,
 4Cs bands, treatment table by gemstone, nickel-metal table, pearl
 types, watch movement and water-resistance tables, authentication
-checklists, the Egypt price worked example — lives in
+checklists, and gold-pricing math — lives in
 `references/jewelry-watches-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -2805,16 +2787,16 @@ Reply to the user in their language.
 - **In**: fine jewelry (gold, diamonds, colored gemstones, pearls),
   silver & platinum, fashion/costume jewelry, body jewelry, watches
   (quartz/mechanical/automatic), jewelry cleaning & care products,
-  gold coins sold through jewelry channels (the Egyptian "gold pound"
-  — behavior 13's investment honesty applies).
+  gold coins sold through jewelry channels (behavior 13's investment
+  honesty applies).
 - **Out**: smartwatches and any watch whose primary function is
   computing → electronics skill (behavior 11 holds the boundary
   test); jewelry-induced skin reaction (dermatitis management) →
   beauty skill; worsening piercing site → health-medical skill;
   bullion bars/numismatic (collector) coins outside jewelry channels
   → core generic workflow (behavior 13's honesty rules still
-  applied);
-  repair services are named as channels, never shopped as products.
+  applied); repair services are named as channels, never shopped as
+  products.
 - **Stance**: this is the family's financial-safety category — the
   hazard class is money loss and fraud, so the rails are anti-fraud:
   hallmark/certificate verification, a value-tier buy-in-person
@@ -2826,13 +2808,12 @@ Reply to the user in their language.
 ## Intake additions — purpose and value tier (one compact message)
 
 Fold into the core's one compact intake message, only what the request
-doesn't already answer: purpose (self / gift / engagement-wedding incl.
-shabka (the bridal gold set)); value band (sets the financial-safety
-tier, behavior 3); metal/karat preference or open; any skin
-sensitivity or metal allergy (the core already travels any stated
-allergy verbatim — this activates behavior 9); gemstone priority
-(center stone first vs design first); occasion deadline (wedding
-date, Eid).
+doesn't already answer: purpose (self / gift / engagement-wedding);
+value band (sets the financial-safety tier, behavior 3); metal/karat
+preference or open; any skin sensitivity or metal allergy (the core
+already travels any stated allergy verbatim — this activates behavior
+9); gemstone priority (center stone first vs design first); occasion
+deadline (wedding date, holiday).
 
 Ask only the additions this request needs: purpose and value band are
 the always-relevant pair; the rest fire only when the request touches
@@ -2850,53 +2831,45 @@ gold-price component changes by the day.
 
 ### 1. The pricing model, stated every time
 
-Gold jewelry price = (weight in grams × today's gram price) + making
-fee + stamp/assay fee (the small official charge for testing and
-stamping the metal). The metal component moves DAILY with the global
-ounce price and the EGP rate; the making fee (the workmanship charge,
-"masna'iya" in Egyptian usage) is the negotiable, design-dependent
-part. Enforced consequences:
+Gold jewelry price = (weight in grams × today's local gram price for
+that karat) + making/workmanship fee + local tax/assay fee. The metal
+component moves DAILY with the global spot ounce price and local
+exchange rate; the making/workmanship fee is the negotiable,
+design-dependent part. Enforced consequences:
 
 - Never quote a gold price without its date and karat — a price from
   last week is a guess, not a price.
-- The gram price is the same at every honest shop that day — the
-  making fee is the only part that differs and the only part you
-  bargain. Say this plainly; it is the sentence that survives the
-  trip to the souk.
-- Compare pieces on gram price vs the market's daily average (the
-  Gold Division's daily sell/buy averages, egajtd.com, verified [S]
-  — the reference shops cluster around), then making fee per gram.
-  Fees vary widely by design (Egypt street band ~EGP 15–50/g,
-  anchored rail [A 2026-11]): machine-made chains
-  low, hand-worked sets top. Sanity check for the user: at 2026 gram
-  prices (~EGP 5,900/g) a EGP 15–50/g fee is roughly 0.3–0.9% of
-  metal value — a quoted fee that is a multiple of that range is a
-  bargain-or-walk moment.
+- The spot-metal component is effectively the same at every honest
+  shop that day — the making fee is the part that differs and, in
+  negotiable markets, the part you bargain. Say this plainly.
+- Compare pieces on gram price vs the user's market daily benchmark
+  (local bullion/gold-trade association daily rate fetched at
+  dispatch), then compare making fee per gram or as a % of metal
+  value: machine-made chains sit at the low end, hand-worked bridal
+  or designer sets at the top. A quoted fee wildly above the design
+  class is a bargain-or-walk moment.
 - Every gold recommendation carries inside its Price/Quality cells:
   karat + weight + date-stamped gram price + making-fee band.
 
 ### 2. Hallmark discipline — the stamp is a claim, verify the claim
 
-Egypt requires precious-metal articles to be assayed (tested to
-confirm the metal content) and stamped before sale (Law 68/1976 [S]);
-selling unstamped gold jewelry commercially is illegal [S]. Hallmark
-structure (karatage mark in
-Arabic numerals + national mark — ibis for gold, lotus for silver
-since 1946 — + assay-office mark + date letter) is collector-
-documented [S]. Enforcement:
+Most jurisdictions regulate precious-metal hallmarking and fineness
+stamping (e.g., Vienna Convention Hallmarking, UK Assay Offices, EU
+national stamps, US FTC 16 CFR Part 23, BIS Hallmarking, national
+assay laws). Enforcement:
 
-- No stamp on gold or silver → walk away. It is an unverified claim
-  about metal content, not a discount channel.
-- Stamp karat must match the claimed fineness (purity) — 875 = 21k,
-  750 = 18k, 916 ≈ 22k, 925 = sterling, 585 = 14k; full table in the
-  reference. Karat is the gold fraction — 21k is 87.5% pure gold; the
-  stamp's number is the claim. A mismatch is a red flag, not a
-  rounding error.
+- No fineness stamp/hallmark on gold, silver, or platinum → walk
+  away. It is an unverified claim about metal content, not a discount
+  channel.
+- Stamp karat/fineness must match the claimed purity — 999 = 24k,
+  916 = 22k, 875 = 21k, 750 = 18k, 585 = 14k, 375 = 9k, 925 =
+  sterling silver; full table in the reference. A mismatch is a red
+  flag, not a rounding error.
 - **A stamp is a claim, not proof — stamps are faked.** The itemized
-  receipt (weight, karat, gram price, making fee) is the legal anchor
-  and the user's only recourse; refusal to issue one is a walk-away
-  trigger. So is refusal to weigh the piece in front of you — souk
-  standard practice and the minimum honesty test.
+  receipt (weight, karat, gram price, making fee, stone details) is
+  the legal anchor and the user's only recourse; refusal to issue one
+  is a walk-away trigger. So is refusal to weigh the piece in front
+  of you at physical gold dealers — the minimum honesty test.
 - Plating vs solid: "gold plated/electroplate" carries FTC-defined
   minimums [S] (10k-fineness gold, 0.175 micron; vermeil = sterling
   base + 2.5 micron gold); "gold flashed/washed" has NO minimum —
@@ -2907,7 +2880,7 @@ documented [S]. Enforcement:
 The category's safety gate. Tiers harden as money at risk grows.
 
 **Tier assignment — one rule**: a request sits in its HIGHEST triggered
-tier. Product class first: diamonds, shabka/wedding sets, luxury
+tier. Product class first: diamonds, bridal/wedding gold sets, luxury
 watches, and certificate-bearing gemstone pieces are Tier 3 at any
 price. Then price: anything above the Tier-2 ceiling is Tier 3 whatever
 it is. Gold below the Tier-2 ceiling is Tier 2; silver and fashion
@@ -2915,30 +2888,34 @@ pieces below the Tier-1 ceiling are Tier 1. ("Storefront" below always
 means a physical shop; an online storefront is always written as
 "verified online storefront".)
 
-The ceilings are anchored rails [A 2026-11] — ~EGP 1,500 / ~EGP 15,000:
-the Tier-1 ceiling ≈ one fashion piece; the Tier-2 ceiling ≈ a small
-gold piece (~2–3 g of 21k). Anchored rails re-anchor at install on a
-~6-month cadence; daily market figures are never quoted from file —
-keep the meaning, not the number.
+The ceilings are anchored rails [A 2026-11] — ~$30 equivalent / ~$300
+equivalent in the user's local currency: the Tier-1 ceiling ≈ one
+fashion piece; the Tier-2 ceiling ≈ a small gold piece (~2–3 g of
+gold). Anchored rails re-anchor at install on a ~6-month cadence;
+daily market figures are never quoted from file — keep the meaning,
+not the number.
 
-- **Tier 1 — fashion/costume jewelry, silver under ~EGP 1,500**:
+- **Tier 1 — fashion/costume jewelry, silver under ~$30 equivalent**:
   online marketplaces acceptable with the clothing skill's
   marketplace-trap checks (its behavior 6) in full: real photography,
   verifiable seller history, return window. Nickel rules (behavior 9)
   apply regardless of price.
-- **Tier 2 — gold and silver up to ~EGP 15,000**: buy in person at an
-  established shop or verified showroom storefront. Online acceptable
-  ONLY via an established showroom's verified online storefront
-  (physical shop + published pricing) — never a social-media or
-  marketplace-only seller. Weigh-in-front, stamp check, itemized
-  receipt: no exceptions.
-- **Tier 3 — diamonds, shabka/wedding sets, luxury watches, anything
-  above ~EGP 15,000**: **in person, mandatory.** Certificate verified
-  through the lab's own site (behavior 4); for stones ~1 ct and
-  above, an independent appraisal before finalizing is the stated
-  standard. Social-media sellers and unverified online stores are
-  excluded outright at this tier — no review score redeems them; if
-  that is the user's only access, say so and say the risk plainly.
+- **Tier 2 — gold and silver up to ~$300 equivalent**: buy in person
+  at an established jeweler or verified showroom storefront. Online
+  acceptable ONLY via an established jeweler's verified online
+  storefront (physical presence + published pricing + clear return
+  policy) — never a social-media or unverified marketplace-only
+  seller. Weigh-in-front (in person), stamp check, itemized receipt:
+  no exceptions.
+- **Tier 3 — diamonds, wedding/bridal sets, luxury watches, anything
+  above ~$300 equivalent**: **in person (or verified authorized dealer
+  with insured escrow/return and independent lab report verification),
+  mandatory.** Certificate verified through the lab's own site
+  (behavior 4); for stones ~1 ct and above, an independent appraisal
+  before finalizing is the stated standard. Social-media sellers and
+  unverified online stores are excluded outright at this tier — no
+  review score redeems them; if that is the user's only access, say so
+  and say the risk plainly.
 - Walk-away triggers at every tier: unstamped precious metal, stamp
   vs claim mismatch, no itemized receipt, refusal to weigh in front,
   mismatched certificate (behavior 4), any "guaranteed investment"
@@ -3046,14 +3023,15 @@ Any treatment affecting value must be disclosed at point of sale
 Nickel allergy is the most common jewelry contact allergy; cheap
 fashion jewelry is the usual trigger. EU caps nickel RELEASE at
 0.5 µg/cm²/week for prolonged skin contact, 0.2 for piercing posts
-(REACH Annex XVII; EN 1811 test) [S] — Egypt enforces no equivalent,
-so the check is the material, not the label:
+(REACH Annex XVII; EN 1811 test) [S]; outside the EU enforcement
+varies, so the check is the material, not the label:
 
 - "Hypoallergenic" on jewelry is unregulated marketing — ask what the
   metal IS. Low-nickel picks: implant-grade titanium, niobium, 950
-  platinum, 18k+ gold, implant-grade stainless steel. High-nickel
-  traps: "nickel silver" (nickel, no silver), unnamed "metal alloy",
-  thin-plated fashion pieces whose coating wears through to base.
+  platinum, 18k+ gold (palladium-white), implant-grade stainless
+  steel. High-nickel traps: "nickel silver" (nickel, no silver),
+  unnamed "metal alloy", thin-plated fashion pieces whose coating
+  wears through to base.
 - Piercing posts sit at the stricter 0.2 limit — body jewelry
   (behavior 14) applies it pass/fail.
 - A stated skin sensitivity or metal allergy is a hard filter on
@@ -3129,39 +3107,37 @@ investment. The honest math for any "buy gold as an investment"
 framing:
 
 - Buyback pays METAL weight at that day's buy price: the making fee
-  is lost, stones usually valued at zero, and the sell/buy gap (the
-  spread between what the shop sells at and buys back at — Egypt:
-  tens of EGP per gram, anchored rail [A 2026-11]) comes off immediately.
-  Resold the next day, a new bracelet loses both fees.
+  is lost, stones usually valued at zero, and the retail sell/buy
+  spread (typically a few percent, anchored rail [A 2026-11]) comes
+  off immediately. Resold the next day, a new bracelet loses both
+  fees.
 - Gold's price itself can fall — "gold always goes up" has receipts
   against it; "guaranteed appreciation" is a walk-away trigger.
-- Closest-to-bullion product in the jewelry channel: the Egyptian 21k
-  gold pound coin (8 g standard; 4 g and 2 g variants [S]) — low
-  making fee, liquid buyback. The coin is 21k (87.5% pure), not 24k —
-  price it off the 21k gram rate × weight; the "pound" name is
-  tradition, not purity. At current prices it sits above the Tier-2
-  ceiling: buy in person — Tier 3 by value. Still buy at the day's
-  price from an established shop with behavior-2 receipt discipline.
+- Closest-to-bullion products in jewelry channels are standard
+  investment gold coins (e.g., sovereigns, Krugerrands, Maple Leafs,
+  local standard gold coins) — low making fee, liquid buyback. Always
+  verify the exact karat/purity and weight (some traditional coins
+  are 21k or 22k, not 24k) and price off the matching karat gram
+  rate. Above Tier-2 value: buy in person or via a verified bullion
+  dealer with behavior-2 receipt discipline.
 - Installment "gold savings" schemes at unverified sellers: caution
   wording + behavior-3 verified-seller rule at full strength.
 
-### 14. Channels, care products, body jewelry — the Egypt lens
+### 14. Channels, care products, and body jewelry
 
-- **Gold souks vs branded showrooms**: the souk (Cairo's El Sagha
-  district, Fatimid-era gold market near Khan el-Khalili [S]) buys
-  the daily price + bargainable making fee + weigh-in-front culture;
-  branded showrooms charge a design/warranty premium for standardized
-  karat discipline and stamped receipts. Neither is "better" — the
-  verdict prices the trade-off; behavior 2's receipt discipline
-  applies in both.
-- **Shabka (the bridal gold set) and wedding gold**: the full set's
-  making fee is the largest
+- **Traditional gold districts/markets vs branded showrooms**:
+  traditional gold markets offer spot-linked pricing, weigh-in-front
+  transparency, and negotiable making fees; branded showrooms charge
+  a design/warranty premium for standardized karat discipline and
+  consistent receipts. Neither is "better" — the verdict prices the
+  trade-off; behavior 2's receipt discipline applies in both.
+- **Bridal/wedding sets**: the full set's making fee is the largest
   negotiable variable; the itemized receipt (weight, karat, gram
-  price, making fee, stamp) is the family's legal record. Demand
-  firms before wedding season, Ramadan, and Eid — genuine windows are
-  off-peak.
+  price, making fee, stamp) is the legal record. Demand firms ahead
+  of regional wedding seasons and major gifting holidays — genuine
+  windows are off-peak.
 - **Second-hand gold**: priced by weight only — design value lost;
-  old pieces carry old-style marks; expect no returns.
+  older pieces may carry legacy hallmarks; expect strict return terms.
 - **Cleaning & care products**: matched to the piece — ammonia-based
   gold cleaners never on treated stones or pearls; ultrasonic
   cleaners damage fracture-filled stones, emeralds, pearls (behavior
@@ -3188,9 +3164,9 @@ buyback math.
 
 Pinning questions per request (detail tables in the reference):
 
-- **Gold daily wear (Egypt)**: 21k is the local standard — wear
-  durability + resale liquidity; 24k for coins/tradition pieces; 18k
-  mostly imported designs. Karat choice = liquidity (21k) vs design.
+- **Gold daily wear**: match the user's market standard karat (14k/18k
+  in US/EU, 18k/21k in MENA, 22k in South Asia) — balance durability,
+  color, and local resale liquidity.
 - **Diamond/engagement**: center stone first (verified certificate),
   setting second; lab-grown where size-per-budget wins and the user
   accepts the value profile; natural where retention matters — both
@@ -3212,28 +3188,28 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these additions:
 
 - Fold into the core table's existing columns: karat + weight + gram
-  price + making fee inside Price/Quality ("21k, 8.2 g, EGP X/g
-  dated 2026-11-15, making fee ~Y/g"); the safety tier and channel
-  requirement in the one-line answer and tier-pick sentences ("buy in
-  person — Tier 3"); certificate verification inside Quality ("GIA
-  1234567890 — verified via Report Check, 2026-11-15"). Never a new
-  column.
+  price + making fee inside Price/Quality ("18k, 8.2 g, [currency]
+  X/g dated YYYY-MM-DD, making fee ~Y/g"); the safety tier and
+  channel requirement in the one-line answer and tier-pick sentences
+  ("buy in person — Tier 3"); certificate verification inside Quality
+  ("GIA 1234567890 — verified via Report Check, YYYY-MM-DD"). Never a
+  new column.
 - The value verdict separates the metal component from the making fee
   ("gold vs design") and marks making-fee negotiability.
 - The intake purpose shapes the picks: gift — weight presentation and
   the recipient's exchange path; self-purchase — durability and resale
-  liquidity; engagement/shabka — Tier 3 discipline first, design
+  liquidity; engagement/bridal — Tier 3 discipline first, design
   second; any investment framing runs behavior 13's math before any
   pick is named.
 - Under caveats: buyback math for investment framing (13),
   treatment-disclosure status for stones, nickel note for fashion
   pieces, and any unverifiable claim met in research (missing stamps,
   no certificate number).
-- **When to buy** follows the MENA calendar (core): demand firms
-  before Ramadan/Eid and in wedding season; genuine windows are
-  off-peak. For gold, state that the day's gram price matters more
-  than the season — daily-price timing is beyond the honesty bar, and
-  the skill says so.
+- **When to buy** follows the user's local calendar: demand firms
+  before major gifting holidays and regional wedding seasons; genuine
+  windows are off-peak. For gold, state that the day's spot price
+  matters more than the season — daily-price timing is beyond the
+  honesty bar, and the skill says so.
 - After the verdict: ONE combined line proposing anything new learned
   this session (metal color, karat, style preferences, sizing) — per
   the core's end-of-verdict rule; ask first, save only on
@@ -3276,7 +3252,7 @@ protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the DIY/garden domain
 layer. The numeric tables behind the rules below — spec-inflation
 patterns, platform comparison, paint VOC bands, ladder duty ratings,
-heat-tolerant plant list, per-project minimum kits — live in
+climate-matched plant notes, per-project minimum kits — live in
 `references/diy-garden-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -3304,8 +3280,8 @@ Reply to the user in their language.
 - **Stance**: the project decides the purchase. This skill first
   pinpoints what the user is actually building or fixing, then names
   the minimum tool/material set that does it well — and never lets
-  price or quality outrank "can this hurt someone" (PPE, electr-
-  ical, gas, chemicals, height).
+  price or quality outrank "can this hurt someone" (PPE, electrical,
+  gas, chemicals, height).
 
 ## Intake additions — project context (one compact message)
 
@@ -3313,9 +3289,9 @@ Fold into the core's one compact intake message, only what the request
 doesn't already answer: the project itself (what will be built/fixed —
 "hang shelves" and "rewire a room" are different purchases); indoor or
 outdoor; children or pets in the home (activates chemical/pool/grill
-rails); garden/balcony size and sun exposure; experience level with
-power tools (beginner tools carry extra safety features). Session
-memory reuses earlier answers — never re-ask.
+rails); garden/balcony size and local climate/sun exposure; experience
+level with power tools (beginner tools carry extra safety features).
+Session memory reuses earlier answers — never re-ask.
 
 ## Domain behaviors
 
@@ -3327,11 +3303,11 @@ project (per-project kit tables in the reference file):
 - One tool that does the real job beats a cheap multi-kit whose parts
   all underperform — but a beginner's occasional use justifies a
   simpler single tool over a pro platform.
-- Match tool class to material and scale: a 600 W drill does wardrobe
-  hinges; a hammer drill does Egyptian red-brick and concrete; an
-  impact driver does long screws fast without wrist strain. Say what
-  the kit does NOT cover — prep, primer, and drop cloths are part of
-  a paint verdict, not upsells.
+- Match tool class to material and scale: a standard drill/driver does
+  wood and drywall; a hammer drill (or SDS rotary hammer) does brick
+  and concrete masonry; an impact driver does long screws fast without
+  wrist strain. Say what the kit does NOT cover — prep, primer, and
+  drop cloths are part of a paint verdict, not upsells.
 - Fix-vs-hire honesty: for one-time heavy jobs (concrete cutting,
   overhead drain work), renting or hiring the tradesman can beat
   owning the tool — say so plainly when the math favors it.
@@ -3392,30 +3368,27 @@ hours of work) — but cost more up front. The honest rule:
 
 - **Certification gate**: never recommend a mains-powered power tool
   without a recognized safety certification (IEC/UL/EN 62841 is the
-  current power-tool standard family — CE/EN for EU-market stock,
-  UL/CSA for North American; the older IEC 60745 still marks
-  legitimate older stock). Uncertified grinders and angle-drill
-  clones are the classic fire/fragment hazard class here
-  (uncertified switching, exploding wheels `[P]` — stated as hazard
-  reasoning, not a sourced statistic).
+  current power-tool standard family — CE/EN/UKCA for European stock,
+  UL/CSA for North American, or the market's national equivalent; the
+  older IEC 60745 still marks legitimate older stock). Uncertified
+  grinders and angle-drill clones are the classic fire/fragment hazard
+  class here (uncertified switching, exploding wheels `[P]` — stated
+  as hazard reasoning, not a sourced statistic).
 - **Quality tells** (where listings/zoomed photos allow): all-metal
   gear housing, low chuck runout (spin a bit in video — visible
   wobble = cheap chuck), real brand warranty via a local authorized
   dealer, matching model/serial on tool + box + manual.
-- **Counterfeit power tools are a documented regional problem** —
-  fake Bosch/Makita circulate at prices too good to be true.
-  Verification marks, checked before any pick ships: **Bosch** — the
-  security hologram/Secure Code Label, whose code is checked through
-  Bosch's official verification page (protect.bosch.com); **Bosch
-  Professional-line serials carry a date-code prefix** (verified).
-  **Makita** — verify through Makita's official regional channel
-  (serial/QR via the brand's own site or app — re-verify the exact
-  channel name at dispatch; no third-party app name is relied on
-  here). Failed or unrecognized codes are a strong fake signal —
-  treat as presumed counterfeit unless the brand's authorized
-  channel confirms it. Both brands register warranty through
-  authorized dealers. A price far below every other listing for
-  the same model = presumed counterfeit (core honesty rule).
+- **Counterfeit power tools are a documented global problem** — fake
+  major-brand tools (Bosch, Makita, DeWalt, Milwaukee) circulate at
+  prices too good to be true. Verification marks, checked before any
+  pick ships: **Bosch** — security hologram/Secure Code Label checked
+  at protect.bosch.com, plus date-code prefixes on Professional-line
+  serials (verified); **Makita / DeWalt / Milwaukee** — verify serial
+  or QR through the brand's official regional channel. Failed or
+  unrecognized codes are a strong fake signal — treat as presumed
+  counterfeit unless the brand's authorized channel confirms it. A
+  price far below every other listing for the same model = presumed
+  counterfeit (core honesty rule).
 - Used power tools: batteries degrade regardless of tool condition —
   price a replacement pack into the verdict; test under load before
   paying.
@@ -3428,45 +3401,44 @@ incomplete without it (same pattern as the health skill's dose caps):
 
 - Cutting/grinding/drilling masonry → eye protection always; hearing
   protection for sustained power-tool work; dust mask at minimum for
-  concrete dust, respirator (FFP2) for sanding/lead-paint work.
+  concrete dust, respirator (FFP2/N95) for sanding/lead-paint work.
 - Spraying paint/varnish/pesticides → respirator rated for vapors,
   ventilation, no flame sources; children and pets out of the room
   until dry/aired.
 - Chainsaws and any high-energy outdoor power equipment → this skill
-  recommends them only with the full PPE set ( helmet, visor,
-  gloves, chaps-equivalent) and declines no-name uncertified units.
+  recommends them only with the full PPE set (helmet, visor, gloves,
+  chaps-equivalent) and declines no-name uncertified units.
 - The PPE line is never folded away in aggregation and never
   simplified out for a casual user (health behavior 12's rule).
 
 ### 7. Electrical supplies — hard DIY limits
 
-Electrical misuse is a leading cited cause of residential fires in
-Egypt (civil-defense experts cite roughly 40–50% of home fires —
-expert/media-cited estimate, no official public database; treat as
-motivation, not statistics). The limits, pass/fail:
+Electrical misuse is a leading cause of residential fires worldwide.
+The limits, pass/fail:
 
 - **Never DIY, licensed electrician only — full stop**: anything fed
-  from the distribution board — new circuits, breaker or panel work,
-  fixed wiring inside walls, meter/service work, and any repair of a
-  spark-showering socket or repeatedly tripping breaker (that fault
-  is the electrician's call, not a shopping question). This skill
-  supplies materials for the electrician's job, never instructions.
+  from the distribution board/breaker panel — new circuits, breaker or
+  panel work, fixed wiring inside walls, meter/service work, and any
+  repair of a spark-showering socket or repeatedly tripping breaker
+  (that fault is the electrician's call, not a shopping question). This
+  skill supplies materials for the electrician's job, never
+  instructions.
 - **User-domain electrical shopping**: cord-ended devices, certified
-  extension cords and socket multi-ways (overload protection, never
-  daisy-chained per the appliances skill's socket discipline), lamp
-  rewires on double-insulated devices, and components the
-  electrician will install.
-- **Earth and RCD reality**: where the home has no earth line or no
-  residual-current breaker, say so as a hazard and put an electrician
-  visit on the path before recommending metal-bodied appliances for
-  wet areas.
-- Certified components only (CE/IEC marks; counterfeit breakers
-  exist and fail to trip); outdoor power through weatherproof,
-  RCD-protected sockets/reels.
+  extension cords and surge-protected power strips (overload
+  protection, never daisy-chained per the appliances skill's socket
+  discipline), lamp rewires on double-insulated devices, and
+  components the electrician will install.
+- **Earth and RCD/GFCI reality**: where the home has no earth/ground
+  line or no residual-current breaker (RCD/GFCI), say so as a hazard
+  and put an electrician visit on the path before recommending
+  metal-bodied appliances for wet areas.
+- Certified components only (UL/CSA/CE/IEC marks matched to local
+  voltage; counterfeit breakers exist and fail to trip); outdoor power
+  through weatherproof, RCD/GFCI-protected sockets/reels.
 
 ### 8. Paint, adhesives, and consumables — match the chemistry
 
-- **Paint**: water-based (acrylic/emulsion) = low VOC, soap-water
+- **Paint**: water-based (acrylic/emulsion/latex) = low VOC, soap-water
   cleanup, fast dry — the default for interiors and bedrooms;
   oil/alkyd = harder, moisture-resistant, but higher VOC and solvent
   cleanup — reserve for trim/wood; water-based acrylic-alkyds give
@@ -3474,18 +3446,19 @@ motivation, not statistics). The limits, pass/fail:
   <50 g/L for flat finishes and ~100–150 g/L for non-flat across
   common standards (Green Seal's current edition: 50/100; older
   editions and other schemes run higher) — the number on the can
-  beats the slogan. Ventilate while painting
-  and until dry; never a sleeping child in a freshly painted room.
-- **Primer matters**: bare plaster/wood/stained surfaces get the
-  matching primer — skipping it is the #1 why-did-my-paint-peel cause.
+  beats the slogan. Ventilate while painting and until dry; never a
+  sleeping child in a freshly painted room.
+- **Primer matters**: bare plaster/drywall/wood/stained surfaces get
+  the matching primer — skipping it is the #1 why-did-my-paint-peel
+  cause.
 - **Adhesives**: PVA for wood joinery, PU for outdoor/wet wood,
   epoxy for gap-filling structural bonds, contact cement for
   laminates — one glue per job class; "universal glue" claims fail
   exactly the jobs they promise (practitioner).
 - **Fasteners**: metric vs imperial are not interchangeable — take
-  the old bolt to the shop; wall plugs matched to base material;
-  screw gauge/length matched to load; brand fasteners for structural
-  hanging (cheap mixed-bin ones shear).
+  the old bolt to the shop; wall plugs matched to base material
+  (drywall vs masonry); screw gauge/length matched to load; brand
+  fasteners for structural hanging (cheap mixed-bin ones shear).
 - Chemical storage rails (adhesives, thinners, paints): original
   containers, locked and cool, never decanted into drink bottles —
   the child-poisoning pattern this rule exists for.
@@ -3494,15 +3467,15 @@ motivation, not statistics). The limits, pass/fail:
 
 - **Never DIY gas** — any gas-line work is the licensed-gas-
   technician rule from the appliances skill (behavior 5), unchanged
-  and cross-referenced there, including the 129 emergency sequence.
+  and cross-referenced there, including the gas-emergency sequence.
 - Shut the main supply and drain before any fixture swap; take the
-  old fitting to the shop — Egyptian plumbing stock mixes BSP and
-  metric threads, and a thread that "starts" still leaks
-  (practitioner consensus). Flexible braided supply hoses beat
-  rubber (burst risk); replace, don't reuse, old flex hoses.
-- PPR pipe welding needs the fusion tool and practice — a homeowner
-  glue-job on a hidden wall line is a leak waiting for a vacation;
-  visible cold-water fixes are the DIY boundary.
+  old fitting to the shop — plumbing stock across markets mixes BSP,
+  NPT, and metric threads, and a thread that "starts" still leaks
+  (practitioner consensus). Flexible braided supply hoses beat rubber
+  (burst risk); replace, don't reuse, old flex hoses.
+- PPR/copper/PEX hidden-wall line work needs the proper tool and
+  practice — a homeowner patch on a hidden wall line is a leak waiting
+  for a vacation; visible cold-water fixes are the DIY boundary.
 - Recurring leaks, hidden-wall damp, main-line or drain issues →
   plumber first; this skill shops parts for the plumber's job list.
 
@@ -3510,8 +3483,9 @@ motivation, not statistics). The limits, pass/fail:
 
 - **Duty rating first**: select by total load (body + tools +
   materials) against the ladder's ANSI duty rating (Type III 200 lb
-  up to IAA 375 lb — table in the reference); a "household" ladder
-  carrying a person AND materials is the classic overload.
+  up to IAA 375 lb — table in the reference) or EN 131 rating; a
+  "household" ladder carrying a person AND materials is the classic
+  overload.
 - **The 4:1 rule and 3-point contact** (verified OSHA/industry
   guidance): extension/straight ladders lean 1 unit out per 4 units
   up; three points of contact climbing — said in plain words, not
@@ -3540,19 +3514,19 @@ motivation, not statistics). The limits, pass/fail:
 
 ### 12. Garden — climate first, then tools
 
-- **MENA heat decides the plant list**: full-sun heat-tolerant
-  winners — bougainvillea, oleander, lantana, pentas, jasmine,
-  hibiscus (verified heat-climate guidance; full list in the
-  reference). Delicate temperate annuals die in the first heatwave —
-  the verdict names the season window (plant autumn/spring, never a
-  mid-summer transplant).
-- **Toxic-plant rail**: oleander is toxic in all parts — never
-  recommend it (or unknown-toxicity ornamentals) where children or
+- **Match plants to the user's local climate and hardiness zone**:
+  delicate temperate annuals die in extreme heatwaves, and tropical
+  plants die in frost — verify local climate/sun exposure and name the
+  right planting window (avoid mid-summer or deep-frost transplants).
+  Hot/arid winners include bougainvillea, lantana, pentas, jasmine,
+  hibiscus, and Mediterranean herbs (full notes in the reference).
+- **Toxic-plant rail**: oleander and several common ornamentals are
+  toxic in all parts — never recommend toxic plants where children or
   leaf-eating pets share the space; flag the hazard when the user's
-  garden already has it.
-- Water honesty: lawns are water-hungry in a hot market — present
-  drought-tolerant ground cover as the value alternative; deep,
-  infrequent watering beats daily sprinkles (practitioner).
+  garden already has them.
+- Water honesty: turf lawns are water-hungry in hot/dry climates —
+  present drought-tolerant ground cover as the value alternative;
+  deep, infrequent watering beats daily sprinkles (practitioner).
 - Garden hand tools: stainless or coated steel beats bare carbon
   (rust); bypass pruners for green wood, anvil for dry.
 
@@ -3578,22 +3552,21 @@ motivation, not statistics). The limits, pass/fail:
 - Drowning is the leading cause of injury death in children 1–4
   (verified CPSC guidance): any pool verdict above the paddling-pool
   size carries the **layers-of-protection** line — non-climbable
-  fencing ~4 ft with self-latching gate, door alarms, covers, active
-  supervision — as a pass/fail condition of the recommendation.
+  fencing ~4 ft (1.2 m) with self-latching gate, door alarms, covers,
+  active supervision — as a pass/fail condition of the recommendation.
 - Pool chemicals (chlorine, acid): never stored together or mixed —
   chlorine + acid releases toxic gas; locked, ventilated, original
   containers, dosed per label (standard-safety consensus).
 - Inflatable/paddling pools: empty and store after use — a filled
   inflatable is unsupervised water, not a toy left out.
-- Pool pumps/heaters near water → certified, earthed, RCD-protected
+- Pool pumps/heaters near water → certified, earthed, RCD/GFCI-protected
   installation by an electrician (behavior 7's limits).
 
 ### 15. Grills — gas vs charcoal, with the rails
 
-- **Charcoal: never indoors — ever** — not in the kitchen, balcony
-  enclosure, tent, or garage; CO kills within minutes and has no
-  smell (verified CPSC). The enclosed-courtyard charcoal habit is
-  the exact hazard this rail exists for.
+- **Charcoal: never indoors — ever** — not in the kitchen, enclosed
+  balcony, tent, or garage; CO kills within minutes and has no smell
+  (verified CPSC).
 - **Gas grills**: the appliances skill's LPG behavior governs
   cylinders (upright, ventilated outside storage, hose checks, valve
   closed) — cross-referenced, never re-worded weaker here; leak-test
@@ -3603,31 +3576,27 @@ motivation, not statistics). The limits, pass/fail:
   weeknight convenience — judged on build (thick grates, stable
   base, grease management), not BTU headlines (behavior 2's logic).
 
-### 16. Egypt channel lens — organized retail, souk, and counterfeits
+### 16. Local channel lens — organized retail, informal markets, and counterfeits
 
-- Organized retail and marketplaces first for anything mains-powered,
-  chemical, or safety-bearing: verified stores (2026-11) —
-  adwatmisr.com (Cairo tools store, EGP pricing; verify dealer
-  authorization on the brand's site before trusting "authorized
-  dealer" claims), plus the family-verified marketplaces Jumia Egypt,
-  Noon Egypt, Amazon.eg.
-- The hardware souk is a legitimate channel for cheap hand tools,
-  fasteners, and fittings — and a high-risk channel for power tools,
-  breakers, and branded consumables, where counterfeits concentrate:
-  behavior 5's verification marks are the condition of a souk
-  purchase; without them, assume fake.
-- Brand warranty runs through authorized dealers — keep the box,
-  serial, and stamped card (the appliances skill's warranty-card
-  pattern); gray imports carry none.
-- Prices in EGP, local convention; "call us" listings = special-order
-  honesty (core rule).
+- Organized hardware retail, authorized dealers, and verified
+  marketplaces first for anything mains-powered, chemical, or
+  safety-bearing — verify dealer authorization on the brand's site
+  before trusting "authorized dealer" claims.
+- Informal hardware markets are legitimate for cheap hand tools,
+  fasteners, and fittings — and high-risk for power tools, breakers,
+  and branded consumables, where counterfeits concentrate: behavior
+  5's verification marks are the condition of any informal purchase;
+  without them, assume fake.
+- Brand warranty runs through authorized dealers — keep the receipt,
+  serial, and warranty registration; gray imports carry none.
+- Quote prices in the user's local currency; "call us" listings =
+  special-order honesty (core rule).
 
 ### 17. Explanation depth adapts to the user
 
-- Casual: plain outcomes — "this drill handles the brick walls in
-  Egyptian apartments; the kit includes the two wall anchors that
-  actually hold"; PPE lines in everyday words ("protect your eyes —
-  concrete chips fly").
+- Casual: plain outcomes — "this hammer drill handles masonry walls;
+  the kit includes the anchors that actually hold"; PPE lines in
+  everyday words ("protect your eyes — masonry chips fly").
 - Technical: platform Ah/voltage math, brushless controller benefits,
   VOC g/L numbers, thread standards, ladder duty ratings — with
   sources.
@@ -3644,7 +3613,7 @@ counterfeit marks; hand tools — steel quality + ergonomics, cheap-is-
 fine for occasional use; paint — surface + room + VOC band + primer;
 plumbing — fitting-match + plumber boundary; electrical — certified
 components + hard limits; locks — cylinder/bolt numbers; plants —
-heat tolerance + season + toxicity rail; pest control — bait-first +
+climate fit + season + toxicity rail; pest control — bait-first +
 cat/fish permethrin rail; grills — fuel type + CPSC rails; pools —
 barrier layers first; outdoor furniture — UV/rust materials (reference
 table).
@@ -3661,22 +3630,20 @@ table, tier picks, caveats, when-to-buy), with these additions:
   sentence; the DIY-limit line ("materials for your electrician's
   job") inside the one-line answer when it governs. No new columns.
 - Under caveats: the project's missing-kit items, VOC/ventilation
-  notes, counterfeit-risk warnings for souk purchases, and the
+  notes, counterfeit-risk warnings for informal channels, and the
   fix-vs-hire call when renting beats owning.
 - **Auto-Quick shortcut**: dumb consumables only — fasteners,
   abrasives, blades/bits, hand-tool accessories, seeds, hose
   fittings — run Quick automatically when the class test passes AND
-  the request sits under ~EGP 5,000 (anchored rail [A 2026-11]; keep
-  the figure aligned with the appliances skill's behavior-9 anchor at
-  install). When class and price disagree, the
+  the request sits under ~$100 equivalent in the user's local currency
+  (anchored rail [A 2026-11]). When class and price disagree, the
   deeper mode wins; when in doubt, run Verified. Power tools,
   electrical components, chemicals, paint, ladders, grills, and pest
   control never auto-Quick — their gates are not mode-gated. An
   explicit user mode choice wins (family rule).
-- **When to buy**: White Friday carries the genuine tool discounts;
-  Ramadan weeks firm prices (buy tools before, deals after Eid);
-  garden season peaks in autumn/spring — plants and seeds stock
-  fully then; summer stock thins to heat-tolerant stock.
+- **When to buy**: major local sale events carry genuine tool
+  discounts; garden stock peaks in local spring/autumn planting
+  seasons and clears out-of-season.
 
 ## No profile, by design
 
@@ -3748,7 +3715,7 @@ Reply to the user in their language.
 Fold into the core's one compact intake message, only what the request
 doesn't already answer: **make, model, year, and engine/transmission
 variant** (parts fitment is decided at this level, not "a 2018
-Caddy"); the VIN for parts-class requests (behavior 1) — offer the
+sedan"); the VIN for parts-class requests (behavior 1) — offer the
 10th-character model-year check; who installs (a trusted workshop? a
 chain? DIY?); current mileage if maintenance-shopping; for tires, the
 size from the sidewall or door placard. Session memory reuses the car
@@ -3795,16 +3762,16 @@ related.** For these:
   authorized channels; no-name unmarked parts are disqualified
   outright, whatever the price.
 - Certification anchor for brake pads and discs: **UN ECE-R90**
-  (approval number on the backing plate/packaging — the benchmark,
-  not a local legal requirement in Egypt). An R90-marked pad ships
-  as certified. **Where an R90-class mark is absent — common in
-  locally distributed stock — a pad is acceptable ONLY when bought
-  through the brand's authorized distributor or the OEM parts
-  channel: the channel and its receipt are the compensating
-  control, not the box print.** Unmarked pads from souks,
-  marketplaces, or unverified channels stay disqualified; "OEM
-  number printed on the box" alone verifies nothing.
-- **Gray imports and used/okaba stock are excluded from this tier**
+  (approval number on the backing plate/packaging — mandatory in EU
+  and a global quality benchmark) or equivalent regional certification.
+  An R90-marked pad ships as certified. **Where an R90-class mark is
+  not required in the user's market, a pad is acceptable ONLY when
+  bought through the brand's authorized distributor or the OEM parts
+  channel: the channel and its receipt are the compensating control,
+  not the box print.** Unmarked pads from informal markets, open
+  marketplaces, or unverified channels stay disqualified; "OEM number
+  printed on the box" alone verifies nothing.
+- **Gray imports and used/salvage stock are excluded from this tier**
   — a brake pad's friction history and a tire's age are unknowable
   from a photo.
 - Airbags/SRS: OEM or dealer-channel only, ever — used SRS units
@@ -3820,9 +3787,9 @@ this skill is a normal value-for-money market.
 
 **Evidence order for any automotive claim**: the owner's manual/OEM
 catalog (spec and fitment truth) → certification/approval marks
-(R90, E-mark, API/ACEA/OEM approval, EDA registration) → independent
-testing and measured reviews → verified user reviews (fitment and
-longevity reports) → marketing (never sufficient alone).
+(R90, E-mark, DOT, API/ACEA/OEM approval) → independent testing and
+measured reviews → verified user reviews (fitment and longevity
+reports) → marketing (never sufficient alone).
 
 ### 3. Oils and fluids — the manual is law
 
@@ -3851,12 +3818,11 @@ longevity reports) → marketing (never sufficient alone).
   full same-spec flush at the workshop is the standard. Coolant:
   same chemistry family only (OAT/IAT/hybrid — never "any color
   mixes").
-- **Fake-oil rails (Egypt/MENA — documented)**: Egypt's consumer
-  protection agency has seized tens of thousands of liters of
-  counterfeit/recycled oil sold under real brand names (flagship:
-  ~45,000 L recycled oil raid). Buy through authorized channels;
-  treat prices far below the market as presumed fake, not bargains;
-  check packaging (batch codes, seal, print quality) and verify any
+- **Fake-oil rails (documented global problem)**: counterfeit and
+  recycled motor oil sold under real brand names is a widespread
+  enforcement target globally. Buy through authorized channels; treat
+  prices far below the market as presumed fake, not bargains; check
+  packaging (batch codes, seal, print quality) and verify any
   QR/hologram the brand offers. Engine noise or overheating right
   after a cheap oil change = drain it, said in plain words.
 
@@ -3878,7 +3844,7 @@ longevity reports) → marketing (never sufficient alone).
   vehicle and tire manufacturers recommend replacement at six to 10
   years from manufacture regardless of tread; many tire makers set
   10 years as the absolute ceiling — for the car, the spare, and
-  the okaba seller's "almost new" tire alike.
+  any used seller's "almost new" tire alike.
 - **Retreads and repaired casings**: retreading is a truck-tire
   practice — a "retreaded" passenger tire offered in the used market
   is declined, full stop; steer-axle tires stay original/quality
@@ -3897,18 +3863,15 @@ longevity reports) → marketing (never sufficient alone).
   power); physically the group size must fit the tray with terminals
   matching polarity and position — reversed terminals on an otherwise
   "compatible" battery is a real-fitment trap (practitioner).
-- **Type follows the car**: start-stop vehicles require **AGM**
-  (sealed, vibration-resistant, cycle-durable); a flooded battery in
-  an AGM-specified car fails early. Ordinary cars run flooded
-  batteries fine — AGM is an upgrade, not a requirement.
+- **Type follows the car**: start-stop vehicles require **AGM** or
+  **EFB** per the OEM spec (sealed, vibration-resistant, cycle-durable);
+  a flooded battery in an AGM-specified car fails early. Ordinary cars
+  run flooded batteries fine — AGM is an upgrade, not a requirement.
 - **Freshness**: check the date code at purchase — batteries
   degrade on the shelf; months-on-shelf count against life
-  (practitioner: prefer <6 months old). Egypt heat shortens battery
-  life meaningfully — weigh warranty length as the value signal.
-- Local example of a stocked brand (verified listing 2026-11):
-  Chloride Gold batteries are sold through Egyptian parts channels —
-  availability beats imported-brand prestige for a part the car
-  needs next morning.
+  (practitioner: prefer <6 months old). Extreme heat or extreme cold
+  shortens battery life meaningfully — weigh warranty length and
+  local exchange availability as key value signals.
 
 ### 6. Mechanic-first — the user buys, the workshop decides
 
@@ -3919,12 +3882,11 @@ longevity reports) → marketing (never sufficient alone).
 - **Buy the exact part the mechanic specified** — if the mechanic's
   part number and the user's lookup disagree, the VIN resolves it
   (behavior 1), not guesswork.
-- **Bring-your-own-part reality** (practitioner): many Egyptian
-  workshops prefer supplying parts themselves (margin + warranty
-  control); buying your own can void labor warranties or fee-shift.
-  The verdict says so: agree with the workshop BEFORE buying —
-  either they supply OEM/brand, or the user brings the part with the
-  mechanic's blessing.
+- **Bring-your-own-part reality** (practitioner): many workshops
+  prefer supplying parts themselves (margin + warranty control);
+  buying your own can void labor warranties or shift fees. The verdict
+  says so: agree with the workshop BEFORE buying — either they supply
+  OEM/brand, or the user brings the part with the mechanic's blessing.
 - **DIY limits — workshop only, full stop**: brakes, airbags/SRS,
   steering/suspension load-bearing parts, anything requiring torque
   specs and safety inspection. User-domain DIY: wipers, bulbs, air/cabin
@@ -3937,14 +3899,14 @@ longevity reports) → marketing (never sufficient alone).
   ground, power on last, disconnect in reverse; protection is a
   backup, not an excuse to skip the order (verified guidance).
 
-### 7. Used parts — the okaba gates
+### 7. Used parts — the salvage/scrapyard gates
 
 The used-parts market is real, cheap, and legitimate for the right
 parts — the gates decide:
 
 - **Acceptable** (used is normal): body panels, mirrors, interior
   trim, wheels/rims (crack-checked), seats, glass, unpowered
-  brackets/hardware. Inspect in person; okaba sellers sell as-seen.
+  brackets/hardware. Inspect in person; salvage sellers sell as-seen.
 - **Conditional** (test or history required): alternators, starters,
   sensors, calipers, gearboxes — only with a working history, a
   test-before-buy, or the seller accepting a return; bearings and
@@ -3955,18 +3917,16 @@ parts — the gates decide:
 - One-line honesty in every used-part verdict: no warranty comes
   with it, and the workshop's labor still costs the same.
 
-### 8. Counterfeit parts — a documented regional problem
+### 8. Counterfeit parts — a documented global problem
 
-Egyptian authorities have seized thousands of counterfeit auto parts
-in recent enforcement actions (heavy-vehicle parts raids, container
-seizures; brake pads and filters are repeatedly named fake classes
-globally — the fake-parts trade is estimated in the billions of
-dollars). The rails:
+OECD flags counterfeit auto parts (especially brake pads, filters,
+airbags, and lubricants) as a top dangerous-goods category within a
+multi-billion-dollar global fake-parts trade. The rails:
 
 - Buy safety-critical and fluid-class parts through authorized
-  distributors, brand service centers, or the verified channels
-  below; the souk is acceptable for commodity items, not for
-  brake/oil/filter brands whose fakes are documented.
+  distributors, brand service centers, or verified specialist parts
+  retailers; informal markets are acceptable for commodity accessories,
+  not for brake/oil/filter brands whose fakes are documented.
 - Verification marks where the brand offers them (holograms, QR
   verification, batch codes) are checked before a pick ships;
   packaging tells — flimsy print, missing batch codes, seal
@@ -3985,11 +3945,11 @@ dollars). The rails:
   fitment (behavior 1) — otherwise this is a price-per-month
   category; mid-tier brand through a real channel beats both the
   no-name and the overpriced OE badge.
-- Wiper logic: beam/hybrid blades outperform frame blades in heat;
-  rubber hardens in Egyptian sun — replace on squeak, not on season.
-- Car care (wax, shampoo, covers): wax = paint protection in extreme
-  UV, not shine; a breathable full cover beats a tarp (moisture
-  traps); interior conditioning fights UV cracking.
+- Wiper logic: beam/hybrid blades outperform frame blades in heat,
+  UV, and winter ice; replace on streak or squeak, not on calendar.
+- Car care (wax, shampoo, covers): wax = paint protection against UV
+  and road salt, not just shine; a breathable full cover beats a tarp
+  (moisture traps); interior conditioning fights UV cracking.
 
 ### 10. Car electronics boundary and car tools
 
@@ -4012,33 +3972,33 @@ dollars). The rails:
 
 Fitment-first applies identically (model/year/engine displacement);
 chains/sprockets match as sets; brake pads are R90-class certified
-or OEM (behavior 2's tier, unchanged); used okaba gates apply. The
+or OEM (behavior 2's tier, unchanged); used salvage gates apply. The
 rider-safety gear question routes to sports-outdoors.
 
-### 12. Egypt lens — channels, gray parts, and the street
+### 12. Local channels, gray parts, and workshop economics
 
-- Verified parts channels (2026-11): yourparts.com (Cairo, EGP
-  pricing, hotline 15145, vehicle-lookup by make/model/year — the
-  fitment-first behavior at retail), tawfiqia.com (Cairo, EGP,
-  vehicle lookup + service-center booking), plus the family-verified
-  marketplaces Jumia Egypt and Noon Egypt for accessories and car
-  care. Verify any "original parts" claim against the brand's
-  local distributor when the part is safety-class.
+- **Verified local channels (check at dispatch for the user's country)**:
+  prefer established parts retailers with make/model/year/VIN vehicle
+  lookup, authorized brand distributors, and official dealer parts
+  desks for safety-critical parts and fluids; major marketplaces are
+  fine for commodity accessories and car care. Verify any "original
+  parts" claim against the brand's local distributor when the part is
+  safety-class.
 - Gray/imported parts: appear only with bold warnings — no local
-  warranty, and fitment claims unverifiable against the local
+  warranty, and fitment claims unverifiable against the local regional
   variant (core grey-import rule, applied to parts).
 - Workshop economics: parts through the workshop cost more up front
   and carry recourse; buying direct costs less and shifts every
   dispute onto the user — the verdict prices both paths honestly.
-- Prices in EGP, local convention; "call us" listings = special-
-  order honesty (core rule).
+- Quote prices in the user's local currency; "call us" listings =
+  special-order honesty (core rule).
 
 ### 13. Explanation depth adapts to the user
 
-- Casual: plain outcomes — "this oil matches what your 2019 Elantra
-  1.6 asks for; buy it from an authorized seller — half-price oil is
-  fake oil"; tire codes translated ("the number on the wall of the
-  tire is its size, strength, and speed limit").
+- Casual: plain outcomes — "this oil matches what your 2019 sedan's
+  1.6L engine asks for; buy it from an authorized seller — half-price
+  oil is fake oil"; tire codes translated ("the number on the wall of
+  the tire is its size, strength, and speed limit").
 - Technical: API/ACEA/OEM-approval mapping, load-index tables, DOT
   decoding, R90 approval numbers, VIN year codes — with sources.
 
@@ -4053,9 +4013,9 @@ parts — fitment-first protocol + safety tier; oils — manual spec +
 ACEA C-series for DPF cars + fake-oil channel rails; tires — placard
 size + at-or-above load/speed + DOT age + used-tire gates; batteries
 — CCA/type/date code + terminal fit; accessories — fitment-relaxed
-but UV/build-matched; car care — UV protection logic; jump starters
-— protection features + connection order; motorcycle — set-matching
-chains/sprockets.
+but UV/build-matched; car care — UV/weather protection logic; jump
+starters — protection features + connection order; motorcycle —
+set-matching chains/sprockets.
 
 ## Verdict adjustments for automotive
 
@@ -4066,18 +4026,19 @@ table, tier picks, caveats, when-to-buy), with these additions:
   string ("fits 2019-2021 petrol 1.6 only") inside the one-line
   answer or Price suffix; certification status (R90, OEM approval,
   API SP/ACEA C3) inside Quality; channel risk ("gray — no local
-  warranty", "souk — verify hologram") as a Price suffix. No new
-  columns.
+  warranty", "informal seller — verify hologram") as a Price suffix.
+  No new columns.
 - Under caveats: the fitment-unconfirmed flag when the user couldn't
   verify the variant, date-code/age notes for tires and batteries,
   the counterfeit-risk warning for any deal far below market, and
   the bring-your-own-part workshop-agreement reminder when the user
   is buying against a mechanic's job.
 - **When to buy**: tires and batteries are demand-stable — the value
-  play is seasonal promotions around Ramadan/White Friday at the
-  verified channels; oils track inflation fast (re-check prices at
-  dispatch); a recall or model-facelift cycle drops old-generation
-  parts prices — relevant when the car is one generation old.
+  play is seasonal promotions (local major sale events, pre-winter/
+  pre-summer tire promos) at verified channels; oils track market
+  prices fast (re-check prices at dispatch); a recall or model-facelift
+  cycle drops old-generation parts prices — relevant when the car is
+  one generation old.
 - Refusal wording is honest, not empty: a disqualified no-name brake
   pad gets one line — "no certification mark, not shippable as a
   pick" — plus the certified alternative in the same price search.
@@ -4099,7 +4060,7 @@ identity — no persistent profile (per the core's profile-justification rule).
 
 ---
 name: product-scout-groceries
-description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
+description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal/dietary-label trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -4119,7 +4080,7 @@ protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the groceries domain
 layer, where the unit-price calculation IS the verdict's backbone.
 When you need the worked math, the adulteration case table, the
-date-code details, or the full channel list — read
+date-code details, or channel guidance — read
 `references/groceries-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -4143,18 +4104,18 @@ Reply to the user in their language.
 - Nicotine-replacement therapy (gum, patches) is a pharmacy product,
   not a tobacco product — route it to the health-medical skill like
   any medicine.
-- **Out — ration-system gaming**: subsidized commodities (tamween goods,
-  baladi bread) may be discussed as price context; never advise on
-  eligibility tricks, reselling subsidized goods, or bypassing the
-  ration system — that is illegal and out of scope.
+- **Out — subsidy/benefit-system gaming**: public food-subsidy programs
+  may be discussed as price context; never advise on eligibility
+  tricks, reselling subsidized goods, or bypassing ration/benefit
+  systems — that is illegal and out of scope.
 - **Out, other owners**: baby food & infant formula → baby-kids skill;
-  pet food & pet care → pets
-  skill; medicines, supplements, symptom talk → health-medical skill
-  (the core's safety gate routes these); washing machines, fridges,
-  water filters → appliances skill; furniture & cookware → home-living.
-- **Stance**: the honest grocer — tells you the real cost per kilo, says
-  which marketing words mean nothing, and never treats a confectionery
-  aisle as a breakfast recommendation without saying so.
+  pet food & pet care → pets skill; medicines, supplements, symptom
+  talk → health-medical skill (the core's safety gate routes these);
+  washing machines, fridges, water filters → appliances skill;
+  furniture & cookware → home-living.
+- **Stance**: the honest grocer — tells you the real cost per kilo or
+  liter, says which marketing words mean nothing, and never treats a
+  confectionery aisle as a breakfast recommendation without saying so.
 
 ## Domain intake additions
 
@@ -4173,20 +4134,21 @@ storage — no profile exists (see "No profile, by design").
 The core grocery skill. Every comparison ranks by price per net unit
 before anything else:
 
-- Compute **price ÷ net weight/volume** (the grams/liters printed as net
-  content, not drained weight, not box inches) for every candidate —
-  in the user's currency. State it in the Quality cell ("EGP X/kg").
+- Compute **price ÷ net weight/volume** (the grams/kg/oz/liters printed
+  as net content, not drained weight, not box inches) for every
+  candidate — in the user's currency. State it in the Quality cell
+  ("[local currency] X/kg").
 - **Pack-size traps**: bigger is not always cheaper — run the math
-  every time; multi-buy deals ("3 for 100") are often the same price
-  as singles; "family size" is a marketing word, not a unit price;
-  bundle packs can hide a smaller net weight than the standalone.
+  every time; multi-buy deals ("3 for X") are often the same price as
+  singles; "family size" is a marketing word, not a unit price; bundle
+  packs can hide a smaller net weight than the standalone.
 - **Shrinkflation**: when a familiar pack's price looks unchanged, check
-  the net-grams line — a smaller weight at the same price is a hidden
+  the net-weight line — a smaller weight at the same price is a hidden
   increase. Compare per-unit across sizes and brands.
-- **Unit-price shelf labels are rarely displayed in Egyptian stores** —
-  compute it yourself (practitioner honesty, reference has the worked
-  math). Online listings usually print net weight; verify it, some
-  listings omit it entirely (that omission is itself a flag).
+- **Where shelf unit-price labels are absent or inconsistent**, compute
+  it yourself (reference has the worked math). Online listings usually
+  print net weight; verify it, some listings omit it entirely (that
+  omission is itself a flag).
 - Cheapest per unit wins only when quality signals pass — a rancid bulk
   oil at a great price per liter is not a bargain (behavior 7).
 
@@ -4206,7 +4168,8 @@ before anything else:
 - Never recommend expired infant formula or baby food, ever (the
   baby-kids boundary).
 - Batch codes and production dates matter more than shelf position —
-  in Egyptian retail the newer batch is often at the back [P].
+  in retail rotation, newer stock is often placed behind older stock
+  [P].
 
 ### 3. Nutrition-label honesty — read the games, state the numbers
 
@@ -4255,30 +4218,29 @@ table with regulators lives in the reference):
   practical defenses, and never present a home test as proof of
   authenticity.
 
-### 5. Halal certification honesty
+### 5. Halal and dietary-certification honesty
 
-- **Egypt's default**: a majority-Muslim market where domestically
-  slaughtered meat/poultry for local sale is halal by market practice;
-  an Egyptian-made product without a halal mark is normal, not a red
-  flag (practitioner honesty). Imported meat and poultry require
-  halal-slaughter certification to enter the market (rule current as of
-  [S 2026-11]; confirm with the importer before relying on it).
-- **What the mark actually says**: a halal mark names the certifying
-  body; rigor varies between certifiers and between countries. When a
-  request genuinely depends on halal status (gelatin, cheese rennet,
-  alcohol-based flavor carriers, animal-origin additives — the
+- **Market context matters**: in majority-Muslim markets, domestically
+  slaughtered meat/poultry is often halal by default market practice
+  even without a mark, whereas in non-majority markets or on imported
+  processed foods, a recognized certifier mark is essential.
+- **What the mark actually says**: a halal (or kosher/vegan) mark names
+  the certifying body; rigor varies between certifiers and countries.
+  When a request genuinely depends on halal status (gelatin, cheese
+  rennet, alcohol-based flavor carriers, animal-origin additives — the
   ingredient list is the primary document), name the certifier on pack
   as the verifiable fact and say plainly when you cannot verify one.
-- Never assert "halal" you cannot verify; never treat an uncertified
-  import as certified. For strict-requirement users, say what to check
-  (named certifier, slaughter statement for meat products).
+- Never assert "halal" (or any religious/dietary certification) you
+  cannot verify; never treat an uncertified import as certified. For
+  strict-requirement users, say what to check (named certifier,
+  slaughter statement for meat products).
 
 ### 6. Brand vs private label — the value reality
 
-- Supermarket private labels (Carrefour, Metro Markets, BIM-class
-  discounters) are frequently produced by the same national
-  manufacturers as branded equivalents (practitioner rule) — judge by
-  the ingredient list and nutrition panel, not the shelf tier.
+- Supermarket private labels (major supermarket chains and hard
+  discounters) are frequently produced by the same manufacturers as
+  branded equivalents (practitioner rule) — judge by the ingredient
+  list and nutrition panel, not the shelf tier.
 - In staples (rice, oil, sugar, pasta, tea), private-label savings per
   unit are often real and large; in products where formulation IS the
   differentiator (chocolate, coffee, cheese), brand quality can be the
@@ -4289,11 +4251,10 @@ table with regulators lives in the reference):
 
 ### 7. Bulk-buying math vs shelf life — when bulk is a trap
 
-- **Bulk is rational** for shelf-stable staples in a price-volatile
-  market: rice, dried legumes, sugar, pasta, sealed oil within its
-  window — the reference's shelf-life table states the real windows
-  (whole-grain flours and opened oils go rancid; ground spices fade in
-  ~6–12 months [P]).
+- **Bulk is rational** for shelf-stable staples: rice, dried legumes,
+  sugar, pasta, sealed oil within its window — the reference's
+  shelf-life table states the real windows (whole-grain flours and
+  opened oils go rancid; ground spices fade in ~6–12 months [P]).
 - **Bulk is a trap** for: anything with a short use-by window,
   perishables without cold storage, oils you'll open and keep for a
   year, half-used bags of flour (pantry pests — sealed containers,
@@ -4305,28 +4266,27 @@ table with regulators lives in the reference):
 
 ### 8. Fresh food, cold chain, and markets — honesty about both channels
 
-- **Morning markets (souk)**: produce arrives at dawn; best selection
-  and haggling room are early-morning (practitioner) — a verdict for
-  fresh produce names the timing. Prices are negotiable and vary by
-  season and week; state approximate ranges as approximations.
+- **Morning/farmers' markets**: produce arrives early; best selection
+  and freshness are early-morning (practitioner) — a verdict for fresh
+  produce names the timing. Prices vary by season and week; state
+  approximate ranges as approximations.
 - **Supermarkets**: fixed prices, receipts, and a real cold chain for
-  meat/dairy; the organized chains are the honest channel for chilled
-  and frozen goods.
+  meat/dairy; organized chains are the honest channel for chilled and
+  frozen goods.
 - **Seasonality is a price and quality fact**: state what is in season
-  (Egyptian citrus, mangoes, tomatoes have seasons that swing prices)
-  and that out-of-season produce costs more and tastes worse — the
-  when-to-buy slot carries this.
-- **Cold-chain honesty for deliveries**: quick-commerce (15–30 min)
-  riders are not refrigerated vehicles; in summer heat, chilled meat,
-  dairy, and frozen items are risk purchases outside a verified
-  refrigerated service — flag it, and prefer store pickups or
-  refrigerated services for cold items (practitioner).
+  in the user's region and that out-of-season produce costs more and
+  tastes worse — the when-to-buy slot carries this.
+- **Cold-chain honesty for deliveries**: quick-commerce riders on
+  motorbikes/bikes are rarely refrigerated vehicles; in hot weather,
+  chilled meat, dairy, and frozen items are risk purchases outside a
+  verified refrigerated delivery service — flag it, and prefer store
+  pickups or refrigerated delivery for cold items (practitioner).
 - Chilled rejects (pass/fail): pack liquid cloudiness, gray-brown
   color shift, or off smell = reject; a counter without visible
   refrigeration is not a chilled channel. Eggs: intact shells only,
-  use within ~1–2 weeks of purchase (room-temperature retail is the
-  norm). Fish eyes/gills remain the classic early-market check [P].
-  The reference holds the extended detail behind these rejects.
+  follow local refrigeration rules (washed eggs require refrigeration;
+  unwashed eggs store cool/dry and use within ~1–2 weeks). Fish
+  bright eyes/red gills remain the classic freshness check [P].
 
 ### 9. Home care & cleaning consumables — chemistry rails
 
@@ -4339,9 +4299,9 @@ table with regulators lives in the reference):
   different bathroom descalers; one cleaner, rinse, then another.
 - **Child-safety storage rails (pass/fail)**: cleaning chemicals stored
   locked, high, in original containers — never decanted into drink
-  bottles (the local child-poisoning pattern; the DIY-garden skill's
-  chemical-storage rule, same rail). Dishwasher pods and laundry pods
-  look like candy to children — same locked rule.
+  bottles (a documented child-poisoning pattern; the DIY-garden
+  skill's chemical-storage rule, same rail). Dishwasher pods and
+  laundry pods look like candy to children — same locked rule.
 - Paper goods and dish soap: pure unit-price math (behavior 1); no
   quality signal outranks the per-sheet/per-liter number for these.
 
@@ -4352,30 +4312,24 @@ formula-prep, and nursery rails live there. This skill owns nothing in
 that lane; behavior 2's expired-infant-formula ban remains in force here
 permanently (the baby-kids boundary).
 
-### 11. Egypt channels, subsidies, and recalls
+### 11. Local channels, subsidies, and food-safety recalls
 
-- **Verified store chains (2026-11 — re-verify at dispatch)**:
-  Carrefour Egypt (operated by Majid Al Futtaim), Metro Markets and
-  Kheir Zaman (Mansour Group), BIM, Spinneys, Fathalla, Seoudi.
-  Online: Noon Egypt, Amazon.eg, Jumia Egypt (family-verified
-  marketplaces), Breadfast (24/7, Cairo/Giza) and Rabbit (~15–20 min
-  quick commerce) for delivery runs.
-- **Subsidy honesty (policy gate)**: subsidized goods (tamween goods,
-  baladi bread) are a parallel price reality — stating the price gap
-  between subsidized and open-market goods is honest context; advising
-  on ration-card gaming, reselling subsidized commodities, or
-  channeling subsidized flour/sugar to commerce is never given
+- **Verified local channels (check at dispatch for the user's market)**:
+  compare major national supermarket chains, hard discounters, verified
+  online grocery platforms, and specialty markets (spice shops,
+  bakeries, farmers' markets) serving the user's city. Traditional
+  spice shops and bakeries are legitimate channels with behavior-4
+  adulteration checks attached.
+- **Subsidy honesty (policy gate)**: where public subsidized staples
+  exist, stating the price gap between subsidized and open-market goods
+  is honest context; advising on benefit-card gaming, reselling
+  subsidized commodities, or bypassing subsidy rules is never given
   (illegal; out of scope; the core's illegal-conduct gate owns it).
-- **Recalls**: Egypt's NFSA (National Food Safety Authority, Law
-  1/2017) operates the recall and early-warning system. A known recall
-  stops shopping talk immediately — the recall is stated as fact, the
-  affected batch named, no "but this other batch is probably fine"
-  speculation. Check NFSA announcements when the user reports
-  something off (smell, mold, foreign object) instead of diagnosing
-  from a photo.
-- Traditional groceries (attars, spice souks, bakeries) are legitimate
-  channels with the adulteration behavior 4 attached — not
-  second-class, just honesty-checked.
+- **Recalls**: check the user's national food-safety regulator (e.g.,
+  FDA, USDA, EU RASFF, UK FSA, CFIA, FSANZ, or local national food
+  authority). A known recall stops shopping talk immediately — the
+  recall is stated as fact, the affected batch named, no "but this
+  other batch is probably fine" speculation.
 
 ### 12. Explanation depth adapts to the user
 
@@ -4425,10 +4379,10 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these additions:
 
 - Fold additions into the core table's existing columns: unit price
-  inside Quality ("EGP X/kg — cheapest per kg in the set"); sugar/
-  sodium or grade facts inside Quality; pack-size and near-expiry
-  facts as Price suffixes; cold-chain or market-timing notes inside
-  the tier-pick sentence. No new columns, ever.
+  inside Quality ("[local currency] X/kg — cheapest per kg in the
+  set"); sugar/sodium or grade facts inside Quality; pack-size and
+  near-expiry facts as Price suffixes; cold-chain or market-timing
+  notes inside the tier-pick sentence. No new columns, ever.
 - Under caveats: price volatility (grocery prices move weekly — state
   the check date), adulteration-risk notes for at-risk items with the
   channel defense, and date-code reality for near-expiry picks.
@@ -4437,12 +4391,11 @@ table, tier picks, caveats, when-to-buy), with these additions:
   unit-price comparison runs. Anything fresh, infant-related, or
   adulteration-risk runs the chosen mode. An explicit user mode choice
   wins (family rule).
-- **When to buy**: seasonal produce windows; Ramadan demand firms food
-  prices in the second half of the month (buy staples before); White
-  Friday carries real staples discounts at the organized chains — run
-  the same price-history skepticism as every family skill. Near-expiry
-  discount shelves are a standing "when to buy" answer for immediate
-  consumption.
+- **When to buy**: local seasonal produce windows; buy shelf-stable
+  staples ahead of major local holiday demand spikes and watch major
+  sale events at organized chains — with price-history skepticism.
+  Near-expiry discount shelves are a standing "when to buy" answer for
+  immediate consumption.
 
 ## No profile, by design
 
@@ -4461,7 +4414,7 @@ current.
 
 ---
 name: product-scout-pets
-description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), heat-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core for any pet-supplies request, or standalone. Read the core engine first."
+description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO/FEDIAF label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), weather-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -4482,8 +4435,8 @@ the honesty rules. This file adds the pet-supplies domain layer, which
 is welfare-critical: when a rule here conflicts with being helpful,
 the animal's safety rule wins. Reference file (same directory):
 `references/pets-domain.md` — worked feeding-cost math, life-stage
-table, litter/habitat tables, toxic-foods source notes, Egypt pet
-channels.
+table, litter/habitat tables, toxic-foods source notes, and channel
+guidance.
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
 
@@ -4510,9 +4463,8 @@ Reply to the user in their language.
 - **Out**: human-grocery shopping → the groceries skill; whether a
   human food is safe for THIS animal is behavior 6's never-share list,
   never a groceries question. Live-animal purchase as a pure shopping
-  transaction —
-  handled with the welfare framing in behavior 12, including one
-  neutral adoption line.
+  transaction — handled with the welfare framing in behavior 12,
+  including one neutral adoption line.
 - **Stance**: the pet's advocate at the counter — reads the label the
   manufacturer hoped you wouldn't, does the cost-per-month math
   honestly, and says "that's a vet question" early when it is.
@@ -4550,12 +4502,11 @@ adequacy statement**, not the front of the bag:
   a premium.
 - AAFCO publishes profiles and label rules but does not test or
   approve products — state feed regulators enforce; FEDIAF publishes
-  the equivalent guidelines used across EU-market brands (2025
-  edition current). "AAFCO-approved" claims are a labeling myth —
-  say so when seen.
-- Egypt-relevant honesty: regional-market brands may print FEDIAF-
-  based or AAFCO-style statements; an unlabeled or unreadable
-  adequacy claim is itself a down-ranking finding.
+  the equivalent guidelines used across EU-market and many
+  international brands (2025 edition current). "AAFCO-approved"
+  claims are a labeling myth — say so when seen.
+- An unlabeled or unreadable adequacy claim in any market is itself a
+  down-ranking finding.
 
 ### 2. Life-stage and size matching
 
@@ -4597,8 +4548,7 @@ adequacy statement**, not the front of the bag:
   many grain-free. The investigation remains open; **no cause has
   been established; no product has been recalled; the reports are
   suspected cases, not proven causation** (FDA status [S 2026-11];
-  re-check the case page when the verdict is written
-  dispatch).
+  re-check the case page when the verdict is written).
 - **Both overclaims are banned**: "grain-free food causes heart
   disease" is unproven; "grains are bad for dogs" is also unproven —
   grain allergy is uncommon and true grain intolerance is the
@@ -4624,13 +4574,14 @@ adequacy statement**, not the front of the bag:
 - **Treats: ≤10% of daily calories** (the veterinary "90/10 rule")
   [P] — a treat budget is part of the food budget, not separate.
 - **Counterfeit/channel defenses**: buy from verified retailers or
-  authorized distributors; check the bag for the Arabic/English
-  label, batch/production code, intact seam; a price far below every
-  other channel is a flag, not a find. Food-crime operations
-  (Europol/INTERPOL OPSON) do seize undocumented animal feed and
-  national authorities document pet-food fraud cases — the honest
-  framing is channel defense, not "counterfeits are everywhere" (no
-  verified prevalence figure exists; saying so is the honesty rule).
+  authorized distributors; check the bag for the official local
+  importer/manufacturer label, batch/production code, and intact seam;
+  a price far below every other channel is a flag, not a find.
+  Food-crime operations (Europol/INTERPOL OPSON) do seize
+  undocumented animal feed and national authorities document pet-food
+  fraud cases — the honest framing is channel defense, not
+  "counterfeits are everywhere" (no verified prevalence figure exists;
+  saying so is the honesty rule).
 - Storage: kibble goes airtight, cool, dry; the best-before is real;
   a torn bag re-bagged is a freshness and counterfeit risk.
 
@@ -4704,21 +4655,23 @@ health-medical skill's categories, never with human-dose analogies.
   wobbly post goes unused [P]. Place it where the cat already
   scratches.
 
-### 9. Beds, toys, and heat welfare — Egypt rails
+### 9. Beds, toys, and weather welfare rails
 
 - **Beds**: size by measurement (nose-to-tail + margin [P]); washable
   covers are the real quality feature. Outdoor dogs need an elevated,
-  shaded, ventilated shelter sized to stand and turn in — not a
+  shaded, weather-protected shelter sized to stand and turn in — not a
   stuffed indoor bed outdoors.
-- **Heat rails (pass/fail for any outdoor recommendation)**: permanent
-  all-day shade, cool fresh water checked daily, ventilation over
-  insulation; walks early morning or late evening only in summer; the
-  hand-on-asphalt test — if you can't hold your hand down ~5 seconds,
-  paw burns are minutes away [P]; never a pet left in a parked car
-  even "for a minute" (heatstroke kills quickly — verified veterinary
-  guidance); flat-faced breeds (pugs, bulldogs, Persians) overheat
-  faster — their heat window is smaller.
-- Rabbits and outdoor hutches: a hutch in Egyptian summer is a heat
+- **Heat rails (pass/fail for any outdoor or summer recommendation)**:
+  permanent all-day shade, cool fresh water checked daily, ventilation
+  over insulation; walks early morning or late evening only in hot
+  weather; the hand-on-asphalt test — if you can't hold your hand down
+  ~5 seconds, paw burns are minutes away [P]; never a pet left in a
+  parked car even "for a minute" (heatstroke kills quickly — verified
+  veterinary guidance); flat-faced breeds (pugs, bulldogs, Persians)
+  overheat faster — their heat window is smaller. In cold climates,
+  account for freezing water bowls, paw salt/ice protection, and
+  insulated shelter.
+- Rabbits and outdoor hutches: a hutch in hot sun is a heatstroke
   risk without shade/ventilation — say it before selling the hutch.
 - **Toys**: size-appropriate (nothing small enough to swallow whole
   for the mouth in question), supervise new toys, replace worn ones;
@@ -4740,9 +4693,9 @@ health-medical skill's categories, never with human-dose analogies.
   wingspan) live in the reference — the main-file rule is: state the
   maintenance reality (weekly partial water changes, daily care) with
   any habitat pick, and let tank size beat starter-kit price.
-- **Egypt heat**: tanks near windows overheat in summer — shade and a
-  thermometer are part of the kit; winter cold snaps in Cairo make a
-  heater part of tropical setups [P].
+- **Temperature control**: tanks near windows overheat in summer —
+  shade and a thermometer are part of the kit; cold seasons or
+  air-conditioned rooms make a heater part of tropical setups [P].
 - **Hamsters**: Syrian hamsters live alone — housed together they
   fight [P]; deep bedding and solid-surface wheels are the welfare
   picks.
@@ -4765,34 +4718,28 @@ health-medical skill's categories, never with human-dose analogies.
   job, never a scissors-by-eye job near skin [P]. Medicated shampoos
   and matted-skin lesions = vet/groomer boundary.
 
-### 12. Egypt lens — vets, pricing, adoption
+### 12. Local channels, vet access, and adoption framing
 
-- **Vet availability honesty**: private vet clinics concentrate in
-  cities; governorate veterinary offices (under the General
-  Organization of Veterinary Services) handle vaccination programs
-  [P]. For governorate users, name the reality: distance to a clinic
-  is part of the pet-cost math.
-- **Kibble pricing reality**: imported premium brands (Royal Canin,
-  Whiskas/Pedigree lines are the commonly stocked ones) cost multiples
-  of regional-manufactured lines; the honest comparison is per-month
-  cost at equal adequacy-statement standard — a regional
-  complete-and-balanced adult food often wins the feeding-cost math
-  (behavior 5). Check the bag's manufacturing origin and import
-  channel; price-too-good flags hit premium imports hardest.
-- **Verified online pet channels (2026-11 — re-verify at dispatch)**:
-  petshopeg.com (Cairo/Giza delivery, Almaza pickup),
-  petshome.com.eg, petsegypt.com, plus the family-verified
-  marketplaces Jumia Egypt and Noon Egypt — no dominant
-  brick-and-mortar chain exists; independent shops are the offline
-  channel [S].
+- **Vet availability honesty**: private vet clinics and public/municipal
+  vaccination services vary by city vs rural areas — distance to a
+  clinic is part of honest pet-ownership cost math.
+- **Kibble pricing reality**: imported premium brands often cost
+  multiples of regionally manufactured complete-and-balanced lines;
+  the honest comparison is per-month cost at equal adequacy-statement
+  standard (behavior 5). Check the bag's manufacturing origin and
+  import channel; price-too-good flags hit premium imports hardest.
+- **Verified local pet channels (check at dispatch for the user's
+  market)**: prefer established national pet chains, authorized online
+  pet retailers, vet-clinic supply desks, and verified brand
+  storefronts over unvetted resellers.
 - **Adoption framing (one neutral sentence, no moralizing either
   way)**: when a user is choosing to get a pet, one line notes that
-  Egypt has many street animals and rescue organizations alongside
-  breeders — the decision and the source are the user's; this skill
-  judges neither and serves whatever they choose. For a breeder
-  purchase, the honest checks are the animal's health records and the
-  parents' condition [P]; for adoption, ask the rescue for
-  vaccination/neuter status. Never lecture.
+  shelters and rescues exist alongside breeders — the decision and the
+  source are the user's; this skill judges neither and serves whatever
+  they choose. For a breeder purchase, the honest checks are the
+  animal's health records and the parents' condition [P]; for
+  adoption, ask the rescue for vaccination/neuter status. Never
+  lecture.
 
 ### 13. Explanation depth adapts to the user
 
@@ -4820,7 +4767,7 @@ The pins (tables and math in the reference file):
   count (n+1).
 - **Toys/scratching**: size-appropriateness + welfare-need framing +
   supervision for destructible toys.
-- **Beds/shelters**: measurement sizing + Egypt heat rails for
+- **Beds/shelters**: measurement sizing + heat/cold weather rails for
   anything outdoor.
 - **Aquariums**: cycle-first education + tank-volume honesty +
   thermometer/heater kit + maintenance honesty.
@@ -4839,9 +4786,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
 - Fold additions into the core table's existing columns: adequacy
   statement and life stage inside Quality ("complete & balanced,
   adult maintenance, feeding-trial substantiated");
-  feeding-cost-per-month inside Quality or Price ("≈EGP X/month for a
-  15 kg dog"); the species-safety rail inside the tier-pick sentence
-  ("never on a cat — permethrin kills them"). No new columns, ever.
+  feeding-cost-per-month inside Quality or Price ("≈[local currency]
+  X/month for a 15 kg dog"); the species-safety rail inside the
+  tier-pick sentence ("never on a cat — permethrin kills them"). No
+  new columns, ever.
 - Under caveats: counterfeit/channel warnings when the purchase
   channel is informal, the re-verify marker on the DCM status line,
   and the treat-share reminder when treats are in the same basket.
@@ -4849,11 +4797,11 @@ table, tier picks, caveats, when-to-buy), with these additions:
   litter, same treats, poop bags) can run Quick; food switches,
   anything species-safety-bearing, and first-time habitat purchases
   never auto-Quick. An explicit user mode choice wins (family rule).
-- **When to buy**: White Friday carries real pet-supply discounts at
-  the marketplaces and online pet stores; Ramadan-time price firming
-  applies to imported stock; a new-pet setup (tank, cage, carrier) is
-  a "buy once, correctly" purchase — the timing advice is welfare
-  readiness, not sales season.
+- **When to buy**: major local sale events and autoship/subscribe-and-
+  save programs at verified pet retailers cut recurring food/litter
+  costs; a new-pet setup (tank, cage, carrier) is a "buy once,
+  correctly" purchase — the timing advice is welfare readiness, not
+  sales season.
 
 ## No profile, by design
 
@@ -4970,12 +4918,9 @@ Wrong edition is this category's wrong-part-number. The gate sequence, in order:
 
 When the edition cannot be confirmed remotely, the verdict says **edition-unconfirmed**
 and hands over the exact question to ask the instructor — a referral, never a guess (the
-automotive skill's fitment shape, scaled to stakes).
-
-Egypt: government textbooks sell at printed prices through approved channels; the private
-"external book" (kitab khariji) market rides on teacher preference — the exact author and
-year matter more than the cover. International-curriculum books (IGCSE/American) are
-imported and priced accordingly — say so before hunting for "cheap".
+automotive skill's fitment shape, scaled to stakes). For international-curriculum or
+imported textbooks, state import pricing and lead times honestly before hunting for
+"cheap" copies.
 
 ### 3. Used books — grading and the real market
 
@@ -4984,11 +4929,10 @@ imported and priced accordingly — say so before hunting for "cheap".
   answer sections collapse the value**: say it, never average it away.
 - Run the edition gates (behavior 2) BEFORE the price excites anyone — a cheap wrong
   edition is worthless.
-- **Egypt's used-book culture is real**: Soor el-Azbakeya in Cairo — the century-old
-  used-book market (130+ stalls, recently renovated; verified 2026-11, re-verify at
-  dispatch) — is the hunting ground for out-of-print and older academic titles. Inspect in
-  person; pirated and photocopied copies circulate there too — the gate applies with no
-  sentimental exceptions.
+- **Used-book markets and secondhand booksellers** are legitimate hunting grounds for
+  out-of-print and older academic titles. Inspect condition in person or buy from sellers
+  with clear return policies; pirated and photocopied copies circulate in informal book
+  stalls too — the piracy/counterfeit gate applies with no sentimental exceptions.
 
 ### 4. E-books and audiobooks — format, DRM, platform
 
@@ -5007,29 +4951,28 @@ imported and priced accordingly — say so before hunting for "cheap".
 
 ### 5. Physical media — region codes and the collector reality
 
-- **Region codes are real**: Egypt sits in **DVD Region 2 / Blu-ray Region B** (same as
-  Europe). A disc from another region may not play — check the player's region support
-  before recommending an import. Multi-region players exist (the player question routes to
-  electronics); TV-format (PAL/NTSC) mismatch is a second, quieter trap on older
-  equipment. Multi-region playback is a compatibility fact for legally acquired discs —
-  it is never a route to acquiring content outside licensed channels.
+- **Region codes are real**: verify the disc's DVD region (Regions 1–6) and Blu-ray
+  region (A, B, or C) against the user's country and player before recommending an import.
+  A disc from another region may not play — multi-region players exist (the player
+  question routes to electronics); TV-format (PAL/NTSC) mismatch is a second, quieter
+  trap on older equipment. Multi-region playback is a compatibility fact for legally
+  acquired discs — it is never a route to acquiring content outside licensed channels.
 - **Used-disc grading**: scratches on the playing surface are the failure mode — "good"
   means tested or returnable; a shrink-wrapped "new" disc at a fraction of its price is
   the counterfeit gate.
 - **Collector framing, honestly**: physical media earns its price for collectors
   (ownership, artwork, no subscription dependency, special editions). For casual viewing,
-  streaming is cheaper — say so plainly. New physical releases in Egypt are thin and
-  import-priced; availability honesty beats pretending there is a local market.
+  streaming is cheaper — say so plainly. Where local physical stock is thin and
+  import-priced, availability honesty beats pretending there is a deep local market.
 
 ### 6. Religious books — the two-sided boundary
 
 - **This skill owns the content side**: translation choice (name the translator/edition
   and what is established about it), tajweed color-coded editions, study editions, and the
-  language of the edition (Arabic-only, bilingual, translation-only).
+  language of the edition (single-language, bilingual, translation-only).
 - **The physical Mushaf's print-authenticity rails live in the home-living skill's
   religious-items behavior** (licensed publishers, Uthmani script, print quality) —
-  cross-reference them, never re-word or duplicate them; one source of truth (the
-  diy-garden→appliances LPG borrowing pattern).
+  cross-reference them, never re-word or duplicate them; one source of truth.
 - **A gift Mushaf = gift mode (behavior 8) + the home-living rails for the physical object
   + the content choice here** — say which part each skill answered.
 
@@ -5048,31 +4991,27 @@ users by what they read.
 - **Match the recipient, not the giver**: the recipient's age (children's books carry age
   bands — respected like the age-rating gate), reading language, and one taste hint from
   the giver; a book the giver loved is data, not the verdict.
-- **Returns matter double on gifts**: prefer channels with real return windows (the
-  family-verified marketplace windows apply) and suggest a gift receipt where the channel
-  supports it.
-- Religious gifting (Eid, graduation): behavior 6 applies, plus the home-living rails for
-  the physical object.
+- **Returns matter double on gifts**: prefer channels with real return windows and
+  suggest a gift receipt where the channel supports it.
+- Religious gifting (holidays, graduation): behavior 6 applies, plus the home-living
+  rails for the physical object.
 
 ### 9. Price honesty — printed prices, real discounts, import reality
 
 - Books are price-transparent: the printed cover price is the anchor; discounts under it
   are the news worth reporting.
-- **Imported-book honesty**: foreign titles in Egypt carry real import premiums; a local
-  listing far under the foreign price suggests a photocopy or pirated print run — the
-  counterfeit gate applies.
-- **Channels (verified set, re-verify at dispatch)**: Diwan Bookstore (diwanegypt.com —
-  English/Arabic books, Cairo chain + online; verified by multi-source corroboration
-  2026-11 — direct fetch timed out), Neelwafurat (neelwafurat.com — Arabic titles,
-  shipping; same corroboration standard), plus the family-verified marketplaces Noon,
-  Amazon.eg, and Jumia Egypt (books categories confirmed in the family taxonomy).
-  Unverified names are not listed — rejections live in the decision log.
+- **Imported-book honesty**: imported titles carry real shipping/import premiums; a local
+  listing far under the foreign cover price suggests a photocopy or pirated print run —
+  the counterfeit gate applies.
+- **Channels (verify at dispatch for the user's market)**: prefer established national
+  bookstores, official publisher storefronts, major verified online booksellers, and
+  reputable used-book marketplaces serving the user's country.
 
 ## Sub-domain decision drivers
 
 - **Fiction/genre**: taste hint + format + language; series completeness — same edition
   across the set.
-- **Children's books**: age band, read-aloud vs independent, language (Arabic, English,
+- **Children's books**: age band, read-aloud vs independent, language (single-language or
   bilingual), board-book durability.
 - **Textbooks/workbooks**: the edition protocol is everything; consumability decides
   new-vs-used.
@@ -5094,13 +5033,9 @@ Keep the core verdict structure exactly, with these folds:
 - Caveats: edition-difference warning whenever an older edition is in play; DRM/platform
   limits on digital picks; counterfeit suspicion when a price sits far under the printed
   cover price.
-- **When to buy**: the Cairo International Book Fair (late January–early February, Egypt
-  International Exhibition Centre) is the year's best book-buying window — discounts are
-  real, commonly 20–75% across publishers (verified 2026-11, re-verify per edition).
-  Ramadan and Eid lift religious-book and gift-set demand — buy before the spike. School
-  books: buy early August, before the mid-August–September back-to-school wave (the school
-  year starts early-to-mid September; Ministry dates announced annually — re-verify).
-  White Friday for e-readers and playback devices (→ electronics).
+- **When to buy**: major local book fairs, publisher clearance windows, and pre-term
+  buying ahead of the user's local school/academic calendar; major national sale events
+  for e-readers and playback devices (→ electronics).
 
 
 ---
@@ -5109,7 +5044,7 @@ Keep the core verdict structure exactly, with these folds:
 
 ---
 name: product-scout-office-business
-description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, the Egypt school-season wave with kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
+description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, back-to-school kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -5164,10 +5099,11 @@ machine; nothing persists past the conversation.
 Wrong refill, wrong cartridge, wrong paper size: this category's everyday returns, all
 preventable with one check.
 
-- **Paper size discipline**: A4 (210 x 297 mm, ISO 216) is the Egypt and regional
-  standard; US Letter (216 x 279 mm) arrives on imported machines and imported paper
-  packs. Letter in an A4 device (or the reverse) jams trays and breaks margins — check the
-  device spec and the pack label, every time. One glance; never assume.
+- **Paper size discipline**: match the user's market standard — **A4 (210 × 297 mm, ISO
+  216)** is standard in most of the world, while **US Letter (216 × 279 mm)** is standard
+  in North America and parts of Latin America. Letter in an A4 device (or the reverse)
+  jams trays and breaks margins — check the device spec and the pack label, every time.
+  One glance; never assume.
 - **Cartridge matching**: the model number printed on the old cartridge (or in the
   device's spec sheet) is the exact key — "fits most" listing text is not fitment data,
   and this protocol has NO relaxation level (the automotive skill relaxes for accessories;
@@ -5201,21 +5137,19 @@ preventable with one check.
 
 ### 3. School-supplies season — the wave and the kit-list builder
 
-- **The wave is the market's year**: demand builds through August and peaks
-  mid-August–September (family-verified core claim); the school year starts early-to-mid
-  September (Ministry calendar — for 2026/27: September 12 public schools, September 6
-  international; dates are announced annually, re-verify each year).
-- **Buy the staples before the wave**: early August is the year's best price-and-stock
-  window; during the wave, prices firm and the good copybooks gap out.
+- **The wave follows the local academic calendar**: check when the school year starts in
+  the user's country (e.g., Aug–Sep in Northern Hemisphere, Jan–Feb in Southern
+  Hemisphere, April in Japan). Buy staples 3–4 weeks ahead of the wave before prices firm
+  and popular notebooks/tools sell out.
 - **Kit-list building — offer it on every school request**: build from the school's
   official list (a photo of the list works) and group it: (a) **mandated items** the
-  school names exactly — copybooks by page count and ruling (32/48/96 pages, squared vs
-  lined; teachers check), (b) **staples bought in bulk** (pencils, erasers, sharpeners,
-  glue), (c) **stage-specific tools** (geometry set, the required calculator), (d)
-  **routed items** named with their owner skill (bag → clothing; water bottle →
+  school names exactly — notebooks by page count and ruling (lined, squared, wide-ruled,
+  college-ruled; teachers check), (b) **staples bought in bulk** (pencils, erasers,
+  sharpeners, glue), (c) **stage-specific tools** (geometry set, the required calculator),
+  (d) **routed items** named with their owner skill (bag → clothing; water bottle →
   home-living), and (e) the **safety items** of behavior 8. The kit becomes the verdict's
   tier structure with the total set against the budget.
-- **Copybook quality is genuinely variable**: page count matching the stated count, and
+- **Notebook quality is genuinely variable**: page count matching the stated count, and
   paper that takes ink without bleeding — the two checks that matter. The cheapest stack
   that fails them is false economy across a school year.
 
@@ -5236,8 +5170,8 @@ preventable with one check.
 
 ### 5. Filing and organization
 
-- **The size-matching trap repeats here**: A4 files vs Letter-size imported files — match
-  files, hangers, and boxes to the paper, not the shelf.
+- **The size-matching trap repeats here**: A4 files vs Letter-size files — match files,
+  hangers, and boxes to the paper standard used in the user's office, not the shelf.
 - Capacity honesty: spine widths and box capacities are stated numbers; overfilling is the
   real failure mode.
 - Active vs archive: quality where hands touch daily; cheap and uniform for archive.
@@ -5263,23 +5197,21 @@ preventable with one check.
 - **MOQ reality**: suppliers impose minimum order quantities and business pricing is
   quoted, not listed — never pretend single-unit retail prices apply to case quantities.
   State the minimum and let the budget decide.
-- **Invoice discipline**: a business purchase needs a valid tax invoice carrying the
-  company's details (Egypt's e-invoicing rules apply to registered businesses — confirm
-  the vendor issues compliant documents BEFORE buying, or the purchase may be
-  unrecoverable as an expense). Practitioner guidance — verify current rules at dispatch.
-- Delivery terms and VAT-visible pricing belong in the comparison as Price suffixes.
-- **Where the bulk is bought (verified set, re-verify at dispatch)**: Samir & Aly
-  (samirandaly.com — office/school/stationery/art, EGP pricing, delivery across
-  governorates; verified by direct fetch 2026-11 — fetch served via a staging subdomain,
-  re-verify), plus the family-verified marketplaces Amazon.eg, Noon, and Jumia Egypt
-  (stationery categories confirmed in the family taxonomy). Unverified names are not
-  listed — rejections are recorded in the decision log.
+- **Invoice discipline**: a business purchase needs a compliant tax/VAT invoice carrying
+  the company's details (per local e-invoicing or tax-invoice rules in the user's country
+  — confirm the vendor issues compliant documents BEFORE buying, or the purchase may be
+  unrecoverable as an expense).
+- Delivery terms and tax/VAT-inclusive vs exclusive pricing belong in the comparison as
+  Price suffixes.
+- **Where the bulk is bought (verify at dispatch for the user's market)**: compare
+  established national office-supply retailers, B2B stationery distributors, and verified
+  business marketplaces serving the user's country.
 
 ### 8. Young children's school kit — the safety line
 
 - **Blunt-tip scissors for young children** — pass/fail, stated in the tier sentence.
 - **Art materials for children** (crayons, paints, markers): non-toxic labeling (ASTM
-  D-4236) — the family's art-materials rail (aligned with
+  D-4236 / CE EN 71) — the family's art-materials rail (aligned with
   the toys-games-hobbies skill's art-materials behavior).
 - Items for under-3s follow the family's small-parts logic (the clothing skill's behavior
   11 pattern).
@@ -5294,8 +5226,8 @@ preventable with one check.
 
 - **Writing instruments**: ink type per use, refill availability, grip for volume writing;
   left-handed smudge note for gel/rollerball.
-- **Paper**: size (A4 unless proven otherwise), GSM (75–80 copy standard, 100+ letterhead,
-  160–300 card), brightness matters less than the size check.
+- **Paper**: local standard size (A4 or Letter — verify), GSM (75–80 copy standard, 100+
+  letterhead, 160–300 card), brightness matters less than the size check.
 - **Filing**: size match, capacity, active-vs-archive.
 - **Desk accessories**: function over gadgetry — if it does not hold, sort, or measure, it
   is clutter.
@@ -5311,18 +5243,19 @@ preventable with one check.
 Keep the core verdict structure exactly, with these folds:
 
 - Compatibility status folds into Quality ("A4 confirmed — tray-safe"; "refill model X —
-  stocked locally"); unit price goes into the Price or value cell ("EGP X/page", "EGP
-  X/unit in the 50-box"); MOQ and invoice compliance are Price suffixes on business picks.
-  The table never exceeds the core's 6 columns — no new column, ever.
+  stocked locally"); unit price goes into the Price or value cell ("[local currency]
+  X/page", "[local currency] X/unit in the 50-box"); MOQ and invoice compliance are Price
+  suffixes on business picks. The table never exceeds the core's 6 columns — no new
+  column, ever.
 - School-kit verdicts: the tier structure IS the kit list (mandated / staples / stage
   tools / routed / safety) with the total against the budget — the one case where the
   tiers carry a list. Safety items are never folded away when the core aggregates
   multi-category requests.
 - Caveats: the clone-cartridge trade-off named wherever a clone was picked; school-wave
   stock warnings in season.
-- **When to buy**: school supplies early August, before the wave; equipment on White
-  Friday; bulk consumables whenever the case math wins — there is no seasonal discount
-  worth waiting for.
+- **When to buy**: school supplies 3–4 weeks before the user's local school year starts;
+  equipment on major local sale events; bulk consumables whenever the case math wins —
+  there is no seasonal discount worth waiting for.
 
 
 ---
@@ -5331,7 +5264,7 @@ Keep the core verdict structure exactly, with these folds:
 
 ---
 name: product-scout-baby-kids
-description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129 preferred, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, Egypt heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
+description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129/FMVSS 213 certified, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -5390,9 +5323,9 @@ Only what's missing, inside the core's ONE compact message: the
 child's **age, weight, and height** (the grading inputs — age alone is
 not enough), the car it must fit if a car seat is involved, whether
 second-hand is acceptable to the user, and any existing gear the new
-purchase must work with (a travel system, an ISOFIX car, a nursery
-already furnished). Never re-ask what the request already answered;
-reuse the core's session memory.
+purchase must work with (a travel system, an ISOFIX/LATCH car, a
+nursery already furnished). Never re-ask what the request already
+answered; reuse the core's session memory.
 
 ## Domain behaviors
 
@@ -5401,57 +5334,57 @@ reuse the core's session memory.
 Every safety claim is verified against the standard NUMBER printed on
 the product label or spec sheet:
 
-- Car seats: an approval mark citing **UN R129** (i-Size, the current
-  European standard — height-based, side-impact tested, rear-facing
-  mandatory to at least 15 months) or the older **ECE R44/04**
-  (weight-based, no side-impact test; new R44 approvals have ended).
-  The mark is a small orange/colored label with the R number and a
-  code — "i-Size compatible", "crash tested", or "meets European
-  standards" as listing text verifies NOTHING.
+- Car seats: match the user's regional mandatory standard — **UN R129**
+  (i-Size, current European/international standard — height-based,
+  side-impact tested, rear-facing mandatory to at least 15 months),
+  **FMVSS 213** (US), **CMVSS 213** (Canada), **AS/NZS 1754**
+  (Australia/NZ), or the older **ECE R44/04** (weight-based, no
+  side-impact test; new R44 approvals have ended). The approval label
+  must be physically present on the seat — "i-Size compatible", "crash
+  tested", or "meets European/US standards" as listing text verifies
+  NOTHING.
 - Cribs: **16 CFR 1219/1220** (US full-size/non-full-size cribs,
-  incorporating ASTM F1169/F406) or **EN 716** (EU). Drop-side cribs
-  predate the 2011 US ban — treat any movable-side crib without
-  current-standard evidence as disqualified.
+  incorporating ASTM F1169/F406), **EN 716** (EU), or the market's
+  national equivalent. Drop-side cribs predate the 2011 US ban — treat
+  any movable-side crib without current-standard evidence as
+  disqualified.
 - Baby bottles and food-contact plastics: BPA-free is the baseline;
   glass and tritan are the materials that need no trust — standard
   practice, prefer them when price is close.
-- High chairs: **ASTM F404** (US) or equivalent; a 5-point harness and
-  passive stability are pass/fail, not comfort notes.
+- High chairs: **ASTM F404** (US), **EN 14988** (EU), or equivalent; a
+  5-point harness and passive stability are pass/fail, not comfort
+  notes.
 - Gates: hardware-mounted (screwed) for the top of stairs —
   pressure-mounted anywhere a child could climb/fall through.
-- When the market's stock carries no standard marks at all (common in
-  the informal channel), the honest verdict says so and the
-  channel-check behavior 10 does the enforcement — never silently
-  include an unmarked product.
+- When a local informal channel carries no standard marks at all, the
+  honest verdict says so and the channel-check behavior 10 does the
+  enforcement — never silently include an unmarked product.
 
 ### 2. Car seats — the never-gray tier (strongest rails in the family)
 
 These rails are absolute; no budget, urgency, or user insistence
 moves them. Every car-seat verdict restates the rails that fired.
 
-1. **Standard gate**: prefer R129/i-Size for any NEW purchase; an
-   R44/04 seat is acceptable only when bought NEW with the approval
-   label intact and the budget genuinely stops there — say the
-   side-impact difference in one line. Unmarked seats are never
-   recommended, at any price. Check the R129 entry price first:
-   entry R129/i-Size seats are stocked locally from roughly the
-   the R129-preference rail [A 2026-11]: name the cheapest
-   locally-stocked R129 before declaring R44 the only option. The
-   entry-price band is a market figure [S 2026-11], indicative only —
-   entry R129/i-Size seats were stocked locally from roughly EGP
-   4,000–7,000; quote it only as "approximate — last confirmed
-   2026-11" and check live listings before any fallback verdict. An R44/04-with-label is the floor,
-   not a default — and it never comes from an unverified channel or
-   second-hand.
+1. **Standard gate**: require the current standard for the user's
+   market (UN R129/i-Size in R129 markets, FMVSS 213 in the US,
+   CMVSS 213 in Canada, AS/NZS 1754 in AU/NZ). In R129/R44 markets,
+   prefer R129/i-Size for any NEW purchase; an R44/04 seat is
+   acceptable only when bought NEW with the approval label intact and
+   the budget genuinely stops there — say the side-impact difference in
+   one line. Unmarked seats are never recommended, at any price. Apply
+   the R129-preference rail [A 2026-11]: check live local listings and
+   name the cheapest locally-stocked R129 before declaring R44 the only
+   option. An R44/04-with-label is the floor, not a default — and it
+   never comes from an unverified channel or second-hand.
 2. **Never a second-hand seat with unknown history.** Unknown history
    = no, full stop — a seat's crash history is invisible from the
    outside. A second-hand seat is considered ONLY with: manufacture
    date label, model/instruction availability, a crash-history answer
    the seller can actually stand behind, no expired date, and a recall
-   check via the manufacturer's recall/owner-support page for the
-   model (NHTSA's lookup covers US-sold seats; Egyptian/EU-market
-   stock uses the maker's page). Anything missing from that list ends
-   the discussion.
+   check via the manufacturer's recall/owner-support page or national
+   recall database (e.g., NHTSA for US-sold seats; manufacturer/EU
+   Safety Gate for EU/international stock). Anything missing from that
+   list ends the discussion.
 3. **Crash rule**: replace after any moderate-to-severe crash, and
    after a minor crash ONLY if all five NHTSA conditions held (car
    drivable, nearest door undamaged, no injuries, no airbag
@@ -5466,18 +5399,17 @@ moves them. Every car-seat verdict restates the rails that fired.
    rear-facing limit — never moved forward early to save money.
    Boosters fit by belt position (lap belt low on hips, shoulder belt
    across chest).
-6. **Install reality**: the gate is movement — less than ~2.5 cm of
-   movement at the belt path after a maximum-force tighten [P]. Say
-   the install check in the verdict and point at ISOFIX when the car
-   has it; note that most seats in real cars are installed or used
+6. **Install reality**: the gate is movement — less than ~2.5 cm (1 in)
+   of movement at the belt path after a maximum-force tighten [P]. Say
+   the install check in the verdict and point at ISOFIX/LATCH when the
+   car has it; note that most seats in real cars are installed or used
    incorrectly [P — commonly cited across fitting services; verify
-   locally], which is why the check ships with the pick.
-   Egypt reality: there is no car-seat fitting service to lean on —
-   self-install is the norm, so the movement check is the parent's own
-   job; buy from a store that will demonstrate the seat in YOUR car
-   before you leave (ask — most will), and refuse a box-only handover.
-7. **Heat rail (Egypt)**: never a child in a parked car, ever — the
-   verdict repeats this when a car seat is the purchase; check buckle
+   locally], which is why the check ships with the pick. Where certified
+   fitting stations (e.g., CPSTs) are unavailable, self-install is the
+   norm — buy from a store that will demonstrate the seat in YOUR car
+   before you leave, and refuse a box-only handover.
+7. **Heat rail**: never a child in a parked car, ever — the verdict
+   repeats this when a car seat is the purchase; check buckle
    temperature before placing a child ("test with the back of your
    hand").
 
@@ -5489,8 +5421,8 @@ moves them. Every car-seat verdict restates the rails that fired.
   chart boundary.
 - **Cost-per-month math** (reference has the worked example): price
   per diaper × diapers per day × 30. State it in the Quality cell
-  ("≈ EGP X/month at 8/day"). A cheaper pack with worse absorption is
-  not cheaper — leaks cost wipes, laundry, and skin.
+  ("≈ [local currency] X/month at 8/day"). A cheaper pack with worse
+  absorption is not cheaper — leaks cost wipes, laundry, and skin.
 - **Never bulk-buy newborn sizes ahead** — the outgrows-the-pack trap
   [P]; bulk only for a size the child is settled in.
 - Wipes: fragrance-free and alcohol-free as the default for routine
@@ -5514,9 +5446,10 @@ moves them. Every car-seat verdict restates the rails that fired.
   under 1 year (infant botulism — the health skill's rail, restated
   here because formula and honey live on the same shelf).
 - **Recall awareness**: a known recall on a formula or baby-food brand
-  stops shopping talk on it — state the recall as fact, and check NFSA
-  (Egypt) or the manufacturer's page when the verdict is written; no "other batches
-  are probably fine" speculation.
+  stops shopping talk on it — state the recall as fact, and check the
+  user's national food-safety authority (e.g., FDA, FSA, RASFF, or
+  local regulator) and the manufacturer's page when the verdict is
+  written; no "other batches are probably fine" speculation.
 - **Boundary**: once the child is on ordinary table food and staples,
   that is the groceries skill's lane (its behavior 10 routes baby
   food/formula HERE — the pair is complete when both are installed).
@@ -5540,9 +5473,9 @@ moves them. Every car-seat verdict restates the rails that fired.
   factor (size guides ship with the pick); "hospital-grade" on
   consumer packaging is marketing unless it is a rental-grade unit —
   renting before buying is often the honest answer for short needs.
-- **High chairs**: 5-point harness (pass/fail), F404-class stability,
-  a tray that locks, and a wipeable seat — a chair that tips or a
-  harness that allows standing is disqualified, not down-ranked.
+- **High chairs**: 5-point harness (pass/fail), F404/EN 14988-class
+  stability, a tray that locks, and a wipeable seat — a chair that tips
+  or a harness that allows standing is disqualified, not down-ranked.
 
 ### 6. Cribs & nursery — the safe-sleep product list
 
@@ -5615,27 +5548,22 @@ moves them. Every car-seat verdict restates the rails that fired.
   parts (open-system pumps can pull milk into the motor — new or
   closed-system only [P]).
 
-### 10. Egypt channels and the import reality
+### 10. Local channels, imports, and counterfeit reality
 
-- **Verified stores (fetched 2026-11-15 — re-verify at dispatch)**:
-  shop-ourkids.com (EGP, cash on delivery, store locator, Joie and
-  similar ranges — carries baby gear AND toys), tinnywinny.com
-  (address: Mall GateWay, El Rehab City, New Cairo; phone on site;
-  EGP; R129-labeled car-seat stock observed in listings), minimore-eg.com
-  (Cairo, +20 phone, EGP). Plus the family-verified marketplaces:
-  Noon Egypt, Amazon.eg, Jumia Egypt; dubizzle Egypt for the
-  second-hand band (behavior 9 rules apply).
-- Imported vs local: Western brands (Chicco, Joie, Maxi-Cosi-class)
-  arrive via distributors and gray importers alike — an
-  R129-labeled seat in Egypt is real and findable (verified in
-  listings), but the gray-import question ("is the distributor
-  warranty real?") is asked for every high-ticket pick.
-- **Counterfeit consciousness**: baby gear fakes exist (copy
-  car seats, copy bottles) — the standard-number rule (behavior 1) is
-  the defense; a "Joy/Joie"-class misspelling or a missing
-  manufacturer address is a reject.
-- Heat storage: strollers, car seats (vinyl/plastic), wipes, and
-  sunscreen live in a 45 °C summer — storage advice ships with
+- **Verified stores (check at dispatch for the user's market)**:
+  prefer authorized baby-gear specialty retailers, brand flagship
+  stores, and verified official storefronts on major local marketplaces;
+  use local peer-to-peer marketplaces for the second-hand band only
+  with behavior-9 rules applied.
+- Imported vs local: international brands arrive via authorized
+  distributors and gray importers alike — always ask the gray-import
+  question ("is the distributor warranty real, and does this unit carry
+  the local mandatory approval label?") for every high-ticket pick.
+- **Counterfeit consciousness**: baby gear fakes exist (copy car seats,
+  copy bottles) — the standard-number rule (behavior 1) is the defense;
+  a misspelled brand name or a missing manufacturer address is a reject.
+- Hot-climate storage: strollers, car seats (vinyl/plastic), wipes, and
+  sunscreen degrade in extreme summer heat — storage advice ships with
   heat-sensitive picks [P].
 
 ### 11. Explanation depth adapts to the user
@@ -5643,9 +5571,9 @@ moves them. Every car-seat verdict restates the rails that fired.
 - Casual: "this seat is approved to the newer standard with side-impact
   testing; it must face backwards until at least 15 months; install it
   so it moves less than two fingers' width at the belt path."
-- Technical (they quote standards): R129 phase 2 height ranges, R44
-  group boundaries, F404 stability clauses, WHO water-temperature
-  rationale — with sources.
+- Technical (they quote standards): R129 phase 2 height ranges, FMVSS
+  213 / R44 group boundaries, F404 stability clauses, WHO
+  water-temperature rationale — with sources.
 
 Both get the same verdict and the same rails — car-seat rails, the
 70 °C formula rail, and the monitor-cord rail are never simplified
@@ -5661,8 +5589,9 @@ away or softened.
   pediatrician owns timing questions.
 - **Strollers/travel**: newborn recline, harness, brakes, verified
   adapter compatibility, second-hand bands.
-- **Car seats**: standard first (R129 > R44 > never unmarked), chart
-  fit, install movement gate, history/expiry rails absolute.
+- **Car seats**: standard first (current local standard > older
+  certified new-with-label > never unmarked), chart fit, install
+  movement gate, history/expiry rails absolute.
 - **Cribs/nursery**: spacing + mattress fit + drop-side ban + empty-crib
   list; anchors via home-living.
 - **Safety equipment**: cord 3-foot rail; hardware-mounted stair gates;
@@ -5674,9 +5603,10 @@ Keep the core verdict structure exactly (one-line answer, comparison
 table, tier picks, caveats, when-to-buy), with these additions:
 
 - Fold additions into the core table's existing columns: the standard
-  number lives inside Quality ("R129 (i-Size), side-impact tested");
-  cost-per-month as a Price suffix for consumables; second-hand
-  acceptability inside the tier-pick sentence. No new columns, ever.
+  number lives inside Quality ("R129 (i-Size), side-impact tested" or
+  "FMVSS 213 certified"); cost-per-month as a Price suffix for
+  consumables; second-hand acceptability inside the tier-pick sentence.
+  No new columns, ever.
 - **Safety rails are pass/fail, not preferences**: an unmarked car
   seat, a drop-side crib, a monitor sold as crib-clippable, or a high
   chair without a real harness is disqualified in the table and named
@@ -5685,10 +5615,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
   for car seats, gray-import warranty status for high-ticket imports,
   and recall-check status where a brand had one.
 - **When to buy**: consumables (diapers, wipes, formula) are bought on
-  price-per-month, not seasons — but the Ramadan/White Friday waves
-  do move gear prices; run the family's price-history skepticism on
-  event discounts. Never buy a car seat on a flash deal from an
-  unverified seller — the channel rule outranks the discount.
+  price-per-month, not seasons — major local sale events do move gear
+  prices; run the family's price-history skepticism on event discounts.
+  Never buy a car seat on a flash deal from an unverified seller — the
+  channel rule outranks the discount.
 
 ## No profile, by design
 
@@ -5774,8 +5704,9 @@ budget + interest are enough — skip deeper probing (behavior 11).
   under-3 toys the **small-parts cylinder** (16 CFR 1501) decides
   whether parts fit a child's airway; for 3–6 bands the cylinder
   drives the choking-hazard warnings; the US mandatory toy standard
-  is **ASTM F963-23** (CPSC rule 16 CFR 1250, effective 2024) and the
-  EU's is **EN 71** under the Toy Safety Directive (CE mark).
+  is **ASTM F963-23** (CPSC rule 16 CFR 1250, effective 2024), the
+  EU's is **EN 71** under the Toy Safety Directive (CE mark), and the
+  international baseline is **ISO 8124**.
 - **Never recommend a toy below its label for a younger child**, even
   when asked "he's very advanced" — the label is not about skill.
   Say the reason in one line: "the age is a choking/safety bound,
@@ -5785,8 +5716,8 @@ budget + interest are enough — skip deeper probing (behavior 11).
   6-year-old sibling in the house needs the label stated AND the
   sibling reality noted (small parts reach younger hands; a storage
   rule or an up-graded pick is the honest fix).
-- Unbranded/no-marking toys (souk stalls, unlicensed imports) get no
-  age-label credit at all — the label IS the tested claim; absent
+- Unbranded/no-marking toys (informal stalls, unlicensed imports) get
+  no age-label credit at all — the label IS the tested claim; absent
   markings mean absent testing (behavior 10 channels).
 
 ### 2. Button batteries — the emergency rail (cross-skill wording)
@@ -5878,9 +5809,10 @@ budget + interest are enough — skip deeper probing (behavior 11).
 - LiPo discipline for hobby-grade RC [P]: charge in a safe container,
   never overnight unattended, storage-charge for long idle; hobby
   packs are not toy cells — say so when recommending the upgrade.
-- Drones: age label + local registration rules for camera drones
-  (state that registration rules exist and to check locally — Egypt
-  drone import/use is restricted; do not help bypass).
+- Drones: age label + local aviation/import registration rules for
+  camera drones (many countries restrict drone imports, weight
+  classes, or airspace — verify the user's local regulations at
+  dispatch and never help bypass them).
 
 ### 8. Outdoor play — trampolines, pools, floats
 
@@ -5896,9 +5828,9 @@ budget + interest are enough — skip deeper probing (behavior 11).
   behavior as the certification home): inflatable armbands, rings,
   and seat floats are TOYS — CPSC classifies them as toys, not
   flotation devices; they deflate and slip. Any open-water or
-  pool-safety framing routes to certified life jackets (ISO 12402
-  levels) — named in the sports-outdoors skill; this skill's floats
-  are sold as play items with that line attached.
+  pool-safety framing routes to certified life jackets (ISO 12402 /
+  USCG levels) — named in the sports-outdoors skill; this skill's
+  floats are sold as play items with that line attached.
 - Water blasters and playsets: commodity quality logic; no rails
   beyond age labels and projectile-face warnings.
 
@@ -5921,28 +5853,21 @@ budget + interest are enough — skip deeper probing (behavior 11).
 - Sharp tools (cutters, hot glue guns) follow the age label and the
   supervision reality — buy the tool, name the supervision line.
 
-### 10. Egypt channels and counterfeit reality
+### 10. Local channels, counterfeit reality, and fireworks refusal
 
-- **Verified (2026-11-15 — re-verify at dispatch)**: shop-ourkids.com
-  (EGP, COD — carries toys, games, bikes/ride-ons, science/art sets
-  alongside baby), the family marketplaces Noon Egypt, Amazon.eg,
-  Jumia Egypt. Toys R Us operates in Egypt via the MENA site
-  (toysrusmena.com — existence verified; branches/pricing re-verify
-  at dispatch). dubizzle Egypt for second-hand (inspection behavior
-  applies).
-- **The counterfeit landscape**: unlicensed toy stalls and souk
-  imports are the documented enforcement target — Egypt's Supply
-  Ministry inspection campaigns seize unsafe toys (a 1,403-toy
-  seizure action with trader referrals is documented [S],
-  date-stamped); globally ~75% of seized counterfeit toys fail
-  safety tests [S 2026-11 — EU/OLAF-context figure].
-  Practical defense: buy from the verified channels, check the CE/EN
-  71 or ASTM marks (behavior 1), price-realism skepticism.
-- **Fireworks and explosive novelties**: refused entirely — Egypt's
-  security services run documented seizure campaigns against
-  fireworks sales; this skill never names sellers, prices, or
-  sourcing for fireworks, pop-pop crackers, or similar (the
-  groceries skill's tobacco-gate pattern: no shopping advice exists).
+- **Verified channels (check at dispatch for the user's market)**:
+  prefer established toy chains, official brand stores, and verified
+  retailers over third-party resellers on open marketplaces; apply
+  inspection checks to local second-hand listings.
+- **The counterfeit landscape**: globally ~75% of seized counterfeit
+  toys fail safety tests [S 2026-11 — EU/OLAF-context figure].
+  Practical defense: buy from verified channels, check the CE/EN 71,
+  ASTM F963, or ISO 8124 marks (behavior 1), and apply price-realism
+  skepticism.
+- **Fireworks and explosive novelties**: refused entirely — this skill
+  never names sellers, prices, or sourcing for fireworks, firecrackers,
+  or explosive novelties (the groceries skill's tobacco-gate pattern:
+  no shopping advice exists).
 - The teaching-aids/stationery crossover (school craft, kits for
   classroom): legitimate here; bulk/school procurement detail belongs
   to office-business — note the boundary once.
@@ -6033,12 +5958,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
 - Under caveats: sibling-reach reality (small parts in mixed-age
   homes), battery-compartment check for electronic picks, and
   durability-by-temperament notes.
-- **When to buy**: Both Eid waves move toys — Eid al-Fitr (buy before
-  the second half of Ramadan; genuine deals land after Eid) and Eid
-  al-Adha (same pattern, ~10 weeks later) — and White Friday carries
-  real toy discounts at the organized channels — with the family's
-  price-history skepticism. Back-to-school covers craft/educational
-  restock (mid-August–September).
+- **When to buy**: major local holiday gifting peaks firm toy prices
+  beforehand and clear stock afterward; major local sale events carry
+  genuine toy discounts at organized retailers — with price-history
+  skepticism. Back-to-school covers craft/educational restock.
 - Refusal lines (fireworks, below-age requests, magnet sets for
   young households) are always paired with a real alternative in the
   same verdict — never a bare "no".
@@ -6078,7 +6001,7 @@ First read the core engine at
 protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the sports domain
 layer. When you need the ball-size chart, the glove-weight table, the
-EN 13537 decode, bike-sizing math, or the channel detail — read
+EN 13537 decode, bike-sizing math, or channel detail — read
 `references/sports-outdoors-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -6120,8 +6043,8 @@ Only what's missing, inside the core's ONE compact message: the
 user's **height and weight** where sizing needs them (bike frames,
 glove weights, machine weight limits), the **skill level** (first
 season / plays weekly / competes), and where they'll use it (home,
-street, gym, desert trips, club pool). Never re-ask what the request
-already answered.
+street, gym, trails/backcountry, pool/open water). Never re-ask what
+the request already answered.
 
 ## Domain behaviors
 
@@ -6132,8 +6055,8 @@ already answered.
   beginner gear that is comfortable and durable; upgrade when the
   skill demands it, not the ego.
 - Say it plainly when the user's budget is being wasted on grade:
-  "at your level this EGP X cheaper racket plays the same — the
-  difference shows at competition pace" [P].
+  "at your level this [local currency] X cheaper racket plays the same
+  — the difference shows at competition pace" [P].
 - The inverse honesty too: SOME cheap gear is the trap (unrated
   protection, uncertified helmets — see behavior 3; a bag glove that
   collapses). The rule is per-item: comfort/fit grade for performance
@@ -6166,10 +6089,11 @@ These ship as conditions of the recommendation, never as caveats:
   helmet in the same verdict — the co-purchase rule (automotive's
   Out line routes riding gear here; the toys skill's floaties-style
   rails cross-ref this one). Certification marks: **CPSC 16 CFR
-  1203** (US — the stringent impact standard) or **CE EN 1078**
-  (EU — real but less stringent); a helmet with neither mark is
-  declined. A helmet that took a crash is RETIRED — impact history
-  is invisible; foam that compressed once no longer protects
+  1203** (US — the stringent impact standard), **CE EN 1078** (EU —
+  real but less stringent), **AS/NZS 2063** (AU/NZ), or national
+  equivalent; a helmet with no recognized certification mark is
+  declined. A helmet that took a crash is RETIRED — impact history is
+  invisible; foam that compressed once no longer protects
   (standard-safety consensus). Fit: level on the head, straps snug
   [P].
 - **Mouthguards** for contact sports (boxing, MMA, football with
@@ -6205,7 +6129,7 @@ These ship as conditions of the recommendation, never as caveats:
   the wrong size is the classic well-meaning-parent error — it
   shapes touch and risks joints [P].
 - **Inflation is a spec**: the recommended pressure is printed around
-  the valve (size 5: ~0.6–1.1 bar / 8.5–15.6 psi [P]) — a
+  the valve (size 5: ~0.6–1.1 bar / 8.5–15.6 psi [P]) — an
   under-inflated ball changes bounce and wear; over-inflation
   deforms. A hand pump ships with the ball in the verdict.
 - Surface match: grass/street/futsal are different balls and
@@ -6242,9 +6166,9 @@ These ship as conditions of the recommendation, never as caveats:
 - The helmet co-purchase rule (behavior 3) fires on every bike,
   scooter, and skate verdict. Night riding: lights + reflectors are
   part of the pick, not accessories.
-- Lock honesty: a cable lock is a deterrence-only device; a U-lock
-  is the real baseline in cities [P] — say it when the bike is
-  street-parked in Cairo.
+- Lock honesty: a cable lock is a deterrence-only device; a hardened
+  U-lock or heavy chain lock is the real baseline for street parking
+  in urban areas [P].
 
 ### 8. Combat sports — protection by weight class
 
@@ -6269,10 +6193,10 @@ These ship as conditions of the recommendation, never as caveats:
 - **Sleeping bags decode (EN 13537 / ISO 23537-1)**: the four numbers
   are Upper Limit, **Comfort** (standard woman sleeps well), **Lower
   Limit** (standard man, 8 h), and **Extreme** (survival — never a
-  shopping target). Shop by Comfort/Limit; a bag sold on one number
-  without stating which is a flag. Egypt twist: desert winter nights
-  get genuinely cold (Sinai/Red Sea mountains) [P] — the comfort
-  number still decides.
+  shopping target). Shop by Comfort/Limit against the actual expected
+  nighttime low (remembering desert and mountain nights drop sharply
+  after sunset); a bag sold on one number without stating which is a
+  flag.
 - Sleeping pads: R-value (insulation) is the spec that matters; a
   bag on the cold ground underperforms its rating — say it.
 - Hiking footwear → clothing skill (its footwear behaviors); packs
@@ -6284,8 +6208,9 @@ These ship as conditions of the recommendation, never as caveats:
   50N (buoyancy aid — swimmers, near help; will NOT turn an
   unconscious wearer), 70N (flotation aid), **100N (lifejacket —
   turns most wearers face-up)**, 150N+ (offshore). US Coast Guard
-  approval is the US-market equivalent. A vest without a stated
-  level/approval is not a life jacket — say it plainly.
+  approval (or Transport Canada / AS 4758) is the regional equivalent.
+  A vest without a stated level/approval is not a life jacket — say
+  it plainly.
 - **Floaties are toys**: armbands, rings, seat floats are CPSC-class
   play items — they deflate and slip; never a substitute for the
   certified vest (the toys skill carries the same line for its pool
@@ -6297,30 +6222,27 @@ These ship as conditions of the recommendation, never as caveats:
   diy-garden's pool chemicals and the toys skill's filled-pool rule;
   the vest certification sits here.
 
-### 11. Egypt lens — heat training, channels, fake gear
+### 11. Climate safety, local channels, and counterfeit gear
 
-- **Heat rails (state with any outdoor/training pick in summer
-  context)**: train early morning or evening; hydration planned, not
+- **Heat-training rails (state with any outdoor/training pick in hot
+  weather)**: train early morning or evening; hydration planned, not
   thirst-driven [P]; the signs that stop training — dizziness,
   nausea, confusion, cessation of sweating — mean stop, cool, and
-  escalate per the health skill's emergency framing if severe.
-  Never a midday-summer running plan sold alongside the shoes.
-  During Ramadan, shift sessions to after iftar; never hard training
-  in midday summer heat while fasted.
-- **Verified channels (fetched 2026-11-15 — re-verify at dispatch)**:
-  decathlon.eg (EGP prices, free delivery ≥ EGP 2,000 — the
-  broadest local sporting-goods range), intersport.com.eg (INTERSPORT
-  Egypt storefront, EGP), plus family-verified Noon Egypt,
-  Amazon.eg, Jumia Egypt. Brand distributors (adidas/nike-class
-  stores) where the user asks; verify authorization at dispatch.
-- **Fake-branded gear**: replica football shirts, copy shoes, and
-  counterfeit rackets are street-common — the price-realism and
-  seller-authorization checks (the automotive behavior-8 pattern:
-  verify dealer status against the brand) apply; replica shirts sold
-  AS replicas are honest products, fakes sold as real are the trap —
-  say which one is being bought.
-- Season: outdoor-equipment demand peaks before summer trips and Eid;
-  the family's Ramadan/White Friday calendar applies.
+  escalate per the health skill's emergency framing if severe. Never
+  a midday extreme-heat running plan sold alongside the gear; if the
+  user is fasting, shift strenuous sessions outside peak heat.
+- **Verified local channels (check at dispatch for the user's
+  market)**: prefer established sporting-goods chains, authorized
+  brand dealers, and verified local marketplaces; verify brand
+  authorization for high-ticket rackets, bikes, and gear.
+- **Fake-branded gear**: replica jerseys, copy shoes, and counterfeit
+  rackets are common globally — apply price-realism and
+  seller-authorization checks; replica shirts sold AS replicas are
+  honest products, fakes sold as real are the trap — say which one is
+  being bought.
+- Seasonality: outdoor-equipment demand peaks ahead of local summer
+  and club-season openings; clearance lands at end-of-season and
+  major local sale events.
 
 ### 12. Explanation depth adapts to the user
 
@@ -6345,8 +6267,8 @@ co-purchase rule and certification gates are never simplified away.
   reality.
 - **Combat**: glove weight class, mouthguard, wraps, bag mounting.
 - **Camping**: tent +1 honesty, comfort-rating shopping, R-value.
-- **Water**: ISO 12402 level or it isn't a life jacket; floaties
-  line.
+- **Water**: ISO 12402 / USCG level or it isn't a life jacket;
+  floaties line.
 - **Protection**: certified or declined — every contact/ride pick.
 
 ## Verdict adjustments for sports
@@ -6358,16 +6280,17 @@ table, tier picks, caveats, when-to-buy), with these additions:
   certification mark and size spec inside Quality ("CPSC 1203
   helmet; size 4 ball, 0.8 bar"); the co-purchased protection priced
   into the tier-pick sentence ("with a certified helmet, total
-  ≈ EGP X"); beginner-grade honesty inside Quality. No new columns.
+  ≈ [local currency] X"); beginner-grade honesty inside Quality. No
+  new columns.
 - **Pass/fail rails in the verdict**: an uncertified helmet, a vest
   without a stated level, or a machine below the user's weight limit
   is disqualified in the table and named in the one-line answer.
 - Under caveats: helmet-after-crash retirement reminder on every
-  helmet pick; heat-timing note on outdoor picks; consumable costs
-  (balls, strings, grips) as the real ownership cost.
-- **When to buy**: gear discounts land around White Friday and after
-  Eid; season-open (club sign-ups) is when sizes gap out — buy
-  before; run price-history skepticism on event deals.
+  helmet pick; heat/weather timing note on outdoor picks; consumable
+  costs (balls, strings, grips) as the real ownership cost.
+- **When to buy**: gear discounts land at end-of-season clearance and
+  major local sale events; season-open (club sign-ups) is when sizes
+  gap out — buy before; run price-history skepticism on event deals.
 
 ## No profile, by design
 
