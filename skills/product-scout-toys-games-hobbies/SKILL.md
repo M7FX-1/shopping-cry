@@ -65,8 +65,9 @@ budget + interest are enough — skip deeper probing (behavior 11).
   under-3 toys the **small-parts cylinder** (16 CFR 1501) decides
   whether parts fit a child's airway; for 3–6 bands the cylinder
   drives the choking-hazard warnings; the US mandatory toy standard
-  is **ASTM F963-23** (CPSC rule 16 CFR 1250, effective 2024) and the
-  EU's is **EN 71** under the Toy Safety Directive (CE mark).
+  is **ASTM F963-23** (CPSC rule 16 CFR 1250, effective 2024), the
+  EU's is **EN 71** under the Toy Safety Directive (CE mark), and the
+  international baseline is **ISO 8124**.
 - **Never recommend a toy below its label for a younger child**, even
   when asked "he's very advanced" — the label is not about skill.
   Say the reason in one line: "the age is a choking/safety bound,
@@ -76,8 +77,8 @@ budget + interest are enough — skip deeper probing (behavior 11).
   6-year-old sibling in the house needs the label stated AND the
   sibling reality noted (small parts reach younger hands; a storage
   rule or an up-graded pick is the honest fix).
-- Unbranded/no-marking toys (souk stalls, unlicensed imports) get no
-  age-label credit at all — the label IS the tested claim; absent
+- Unbranded/no-marking toys (informal stalls, unlicensed imports) get
+  no age-label credit at all — the label IS the tested claim; absent
   markings mean absent testing (behavior 10 channels).
 
 ### 2. Button batteries — the emergency rail (cross-skill wording)
@@ -169,9 +170,10 @@ budget + interest are enough — skip deeper probing (behavior 11).
 - LiPo discipline for hobby-grade RC [P]: charge in a safe container,
   never overnight unattended, storage-charge for long idle; hobby
   packs are not toy cells — say so when recommending the upgrade.
-- Drones: age label + local registration rules for camera drones
-  (state that registration rules exist and to check locally — Egypt
-  drone import/use is restricted; do not help bypass).
+- Drones: age label + local aviation/import registration rules for
+  camera drones (many countries restrict drone imports, weight
+  classes, or airspace — verify the user's local regulations at
+  dispatch and never help bypass them).
 
 ### 8. Outdoor play — trampolines, pools, floats
 
@@ -187,9 +189,9 @@ budget + interest are enough — skip deeper probing (behavior 11).
   behavior as the certification home): inflatable armbands, rings,
   and seat floats are TOYS — CPSC classifies them as toys, not
   flotation devices; they deflate and slip. Any open-water or
-  pool-safety framing routes to certified life jackets (ISO 12402
-  levels) — named in the sports-outdoors skill; this skill's floats
-  are sold as play items with that line attached.
+  pool-safety framing routes to certified life jackets (ISO 12402 /
+  USCG levels) — named in the sports-outdoors skill; this skill's
+  floats are sold as play items with that line attached.
 - Water blasters and playsets: commodity quality logic; no rails
   beyond age labels and projectile-face warnings.
 
@@ -212,28 +214,21 @@ budget + interest are enough — skip deeper probing (behavior 11).
 - Sharp tools (cutters, hot glue guns) follow the age label and the
   supervision reality — buy the tool, name the supervision line.
 
-### 10. Egypt channels and counterfeit reality
+### 10. Local channels, counterfeit reality, and fireworks refusal
 
-- **Verified (2026-11-15 — re-verify at dispatch)**: shop-ourkids.com
-  (EGP, COD — carries toys, games, bikes/ride-ons, science/art sets
-  alongside baby), the family marketplaces Noon Egypt, Amazon.eg,
-  Jumia Egypt. Toys R Us operates in Egypt via the MENA site
-  (toysrusmena.com — existence verified; branches/pricing re-verify
-  at dispatch). dubizzle Egypt for second-hand (inspection behavior
-  applies).
-- **The counterfeit landscape**: unlicensed toy stalls and souk
-  imports are the documented enforcement target — Egypt's Supply
-  Ministry inspection campaigns seize unsafe toys (a 1,403-toy
-  seizure action with trader referrals is documented [S],
-  date-stamped); globally ~75% of seized counterfeit toys fail
-  safety tests [S 2026-11 — EU/OLAF-context figure].
-  Practical defense: buy from the verified channels, check the CE/EN
-  71 or ASTM marks (behavior 1), price-realism skepticism.
-- **Fireworks and explosive novelties**: refused entirely — Egypt's
-  security services run documented seizure campaigns against
-  fireworks sales; this skill never names sellers, prices, or
-  sourcing for fireworks, pop-pop crackers, or similar (the
-  groceries skill's tobacco-gate pattern: no shopping advice exists).
+- **Verified channels (check at dispatch for the user's market)**:
+  prefer established toy chains, official brand stores, and verified
+  retailers over third-party resellers on open marketplaces; apply
+  inspection checks to local second-hand listings.
+- **The counterfeit landscape**: globally ~75% of seized counterfeit
+  toys fail safety tests [S 2026-11 — EU/OLAF-context figure].
+  Practical defense: buy from verified channels, check the CE/EN 71,
+  ASTM F963, or ISO 8124 marks (behavior 1), and apply price-realism
+  skepticism.
+- **Fireworks and explosive novelties**: refused entirely — this skill
+  never names sellers, prices, or sourcing for fireworks, firecrackers,
+  or explosive novelties (the groceries skill's tobacco-gate pattern:
+  no shopping advice exists).
 - The teaching-aids/stationery crossover (school craft, kits for
   classroom): legitimate here; bulk/school procurement detail belongs
   to office-business — note the boundary once.
@@ -324,12 +319,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
 - Under caveats: sibling-reach reality (small parts in mixed-age
   homes), battery-compartment check for electronic picks, and
   durability-by-temperament notes.
-- **When to buy**: Both Eid waves move toys — Eid al-Fitr (buy before
-  the second half of Ramadan; genuine deals land after Eid) and Eid
-  al-Adha (same pattern, ~10 weeks later) — and White Friday carries
-  real toy discounts at the organized channels — with the family's
-  price-history skepticism. Back-to-school covers craft/educational
-  restock (mid-August–September).
+- **When to buy**: major local holiday gifting peaks firm toy prices
+  beforehand and clear stock afterward; major local sale events carry
+  genuine toy discounts at organized retailers — with price-history
+  skepticism. Back-to-school covers craft/educational restock.
 - Refusal lines (fireworks, below-age requests, magnet sets for
   young households) are always paired with a real alternative in the
   same verdict — never a bare "no".

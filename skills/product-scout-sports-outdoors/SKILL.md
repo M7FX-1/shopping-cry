@@ -19,7 +19,7 @@ First read the core engine at
 protocol (market / budget / mode), the three research modes, the verdict
 structure, and the honesty rules. This file adds the sports domain
 layer. When you need the ball-size chart, the glove-weight table, the
-EN 13537 decode, bike-sizing math, or the channel detail — read
+EN 13537 decode, bike-sizing math, or channel detail — read
 `references/sports-outdoors-domain.md` (same directory).
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
@@ -61,8 +61,8 @@ Only what's missing, inside the core's ONE compact message: the
 user's **height and weight** where sizing needs them (bike frames,
 glove weights, machine weight limits), the **skill level** (first
 season / plays weekly / competes), and where they'll use it (home,
-street, gym, desert trips, club pool). Never re-ask what the request
-already answered.
+street, gym, trails/backcountry, pool/open water). Never re-ask what
+the request already answered.
 
 ## Domain behaviors
 
@@ -73,8 +73,8 @@ already answered.
   beginner gear that is comfortable and durable; upgrade when the
   skill demands it, not the ego.
 - Say it plainly when the user's budget is being wasted on grade:
-  "at your level this EGP X cheaper racket plays the same — the
-  difference shows at competition pace" [P].
+  "at your level this [local currency] X cheaper racket plays the same
+  — the difference shows at competition pace" [P].
 - The inverse honesty too: SOME cheap gear is the trap (unrated
   protection, uncertified helmets — see behavior 3; a bag glove that
   collapses). The rule is per-item: comfort/fit grade for performance
@@ -107,10 +107,11 @@ These ship as conditions of the recommendation, never as caveats:
   helmet in the same verdict — the co-purchase rule (automotive's
   Out line routes riding gear here; the toys skill's floaties-style
   rails cross-ref this one). Certification marks: **CPSC 16 CFR
-  1203** (US — the stringent impact standard) or **CE EN 1078**
-  (EU — real but less stringent); a helmet with neither mark is
-  declined. A helmet that took a crash is RETIRED — impact history
-  is invisible; foam that compressed once no longer protects
+  1203** (US — the stringent impact standard), **CE EN 1078** (EU —
+  real but less stringent), **AS/NZS 2063** (AU/NZ), or national
+  equivalent; a helmet with no recognized certification mark is
+  declined. A helmet that took a crash is RETIRED — impact history is
+  invisible; foam that compressed once no longer protects
   (standard-safety consensus). Fit: level on the head, straps snug
   [P].
 - **Mouthguards** for contact sports (boxing, MMA, football with
@@ -146,7 +147,7 @@ These ship as conditions of the recommendation, never as caveats:
   the wrong size is the classic well-meaning-parent error — it
   shapes touch and risks joints [P].
 - **Inflation is a spec**: the recommended pressure is printed around
-  the valve (size 5: ~0.6–1.1 bar / 8.5–15.6 psi [P]) — a
+  the valve (size 5: ~0.6–1.1 bar / 8.5–15.6 psi [P]) — an
   under-inflated ball changes bounce and wear; over-inflation
   deforms. A hand pump ships with the ball in the verdict.
 - Surface match: grass/street/futsal are different balls and
@@ -183,9 +184,9 @@ These ship as conditions of the recommendation, never as caveats:
 - The helmet co-purchase rule (behavior 3) fires on every bike,
   scooter, and skate verdict. Night riding: lights + reflectors are
   part of the pick, not accessories.
-- Lock honesty: a cable lock is a deterrence-only device; a U-lock
-  is the real baseline in cities [P] — say it when the bike is
-  street-parked in Cairo.
+- Lock honesty: a cable lock is a deterrence-only device; a hardened
+  U-lock or heavy chain lock is the real baseline for street parking
+  in urban areas [P].
 
 ### 8. Combat sports — protection by weight class
 
@@ -210,10 +211,10 @@ These ship as conditions of the recommendation, never as caveats:
 - **Sleeping bags decode (EN 13537 / ISO 23537-1)**: the four numbers
   are Upper Limit, **Comfort** (standard woman sleeps well), **Lower
   Limit** (standard man, 8 h), and **Extreme** (survival — never a
-  shopping target). Shop by Comfort/Limit; a bag sold on one number
-  without stating which is a flag. Egypt twist: desert winter nights
-  get genuinely cold (Sinai/Red Sea mountains) [P] — the comfort
-  number still decides.
+  shopping target). Shop by Comfort/Limit against the actual expected
+  nighttime low (remembering desert and mountain nights drop sharply
+  after sunset); a bag sold on one number without stating which is a
+  flag.
 - Sleeping pads: R-value (insulation) is the spec that matters; a
   bag on the cold ground underperforms its rating — say it.
 - Hiking footwear → clothing skill (its footwear behaviors); packs
@@ -225,8 +226,9 @@ These ship as conditions of the recommendation, never as caveats:
   50N (buoyancy aid — swimmers, near help; will NOT turn an
   unconscious wearer), 70N (flotation aid), **100N (lifejacket —
   turns most wearers face-up)**, 150N+ (offshore). US Coast Guard
-  approval is the US-market equivalent. A vest without a stated
-  level/approval is not a life jacket — say it plainly.
+  approval (or Transport Canada / AS 4758) is the regional equivalent.
+  A vest without a stated level/approval is not a life jacket — say
+  it plainly.
 - **Floaties are toys**: armbands, rings, seat floats are CPSC-class
   play items — they deflate and slip; never a substitute for the
   certified vest (the toys skill carries the same line for its pool
@@ -238,30 +240,27 @@ These ship as conditions of the recommendation, never as caveats:
   diy-garden's pool chemicals and the toys skill's filled-pool rule;
   the vest certification sits here.
 
-### 11. Egypt lens — heat training, channels, fake gear
+### 11. Climate safety, local channels, and counterfeit gear
 
-- **Heat rails (state with any outdoor/training pick in summer
-  context)**: train early morning or evening; hydration planned, not
+- **Heat-training rails (state with any outdoor/training pick in hot
+  weather)**: train early morning or evening; hydration planned, not
   thirst-driven [P]; the signs that stop training — dizziness,
   nausea, confusion, cessation of sweating — mean stop, cool, and
-  escalate per the health skill's emergency framing if severe.
-  Never a midday-summer running plan sold alongside the shoes.
-  During Ramadan, shift sessions to after iftar; never hard training
-  in midday summer heat while fasted.
-- **Verified channels (fetched 2026-11-15 — re-verify at dispatch)**:
-  decathlon.eg (EGP prices, free delivery ≥ EGP 2,000 — the
-  broadest local sporting-goods range), intersport.com.eg (INTERSPORT
-  Egypt storefront, EGP), plus family-verified Noon Egypt,
-  Amazon.eg, Jumia Egypt. Brand distributors (adidas/nike-class
-  stores) where the user asks; verify authorization at dispatch.
-- **Fake-branded gear**: replica football shirts, copy shoes, and
-  counterfeit rackets are street-common — the price-realism and
-  seller-authorization checks (the automotive behavior-8 pattern:
-  verify dealer status against the brand) apply; replica shirts sold
-  AS replicas are honest products, fakes sold as real are the trap —
-  say which one is being bought.
-- Season: outdoor-equipment demand peaks before summer trips and Eid;
-  the family's Ramadan/White Friday calendar applies.
+  escalate per the health skill's emergency framing if severe. Never
+  a midday extreme-heat running plan sold alongside the gear; if the
+  user is fasting, shift strenuous sessions outside peak heat.
+- **Verified local channels (check at dispatch for the user's
+  market)**: prefer established sporting-goods chains, authorized
+  brand dealers, and verified local marketplaces; verify brand
+  authorization for high-ticket rackets, bikes, and gear.
+- **Fake-branded gear**: replica jerseys, copy shoes, and counterfeit
+  rackets are common globally — apply price-realism and
+  seller-authorization checks; replica shirts sold AS replicas are
+  honest products, fakes sold as real are the trap — say which one is
+  being bought.
+- Seasonality: outdoor-equipment demand peaks ahead of local summer
+  and club-season openings; clearance lands at end-of-season and
+  major local sale events.
 
 ### 12. Explanation depth adapts to the user
 
@@ -286,8 +285,8 @@ co-purchase rule and certification gates are never simplified away.
   reality.
 - **Combat**: glove weight class, mouthguard, wraps, bag mounting.
 - **Camping**: tent +1 honesty, comfort-rating shopping, R-value.
-- **Water**: ISO 12402 level or it isn't a life jacket; floaties
-  line.
+- **Water**: ISO 12402 / USCG level or it isn't a life jacket;
+  floaties line.
 - **Protection**: certified or declined — every contact/ride pick.
 
 ## Verdict adjustments for sports
@@ -299,16 +298,17 @@ table, tier picks, caveats, when-to-buy), with these additions:
   certification mark and size spec inside Quality ("CPSC 1203
   helmet; size 4 ball, 0.8 bar"); the co-purchased protection priced
   into the tier-pick sentence ("with a certified helmet, total
-  ≈ EGP X"); beginner-grade honesty inside Quality. No new columns.
+  ≈ [local currency] X"); beginner-grade honesty inside Quality. No
+  new columns.
 - **Pass/fail rails in the verdict**: an uncertified helmet, a vest
   without a stated level, or a machine below the user's weight limit
   is disqualified in the table and named in the one-line answer.
 - Under caveats: helmet-after-crash retirement reminder on every
-  helmet pick; heat-timing note on outdoor picks; consumable costs
-  (balls, strings, grips) as the real ownership cost.
-- **When to buy**: gear discounts land around White Friday and after
-  Eid; season-open (club sign-ups) is when sizes gap out — buy
-  before; run price-history skepticism on event deals.
+  helmet pick; heat/weather timing note on outdoor picks; consumable
+  costs (balls, strings, grips) as the real ownership cost.
+- **When to buy**: gear discounts land at end-of-season clearance and
+  major local sale events; season-open (club sign-ups) is when sizes
+  gap out — buy before; run price-history skepticism on event deals.
 
 ## No profile, by design
 

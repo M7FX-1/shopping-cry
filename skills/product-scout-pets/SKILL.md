@@ -1,6 +1,6 @@
 ---
 name: product-scout-pets
-description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), heat-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core for any pet-supplies request, or standalone. Read the core engine first."
+description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO/FEDIAF label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), weather-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core or standalone. Read the core engine first."
 metadata:
   calibrated: "2026-11"
 
@@ -21,8 +21,8 @@ the honesty rules. This file adds the pet-supplies domain layer, which
 is welfare-critical: when a rule here conflicts with being helpful,
 the animal's safety rule wins. Reference file (same directory):
 `references/pets-domain.md` — worked feeding-cost math, life-stage
-table, litter/habitat tables, toxic-foods source notes, Egypt pet
-channels.
+table, litter/habitat tables, toxic-foods source notes, and channel
+guidance.
 
 Read the core file in full every run, and this file in full when invoked — partial reads break the safety gates and honesty rules; `references/` files load lazily, on demand, and nothing operative is ever satisfied from a reference alone.
 
@@ -49,9 +49,8 @@ Reply to the user in their language.
 - **Out**: human-grocery shopping → the groceries skill; whether a
   human food is safe for THIS animal is behavior 6's never-share list,
   never a groceries question. Live-animal purchase as a pure shopping
-  transaction —
-  handled with the welfare framing in behavior 12, including one
-  neutral adoption line.
+  transaction — handled with the welfare framing in behavior 12,
+  including one neutral adoption line.
 - **Stance**: the pet's advocate at the counter — reads the label the
   manufacturer hoped you wouldn't, does the cost-per-month math
   honestly, and says "that's a vet question" early when it is.
@@ -89,12 +88,11 @@ adequacy statement**, not the front of the bag:
   a premium.
 - AAFCO publishes profiles and label rules but does not test or
   approve products — state feed regulators enforce; FEDIAF publishes
-  the equivalent guidelines used across EU-market brands (2025
-  edition current). "AAFCO-approved" claims are a labeling myth —
-  say so when seen.
-- Egypt-relevant honesty: regional-market brands may print FEDIAF-
-  based or AAFCO-style statements; an unlabeled or unreadable
-  adequacy claim is itself a down-ranking finding.
+  the equivalent guidelines used across EU-market and many
+  international brands (2025 edition current). "AAFCO-approved"
+  claims are a labeling myth — say so when seen.
+- An unlabeled or unreadable adequacy claim in any market is itself a
+  down-ranking finding.
 
 ### 2. Life-stage and size matching
 
@@ -136,8 +134,7 @@ adequacy statement**, not the front of the bag:
   many grain-free. The investigation remains open; **no cause has
   been established; no product has been recalled; the reports are
   suspected cases, not proven causation** (FDA status [S 2026-11];
-  re-check the case page when the verdict is written
-  dispatch).
+  re-check the case page when the verdict is written).
 - **Both overclaims are banned**: "grain-free food causes heart
   disease" is unproven; "grains are bad for dogs" is also unproven —
   grain allergy is uncommon and true grain intolerance is the
@@ -163,13 +160,14 @@ adequacy statement**, not the front of the bag:
 - **Treats: ≤10% of daily calories** (the veterinary "90/10 rule")
   [P] — a treat budget is part of the food budget, not separate.
 - **Counterfeit/channel defenses**: buy from verified retailers or
-  authorized distributors; check the bag for the Arabic/English
-  label, batch/production code, intact seam; a price far below every
-  other channel is a flag, not a find. Food-crime operations
-  (Europol/INTERPOL OPSON) do seize undocumented animal feed and
-  national authorities document pet-food fraud cases — the honest
-  framing is channel defense, not "counterfeits are everywhere" (no
-  verified prevalence figure exists; saying so is the honesty rule).
+  authorized distributors; check the bag for the official local
+  importer/manufacturer label, batch/production code, and intact seam;
+  a price far below every other channel is a flag, not a find.
+  Food-crime operations (Europol/INTERPOL OPSON) do seize
+  undocumented animal feed and national authorities document pet-food
+  fraud cases — the honest framing is channel defense, not
+  "counterfeits are everywhere" (no verified prevalence figure exists;
+  saying so is the honesty rule).
 - Storage: kibble goes airtight, cool, dry; the best-before is real;
   a torn bag re-bagged is a freshness and counterfeit risk.
 
@@ -243,21 +241,23 @@ health-medical skill's categories, never with human-dose analogies.
   wobbly post goes unused [P]. Place it where the cat already
   scratches.
 
-### 9. Beds, toys, and heat welfare — Egypt rails
+### 9. Beds, toys, and weather welfare rails
 
 - **Beds**: size by measurement (nose-to-tail + margin [P]); washable
   covers are the real quality feature. Outdoor dogs need an elevated,
-  shaded, ventilated shelter sized to stand and turn in — not a
+  shaded, weather-protected shelter sized to stand and turn in — not a
   stuffed indoor bed outdoors.
-- **Heat rails (pass/fail for any outdoor recommendation)**: permanent
-  all-day shade, cool fresh water checked daily, ventilation over
-  insulation; walks early morning or late evening only in summer; the
-  hand-on-asphalt test — if you can't hold your hand down ~5 seconds,
-  paw burns are minutes away [P]; never a pet left in a parked car
-  even "for a minute" (heatstroke kills quickly — verified veterinary
-  guidance); flat-faced breeds (pugs, bulldogs, Persians) overheat
-  faster — their heat window is smaller.
-- Rabbits and outdoor hutches: a hutch in Egyptian summer is a heat
+- **Heat rails (pass/fail for any outdoor or summer recommendation)**:
+  permanent all-day shade, cool fresh water checked daily, ventilation
+  over insulation; walks early morning or late evening only in hot
+  weather; the hand-on-asphalt test — if you can't hold your hand down
+  ~5 seconds, paw burns are minutes away [P]; never a pet left in a
+  parked car even "for a minute" (heatstroke kills quickly — verified
+  veterinary guidance); flat-faced breeds (pugs, bulldogs, Persians)
+  overheat faster — their heat window is smaller. In cold climates,
+  account for freezing water bowls, paw salt/ice protection, and
+  insulated shelter.
+- Rabbits and outdoor hutches: a hutch in hot sun is a heatstroke
   risk without shade/ventilation — say it before selling the hutch.
 - **Toys**: size-appropriate (nothing small enough to swallow whole
   for the mouth in question), supervise new toys, replace worn ones;
@@ -279,9 +279,9 @@ health-medical skill's categories, never with human-dose analogies.
   wingspan) live in the reference — the main-file rule is: state the
   maintenance reality (weekly partial water changes, daily care) with
   any habitat pick, and let tank size beat starter-kit price.
-- **Egypt heat**: tanks near windows overheat in summer — shade and a
-  thermometer are part of the kit; winter cold snaps in Cairo make a
-  heater part of tropical setups [P].
+- **Temperature control**: tanks near windows overheat in summer —
+  shade and a thermometer are part of the kit; cold seasons or
+  air-conditioned rooms make a heater part of tropical setups [P].
 - **Hamsters**: Syrian hamsters live alone — housed together they
   fight [P]; deep bedding and solid-surface wheels are the welfare
   picks.
@@ -304,34 +304,28 @@ health-medical skill's categories, never with human-dose analogies.
   job, never a scissors-by-eye job near skin [P]. Medicated shampoos
   and matted-skin lesions = vet/groomer boundary.
 
-### 12. Egypt lens — vets, pricing, adoption
+### 12. Local channels, vet access, and adoption framing
 
-- **Vet availability honesty**: private vet clinics concentrate in
-  cities; governorate veterinary offices (under the General
-  Organization of Veterinary Services) handle vaccination programs
-  [P]. For governorate users, name the reality: distance to a clinic
-  is part of the pet-cost math.
-- **Kibble pricing reality**: imported premium brands (Royal Canin,
-  Whiskas/Pedigree lines are the commonly stocked ones) cost multiples
-  of regional-manufactured lines; the honest comparison is per-month
-  cost at equal adequacy-statement standard — a regional
-  complete-and-balanced adult food often wins the feeding-cost math
-  (behavior 5). Check the bag's manufacturing origin and import
-  channel; price-too-good flags hit premium imports hardest.
-- **Verified online pet channels (2026-11 — re-verify at dispatch)**:
-  petshopeg.com (Cairo/Giza delivery, Almaza pickup),
-  petshome.com.eg, petsegypt.com, plus the family-verified
-  marketplaces Jumia Egypt and Noon Egypt — no dominant
-  brick-and-mortar chain exists; independent shops are the offline
-  channel [S].
+- **Vet availability honesty**: private vet clinics and public/municipal
+  vaccination services vary by city vs rural areas — distance to a
+  clinic is part of honest pet-ownership cost math.
+- **Kibble pricing reality**: imported premium brands often cost
+  multiples of regionally manufactured complete-and-balanced lines;
+  the honest comparison is per-month cost at equal adequacy-statement
+  standard (behavior 5). Check the bag's manufacturing origin and
+  import channel; price-too-good flags hit premium imports hardest.
+- **Verified local pet channels (check at dispatch for the user's
+  market)**: prefer established national pet chains, authorized online
+  pet retailers, vet-clinic supply desks, and verified brand
+  storefronts over unvetted resellers.
 - **Adoption framing (one neutral sentence, no moralizing either
   way)**: when a user is choosing to get a pet, one line notes that
-  Egypt has many street animals and rescue organizations alongside
-  breeders — the decision and the source are the user's; this skill
-  judges neither and serves whatever they choose. For a breeder
-  purchase, the honest checks are the animal's health records and the
-  parents' condition [P]; for adoption, ask the rescue for
-  vaccination/neuter status. Never lecture.
+  shelters and rescues exist alongside breeders — the decision and the
+  source are the user's; this skill judges neither and serves whatever
+  they choose. For a breeder purchase, the honest checks are the
+  animal's health records and the parents' condition [P]; for
+  adoption, ask the rescue for vaccination/neuter status. Never
+  lecture.
 
 ### 13. Explanation depth adapts to the user
 
@@ -359,7 +353,7 @@ The pins (tables and math in the reference file):
   count (n+1).
 - **Toys/scratching**: size-appropriateness + welfare-need framing +
   supervision for destructible toys.
-- **Beds/shelters**: measurement sizing + Egypt heat rails for
+- **Beds/shelters**: measurement sizing + heat/cold weather rails for
   anything outdoor.
 - **Aquariums**: cycle-first education + tank-volume honesty +
   thermometer/heater kit + maintenance honesty.
@@ -378,9 +372,10 @@ table, tier picks, caveats, when-to-buy), with these additions:
 - Fold additions into the core table's existing columns: adequacy
   statement and life stage inside Quality ("complete & balanced,
   adult maintenance, feeding-trial substantiated");
-  feeding-cost-per-month inside Quality or Price ("≈EGP X/month for a
-  15 kg dog"); the species-safety rail inside the tier-pick sentence
-  ("never on a cat — permethrin kills them"). No new columns, ever.
+  feeding-cost-per-month inside Quality or Price ("≈[local currency]
+  X/month for a 15 kg dog"); the species-safety rail inside the
+  tier-pick sentence ("never on a cat — permethrin kills them"). No
+  new columns, ever.
 - Under caveats: counterfeit/channel warnings when the purchase
   channel is informal, the re-verify marker on the DCM status line,
   and the treat-share reminder when treats are in the same basket.
@@ -388,11 +383,11 @@ table, tier picks, caveats, when-to-buy), with these additions:
   litter, same treats, poop bags) can run Quick; food switches,
   anything species-safety-bearing, and first-time habitat purchases
   never auto-Quick. An explicit user mode choice wins (family rule).
-- **When to buy**: White Friday carries real pet-supply discounts at
-  the marketplaces and online pet stores; Ramadan-time price firming
-  applies to imported stock; a new-pet setup (tank, cage, carrier) is
-  a "buy once, correctly" purchase — the timing advice is welfare
-  readiness, not sales season.
+- **When to buy**: major local sale events and autoship/subscribe-and-
+  save programs at verified pet retailers cut recurring food/litter
+  costs; a new-pet setup (tank, cage, carrier) is a "buy once,
+  correctly" purchase — the timing advice is welfare readiness, not
+  sales season.
 
 ## No profile, by design
 
