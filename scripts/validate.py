@@ -13,7 +13,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS = os.path.join(ROOT, "skills")
 LEGEND_SENTINEL = "> **Verification tags.**"
-TAG_RE = re.compile(r"\[([SPA])(?:[0-9][0-9, ]*)?(?:[ :][^\]\[]{1,120})?\]")
+TAG_RE = re.compile(r"\[([SPA])(?:[0-9][0-9, ]*)?(?:[ :][^\[\]]{1,120})?\]")
 FORBIDDEN_PHRASES = [
     "pending build", "interim rule", "once built", "critique-G",
     "apply round", "group log", "G1/G2 precedent", "G2 precedent",
@@ -179,8 +179,8 @@ for path in skill_files:
     text = open(path, encoding="utf-8").read()
     for para in re.split(r"\n\s*\n", text):
         if "re-verify at dispatch" in para or "re-check at dispatch" in para or "re-anchor at dispatch" in para:
-            if re.search(r"EGP|\$|price band|street anchor|walk-away|ceiling", para, re.I) and \
-               not re.search(r"channel|store|sites|chains|dealers|marketplaces|tariff|egajtd|egyptera", para, re.I):
+            if re.search(r"\$|€|£|price band|street anchor|walk-away|ceiling", para, re.I) and \
+               not re.search(r"channel|store|sites|chains|dealers|marketplaces|tariff|regulator|utility|exchange", para, re.I):
                 warn(f"W9 {name}: possible dispatch promise on a figure line: {para.strip()[:80]!r}")
 
 # ---- reference sizes ----
