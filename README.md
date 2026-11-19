@@ -2,11 +2,13 @@
 
 **Stop buying marketing. Start buying what works.**
 
-shopping-cry gives any AI assistant a complete shopping brain: one core
-engine plus 16 specialists that research your purchase, compare real prices
-in your market, verify quality with independent lab evidence, and end with
-one sharp answer — what to buy, what to buy instead if you're spending less,
-and the truth about what your money can't get.
+shopping-cry gives any AI assistant a complete **global, multi-market**
+shopping brain: one core engine plus 16 specialists (17 skills total) that
+work across **all world markets**, in **any currency and any language**.
+Each skill researches your purchase, compares real local prices, verifies
+quality with independent lab evidence, and ends with one sharp answer — what
+to buy, what to buy instead if you're spending less, and the truth about
+what your money can't get.
 
 **What makes it different**
 
@@ -18,8 +20,14 @@ and the truth about what your money can't get.
   financial walk-away triggers for gold and watches.
 - **Honesty about money.** If your budget buys nothing good, it says so
   plainly — and shows what a little more would get instead.
-- **Your market, not Silicon Valley's.** Local channels, local prices, local
-  counterfeit traps — named, verified, and dated.
+- **Global & multi-market by design.** No country, retailer, or currency
+  lock-in — all 17 skills work in any language and any local currency,
+  adapting dynamically at runtime to your market's authorized retailers and
+  service networks, local regulatory authorities (e.g., FDA, EMA, MHRA, TGA,
+  or national equivalents), local mains voltage and regional standards
+  (120V/60Hz or 220–240V/50Hz, car-seat standards, paper sizes, disc
+  regions), local counterfeit traps, and local shopping and academic
+  calendars.
 
 ## The family
 
