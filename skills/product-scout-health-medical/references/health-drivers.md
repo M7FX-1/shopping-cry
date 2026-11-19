@@ -60,7 +60,7 @@ skill ever disagree, the skill wins.
   commercial water-based lubes run 2,000–6,000 mOsm/kg (glycerin/
   propylene glycol) — hyperosmolar, mucosa-damaging. Polyurethane
   condoms transmit heat and work with oil-based lubricants — check
-  the brand's instructions `[S, unverified`.
+  the brand's instructions `[S, unverified]`.
 - Reformulated iso-osmolar, pH-matched compliant products exist —
   prefer them when available in-market.
 
@@ -78,7 +78,7 @@ the pharmacist's discard program for expired medicines `[P, unverified]`.
   than the 4,000 mg ceiling; the package insert is the authority
   (SKILL.md behavior 5).
 - **Infant formula preparation (variable tap-water quality)**: boiled
-  then cooled water for infant-prep contexts `[S, unverified`.
+  then cooled water for infant-prep contexts `[S, unverified]`.
 - **Kit heat exposure**: summer storage heat degrades medicines and
   condoms — never leave kits in cars (echo of SKILL.md behavior 11,
   repeated here because kit-building is when storage gets decided).

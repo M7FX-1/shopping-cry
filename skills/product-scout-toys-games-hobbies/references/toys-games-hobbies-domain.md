@@ -59,39 +59,26 @@ and clutch power.
 
 ## Gift fast-path worked examples `[P]`
 
-- Age 4, EGP 500, loves vehicles → one-line pick (a die-cast/classic
-  set), cheaper alternate (a matchbox-style multipack), sibling-safer
+- Age 4, ~$15 equivalent, loves vehicles → one-line pick (a die-cast/
+  classic set), cheaper alternate (a multipack), sibling-safer
   alternate (no small parts), age-label line, durability note.
-- Age 10, EGP 1,500, wants "science" → kit that builds/experiments
-  over a screen-gadget; check D-4236/CE marks; compartment gate for
-  any cells.
-- Budget can't buy decent at the age ("EGP 100 for a 7-year-old
-  builder") → say it, give best-of-bracket clearly labeled, or move
-  to books/board-game class where the budget lands honestly.
+- Age 10, ~$35 equivalent, wants "science" → kit that builds/
+  experiments over a screen-gadget; check D-4236/CE/ASTM marks;
+  compartment gate for any cells.
+- Budget can't buy decent at the age (e.g., ~$3 for a 7-year-old
+  builder) → say it, give best-of-bracket clearly labeled, or move to
+  books/board-game class where the budget lands honestly.
 
-## Egypt enforcement & counterfeit context `[S]` (date-stamped)
+## Counterfeit & channel guidance `[S]` / `[P]`
 
-- Supply Ministry inspection campaigns against unsafe/objectionable
-  toys (documented action: 1,403 toys seized, 41 traders detained
-  and referred to prosecution [S 2026-11]).
-- Fireworks: security-service seizure campaigns in Cairo/Giza/
-  Menoufia (2025–2026 reporting); the skill's fireworks refusal
-  stands regardless of legality drift.
-- Global counterfeit-toy context: EU/OLAF operations seized 7.8M+
-  counterfeit/dangerous toys (Nov 2025); industry figure ~75% of
-  seized counterfeit toys fail safety tests.
-
-## Egypt channels (verified 2026-11-15 `[S]` — re-verify at dispatch)
-
-| Channel | What verified | Notes |
-|---|---|---|
-| shop-ourkids.com | EGP, COD, store locator; carries toys, games, RC, science/art sets, bikes & ride-ons, party supplies | the broadest verified kids' catalog |
-| Noon Egypt / Amazon.eg / Jumia Egypt | family-verified marketplaces | counterfeit risk rises with marketplace sellers — apply checks |
-| toysrusmena.com | official MENA Toys R Us site (existence verified) | Egypt branches/pricing re-verify at dispatch |
-| dubizzle Egypt | family-verified second-hand channel | plush/wooden/board games fine used; car seats → baby-kids never-band |
-
-Not named (unverified): search-result-only toy shops and aggregator
-sites; Bingotoys/Toys R Us .eg domains that did not resolve.
+- Global counterfeit-toy context `[S]`: EU/OLAF operations seized
+  7.8M+ counterfeit/dangerous toys (Nov 2025); industry figure ~75%
+  of seized counterfeit toys fail safety tests.
+- Channels (verify at dispatch for the user's market): prefer
+  established national toy retailers, official brand stores, and
+  verified retailers over unvetted third-party marketplace sellers;
+  apply inspection checks to local second-hand listings.
+- Fireworks refusal stands globally regardless of local legality.
 
 ## Student-instrument grading detail `[P]`
 
