@@ -1,6 +1,6 @@
 ---
 name: product-scout-pets
-description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO/FEDIAF label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), weather-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core or standalone. Read the core engine first."
+description: "Pets specialist of the product-scout family. Matches food and gear to species and life stage with AAFCO label literacy, species-toxicity rails (permethrin kills cats), heat and cold welfare guidance, and counterfeit-food awareness — with a hard vet-first medicine boundary: never pet dosing here. Use when the user is buying pet food, litter, toys, or habitats — 'best cat food for kittens', 'أكل قطط'. Do NOT use for diagnosing or treating sick animals — refer to a veterinarian. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

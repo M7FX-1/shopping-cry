@@ -1,6 +1,6 @@
 ---
 name: product-scout-books-media
-description: "Books and media specialist of the product-scout family — books by genre, textbooks with an edition-matching protocol, e-books and audiobooks, physical media, religious books. Lightweight: edition/format/ISBN matching, used-book grading, gift mode, piracy refusal, age-rating respect. Dispatched by the core for any book or media request, or standalone. Read the core engine first."
+description: "Books and media specialist of the product-scout family. Lightweight matching: edition/format/ISBN matching for books and textbooks, used-book grading, e-books and audiobooks, gift mode, age-rating respect, and piracy refusal. Use when the user is buying books, textbooks, or physical media — 'which edition of this textbook', 'كتاب'. Do NOT use for PDF sourcing, piracy requests, or course-content questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

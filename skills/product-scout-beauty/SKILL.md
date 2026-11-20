@@ -1,6 +1,6 @@
 ---
 name: product-scout-beauty
-description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history). Dispatched by the core or standalone. Read the core engine first."
+description: "Beauty & personal care specialist of the product-scout family. Judges skincare, makeup, haircare, fragrance, and grooming on evidence-graded ingredient science — INCI lists, concentrations, pregnancy and Rx-only rails, counterfeit channels — and builds routines with a filtered product plan and an optional consent-gated profile. Use when the user asks about serums, sunscreens, foundations, shampoos, or any cosmetic purchase — 'best vitamin C serum', 'روتين للبشرة الدهنية'. Do NOT use for medical diagnosis or prescription treatments. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

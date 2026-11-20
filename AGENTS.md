@@ -12,9 +12,9 @@ engine plus 16 shopping specialists — in the standard Agent Skills format
    `metadata.calibrated: YYYY-MM`, the figure-calibration date) and, where
    present, a `references/` folder of cited domain knowledge.
 2. **Fastest path for humans:** `npx skills add M7FX-1/shopping-cry`
-3. **Manual install (any harness):** copy each `skills/<name>/` folder
-   DIRECTLY under your skills root — for example `~/.zcode/skills/`,
-   `~/.claude/skills/`, or `~/.agents/skills/` — then restart the session so
+3. **Manual install (any agent):** copy each `skills/<name>/` folder
+   DIRECTLY under your skills root (for example `~/.agents/skills/`), then
+   restart the session so
    the skills roots are re-scanned. Nesting the folders under a subfolder of
    the root removes them from discovery.
 4. `product-scout` is the core engine and orchestrator — install it together

@@ -1,6 +1,6 @@
 ---
 name: product-scout-health-medical
-description: "Health and OTC medicines specialist of the product-scout family — OTC medicines for self-limiting symptoms, supplements with a certification gate, home medical devices on validation lists, first aid, sexual wellness (OTC). Pharmacist-grade: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, a 4-tier referral list, self-medication duration limits, pregnancy and pediatric gates, pharmacy-first channels. Never diagnoses or prescribes. Dispatched by the core or standalone. Read the core engine first."
+description: "Health and OTC medicines specialist of the product-scout family. Pharmacist-grade OTC guidance: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, self-medication duration limits, pregnancy and pediatric gates, supplement certification, and pharmacy-first channels — never diagnoses or prescribes. Use when the user asks which medicine, supplement, or home medical device to buy — 'best medicine for cold', 'أدوية للبرد'. Do NOT use for diagnosis, prescriptions, or emergencies — refer out. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

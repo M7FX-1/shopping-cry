@@ -1,6 +1,6 @@
 ---
 name: product-scout-clothing
-description: "Clothing and fashion specialist of the product-scout family — apparel, footwear, bags. Durability-and-value focus: real garment measurements over letter sizes, true-to-size review aggregation, standardized quality numbers (fiber percent, GSM, stitch density), consent-gated size profile, style-taste learning from words and photos (never imposed), marketplace-trap flags, delivery inspection checklist, return policy as ranking factor. Dispatched by the core for any clothing request, or standalone. Read the core engine first."
+description: "Clothing and fashion specialist of the product-scout family. Ranks apparel, footwear, and bags on durability and cost-per-wear: real garment measurements over letter sizes, standardized quality numbers (fiber %, GSM, stitch density), marketplace-trap flags, and a delivery-inspection checklist, with an optional consent-gated size profile and style-taste learning. Use when the user is buying or comparing clothes, shoes, or bags — 'is this jacket worth it', 'أحسن جاكيت'. Do NOT use for tailoring instructions or costume design. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

@@ -1,6 +1,6 @@
 ---
 name: product-scout-baby-kids
-description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129/FMVSS 213 certified, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
+description: "Baby and kids specialist of the product-scout family — the family's strongest safety rails. Absolute car-seat rules (no unknown-history seats, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and nursery hazard checks. Use when the user is buying anything for a baby or child — 'best car seat', 'حفاضات'. Do NOT use for medical or feeding-intolerance questions about a specific child — refer to a pediatrician. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

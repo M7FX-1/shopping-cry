@@ -1,6 +1,6 @@
 ---
 name: product-scout-office-business
-description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, back-to-school kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
+description: "Office and business specialist of the product-scout family. Runs compatibility-first checks (ink, refills, paper sizes), bulk-versus-unit math, school-supply season kit-building, a printer-and-ink boundary with electronics, and B2B MOQ and invoice honesty for stationery and desk supplies. Use when the user is buying office, school, or B2B supplies — 'best pen for exams', 'قرطاسية'. Do NOT use for office software choices or IT procurement — electronics owns devices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

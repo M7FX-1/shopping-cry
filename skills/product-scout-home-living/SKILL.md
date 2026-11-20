@@ -1,6 +1,6 @@
 ---
 name: product-scout-home-living
-description: "Home and living specialist of the product-scout family — furniture, mattresses, kitchenware, linens, decor, lighting, religious household items. Material safety (coatings, emissions), anti-tip anchoring for every household, dimension-planning method, durability grades, try-before-buy guidance, delivery and assembly checklist. Dispatched by the core for any home-goods request, or standalone. Read the core engine first."
+description: "Home and living specialist of the product-scout family. Ranks furniture, mattresses, kitchenware, linens, decor, and lighting on material safety (coatings, emissions), durability grades, dimension planning, and anti-tip anchoring, with a delivery-and-assembly checklist. Use when the user is furnishing or buying any home goods — 'best mattress for back pain', 'أثاث أوضة نوم'. Do NOT use for interior-design aesthetics alone or real-estate questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

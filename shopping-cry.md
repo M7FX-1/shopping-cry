@@ -12,7 +12,7 @@ Generated: 2026-11-20. This file bundles all 17 SKILL.md files of the family ver
 
 ---
 name: product-scout
-description: "Deep product research and comparison engine and orchestrator for 16 specialty skills. Asks the user's market, budget, and research depth, then researches candidates, compares price/quality/effectiveness, and delivers one sharp verdict with safety gates. Use for ANY shopping or purchase-decision request in any language — 'which laptop should I buy', 'best shampoo', 'أيهما أفضل' — even without the word compare. Routes each category to its specialist sub-agent and aggregates one unified report."
+description: "Deep product research and comparison engine and orchestrator for 16 specialty skills. Asks the user's market, budget, and depth, then researches candidates, compares price/quality with independent lab evidence, and delivers one sharp verdict with safety gates. Use for ANY shopping or purchase-decision request in any language or country — 'which laptop should I buy', 'best shampoo', 'أيهما أفضل' — even without the word compare. Routes each category to its specialist sub-agent. Do NOT use for medical diagnosis, prescriptions, or appraisals."
 metadata:
   calibrated: "2026-11"
 
@@ -419,7 +419,7 @@ never outrank "can this hurt someone".
 
 ---
 name: product-scout-electronics
-description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Dispatched by the core or standalone. Read the core engine first."
+description: "Electronics & tech specialist of the product-scout family. Compares phones, laptops, TVs, audio, cameras, gaming gear, wearables, and accessories on measured performance, software-update lifespan, after-sales reality, and real price — and flags grey imports and counterfeit traps. Use when the user asks which device to buy, wants a comparison or price check, or names any gadget — 'which laptop for university', 'is this phone worth it'. Do NOT use for repairs, software tutorials, or general tech news. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -676,7 +676,7 @@ tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-beauty
-description: "Beauty & personal care specialist of the product-scout family — skincare, makeup, haircare, fragrance, and men's grooming, judged with evidence-graded ingredient science rather than marketing claims. Reads INCI lists and concentrations, applies evidence levels and safety rails (pregnancy, Rx-only actives, counterfeit channels), matches products to skin type and climate, builds or critiques routines, delivers full evidence-based OTC treatment protocols with a filtered product purchase plan, and maintains an optional consent-gated personal profile (allergies, medications, conditions, product history). Dispatched by the core or standalone. Read the core engine first."
+description: "Beauty & personal care specialist of the product-scout family. Judges skincare, makeup, haircare, fragrance, and grooming on evidence-graded ingredient science — INCI lists, concentrations, pregnancy and Rx-only rails, counterfeit channels — and builds routines with a filtered product plan and an optional consent-gated profile. Use when the user asks about serums, sunscreens, foundations, shampoos, or any cosmetic purchase — 'best vitamin C serum', 'روتين للبشرة الدهنية'. Do NOT use for medical diagnosis or prescription treatments. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -1097,7 +1097,7 @@ tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-clothing
-description: "Clothing and fashion specialist of the product-scout family — apparel, footwear, bags. Durability-and-value focus: real garment measurements over letter sizes, true-to-size review aggregation, standardized quality numbers (fiber percent, GSM, stitch density), consent-gated size profile, style-taste learning from words and photos (never imposed), marketplace-trap flags, delivery inspection checklist, return policy as ranking factor. Dispatched by the core for any clothing request, or standalone. Read the core engine first."
+description: "Clothing and fashion specialist of the product-scout family. Ranks apparel, footwear, and bags on durability and cost-per-wear: real garment measurements over letter sizes, standardized quality numbers (fiber %, GSM, stitch density), marketplace-trap flags, and a delivery-inspection checklist, with an optional consent-gated size profile and style-taste learning. Use when the user is buying or comparing clothes, shoes, or bags — 'is this jacket worth it', 'أحسن جاكيت'. Do NOT use for tailoring instructions or costume design. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -1473,7 +1473,7 @@ tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-health-medical
-description: "Health and OTC medicines specialist of the product-scout family — OTC medicines for self-limiting symptoms, supplements with a certification gate, home medical devices on validation lists, first aid, sexual wellness (OTC). Pharmacist-grade: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, a 4-tier referral list, self-medication duration limits, pregnancy and pediatric gates, pharmacy-first channels. Never diagnoses or prescribes. Dispatched by the core or standalone. Read the core engine first."
+description: "Health and OTC medicines specialist of the product-scout family. Pharmacist-grade OTC guidance: symptom-relief framing with a red-flag emergency screen, dose caps with hidden-stacking warnings, self-medication duration limits, pregnancy and pediatric gates, supplement certification, and pharmacy-first channels — never diagnoses or prescribes. Use when the user asks which medicine, supplement, or home medical device to buy — 'best medicine for cold', 'أدوية للبرد'. Do NOT use for diagnosis, prescriptions, or emergencies — refer out. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -2028,7 +2028,7 @@ table, tier picks, caveats, when-to-buy), with these adjustments:
 
 ---
 name: product-scout-appliances
-description: "Appliance specialist of the product-scout family — refrigerators, washers, ACs, cooking, dishwashers, water heaters, and small appliances. Weighs real running costs at local tariffs, installation and service-network reality, gas/electrical/CO safety rails, warranty terms, and showroom-check guidance; small low-stakes appliances auto-run Quick mode. Dispatched by the core for any appliance request, or standalone. Read the core engine first."
+description: "Appliance specialist of the product-scout family. Weighs large and small appliances — refrigerators, washers, ACs, cookers, water heaters — on real running costs at the user's local tariffs, installation and service-network reality, warranty terms, and gas/electrical safety rails; small low-stakes buys auto-run Quick mode. Use when the user is buying, replacing, or comparing any home appliance — 'best inverter AC', 'غسالة أوتومات'. Do NOT use for repair diagnostics or utility-billing questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -2403,7 +2403,7 @@ table, tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-home-living
-description: "Home and living specialist of the product-scout family — furniture, mattresses, kitchenware, linens, decor, lighting, religious household items. Material safety (coatings, emissions), anti-tip anchoring for every household, dimension-planning method, durability grades, try-before-buy guidance, delivery and assembly checklist. Dispatched by the core for any home-goods request, or standalone. Read the core engine first."
+description: "Home and living specialist of the product-scout family. Ranks furniture, mattresses, kitchenware, linens, decor, and lighting on material safety (coatings, emissions), durability grades, dimension planning, and anti-tip anchoring, with a delivery-and-assembly checklist. Use when the user is furnishing or buying any home goods — 'best mattress for back pain', 'أثاث أوضة نوم'. Do NOT use for interior-design aesthetics alone or real-estate questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -2755,7 +2755,7 @@ table, tier picks, caveats, when-to-buy), with these additions:
 
 ---
 name: product-scout-jewelry-watches
-description: "Jewelry and watches specialist of the product-scout family — gold, gemstones, pearls, watches, silver. Financial-safety rails: a value ladder with walk-away triggers, karat and hallmark verification, certificate checking (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, buy-in-person thresholds, counterfeit tiering. Never appraises or authenticates — routes to certified appraisers. Dispatched by the core or standalone. Read the core engine first."
+description: "Jewelry and watches specialist of the product-scout family. Applies financial-safety rails to gold, gemstones, pearls, and watches: value tiers with walk-away triggers, hallmark and certificate verification (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, and buy-in-person thresholds — never appraises or authenticates. Use when the user is buying gold, diamonds, or watches — 'gold chain price', 'شبكة دهب'. Do NOT use for appraisals, resale valuation, or investment advice — routes to certified appraisers. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -3236,7 +3236,7 @@ registry row will not mention one.
 
 ---
 name: product-scout-diy-garden
-description: "DIY and garden specialist of the product-scout family — hand and power tools, tool platforms, building materials, plumbing, gardening, grills, pest control. Battery-platform wallet math, anti-counterfeit verification marks, PPE pass/fail, hard DIY-electrical limits, chemical-safety rails around children and pets, project-matching tool lists. Dispatched by the core for any tools or garden request, or standalone. Read the core engine first."
+description: "DIY and garden specialist of the product-scout family. Covers hand and power tools, battery platforms, building materials, plumbing, gardening, and pest control: platform wallet-math, anti-counterfeit verification marks, PPE pass/fail, hard DIY-electrical limits, and chemical-safety rails around children and pets. Use when the user is buying tools or materials or planning a project — 'best drill for home use', 'أدوات نجارة'. Do NOT use for licensed electrical, gas, or structural work — routes out. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -3665,7 +3665,7 @@ profile-justification rule).
 
 ---
 name: product-scout-automotive
-description: "Automotive specialist of the product-scout family — car parts, fluids, tires, batteries, brakes, suspension, accessories. Fitment-first protocol (make/model/year/VIN with two-source cross-check), safety-critical parts tier (OEM-or-certified only, no gray market), oil-spec literacy, fake-oil and fake-part detection, and mechanic-cooperation framing. Dispatched by the core for any vehicle-parts request, or standalone. Read the core engine first."
+description: "Automotive specialist of the product-scout family. Runs a fitment-first protocol (make/model/year/VIN cross-checked twice) for parts, fluids, tires, batteries, brakes, suspension, and accessories, with a safety-critical tier (OEM-or-certified only, no gray market), oil-spec literacy, and fake-part detection. Use when the user is buying car parts, tires, or fluids — 'best tire for my car', 'زيت موتور'. Do NOT use for repair procedures or mechanical diagnosis — a mechanic owns that. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -4065,7 +4065,7 @@ identity — no persistent profile (per the core's profile-justification rule).
 
 ---
 name: product-scout-groceries
-description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal/dietary-label trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
+description: "Groceries specialist of the product-scout family. Applies unit-price math and pack-size traps to pantry staples, beverages, dairy, snacks, and home-cleaning consumables, with expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, and halal trust rules; tobacco and subsidy-gaming are refused. Use when the user is buying food or household consumables — 'best olive oil brand', 'أرز'. Do NOT use for recipes, nutrition plans, or restaurant choices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -4419,7 +4419,7 @@ current.
 
 ---
 name: product-scout-pets
-description: "Pets specialist of the product-scout family — dog, cat, bird, fish, and small-animal food and gear, litter, toys, habitats, grooming. Life-stage feeding and AAFCO/FEDIAF label literacy, species-toxicity rails (permethrin kills cats), a vet-first medicine boundary (never pet dosing here), weather-welfare rails for outdoor pets, counterfeit-food awareness, adoption framing without moralizing. Dispatched by the core or standalone. Read the core engine first."
+description: "Pets specialist of the product-scout family. Matches food and gear to species and life stage with AAFCO label literacy, species-toxicity rails (permethrin kills cats), heat and cold welfare guidance, and counterfeit-food awareness — with a hard vet-first medicine boundary: never pet dosing here. Use when the user is buying pet food, litter, toys, or habitats — 'best cat food for kittens', 'أكل قطط'. Do NOT use for diagnosing or treating sick animals — refer to a veterinarian. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -4826,7 +4826,7 @@ file with a stale-data hazard attached.
 
 ---
 name: product-scout-books-media
-description: "Books and media specialist of the product-scout family — books by genre, textbooks with an edition-matching protocol, e-books and audiobooks, physical media, religious books. Lightweight: edition/format/ISBN matching, used-book grading, gift mode, piracy refusal, age-rating respect. Dispatched by the core for any book or media request, or standalone. Read the core engine first."
+description: "Books and media specialist of the product-scout family. Lightweight matching: edition/format/ISBN matching for books and textbooks, used-book grading, e-books and audiobooks, gift mode, age-rating respect, and piracy refusal. Use when the user is buying books, textbooks, or physical media — 'which edition of this textbook', 'كتاب'. Do NOT use for PDF sourcing, piracy requests, or course-content questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -5049,7 +5049,7 @@ Keep the core verdict structure exactly, with these folds:
 
 ---
 name: product-scout-office-business
-description: "Office and business specialist of the product-scout family — writing instruments, paper, filing, desk accessories, school supplies, B2B basics. Compatibility-first (ink, refill, and paper-size traps), bulk-versus-unit math, back-to-school kit-building, a printer and ink boundary with electronics, B2B MOQ and invoice honesty. Dispatched by the core for any office or stationery request, or standalone. Read the core engine first."
+description: "Office and business specialist of the product-scout family. Runs compatibility-first checks (ink, refills, paper sizes), bulk-versus-unit math, school-supply season kit-building, a printer-and-ink boundary with electronics, and B2B MOQ and invoice honesty for stationery and desk supplies. Use when the user is buying office, school, or B2B supplies — 'best pen for exams', 'قرطاسية'. Do NOT use for office software choices or IT procurement — electronics owns devices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -5269,7 +5269,7 @@ Keep the core verdict structure exactly, with these folds:
 
 ---
 name: product-scout-baby-kids
-description: "Baby and kids specialist of the product-scout family — diapers, feeding, strollers, car seats, cribs, safety gear. The family's strongest rails: car-seat absolute rules (no unknown-history seats, R129/FMVSS 213 certified, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and heat care. Dispatched by the core for any baby or kids request, or standalone. Read the core engine first."
+description: "Baby and kids specialist of the product-scout family — the family's strongest safety rails. Absolute car-seat rules (no unknown-history seats, expiry dates, crash replacement), formula-prep safety, age-stage matching, second-hand gates, and nursery hazard checks. Use when the user is buying anything for a baby or child — 'best car seat', 'حفاضات'. Do NOT use for medical or feeding-intolerance questions about a specific child — refer to a pediatrician. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -5644,7 +5644,7 @@ health-medical skill).
 
 ---
 name: product-scout-toys-games-hobbies
-description: "Toys, games and hobbies specialist of the product-scout family — toys by age, plush, building sets, board games, RC, outdoor play, party supplies, crafts, instruments, collectibles. The age label is a tested safety bound (never size down), a button-battery ER rail, counterfeit-brick and battery-safety checks, a gift fast-path, and educational-claim honesty. Dispatched by the core for any toys or hobby request, or standalone. Read the core engine first."
+description: "Toys, games and hobbies specialist of the product-scout family. Treats the age label as a tested safety bound (never size down), runs button-battery and counterfeit-brick checks, applies educational-claim honesty, and offers a gift fast-path for toys, plush, board games, RC, instruments, crafts, and collectibles. Use when the user is buying a toy, game, or hobby item — 'gift for a 5-year-old', 'لعبة'. Do NOT use for video games or gaming hardware — the electronics skill owns devices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
@@ -5987,7 +5987,7 @@ exactly the failure the age-label rule exists to prevent.
 
 ---
 name: product-scout-sports-outdoors
-description: "Sports and outdoors specialist of the product-scout family — fitness equipment, team and racket sports, cycling, combat sports, camping, water sports. Skill-level matching (the beginner overbuy trap), helmet-certification co-purchase pass/fail, equipment sizing by age and body, sleeping-bag and tent ratings decoded, heat-training rails, gym-versus-membership math. Dispatched by the core for any sports request, or standalone. Read the core engine first."
+description: "Sports and outdoors specialist of the product-scout family. Matches fitness equipment, team and racket gear, cycling, and camping kit to the user's level (the beginner-overbuy trap), enforces helmet-certification co-purchase pass/fail, decodes sleeping-bag and tent ratings, and applies heat-training rails. Use when the user is buying sports or outdoor equipment — 'best treadmill for home', 'دراجة'. Do NOT use for training programs or injury advice — a coach or doctor owns that. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

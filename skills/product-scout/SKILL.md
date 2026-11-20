@@ -1,6 +1,6 @@
 ---
 name: product-scout
-description: "Deep product research and comparison engine and orchestrator for 16 specialty skills. Asks the user's market, budget, and research depth, then researches candidates, compares price/quality/effectiveness, and delivers one sharp verdict with safety gates. Use for ANY shopping or purchase-decision request in any language — 'which laptop should I buy', 'best shampoo', 'أيهما أفضل' — even without the word compare. Routes each category to its specialist sub-agent and aggregates one unified report."
+description: "Deep product research and comparison engine and orchestrator for 16 specialty skills. Asks the user's market, budget, and depth, then researches candidates, compares price/quality with independent lab evidence, and delivers one sharp verdict with safety gates. Use for ANY shopping or purchase-decision request in any language or country — 'which laptop should I buy', 'best shampoo', 'أيهما أفضل' — even without the word compare. Routes each category to its specialist sub-agent. Do NOT use for medical diagnosis, prescriptions, or appraisals."
 metadata:
   calibrated: "2026-11"
 

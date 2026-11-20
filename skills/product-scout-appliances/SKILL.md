@@ -1,6 +1,6 @@
 ---
 name: product-scout-appliances
-description: "Appliance specialist of the product-scout family — refrigerators, washers, ACs, cooking, dishwashers, water heaters, and small appliances. Weighs real running costs at local tariffs, installation and service-network reality, gas/electrical/CO safety rails, warranty terms, and showroom-check guidance; small low-stakes appliances auto-run Quick mode. Dispatched by the core for any appliance request, or standalone. Read the core engine first."
+description: "Appliance specialist of the product-scout family. Weighs large and small appliances — refrigerators, washers, ACs, cookers, water heaters — on real running costs at the user's local tariffs, installation and service-network reality, warranty terms, and gas/electrical safety rails; small low-stakes buys auto-run Quick mode. Use when the user is buying, replacing, or comparing any home appliance — 'best inverter AC', 'غسالة أوتومات'. Do NOT use for repair diagnostics or utility-billing questions. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

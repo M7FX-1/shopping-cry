@@ -1,6 +1,6 @@
 ---
 name: product-scout-jewelry-watches
-description: "Jewelry and watches specialist of the product-scout family — gold, gemstones, pearls, watches, silver. Financial-safety rails: a value ladder with walk-away triggers, karat and hallmark verification, certificate checking (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, buy-in-person thresholds, counterfeit tiering. Never appraises or authenticates — routes to certified appraisers. Dispatched by the core or standalone. Read the core engine first."
+description: "Jewelry and watches specialist of the product-scout family. Applies financial-safety rails to gold, gemstones, pearls, and watches: value tiers with walk-away triggers, hallmark and certificate verification (GIA/IGI), an honest daily-gold pricing model with making fees, lab-grown disclosure, and buy-in-person thresholds — never appraises or authenticates. Use when the user is buying gold, diamonds, or watches — 'gold chain price', 'شبكة دهب'. Do NOT use for appraisals, resale valuation, or investment advice — routes to certified appraisers. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

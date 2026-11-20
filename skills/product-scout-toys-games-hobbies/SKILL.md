@@ -1,6 +1,6 @@
 ---
 name: product-scout-toys-games-hobbies
-description: "Toys, games and hobbies specialist of the product-scout family — toys by age, plush, building sets, board games, RC, outdoor play, party supplies, crafts, instruments, collectibles. The age label is a tested safety bound (never size down), a button-battery ER rail, counterfeit-brick and battery-safety checks, a gift fast-path, and educational-claim honesty. Dispatched by the core for any toys or hobby request, or standalone. Read the core engine first."
+description: "Toys, games and hobbies specialist of the product-scout family. Treats the age label as a tested safety bound (never size down), runs button-battery and counterfeit-brick checks, applies educational-claim honesty, and offers a gift fast-path for toys, plush, board games, RC, instruments, crafts, and collectibles. Use when the user is buying a toy, game, or hobby item — 'gift for a 5-year-old', 'لعبة'. Do NOT use for video games or gaming hardware — the electronics skill owns devices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

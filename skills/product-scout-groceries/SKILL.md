@@ -1,6 +1,6 @@
 ---
 name: product-scout-groceries
-description: "Groceries specialist of the product-scout family — pantry staples, beverages, dairy, snacks, spices, canned food, home-cleaning consumables. Unit-price math and pack-size traps, expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, halal/dietary-label trust, tobacco and subsidy-gaming refusal. Dispatched by the core for any grocery request, or standalone. Read the core engine first."
+description: "Groceries specialist of the product-scout family. Applies unit-price math and pack-size traps to pantry staples, beverages, dairy, snacks, and home-cleaning consumables, with expiry discipline, adulteration flags (spices, olive oil), nutrition-label honesty, and halal trust rules; tobacco and subsidy-gaming are refused. Use when the user is buying food or household consumables — 'best olive oil brand', 'أرز'. Do NOT use for recipes, nutrition plans, or restaurant choices. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

@@ -3,10 +3,8 @@
 # (17 folders under ./skills/) into an agent's skills root.
 #
 # Usage:
-#   ./install.sh --zcode          # ZCode harness root (~/.zcode/skills)
-#   ./install.sh --claude         # Claude Code root (~/.claude/skills)
-#   ./install.sh --agents         # generic root (~/.agents/skills)
-#   ./install.sh --dir <path>     # any custom skills root
+#   ./install.sh --dir <path>     # your agent's skills root
+#   ./install.sh --agents         # shortcut root (~/.agents/skills)
 #   ./install.sh --list           # show the installable skills
 #   ./install.sh --check          # compare installed copies with this repo
 #   ./install.sh --uninstall [--yes]  # remove (dry-run unless --yes)
@@ -25,15 +23,14 @@ TARGET=""
 ONLY=""
 
 usage() {
-  echo "usage: $0 [--zcode|--claude|--agents|--dir <path>|--list|--check|--uninstall [--yes]|--only <names>]" >&2
+  echo "usage: $0 --dir <path> [--list|--check|--uninstall [--yes]|--only <names>]" >&2
+  echo "       ($0 --agents is a shortcut for --dir ~/.agents/skills)" >&2
   echo "       FORCE=1 to overwrite already-installed skills" >&2
   exit 1
 }
 
 while [ $# -gt 0 ]; do
   case "$1" in
-    --zcode) TARGET="${HOME}/.zcode/skills" ;;
-    --claude) TARGET="${HOME}/.claude/skills" ;;
     --agents) TARGET="${HOME}/.agents/skills" ;;
     --dir) shift; TARGET="${1:?--dir requires a path}" ;;
     --list) LIST=1 ;;
@@ -61,15 +58,12 @@ if [ "${LIST:-0}" = "1" ]; then
     printf '    %-32s %.90s\n' "$(basename "$(dirname "$f")")" "$d"
   done
   echo
-  echo "Usage: $0 --zcode|--claude|--agents|--dir <path>   (FORCE=1 overwrites)"
+  echo "Usage: $0 --dir <path>   (FORCE=1 overwrites)"
   echo "       $0 --check | $0 --uninstall [--yes] | $0 --only <names>"
   exit 0
 fi
 
 # ---- resolve TARGET for install/check/uninstall ----
-if [ -z "$TARGET" ] && { [ "${CHECK:-0}" = "1" ] || [ "${UNINSTALL:-0}" = "1" ]; }; then
-  TARGET="${HOME}/.zcode/skills"   # default root for --check / --uninstall
-fi
 if [ -z "$TARGET" ]; then
   usage
 fi

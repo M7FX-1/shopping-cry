@@ -1,6 +1,6 @@
 ---
 name: product-scout-diy-garden
-description: "DIY and garden specialist of the product-scout family — hand and power tools, tool platforms, building materials, plumbing, gardening, grills, pest control. Battery-platform wallet math, anti-counterfeit verification marks, PPE pass/fail, hard DIY-electrical limits, chemical-safety rails around children and pets, project-matching tool lists. Dispatched by the core for any tools or garden request, or standalone. Read the core engine first."
+description: "DIY and garden specialist of the product-scout family. Covers hand and power tools, battery platforms, building materials, plumbing, gardening, and pest control: platform wallet-math, anti-counterfeit verification marks, PPE pass/fail, hard DIY-electrical limits, and chemical-safety rails around children and pets. Use when the user is buying tools or materials or planning a project — 'best drill for home use', 'أدوات نجارة'. Do NOT use for licensed electrical, gas, or structural work — routes out. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

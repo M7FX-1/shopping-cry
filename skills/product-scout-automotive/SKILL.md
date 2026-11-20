@@ -1,6 +1,6 @@
 ---
 name: product-scout-automotive
-description: "Automotive specialist of the product-scout family — car parts, fluids, tires, batteries, brakes, suspension, accessories. Fitment-first protocol (make/model/year/VIN with two-source cross-check), safety-critical parts tier (OEM-or-certified only, no gray market), oil-spec literacy, fake-oil and fake-part detection, and mechanic-cooperation framing. Dispatched by the core for any vehicle-parts request, or standalone. Read the core engine first."
+description: "Automotive specialist of the product-scout family. Runs a fitment-first protocol (make/model/year/VIN cross-checked twice) for parts, fluids, tires, batteries, brakes, suspension, and accessories, with a safety-critical tier (OEM-or-certified only, no gray market), oil-spec literacy, and fake-part detection. Use when the user is buying car parts, tires, or fluids — 'best tire for my car', 'زيت موتور'. Do NOT use for repair procedures or mechanical diagnosis — a mechanic owns that. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

@@ -54,7 +54,7 @@ never edit it by hand. For human reading only: agents load the individual
 
 ## Install
 
-### Option 1 — Agent Skills CLI (Claude Code and other supported agents)
+### Option 1 — Agent Skills CLI (any agent that supports it)
 
 ```bash
 npx skills add M7FX-1/shopping-cry
@@ -68,31 +68,28 @@ or `--list` to browse first.
 ```bash
 git clone https://github.com/M7FX-1/shopping-cry
 cd shopping-cry
-./install.sh --zcode      # ZCode harness (~/.zcode/skills)
-./install.sh --claude     # Claude Code (~/.claude/skills)
-./install.sh --agents     # generic root (~/.agents/skills)
-./install.sh --dir /path  # any custom skills root
+./install.sh --dir ~/.agents/skills   # example: the generic-agent skills root
+./install.sh --dir /path/to/skills    # your agent's skills root — any path
 ```
 
 Install the **core** (`product-scout`) together with the specialties you
 want — the specialties register themselves in the core's specialty table and
 fall back to the core's generic workflow for anything unregistered.
 
-Flags: `FORCE=1 ./install.sh --zcode` overwrites already-installed skills.
+Flags: `FORCE=1 ./install.sh --dir <root>` overwrites already-installed skills.
 
 ```bash
-./install.sh --list                          # show the 17 installable skills
-./install.sh --only electronics,beauty       # install a subset (core always included)
-./install.sh --check                         # compare installed copies with this repo
-./install.sh --uninstall                     # preview removal (dry-run; add --yes to apply)
+./install.sh --list                                    # show the 17 installable skills
+./install.sh --only electronics,beauty --dir <root>    # install a subset (core always included)
+./install.sh --check --dir <root>                      # compare installed copies with this repo
+./install.sh --uninstall --dir <root>                  # preview removal (dry-run; add --yes to apply)
 ```
 
 Uninstalling never touches your personal profiles in `~/.product-scout/profiles/`.
 
 ### Option 3 — Manual
 
-Copy the folders inside `skills/` into your agent's skills root
-(`~/.zcode/skills/`, `~/.claude/skills/`, or `~/.agents/skills/`), then
+Copy the folders inside `skills/` into your agent's skills root, then
 restart your agent session so it re-scans its skills roots.
 
 ## Notes
@@ -117,5 +114,5 @@ restart your agent session so it re-scans its skills roots.
   every SKILL.md; `[A]`-tagged thresholds are calibrated anchors, re-anchored
   at install time on a ~6-month cadence. Run `python3 scripts/validate.py`
   before committing changes.
-- `<skills-root>` in skill texts means your agent's skills root
-  (`~/.zcode/skills/`, `~/.claude/skills/`, or `~/.agents/skills/`).
+- `<skills-root>` in skill texts means your agent's skills root — the folder
+  your agent scans for `SKILL.md` files (for example `~/.agents/skills/`).

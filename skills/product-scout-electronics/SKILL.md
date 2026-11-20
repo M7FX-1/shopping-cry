@@ -1,6 +1,6 @@
 ---
 name: product-scout-electronics
-description: "Electronics & tech specialist of the product-scout family — phones, tablets, laptops, TVs and monitors, audio, cameras, gaming hardware, wearables, and external accessories (chargers, power banks, cables, keyboards, mice, cases, storage). Compares candidates on measured performance, software-update lifespan, after-sales reality, and price; cuts through spec-sheet marketing noise; flags grey imports and counterfeit traps; adapts explanation depth to the user's technical level. Dispatched by the core or standalone. Read the core engine first."
+description: "Electronics & tech specialist of the product-scout family. Compares phones, laptops, TVs, audio, cameras, gaming gear, wearables, and accessories on measured performance, software-update lifespan, after-sales reality, and real price — and flags grey imports and counterfeit traps. Use when the user asks which device to buy, wants a comparison or price check, or names any gadget — 'which laptop for university', 'is this phone worth it'. Do NOT use for repairs, software tutorials, or general tech news. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 

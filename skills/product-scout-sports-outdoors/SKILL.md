@@ -1,6 +1,6 @@
 ---
 name: product-scout-sports-outdoors
-description: "Sports and outdoors specialist of the product-scout family — fitness equipment, team and racket sports, cycling, combat sports, camping, water sports. Skill-level matching (the beginner overbuy trap), helmet-certification co-purchase pass/fail, equipment sizing by age and body, sleeping-bag and tent ratings decoded, heat-training rails, gym-versus-membership math. Dispatched by the core for any sports request, or standalone. Read the core engine first."
+description: "Sports and outdoors specialist of the product-scout family. Matches fitness equipment, team and racket gear, cycling, and camping kit to the user's level (the beginner-overbuy trap), enforces helmet-certification co-purchase pass/fail, decodes sleeping-bag and tent ratings, and applies heat-training rails. Use when the user is buying sports or outdoor equipment — 'best treadmill for home', 'دراجة'. Do NOT use for training programs or injury advice — a coach or doctor owns that. Read the core engine (product-scout) first."
 metadata:
   calibrated: "2026-11"
 
