@@ -1,3 +1,5 @@
+**English** | [العربية](README.ar.md)
+
 # shopping-cry
 
 **Stop buying marketing. Start buying what works — in any market worldwide.**
@@ -106,12 +108,9 @@ restart your agent session so it re-scans its skills roots.
   policy gates in the core, never skills.
 - Personal profiles (beauty, clothing, health) are opt-in, consent-gated, and
   stored locally at `~/.product-scout/profiles/<name>.md` — deleting one file
-  erases one profile completely. Profiles created by older versions at
-  `~/.zcode/product-scout/profiles/` are copied to the new location
-  automatically on first use (one notification line; the original is left
-  untouched).
+  erases one profile completely.
 - Verification tags `[S]` / `[P]` / `[A]` are defined once, after the title in
-  every SKILL.md; `[A]`-tagged thresholds are calibrated anchors, re-anchored
+  every `SKILL.md`; `[A]`-tagged thresholds are calibrated anchors, re-anchored
   at install time on a ~6-month cadence. Run `python3 scripts/validate.py`
   before committing changes.
 - `<skills-root>` in skill texts means your agent's skills root — the folder
