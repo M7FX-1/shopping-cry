@@ -1,6 +1,6 @@
-**English** | [العربية](README.ar.md)
-
 # shopping-cry
+
+> 🌐 **متوفر باللغة العربية:** [اقرأ الشرح الكامل بالعربية (`README.ar.md`)](README.ar.md)
 
 **Stop buying marketing. Start buying what works — in any market worldwide.**
 
