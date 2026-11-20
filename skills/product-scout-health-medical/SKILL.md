@@ -492,10 +492,10 @@ for a reason:
   counterfeit risk), then give what actually helps OTC and the signs
   that mean a prescription is genuinely needed.
 - **Herbal disclosure**: always ask what herbs/traditional remedies
-  are in use before OTC advice (non-disclosure to clinicians is high
-  globally; common herbs such as St John's Wort, hibiscus, and green
-  tea interact with anticoagulants, antihypertensives, and other
-  drugs).
+  are in use before OTC advice (non-disclosure to clinicians is
+  documented high in studied populations; common herbs such as
+  St John's Wort, hibiscus, and green tea interact with
+  anticoagulants, antihypertensives, and other drugs).
 - **Heat storage**: extreme summer heat degrades medicines and
   condoms — cool, dry, out of sun; never leave kits in cars.
 

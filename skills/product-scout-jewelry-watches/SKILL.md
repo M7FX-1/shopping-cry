@@ -91,8 +91,11 @@ design-dependent part. Enforced consequences:
 - Compare pieces on gram price vs the user's market daily benchmark
   (local bullion/gold-trade association daily rate fetched at
   dispatch), then compare making fee per gram or as a % of metal
-  value: machine-made chains sit at the low end, hand-worked bridal
-  or designer sets at the top. A quoted fee wildly above the design
+  value. Practitioner benchmark [P 2026-11]: standard machine-made
+  designs and chains commonly sit around 0.5–3% of metal value in
+  competitive markets; hand-worked bridal, filigree, or designer
+  work sits materially higher — the test is that the fee matches
+  its design class. A quoted fee several multiples above its design
   class is a bargain-or-walk moment.
 - Every gold recommendation carries inside its Price/Quality cells:
   karat + weight + date-stamped gram price + making-fee band.
@@ -100,9 +103,10 @@ design-dependent part. Enforced consequences:
 ### 2. Hallmark discipline — the stamp is a claim, verify the claim
 
 Most jurisdictions regulate precious-metal hallmarking and fineness
-stamping (e.g., Vienna Convention Hallmarking, UK Assay Offices, EU
+stamping (Vienna Convention Hallmarking, UK Assay Offices, EU
 national stamps, US FTC 16 CFR Part 23, BIS Hallmarking, national
-assay laws). Enforcement:
+assay laws — the regulatory table lives in reference section 2) [S].
+Enforcement:
 
 - No fineness stamp/hallmark on gold, silver, or platinum → walk
   away. It is an unverified claim about metal content, not a discount
@@ -150,14 +154,13 @@ not the number.
   at an established jeweler or verified showroom storefront. Online
   acceptable ONLY via an established jeweler's verified online
   storefront (physical presence + published pricing + clear return
-  policy) — never a social-media or unverified marketplace-only
+  policy) — never a social-media or marketplace-only
   seller. Weigh-in-front (in person), stamp check, itemized receipt:
   no exceptions.
 - **Tier 3 — diamonds, wedding/bridal sets, luxury watches, anything
-  above ~$300 equivalent**: **in person (or verified authorized dealer
-  with insured escrow/return and independent lab report verification),
-  mandatory.** Certificate verified through the lab's own site
-  (behavior 4); for stones ~1 ct and above, an independent appraisal
+  above ~$300 equivalent**: **in person, mandatory.** Certificate
+  verified through the lab's own site (behavior 4); for stones ~1 ct
+  and above, an independent appraisal
   before finalizing is the stated standard. Social-media sellers and
   unverified online stores are excluded outright at this tier — no
   review score redeems them; if that is the user's only access, say so
@@ -364,8 +367,8 @@ framing:
   local standard gold coins) — low making fee, liquid buyback. Always
   verify the exact karat/purity and weight (some traditional coins
   are 21k or 22k, not 24k) and price off the matching karat gram
-  rate. Above Tier-2 value: buy in person or via a verified bullion
-  dealer with behavior-2 receipt discipline.
+  rate. Above Tier-2 value: buy in person — the Tier-3 rule applies by
+  value, with the same behavior-2 receipt discipline.
 - Installment "gold savings" schemes at unverified sellers: caution
   wording + behavior-3 verified-seller rule at full strength.
 

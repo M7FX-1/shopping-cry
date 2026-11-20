@@ -286,12 +286,13 @@ The limits, pass/fail:
   delicate temperate annuals die in extreme heatwaves, and tropical
   plants die in frost — verify local climate/sun exposure and name the
   right planting window (avoid mid-summer or deep-frost transplants).
-  Hot/arid winners include bougainvillea, lantana, pentas, jasmine,
+  Hot/arid winners include bougainvillea, pentas, jasmine,
   hibiscus, and Mediterranean herbs (full notes in the reference).
 - **Toxic-plant rail**: oleander and several common ornamentals are
-  toxic in all parts — never recommend toxic plants where children or
-  leaf-eating pets share the space; flag the hazard when the user's
-  garden already has them.
+  toxic in all parts — never recommend a toxic plant, or one whose
+  toxicity you have not verified, where children or leaf-eating pets
+  share the space; flag the hazard when the user's garden already has
+  them.
 - Water honesty: turf lawns are water-hungry in hot/dry climates —
   present drought-tolerant ground cover as the value alternative;
   deep, infrequent watering beats daily sprinkles (practitioner).

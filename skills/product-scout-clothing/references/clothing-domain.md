@@ -92,9 +92,9 @@
 
 ### Shoe sizing
 - Full size = one barleycorn = ~1/3 in (~8.5 mm); US men's ≈ UK + 1; EU sizes are Paris points (~2/3 cm per size) with **no official cross-system standard** — published conversion charts disagree. [S38][S39]
-- Brannock devices standardize length + width (US letters: A narrow → D standard → E/EE wide), but feet are 3D: Brannock misses foot volume, so identical Brannock readings can need different sizes; between widths, go wider for a thick/fleshy foot. [S40][S41][S42]
+- Brannock devices standardize length + width (US letters: A narrow → D standard → E/EE wide), but feet are 3D: Brannock misses foot volume, so identical Brannock readings can need different sizes; between widths, go wider for a thick/fleshy foot. [S40][S41][S39]
 - **Last variance is the real problem**: each manufacturer's last (and each model within a brand) has its own length/width/volume proportions; the same stated size fits differently — brand-level and model-level fit reviews beat any conversion chart. [S39][S41]
-- Practical rules: size for the longer foot; length up a half size before width up (width scales within the length system); UK letters ≠ US letters. [S40][S42]
+- Practical rules: size for the longer foot; length up a half size before width up (width scales within the length system); UK letters ≠ US letters. [S40][S39]
 
 ---
 

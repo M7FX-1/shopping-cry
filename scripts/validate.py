@@ -179,8 +179,8 @@ for path in skill_files:
     text = open(path, encoding="utf-8").read()
     for para in re.split(r"\n\s*\n", text):
         if "re-verify at dispatch" in para or "re-check at dispatch" in para or "re-anchor at dispatch" in para:
-            if re.search(r"\$|€|£|price band|street anchor|walk-away|ceiling", para, re.I) and \
-               not re.search(r"channel|store|sites|chains|dealers|marketplaces|tariff|regulator|utility|exchange", para, re.I):
+            if re.search(r"\$|€|£|\b\d[\d,.]*\s*[A-Z]{3}\b|price band|street anchor|walk-away|ceiling", para, re.I) and \
+               not re.search(r"channel|store|sites|chains|dealers|marketplaces|tariff|regulator|utility", para, re.I):
                 warn(f"W9 {name}: possible dispatch promise on a figure line: {para.strip()[:80]!r}")
 
 # ---- reference sizes ----

@@ -2,7 +2,7 @@ For human reading only. Agents: never load this file — read skills/product-sco
 
 # shopping-cry — the product-scout skill family
 
-Generated: 2026-11-19. This file bundles all 17 SKILL.md files of the family verbatim, in registry order. Reference files (domain knowledge bases) are NOT included — they live next to each skill in its own folder.
+Generated: 2026-11-20. This file bundles all 17 SKILL.md files of the family verbatim, in registry order. Reference files (domain knowledge bases) are NOT included — they live next to each skill in its own folder.
 
 
 
@@ -1965,10 +1965,10 @@ for a reason:
   counterfeit risk), then give what actually helps OTC and the signs
   that mean a prescription is genuinely needed.
 - **Herbal disclosure**: always ask what herbs/traditional remedies
-  are in use before OTC advice (non-disclosure to clinicians is high
-  globally; common herbs such as St John's Wort, hibiscus, and green
-  tea interact with anticoagulants, antihypertensives, and other
-  drugs).
+  are in use before OTC advice (non-disclosure to clinicians is
+  documented high in studied populations; common herbs such as
+  St John's Wort, hibiscus, and green tea interact with
+  anticoagulants, antihypertensives, and other drugs).
 - **Heat storage**: extreme summer heat degrades medicines and
   condoms — cool, dry, out of sun; never leave kits in cars.
 
@@ -2294,8 +2294,9 @@ never skips three things:
    as total pot vs usable basket, blender jar vs usable capacity,
    inflated heater wattage.
 3. **Motor/element warranty** — the failure point of every small
-   appliance; a short motor warranty on a daily-use blender is the real
-   quality statement.
+   appliance; the motor-warranty term is the real quality statement
+   on a daily-use blender — a longer term is the honest vote of
+   confidence.
 
 - **Microwave rails**: never run a unit with a bent door, damaged
   hinge or latch, or a burnt door seal — replace the unit rather than
@@ -2845,8 +2846,11 @@ design-dependent part. Enforced consequences:
 - Compare pieces on gram price vs the user's market daily benchmark
   (local bullion/gold-trade association daily rate fetched at
   dispatch), then compare making fee per gram or as a % of metal
-  value: machine-made chains sit at the low end, hand-worked bridal
-  or designer sets at the top. A quoted fee wildly above the design
+  value. Practitioner benchmark [P 2026-11]: standard machine-made
+  designs and chains commonly sit around 0.5–3% of metal value in
+  competitive markets; hand-worked bridal, filigree, or designer
+  work sits materially higher — the test is that the fee matches
+  its design class. A quoted fee several multiples above its design
   class is a bargain-or-walk moment.
 - Every gold recommendation carries inside its Price/Quality cells:
   karat + weight + date-stamped gram price + making-fee band.
@@ -2854,9 +2858,10 @@ design-dependent part. Enforced consequences:
 ### 2. Hallmark discipline — the stamp is a claim, verify the claim
 
 Most jurisdictions regulate precious-metal hallmarking and fineness
-stamping (e.g., Vienna Convention Hallmarking, UK Assay Offices, EU
+stamping (Vienna Convention Hallmarking, UK Assay Offices, EU
 national stamps, US FTC 16 CFR Part 23, BIS Hallmarking, national
-assay laws). Enforcement:
+assay laws — the regulatory table lives in reference section 2) [S].
+Enforcement:
 
 - No fineness stamp/hallmark on gold, silver, or platinum → walk
   away. It is an unverified claim about metal content, not a discount
@@ -2904,14 +2909,13 @@ not the number.
   at an established jeweler or verified showroom storefront. Online
   acceptable ONLY via an established jeweler's verified online
   storefront (physical presence + published pricing + clear return
-  policy) — never a social-media or unverified marketplace-only
+  policy) — never a social-media or marketplace-only
   seller. Weigh-in-front (in person), stamp check, itemized receipt:
   no exceptions.
 - **Tier 3 — diamonds, wedding/bridal sets, luxury watches, anything
-  above ~$300 equivalent**: **in person (or verified authorized dealer
-  with insured escrow/return and independent lab report verification),
-  mandatory.** Certificate verified through the lab's own site
-  (behavior 4); for stones ~1 ct and above, an independent appraisal
+  above ~$300 equivalent**: **in person, mandatory.** Certificate
+  verified through the lab's own site (behavior 4); for stones ~1 ct
+  and above, an independent appraisal
   before finalizing is the stated standard. Social-media sellers and
   unverified online stores are excluded outright at this tier — no
   review score redeems them; if that is the user's only access, say so
@@ -3118,8 +3122,8 @@ framing:
   local standard gold coins) — low making fee, liquid buyback. Always
   verify the exact karat/purity and weight (some traditional coins
   are 21k or 22k, not 24k) and price off the matching karat gram
-  rate. Above Tier-2 value: buy in person or via a verified bullion
-  dealer with behavior-2 receipt discipline.
+  rate. Above Tier-2 value: buy in person — the Tier-3 rule applies by
+  value, with the same behavior-2 receipt discipline.
 - Installment "gold savings" schemes at unverified sellers: caution
   wording + behavior-3 verified-seller rule at full strength.
 
@@ -3518,12 +3522,13 @@ The limits, pass/fail:
   delicate temperate annuals die in extreme heatwaves, and tropical
   plants die in frost — verify local climate/sun exposure and name the
   right planting window (avoid mid-summer or deep-frost transplants).
-  Hot/arid winners include bougainvillea, lantana, pentas, jasmine,
+  Hot/arid winners include bougainvillea, pentas, jasmine,
   hibiscus, and Mediterranean herbs (full notes in the reference).
 - **Toxic-plant rail**: oleander and several common ornamentals are
-  toxic in all parts — never recommend toxic plants where children or
-  leaf-eating pets share the space; flag the hazard when the user's
-  garden already has them.
+  toxic in all parts — never recommend a toxic plant, or one whose
+  toxicity you have not verified, where children or leaf-eating pets
+  share the space; flag the hazard when the user's garden already has
+  them.
 - Water honesty: turf lawns are water-hungry in hot/dry climates —
   present drought-tolerant ground cover as the value alternative;
   deep, infrequent watering beats daily sprinkles (practitioner).

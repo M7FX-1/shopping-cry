@@ -206,3 +206,35 @@ questions → beauty skill.
   piece / a small ~2–3 g gold piece), not the number. Daily spot and
   local gram prices are never quoted from this file — fetch at
   dispatch.
+- The making-fee benchmark (standard machine-made designs ≈ 0.5–3%
+  of metal value, [P 2026-11] in SKILL.md behavior 1) is a
+  practitioner range, not a market quote: re-examine it on the same
+  ~6-month install cadence.
+- Investment-coin handling ("in person above Tier-2 value") is
+  SKILL.md behavior 13's coin bullet.
+
+
+## 14. Sources and verification status (2026-11)
+
+| Claim area | Source class | Status |
+|---|---|---|
+| Hallmarking systems global overview (Vienna Convention, UK Assay Offices, BIS, national assay laws) | Official assay-authority documentation | Verified `[S]` |
+| FTC 16 CFR Part 23 marking minimums (plate 0.175 µm; heavy 2.5 µm; vermeil; flashed/washed) | eCFR/Cornell LII full text | Verified regulation `[S]` |
+| FTC §23.24 treatment disclosure; §23.12 lab-grown; 2018 "real/natural/genuine" ban | FTC Guides + 2018 Basis & Purpose | Verified `[S]` |
+| GIA lab-grown: Quality Assessment Premium/Standard replacing D–Z/FL–I3 (late 2025); >95% narrow band | GIA news/press | Verified `[S]`; recent change — verify current report formats at dispatch |
+| IGI continues D–Z grades for lab-grown | Lab comparison coverage | Verified `[S]` |
+| GIA Report Check / IGI Report Verification free lookup | gia.edu, IGI | Verified `[S]` |
+| 4Cs scale structure (D–Z, FL–I3, cut grades, carat = 0.2 g) | GIA education | Verified `[S]` |
+| Eye-clean ≈ VS2/SI1; G-H value zone; fluorescence neutrality | Buyer guidance + trade practice | Practitioner `[P]` |
+| Lab-grown price collapse 80%+; 60–85% retail gap; near-zero resale | Industry analyses/press (secondary) | Reported estimates `[P]` — labeled, never quoted as precise |
+| Gemstone treatment duties (heat/filling/oiling/laser/HPHT/irradiation) | FTC §23.24 + gemological trade guidance | Verified duties `[S]`; per-stone table partly trade practice `[P]` |
+| Nickel limits 0.5 / 0.2 µg/cm²/week; EN 1811; not safe for all sensitized | REACH Annex XVII entry 27 coverage + research citations | Verified `[S]` |
+| Implant-grade material rankings | Body-jewelry industry standards practice | Practitioner `[P]` (titanium/niobium "effectively none" is consensus) |
+| Pearl classes + four cultured types; Tahitian mislabeling | GIA education + buyer guidance | Verified `[S]` |
+| Tooth test / luster screens | Retailer/trade guidance | Practitioner `[P]` |
+| COSC −4/+6 s/day (15 days/5 positions/3 temps); quartz ~±25 s/yr; Excellence tier | COSC explainer sources | Verified `[S]` |
+| Water-resistance ATM bands; 5–8 yr mechanical service cycle | Watch-industry practice | Practitioner `[P]` |
+| Watch authentication checks (serial consistency, price realism, registers) | Consumer/watchdog guidance + The Watch Register | Verified approach `[S]`; brand-specific marks not named |
+| Cleaning-product matching table | Trade/jeweler practice | Practitioner `[P]` |
+| Making-fee sanity benchmark (standard machine-made designs ≈ 0.5–3% of metal value) | Trade/jeweler practice | Practitioner `[P 2026-11]` — re-examine on install cadence |
+| Value-tier ceilings + spread rails | SKILL.md behavior 1 / 13 | Anchored rails `[A 2026-11]` — re-anchor at install, fetch live values at dispatch |

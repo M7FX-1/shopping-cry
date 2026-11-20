@@ -266,8 +266,9 @@ never skips three things:
    as total pot vs usable basket, blender jar vs usable capacity,
    inflated heater wattage.
 3. **Motor/element warranty** — the failure point of every small
-   appliance; a short motor warranty on a daily-use blender is the real
-   quality statement.
+   appliance; the motor-warranty term is the real quality statement
+   on a daily-use blender — a longer term is the honest vote of
+   confidence.
 
 - **Microwave rails**: never run a unit with a bent door, damaged
   hinge or latch, or a burnt door seal — replace the unit rather than

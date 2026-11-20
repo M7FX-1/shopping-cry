@@ -131,11 +131,11 @@ Rank decisions: when levels conflict, prefer the higher level; when only marketi
 
 ### 4.3 Regional & grey-import checks (verify per user market)
 
-- **Telecom / IMEI registration & band support**: several countries require imported phones to register their IMEI with the national telecom authority or pay import fees within a grace window; check cellular bands and local registration rules before recommending a grey-market handset.
+- **Telecom / IMEI registration & band support**: several countries require imported phones to register their IMEI with the national telecom authority or pay import fees within a grace window; check cellular bands and local registration rules before recommending a grey-market handset. [P 2026-11 — varies by country; verify the exact rule and fee at dispatch]
 - **Warranty**: officially imported units get manufacturer warranty via authorized local service centers; grey/parallel imports usually fall outside local warranty or depend on "international warranty" the local distributor may not honor (see INTA overview: https://www.inta.org/topics/parallel-imports). [P 2026-11]
 - **Power**: verify local mains voltage/plug compatibility (120V/60Hz vs 220–240V/50Hz) — irrelevant for dual-voltage chargers ("100-240V" on the label), critical for single-voltage devices.
-- **Region locks**: streaming-app availability, keyboard layouts, and cellular band support can differ between regional SKUs.
-- **After-sales as a purchase factor**: brands with thin local service coverage turn cheap purchases into expensive repairs; prefer brands with documented local service in the user's market.
+- **Region locks**: streaming-app availability, keyboard layouts, and cellular band support can differ between regional SKUs. [P, unverified per-SKU — check the specific SKU at dispatch]
+- **After-sales as a purchase factor**: brands with thin local service coverage turn cheap purchases into expensive repairs; prefer brands with documented local service in the user's market. [P — general guidance]
 
 ---
 

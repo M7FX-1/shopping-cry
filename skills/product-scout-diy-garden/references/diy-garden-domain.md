@@ -95,7 +95,9 @@ or cold climates):
 - **Oleander** — extremely heat/drought tolerant, coastal-ok; TOXIC
   in all parts (SKILL.md behavior 12 rail governs where kids/pets
   share the space).
-- **Lantana** — full sun, 6+ h direct sun, long blooming.
+- **Lantana** — full sun, 6+ h direct sun, long blooming; TOXIC
+  (foliage and unripe berries) to children and leaf-eating pets —
+  not a recommendation where they share the space.
 - **Pentas** — heat-loving perennial, sun/semi-shade.
 - **Jasmine** — tolerates heat with deep regular watering.
 - **Hibiscus** — reliable summer bloomer, afternoon shade helps.
