@@ -1,14 +1,12 @@
 # shopping-cry
 
-**Stop buying marketing. Start buying what works.**
+**Stop buying marketing. Start buying what works — in any market worldwide.**
 
-shopping-cry gives any AI assistant a complete **global, multi-market**
-shopping brain: one core engine plus 16 specialists (17 skills total) that
-work across **all world markets**, in **any currency and any language**.
-Each skill researches your purchase, compares real local prices, verifies
-quality with independent lab evidence, and ends with one sharp answer — what
-to buy, what to buy instead if you're spending less, and the truth about
-what your money can't get.
+shopping-cry gives any AI assistant a complete global shopping brain: one core
+engine plus 16 specialists that research your purchase, compare real prices
+in your country and local currency, verify quality with independent lab
+evidence, and end with one sharp answer — what to buy, what to buy instead if
+you're spending less, and the truth about what your money can't get.
 
 **What makes it different**
 
@@ -20,14 +18,11 @@ what your money can't get.
   financial walk-away triggers for gold and watches.
 - **Honesty about money.** If your budget buys nothing good, it says so
   plainly — and shows what a little more would get instead.
-- **Global & multi-market by design.** No country, retailer, or currency
-  lock-in — all 17 skills work in any language and any local currency,
-  adapting dynamically at runtime to your market's authorized retailers and
-  service networks, local regulatory authorities (e.g., FDA, EMA, MHRA, TGA,
-  or national equivalents), local mains voltage and regional standards
-  (120V/60Hz or 220–240V/50Hz, car-seat standards, paper sizes, disc
-  regions), local counterfeit traps, and local shopping and academic
-  calendars.
+- **Built for every market worldwide.** Works in any country, any currency,
+  and any language — adapting at dispatch to your local authorized retailers,
+  national regulators (FDA, EMA, MHRA, TGA, Health Canada, or local
+  equivalents), mains voltage, sizing/paper/disc standards, local counterfeit
+  traps, and local shopping calendar.
 
 ## The family
 
@@ -38,7 +33,7 @@ what your money can't get.
 | `product-scout-beauty` | Skincare, makeup, haircare, fragrance, grooming — ingredient science, OTC treatment protocols |
 | `product-scout-clothing` | Apparel, footwear, bags — durability & cost-per-wear, size profiles, style-taste learning |
 | `product-scout-health-medical` | OTC medicines, supplements, home medical devices, first aid — pharmacist-grade limits |
-| `product-scout-appliances` | Large & small appliances — energy cost, installation, gas/electrical safety |
+| `product-scout-appliances` | Large & small appliances — running cost at local tariffs, installation, gas/electrical safety |
 | `product-scout-home-living` | Furniture, kitchenware, linens, decor, lighting — material safety, anchoring |
 | `product-scout-jewelry-watches` | Gold, gemstones, watches — authentication, grading, financial-safety rails |
 | `product-scout-diy-garden` | Tools, materials, gardening — platform math, PPE, DIY limits |
@@ -102,6 +97,11 @@ restart your agent session so it re-scans its skills roots.
 
 ## Notes
 
+- **Global market-adaptive design**: no region, currency, retailer, or
+  regulator is hardcoded. Anchored thresholds (`[A]`) use USD-equivalent
+  local-currency values re-anchored on a ~6-month cadence, and live figures
+  (retail prices, electricity tariffs, daily gold rates) are fetched at
+  dispatch for the user's stated country.
 - The live/installed skills must sit **directly** under a skills root
   (`<root>/<skill-name>/SKILL.md`) — nesting them under a subfolder removes
   them from discovery.
